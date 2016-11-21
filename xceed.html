@@ -52,6 +52,23 @@
 			<script src="http://wordpress.promo-gear.itembridge.com/5/wp-content/themes/promo-gear/assets/js/html5shiv.js"></script>
 			<script src="http://wordpress.promo-gear.itembridge.com/5/wp-content/themes/promo-gear/assets/js/respond.min.js"></script>
 		<![endif]-->
+		
+		<script>
+			var myArr = new Array();
+			var xmlhttp = new XMLHttpRequest();
+			var url = "http://enct29fa5ae.kurukshetra.org.in/xceeds.json";
+			
+			xmlhttp.onreadystatechange = function() {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					myArr.push(JSON.parse(xmlhttp.responseText));
+					//myFunction(myArr);
+				}
+			};
+			xmlhttp.open("GET", url, true);
+			xmlhttp.send();
+			
+		</script>
+		
 	</head>
 	
 	<body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
