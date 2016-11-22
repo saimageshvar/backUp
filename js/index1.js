@@ -35,4 +35,8 @@ function myFunction(arr)
 		outer.append(child);
 	}
 	document.getElementsByClassName("workshops-details")[0].append(outer);
+	
+	//hospitality
+	
+	
 }
