@@ -8,14 +8,12 @@ function myFunction(arr)
 	var i;
 	for(i=0;i<7;i++)
 	{
-		var link = document.createElement("a");
-		link.href = "#set7";
-		link.className = "hi-icon " + icons[i];
-		outer.append(link);
-		var child = document.createElement("span");
-		child.style="";
-		child.textContent=arr[0].categories[i].name;
-		outer.append(child);
+		var icon = document.createElement("i");
+		icon.className = "hi-icon fa fa-twitter";
+		var child = document.createElement("a");
+		child.href = "#";
+		icon.append(child);
+		outer.append(icon);
 	}
 	document.getElementsByClassName("events-details")[0].append(outer);
 	

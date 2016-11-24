@@ -55,6 +55,10 @@
 		<link rel='shortlink' href='index.html' />
 		<link rel="stylesheet" type="text/css" href="css/about/style.css" />
 		<link type="text/css" href="css/about/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+		
+		<!-- font awesome -->
+		<link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 		
 		<!--[if lt IE 9]>
@@ -77,17 +81,17 @@
 			xmlhttp.open("GET", url, true);
 			xmlhttp.send();
 			
-			var xmlhttp1 = new XMLHttpRequest();
-			var url1 = "http://cms16.kurukshetra.org.in/hospitalities.json";
+			//var xmlhttp1 = new XMLHttpRequest();
+			//var url1 = "http://cms16.kurukshetra.org.in/hospitalities.json";
 			
-			xmlhttp1.onreadystatechange = function() {
-				if (xmlhttp1.readyState == 4 && xmlhttp1.status == 200) {
-					myArr.push(JSON.parse(xmlhttp1.responseText));
-					myFunction(myArr);
-				}
-			};
-			xmlhttp1.open("GET", url1, true);
-			xmlhttp1.send();
+			//xmlhttp1.onreadystatechange = function() {
+				//if (xmlhttp1.readyState == 4 && xmlhttp1.status == 200) {
+					//myArr.push(JSON.parse(xmlhttp1.responseText));
+					//myFunction(myArr);
+				//}
+			//};
+			//xmlhttp1.open("GET", url1, true);
+			//xmlhttp1.send();
 		</script>
 		<style>
 			.img-with-text {
