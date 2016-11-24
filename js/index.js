@@ -1,13 +1,23 @@
 function myFunction(arr)
 {
-	var out="";out+='<div class="row filter-elements">';
+	var icons = ["hi-icon-cog", "hi-icon-clock", "hi-icon-videos", "hi-icon-list", "hi-icon-refresh", "hi-icon-clock", "hi-icon-cog"]
+	
+	//events
+	var outer = document.createElement("div");
+	outer.className = "events";
 	var i;
 	for(i=0;i<7;i++)
-	{out+='<div class="col-xs-12 col-sm-6 col-md-3 events"><a href="#" class="work" data-id="128" data-link="" data-appear-animation="fadeInDown" data-appear-animation-delay="200" data-toggle="modal"><div class="image"><img width="270" height="167" src="wp-content/uploads/2015/07/alcatraz.jpg" class="attachment-270x182 wp-post-image" alt="Laptop" /></div><h3 class="title">'+arr[0].categories[i].name+'</h3></a></div>';
+	{
+		var icon = document.createElement("i");
+		icon.className = "hi-icon fa fa-twitter";
+		var child = document.createElement("a");
+		child.href = "#";
+		icon.append(child);
+		outer.append(icon);
 	}
-	for(i=0;i<6;i++)
-	{out+='<div class="col-xs-12 col-sm-6 col-md-3 workshops"><a href="#" class="work" data-id="128" data-link="" data-appear-animation="fadeInDown" data-appear-animation-delay="200" data-toggle="modal"><div class="image"><img width="270" height="167" src="wp-content/uploads/2015/07/alcatraz.jpg" class="attachment-270x182 wp-post-image" alt="Laptop" /></div><h3 class="title">'+arr[0].categories[i].name+'</h3></a></div>';
-	}
-	out+='</div>';
-	document.getElementById("domains").innerHTML = out;
+	document.getElementsByClassName("domains")[0].append(outer);
+	
+
+	
+	
 }
