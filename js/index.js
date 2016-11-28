@@ -14,7 +14,11 @@ function myFunction(arr)
 		for(i=0; i<arr[0].events[domains].events.length; i++)
 		{
 			var column = document.createElement("div");
+			column.id = i;
+			$(column).data('name',arr[0].events[0].events[0].name);
+			$(column).data('tabs',arr[0].events[0].events[0].tabs);
 			column.className = "col-sm-3";
+			column.addEventListener("click", function() { displayDetails(this); });
 			var link = document.createElement("a");
 			link.href = "#";
 			link.className = "hi-icon fa fa-twitter";
@@ -38,4 +42,9 @@ function swapDomains(ele)
 	$(".events-"+ele.id).show();
 	$(".events-"+ele.id+" div").show();			
 	
+}
+
+function displayDetails(e)
+{
+	alert($(e).data('tabs'));
 }
