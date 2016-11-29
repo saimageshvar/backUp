@@ -15,8 +15,8 @@ function myFunction(arr)
 		{
 			var column = document.createElement("div");
 			column.id = i;
-			$(column).data('name',arr[0].events[0].events[0].name);
-			$(column).data('tabs',arr[0].events[0].events[0].tabs);
+			$(column).data('name',arr[0].events[domains].events[i].name);
+			$(column).data('tabs',arr[0].events[domains].events[i].tabs);
 			column.className = "col-sm-3";
 			column.addEventListener("click", function() { displayDetails(this); });
 			var link = document.createElement("a");
@@ -46,5 +46,19 @@ function swapDomains(ele)
 
 function displayDetails(e)
 {
-	alert($(e).data('tabs'));
+	//alert($(e).data('name'));
+	$('#eventsDetails .modal-title')[0].innerHTML = $(e).data('name');
+	//$('#eventsDetails .modal-body')[0].innerHTML = $(e).data('tabs').length;
+	var outerDiv = document.createElement('div');
+	var i;
+	var noOfTabs = $(e).data('tabs').length;
+	for(i=0; i<noOfTabs; i++)
+	{
+		var tabHeading = document.createElement('h6');
+		tabHeading.innerHTML = $(e).data('tabs')[i].title;
+		
+		$(outerDiv).append(tabHeading);
+	}
+	$('#eventsDetails .modal-body')[0].append(outerDiv);
+	$('#eventsDetails').modal('show');
 }
