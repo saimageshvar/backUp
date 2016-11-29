@@ -20,8 +20,8 @@
 	font-size: 0px;
 	cursor: pointer;
 	margin: 15px 30px;
-	width: 90px;
-	height: 90px;
+	width: 70px;
+	height: 70px;
 	border-radius: 50%;
 	text-align: center;
 	position: relative;
@@ -42,10 +42,9 @@
 }
 
 .hi-icon:before {
-	font-family: 'ecoicon';
 	speak: none;
 	font-size: 48px;
-	line-height: 90px;
+	line-height: 70px;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
