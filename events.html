@@ -30,7 +30,7 @@
 		<link rel='stylesheet' id='promogear-jquery-mcustomscrollbar-min-css'  href='wp-content/themes/promo-gear/assets/css/jquery.mCustomScrollbar.min3a05.css?ver=4.2.2' type='text/css' media='all' />
 		<link rel='stylesheet' id='promogear-main-styles-css'  href='wp-content/themes/promo-gear/assets/css/style3a05.css?ver=4.2.2' type='text/css' media='all' />
 		<link rel='stylesheet' href="css/res.css">
-
+		
 		
 		<!-- event and workshop -->
 		<link rel="stylesheet" type="text/css" href="css/eventIcons.css" />
@@ -271,6 +271,11 @@
 					$(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
 					setTimeout(randomBackground, 5000);
 				});
+				
+				$('#eventsDetails').on('hidden.bs.modal', function (e) {
+					$('.eventModalBodyDiv').remove();
+				});
+				
 			</script>
 			
 			
@@ -328,4 +333,4 @@
 		</body>
 		
 		<!-- Mirrored from wordpress.promo-gear.itembridge.com/5/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2016 15:45:57 GMT -->
-	</html>			
+	</html>				

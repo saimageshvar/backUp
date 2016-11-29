@@ -50,15 +50,20 @@ function displayDetails(e)
 	$('#eventsDetails .modal-title')[0].innerHTML = $(e).data('name');
 	//$('#eventsDetails .modal-body')[0].innerHTML = $(e).data('tabs').length;
 	var outerDiv = document.createElement('div');
+	outerDiv.className = 'eventModalBodyDiv';
 	var i;
 	var noOfTabs = $(e).data('tabs').length;
 	for(i=0; i<noOfTabs; i++)
 	{
 		var tabHeading = document.createElement('h6');
 		tabHeading.innerHTML = $(e).data('tabs')[i].title;
-		
+		var tabContent = document.createElement('p');
+		tabContent.innerHTML = $(e).data('tabs')[i].content;
 		$(outerDiv).append(tabHeading);
+		$(outerDiv).append(tabContent);		
 	}
 	$('#eventsDetails .modal-body')[0].append(outerDiv);
 	$('#eventsDetails').modal('show');
 }
+
+
