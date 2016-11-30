@@ -1,6 +1,6 @@
 function populateForm()
 {
-	alert();
+
 	//degree-names
 	var degrees=[" B.E ","B.A","B.Arch","B.Com","B.Sc","B.Tech","BBA","BCA","DEEE","Diploma","Dual Degree","Intermediate","M.A","M.E","M.Sc","M.Sc(Integrated)","M.Tech","MBA","MCA","MS","Ph.D","Other"]
 	var i;
