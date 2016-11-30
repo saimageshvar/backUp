@@ -22,15 +22,15 @@ function myFunction(arr)
 		var innerchild = document.createElement("i");
 		innerchild.className=icons[i];
 		child2.append(innerchild);
-		child2.textContent=arr[0].hospitalities[i].title;	
+		child2.innerHTML=arr[0].hospitalities[i].title;	
 		child.append(child2);
 		parent.append(child);
 		outer.append(parent);
 	}
 	document.getElementsByClassName("hospi-header")[0].append(outer);
 	
-	outer = document.createElement("div");	
-	outer.className = "hospi";
+	//outer = document.createElement("div");	
+	//outer.className = "hospi";
 	for(i=0;i<6;i++)
 	{
 		var parent = document.createElement("div");
@@ -42,8 +42,8 @@ function myFunction(arr)
 		
 		var child = document.createElement("p")
 		child.style="color:#fff"
-		child.textContent=arr[0].hospitalities[i].desc;
-		parent.append(child);
+		child.innerHTML = arr[0].hospitalities[i].desc;
+		parent.append(child);		
 		document.getElementsByClassName("hospi-details")[0].append(parent);
 	}
 	//document.getElementsByClassName("hospi-details")[0].append(outer);
