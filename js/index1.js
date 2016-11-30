@@ -11,7 +11,9 @@ function myFunction(arr)
 	var i;	
 	for(i=0;i<6;i++)
 	{
-		var parent = document.createElement("li");		
+		var parent = document.createElement("li");
+		if(i==0)
+			parent.className = "active";
 		
 		var child = document.createElement("a");
 		child.href="#hospi"+i;		
