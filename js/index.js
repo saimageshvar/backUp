@@ -67,6 +67,3 @@ function displayDetails(e)
 }
 
 
-=======
-	alert($(e).data('tabs'));
-}

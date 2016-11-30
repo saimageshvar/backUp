@@ -42,7 +42,7 @@ function myFunction(arr)
 		
 		var child = document.createElement("p")
 		child.style="color:#fff"
-		child.textContent=arr[0].hospitalities[i].desc;
+		child.innerHTML = arr[0].hospitalities[i].desc;
 		parent.append(child);
 		document.getElementsByClassName("hospi-details")[0].append(parent);
 	}
