@@ -641,11 +641,11 @@
                     </div>
                 </div>
                 <!-- .section-content -->
-                <footer class="site-footer" style="background-color: #fff;padding:12px;">
+                <footer class="site-footer" style="background-color: #fff;padding:22px;">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6 left-align">
-                                <div style="font-size:13px;" class="copyright"><b>Copyright 2016 @ CEG Tech Forum. All rights reserved.</b></div>
+                                <div style="font-size:15px;" class="copyright"><b>Copyright 2016 @ CEG Tech Forum. All rights reserved.</b></div>
                             </div>
                             <div class="col-sm-6 right-align">
                                 <a href="http://www.archive16.kurukshetra.org.in" target="_blank">k!16</a>&nbsp;
@@ -672,6 +672,8 @@
                     <div class="modal-content">
                         <h3 style="text-align:center;margin-top:30px">Sponsors</h3>
                         <hr/>
+						<center><p> Will be updated soon</p></center>
+						<br/>
                     </div>
                 </div>
             </div>
@@ -693,7 +695,7 @@
                         </ul>
                         <div class="tab-content" style="border:none">
                             <div id="login" class="tab-pane fade in active">
-                                <form>
+                                <form id="login">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="email" type="text" class="form-control" name="email" placeholder="Email">
@@ -716,18 +718,21 @@
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-phone" style="width:16px;"></i></span>
-                                        <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number">
+                                        <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
                                     </div>
+									<span style="color:#df576f; font-style:italic;" id="phoneerror"></span>
                                     <br>							
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                        <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id">
+                                        <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
                                     </div>
+									<span style="color:#df576f; font-style:italic;" id="mailerror"></span>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
                                     </div>
+									<span style="color:#df576f; font-style:italic;" id="passerror"></span>
                                     <br/>
                                     <div class="input-group radio">
                                         Gender:
@@ -761,7 +766,7 @@
                         <h3 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h3>
                         <center>
                             <div class="newreg">
-                                <form style="width:90%;" method="post" action="register.php">
+                                <form id="saregister" style="width:90%;" method="post" action="register.php">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="name" type="text" class="form-control" name="name" placeholder="Your name">
@@ -769,18 +774,21 @@
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-phone" style="width:16px;"></i></span>
-                                        <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number">
+                                        <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
                                     </div>
+									<span style="color:#df576f; font-style:italic;" id="phoneerror"></span>
                                     <br>							
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                        <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id">
+                                        <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
                                     </div>
+									<span style="color:#df576f; font-style:italic;" id="mailerror"></span>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
                                     </div>
+									<span style="color:#df576f; font-style:italic;" id="passerror"></span>
                                     <br/>
                                     <div class="input-group radio">
                                         Gender:
@@ -948,7 +956,7 @@
         <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-datepicker.min68b3.js'></script>
         
         <!-- the jScrollPane script -->
-		
+		<script type='text/javascript' src='js/register.js'></script>
 		<!-- form data -->
         <script src="js/list.js"></script>
         <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/main68b3.js?ver=1'></script>
