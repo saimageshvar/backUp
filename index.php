@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+    ?>
 <!DOCTYPE html>
 <html lang="en-US">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -15,14 +18,9 @@
         <link rel='stylesheet' id='promogear-jquery-fullpage-css'  href='wp-content/themes/promo-gear/assets/css/jquery.fullPage3a05.css?ver=4.2.2' type='text/css' media='all' />
         <link rel='stylesheet' id='promogear-main-styles-css'  href='wp-content/themes/promo-gear/assets/css/style3a05.css?ver=4.2.2' type='text/css' media='all' />
         <link rel='stylesheet' href="css/res.css">
-		
-		<!-- bootstrap -->
-		<!-- Latest compiled and minified CSS -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-
-		
-		
-		
+        <!-- bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
         <!--hospitality-->
         <link rel="stylesheet" type="text/css" href="css/hospi/tabs.css" />
         <link rel="stylesheet" type="text/css" href="css/hospi/tabstyles.css" />
@@ -55,6 +53,7 @@
             }
             };
             xmlhttp.open("GET", url, true);
+            xmlhttp.setRequestHeader('origin', 'http');
             xmlhttp.send();
             
         </script>
@@ -574,14 +573,13 @@
                 <div class="section-content ">
                     <div class="container section-wrap"
                         style="">
-						<h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Our Theme</h1>
+                        <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Our Theme</h1>
                         <div class="card card-outline-warning text-xs-center">
                             <div class="card-block">
                                 <blockquote class="card-blockquote">
-									<blockquote class="text-left">
-                                    
-										<h3>Climate Change</h3>
-									</blockquote>
+                                    <blockquote class="text-left">
+                                        <h3>Climate Change</h3>
+                                    </blockquote>
                                     <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                                 </blockquote>
                             </div>
@@ -699,7 +697,7 @@
                                 </form>
                             </div>
                             <div id="register" class="tab-pane fade">
-                                <form>
+                                <form id="register" method="post" action="register.php">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="name" type="text" class="form-control" name="name" placeholder="Your name">
@@ -707,12 +705,27 @@
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-phone" style="width:16px;"></i></span>
-                                        <input id="phone" type="text" class="form-control" name="password" placeholder="Your mobile number">
+                                        <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number">
                                     </div>
                                     <br>							
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                        <input id="email" type="text" class="form-control" name="email" placeholder="Your email-id">
+                                        <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id">
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                    </div>
+                                    <br/>
+                                    <div class="input-group radio">
+                                        Gender:
+                                        <label class="radio-inline">
+                                        <input type="radio" name="gender"  value="M"> Male
+                                        </label>
+                                        <label class="radio-inline">
+                                        <input type="radio" name="gender" value="F"> Female
+                                        </label>
                                     </div>
                                     <br>
                                     <div class="form-group college">
@@ -763,15 +776,17 @@
                                     </div>
                                     <button type="submit" class="btn btn-default">REGISTER AS STUDENT AMBASSDOR</button>
                                 </form>
+                                <br/>
                                 <div class="oldreglink"><a>Already registered as student ambassdor?</a></div>
                             </div>
                         </center>
                         <div class="main clearfix oldreg" style="display:none;">
                             <div class="back">
                                 <a>
-                                    <h4>&nbsp;&nbsp;<i class="fa fa-angle-double-left"></i>&nbsp;Back</h4>
+                                    <p>&nbsp;&nbsp;<i class="fa fa-arrow-left"></i>&nbsp;Back</p>
                                 </a>
                             </div>
+                            <br/>
                             <center>
                                 <form style="width:90%;">
                                     <div class="input-group">
@@ -881,11 +896,9 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <script type="text/javascript" src="js/randomColorMaster.js"></script>
-		
-		<!-- bootstrap -->
-		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-        
-		<script>
+        <!-- bootstrap -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+        <script>
             $(document).ready(function randomBackground(){
             	num2 = 0.8;
             	var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
@@ -956,7 +969,24 @@
             	$(".oldreg").hide();
             	$(".newreg").show();			
             });
-        </script>
+        </script>								
     </body>
-    <!-- Mirrored from wordpress.promo-gear.itembridge.com/5/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2016 15:45:57 GMT -->
 </html>
+<?php
+    if(isset($_SESSION['registration']))
+    {
+    	if($_SESSION['registration'] == "failure")
+    	{
+    	?>
+			<script>alert('Your registration failed');</script>
+		<?php
+		}
+		else if($_SESSION['registration'] == "success")
+		{
+		?>
+			<script>alert('<?php echo $_SESSION['user_id'] ?>');</script>
+		<?php
+		}
+		//unset($_SESSION['registration']);
+    }
+?>
