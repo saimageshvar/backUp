@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    ?>
+?>
 <!DOCTYPE html>
 <html lang="en-US">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -10,20 +10,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="shortcut icon" href="wp-content/themes/promo-gear/assets/img/favicon.ico">
         <title>Kurukshetra'17</title>
-        <meta name='robots' content='noindex,follow' />
-        <link rel='stylesheet' id='promogear-bootstrap-css'  href='wp-content/themes/promo-gear/assets/css/bootstrap3a05.css?ver=4.2.2' type='text/css' media='all' />
-        <link rel='stylesheet' id='promogear-bootstrap-select-min-css'  href='wp-content/themes/promo-gear/assets/css/bootstrap-select.min3a05.css?ver=4.2.2' type='text/css' media='all' />
-        <link rel='stylesheet' id='promogear-font-awesome-min-css'  href='wp-content/themes/promo-gear/assets/css/font-awesome.min3a05.css?ver=4.2.2' type='text/css' media='all' />
-        <link rel='stylesheet' id='promogear-animate-min-css'  href='wp-content/themes/promo-gear/assets/css/animate.min3a05.css?ver=4.2.2' type='text/css' media='all' />
-        <link rel='stylesheet' id='promogear-jquery-fullpage-css'  href='wp-content/themes/promo-gear/assets/css/jquery.fullPage3a05.css?ver=4.2.2' type='text/css' media='all' />
-        <link rel='stylesheet' id='promogear-main-styles-css'  href='wp-content/themes/promo-gear/assets/css/style3a05.css?ver=4.2.2' type='text/css' media='all' />
+        <link rel='stylesheet' id='promogear-bootstrap-css'  href='wp-content/themes/promo-gear/assets/css/bootstrap3a05.css' type='text/css' media='all' />
+        
+		<!--<link rel='stylesheet' id='promogear-bootstrap-select-min-css'  href='wp-content/themes/promo-gear/assets/css/bootstrap-select.min3a05.css' type='text/css' media='all' />-->
+		
+        <link rel='stylesheet' id='promogear-font-awesome-min-css'  href='wp-content/themes/promo-gear/assets/css/font-awesome.min3a05.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='promogear-animate-min-css'  href='wp-content/themes/promo-gear/assets/css/animate.min3a05.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='promogear-jquery-fullpage-css'  href='wp-content/themes/promo-gear/assets/css/jquery.fullPage3a05.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='promogear-main-styles-css'  href='wp-content/themes/promo-gear/assets/css/style3a05.css' type='text/css' media='all' />
         <link rel='stylesheet' href="css/res.css">
-        <!-- bootstrap -->
-        <!-- Latest compiled and minified CSS -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
         <!--hospitality-->
-        <link rel="stylesheet" type="text/css" href="css/hospi/tabs.css" />
-        <link rel="stylesheet" type="text/css" href="css/hospi/tabstyles.css" />
         <link rel="stylesheet" type="text/css" href="css/hospi/demo.css" />
         <!-- event and workshop -->
         <link rel="stylesheet" type="text/css" href="css/eventIcons.css" />
@@ -33,8 +30,7 @@
             }                
             h1, .h1 {font-family: Miso;font-size: 56px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h2, .h2 {font-family: Miso;font-size: 48px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h3, .h3 {font-family: Miso;font-size: 40px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h4, .h4 {font-family: Miso;font-size: 32px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h5, .h5 {font-family: Miso;font-size: 24px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h6, .h6 {font-family: Miso;font-size: 19px;font-weight: 700;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}a {font-family: Lato;font-size: 18px;text-transform: none;}a {color: #d73e4d}a:hover {color: #d73e4d}a:active {color: #d73e4d}.btn {padding-top:6px;padding-bottom:6px;padding-left:30px;padding-right:30px;}.btn.btn-sm {padding-top:2px;padding-bottom:2px;padding-left:20px;padding-right:20px;}.btn.btn-lg {padding-top:6px;padding-bottom:6px;padding-left:40px;padding-right:40px;}p {margin-top:0px;margin-bottom:30px;}blockquote {border-left-width:1px;border-color:#d73e4d;padding-top:0px;padding-bottom:0px;padding-left:20px;padding-right:0px;}table th, table td {padding-top:1px;padding-bottom:1px;padding-left:1px;padding-right:1px;}
         </style>
-        <!-- font awesome -->
-        <link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        
         <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
         <!--[if lt IE 9]>
         <script src="http://wordpress.promo-gear.itembridge.com/5/wp-content/themes/promo-gear/assets/js/html5shiv.js"></script>
@@ -929,8 +925,6 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <script type="text/javascript" src="js/randomColorMaster.js"></script>
-        <!-- bootstrap -->
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
         <script>
             $(document).ready(function randomBackground(){
             	num2 = 0.8;
@@ -939,65 +933,43 @@
             	setTimeout(randomBackground, 5000);
             });
         </script>
-        <!--script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;ver=1'></script-->
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.appear68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.easings.min68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.carouFredSel-6.2.1-packed68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.touchwipe.min68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.themepunch.tools.min68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.mCustomScrollbar.min68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.mlens-1.5.min68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.validate.min68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.fullPage.min68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap.min68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-select.min68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-datepicker.min68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/isotope.pkgd.min68b3.js?ver=1'></script>
+      
+        
+        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.easings.min68b3.js'></script>
+        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.carouFredSel-6.2.1-packed68b3.js'></script>
+        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.touchwipe.min68b3.js'></script>
+    
+        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.mCustomScrollbar.min68b3.js'></script>
+        
+        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.validate.min68b3.js'></script>
+        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.fullPage.min68b3.js'></script>
+        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap.min68b3.js'></script>
+        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-select.min68b3.js'></script>
+        <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-datepicker.min68b3.js'></script>
+        
         <!-- the jScrollPane script -->
-        <script type="text/javascript" src="js/about/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/about/jquery.crotator.js"></script>
-        <script src="js/hospi/cbpFWTabs.js"></script>
+		
+		<!-- form data -->
         <script src="js/list.js"></script>
-        <!-- <script type="text/javascript" src="js/about/jquery.mousewheel.js"></script> -->
-        <script type="text/javascript">
-            $(window).load(function(){
-            	$('#cr-container').crotator();
-            	populateForm();
-            	
-            });
-        </script>
-        <script type='text/javascript'>
-            /* <![CDATA[ */
-            var promogear = {"ajax_url":"http:\/\/wordpress.promo-gear.itembridge.com\/5\/wp-admin\/admin-ajax.php"};
-            /* ]]> */
-        </script>
         <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/main68b3.js?ver=1'></script>
-        <script type='text/javascript' src='wp-content/themes/promo-gear/custom68b3.js?ver=1'></script>
-        <script type="text/javascript">                    (function($){
-            $(document).ready(function(){
-            	/*alert('test');*/
-            });
-            })(jQuery);                
-        </script>
         <script>
+			//switching events and workshops
             $( ".workshops-menu" ).click(function() {
             	$(".events-details").hide();
             	$(".workshops-details").show();
             });
-        </script>
-        <script>
+    
             $( ".events-menu" ).click(function() {
             	$(".workshops-details").hide();
             	$(".events-details").show();			
             });
         </script>
         <script>
+			//switching reg forms
             $( ".oldreglink" ).click(function() {
             	$(".newreg").hide();
             	$(".oldreg").show();			
             });
-        </script>
-        <script>
             $( ".back" ).click(function() {
             	$(".oldreg").hide();
             	$(".newreg").show();			
@@ -1022,8 +994,4 @@
 		}
 		//unset($_SESSION['registration']);
     }
-	else
-	{
-		echo $_SESSION['registration'];
-	}
 ?>
