@@ -1,6 +1,5 @@
 <?php 
     session_start();
-	require 'logout.php';
     ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -150,7 +149,7 @@
 								else
 								{
 								?>	
-									<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='<?php logout();?>'><span>Logout</span></a></li>
+									<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='logout.php'><span>Logout</span></a></li>
 								<?php
 								}
 								?>
@@ -766,20 +765,35 @@
                         <h3 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h3>
                         <center>
                             <div class="newreg">
-                                <form style="width:90%;">
+                                <form style="width:90%;" method="post" action="register.php">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="name" type="text" class="form-control" name="name" placeholder="Your name">
                                     </div>
-                                    <br/>
+                                    <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-phone" style="width:16px;"></i></span>
-                                        <input id="phone" type="text" class="form-control" name="password" placeholder="Your mobile number">
+                                        <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number">
                                     </div>
-                                    <br/>							
+                                    <br>							
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                        <input id="email" type="text" class="form-control" name="email" placeholder="Your email-id">
+                                        <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id">
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                    </div>
+                                    <br/>
+                                    <div class="input-group radio">
+                                        Gender:
+                                        <label class="radio-inline">
+                                        <input type="radio" name="gender"  value="M"> Male
+                                        </label>
+                                        <label class="radio-inline">
+                                        <input type="radio" name="gender" value="F"> Female
+                                        </label>
                                     </div>
                                     <br>
                                     <div class="form-group college">
@@ -790,7 +804,10 @@
                                     </div>
                                     <div class="form-group year">
                                     </div>
-                                    <button type="submit" class="btn btn-default">REGISTER AS STUDENT AMBASSDOR</button>
+									<div class="input-group">
+										<input type="hidden" name="sa" value="true" />
+									</div>
+                                    <button type="submit" class="btn btn-default">REGISTER</button>
                                 </form>
                                 <br/>
                                 <div class="oldreglink"><a>Already registered as student ambassdor?</a></div>
@@ -1005,4 +1022,8 @@
 		}
 		//unset($_SESSION['registration']);
     }
+	else
+	{
+		echo $_SESSION['registration'];
+	}
 ?>

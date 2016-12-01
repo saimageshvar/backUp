@@ -7,7 +7,11 @@
 	$gender = sanitizeParams($_POST['gender']);
 	$collegeName =$_POST['collegeName'];
 	$department = sanitizeParams($_POST['department']);
-	$isSA = false;
+	$isSA = '';
+	if(isset($_POST['sa']))
+		$isSA = true;
+	else
+		$isSA = false;
 	
 	$url = 'http://login.kurukshetra.org.in/create.json';
 	$params =  json_encode(array("user" => array(
@@ -40,25 +44,25 @@
 		$_SESSION['registration'] = "failure";
 
 	}
-	echo $response['responseCode'];
+	//echo $response['responseCode'];
+	//echo $_SESSION['user_id'];
 	header("Location: index.php");
 	
 	function sanitizeParams($param)
 	{
-		$orig_param = $param;
 		$param = strip_tags(trim($param));
 		if (isset($param) && empty($param) != 1)
 		{
-			echo "ffd<br/>";
+			//echo "ffd<br/>";
 			return $param;
 			
 		}
 		else
 		{
 			$_SESSION['registration'] = "failure";
-			echo $param;
-			//header("Location: index.php");
-			echo "asd<br/>";
+			//echo $param;
+			header("Location: index.php");
+			//echo "asd<br/>";
 		}
 	}
 	
