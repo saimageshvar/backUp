@@ -43,7 +43,7 @@ function myFunction(arr)
 		parent.id="hospi"+i;
 		
 		var child = document.createElement("p")
-		child.style="color:#fff"
+		child.style="color:#fff; font-family: 'Open Sans',serif"
 		child.innerHTML = arr[0].hospitalities[i].desc;
 		parent.append(child);
 		document.getElementsByClassName("hospi-details")[0].append(parent);

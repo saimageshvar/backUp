@@ -19,6 +19,8 @@
         <link rel='stylesheet' id='promogear-jquery-fullpage-css'  href='wp-content/themes/promo-gear/assets/css/jquery.fullPage3a05.css' type='text/css' media='all' />
         <link rel='stylesheet' id='promogear-main-styles-css'  href='wp-content/themes/promo-gear/assets/css/style3a05.css' type='text/css' media='all' />
         <link rel='stylesheet' href="css/res.css">
+		
+		 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Proza+Libre"/>
 
         <!--hospitality-->
         <link rel="stylesheet" type="text/css" href="css/hospi/demo.css" />
@@ -296,35 +298,35 @@
                                 </div>
                             </div>
                             <!-- .section-title-block -->
-                            <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details">
+                            <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
                                 <div class="col-sm-3">
                                     <a class="hi-icon fa fa-gear"></a>
-                                    <p>Engineering
+                                    <p style="font-family:'Proza Libre',serif;">ENGINEERING</p>
                                 </div>
                                 </li>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-android"></a>
-                                    <p>Robotics
+                                    <p style="font-family:'Proza Libre',serif;">ROBOTICS
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-money"></a>
-                                    <p>Management
+                                    <p style="font-family:'Proza Libre',serif;">MANAGEMENT
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
-                                    <p>Quiz
+                                    <p style="font-family:'Proza Libre',serif;">QUIZ
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-archive"></a>
-                                    <p>General
+                                    <p style="font-family:'Proza Libre',serif;">GENERAL
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-terminal"></a>
-                                    <p>Coding
+                                    <p style="font-family:'Proza Libre',serif;">CODING
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-laptop"></a>
-                                    <p>Online
+                                    <p style="font-family:'Proza Libre',serif;">ONLINE
                                 </div>
                                 <!-- events will come here -->
                                 <!-- workshop should come in tab -->
@@ -440,12 +442,12 @@
                         <h3 class="section-title"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h3>
                         <p style="color:#fff; font-size:16px; margin-left:30px; text-align:justify;">
                             Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra. Quite simply, XCEED provides those beyond our state borders the chance to experience Kurukshetra first hand. Since 2008, XCEED has visited some of the top institutions in our country. We have hosted XCEED in a lot of colleges.<br/><br/>
-                            <!--For more details check out our website:<br/>
-                                <a href="xceed.kurukshetra.org.in" style="color:#fff; font-size:20px;">xceed.kurukshetra.org.in</a>-->
                         </p>
                         <h4 style="color:rgb(255, 247, 204);" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Battle of Bots</h4>
                         <p style="color:#fff; font-size:16px; margin-left:30px;">
-                            Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra.<br/><br/>                                
+                            Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra.<br/><br/> 
+							<i>For more details check out our <a target="_blank" href="http://www.xceed.kurukshetra.org.in" style="color:#fff; font-size:20px;"><b>WEBSITE</b></i></a><br/>
+                                
                         </p>
                     </div>
                 </div>
@@ -641,7 +643,7 @@
                     </div>
                 </div>
                 <!-- .section-content -->
-                <footer class="site-footer" style="background-color: #fff;padding:22px;">
+                <footer class="site-footer" style="background-color: #f7f7f1;padding:22px;">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6 left-align">
