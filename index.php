@@ -1,5 +1,6 @@
 <?php 
     session_start();
+	require 'logout.php';
     ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -144,6 +145,12 @@
 								{
 								?>	
 									<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".login"><span>Login/Register</span></a></li>
+								<?php
+								}
+								else
+								{
+								?>	
+									<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='<?php logout();?>'><span>Logout</span></a></li>
 								<?php
 								}
 								?>
