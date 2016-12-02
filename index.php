@@ -695,7 +695,7 @@
                         </ul>
                         <div class="tab-content" style="border:none">
                             <div id="login" class="tab-pane fade in active">
-                                <form id="login">
+                                <form id="login" method="post" action="login.php">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="email" type="text" class="form-control" name="email" placeholder="Email">
@@ -825,7 +825,7 @@
                             </div>
                             <br/>
                             <center>
-                                <form style="width:90%;">
+                                <form style="width:90%;" method="post" action="login.php">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="email" type="text" class="form-control" name="email" placeholder="Email">
@@ -1004,6 +1004,26 @@
 			<script>alert('<?php echo $_SESSION['user_id'] ?>');</script>
 		<?php
 		}
-		//unset($_SESSION['registration']);
+		unset($_SESSION['registration']);
+    }
+?>
+
+
+<?php
+    if(isset($_SESSION['login']))
+    {
+    	if($_SESSION['login'] == "failure")
+    	{
+    	?>
+			<script>alert('Your login failed');</script>
+		<?php
+		}
+		else if($_SESSION['login'] == "success")
+		{
+		?>
+			<script>alert('<?php echo $_SESSION['user']['_id'] ?>');</script>
+		<?php
+		}
+		unset($_SESSION['login']);
     }
 ?>
