@@ -961,6 +961,10 @@
         <script src="js/list.js"></script>
         <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/main68b3.js?ver=1'></script>
         <script>
+			//populate form
+			$(document).ready(function() {
+				populateForm();
+			});
 			//switching events and workshops
             $( ".workshops-menu" ).click(function() {
             	$(".events-details").hide();
