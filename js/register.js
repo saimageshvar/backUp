@@ -1,28 +1,46 @@
+var check;
+function validatename(key)
+{
+	var name=key.value;
+	if (!name.match(/^[a-zA-Z. ]*$/))
+	{
+		key.style.borderColor="red";
+		check = false;
+	}
+	else
+	{
+		key.style.borderColor="green";
+		check = true;
+	}
+	key.style.borderWidth="1px";
+}
 function validatephone(key) {      
         var phone = key.value;				
         if((phone.match(/^[0-9]+$/) == null) || phone.length != 10)
 		{
-			document.getElementById("phoneerror").innerHTML="Invalid Phone no.";
-			document.register.phone.value="";
-			document.register.phone.focus();
+			check = false;
+			key.style.borderColor="red";
 		}	
 		else
 		{
-			document.getElementById("phoneerror").innerHTML="";
+			key.style.borderColor="green";
+			check =true;
 		}
+		key.style.borderWidth="1px";
 } 
 function validatepass(key) {      
 		var pass = key.value;
         if(pass.length<6)
 		{
-			document.getElementById("passerror").innerHTML="Invalid Password";
-			document.register.pass.value="";
-			document.register.pass.focus();
+			check = false;
+			key.style.borderColor="red";
 		}	
 		else
 		{
-			document.getElementById("passerror").innerHTML="";
+			key.style.borderColor="green";
+			check = true;
 		}
+		key.style.borderWidth="1px";
 }
 function validatemail(key) { 
 		var x = key.value;
@@ -30,12 +48,23 @@ function validatemail(key) {
 		var dotpos = x.lastIndexOf(".");
 		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) 
 		{
-			document.getElementById("mailerror").innerHTML="Invalid Email-id";
-			document.register.email.value="";
-			document.register.email.focus();
+			check = false;
+			key.style.borderColor="red";
 		}
 		else
 		{
-			document.getElementById("mailerror").innerHTML="";			
+			key.style.borderColor="green";
+			check = true;
 		}			
+		key.style.borderWidth="1px";		
+}
+function Validate(formid)
+{
+	if(check)
+	{
+		formid.method = "post";
+		formid.action = "register.php";
+	}
+	else
+		alert("Invalid")
 }

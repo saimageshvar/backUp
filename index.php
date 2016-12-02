@@ -700,41 +700,38 @@
                                 <form id="login">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                        <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 6 characters long)" onblur="validatepass(this)">
                                     </div>
                                     <br>							
                                     <button type="submit" class="btn btn-default">LOGIN</button>
                                 </form>
                             </div>
                             <div id="register" class="tab-pane fade">
-                                <form id="register" method="post" action="register.php">
+                                <form id="register" onsubmit="Validate(this)">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name">
+                                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-phone" style="width:16px;"></i></span>
                                         <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
                                     </div>
-									<span style="color:#df576f; font-style:italic;" id="phoneerror"></span>
                                     <br>							
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                                         <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
                                     </div>
-									<span style="color:#df576f; font-style:italic;" id="mailerror"></span>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
+                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 6 characters long)" onblur="validatepass(this)">
                                     </div>
-									<span style="color:#df576f; font-style:italic;" id="passerror"></span>
                                     <br/>
                                     <div class="input-group radio">
                                         Gender:
@@ -754,7 +751,7 @@
                                     </div>
                                     <div class="form-group year">
                                     </div>
-                                    <button type="submit" class="btn btn-default">REGISTER</button>
+                                    <input type="submit" class="btn btn-default" value="Register">
                                 </form>
                             </div>
                         </div>
@@ -768,27 +765,25 @@
                         <h3 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h3>
                         <center>
                             <div class="newreg">
-                                <form id="saregister" style="width:90%;" method="post" action="register.php">
+                                <form id="saregister" style="width:90%;" onsubmit="Validate()">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name">
+                                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-phone" style="width:16px;"></i></span>
                                         <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
                                     </div>
-									<span style="color:#df576f; font-style:italic;" id="phoneerror"></span>
                                     <br>							
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                                         <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
                                     </div>
-									<span style="color:#df576f; font-style:italic;" id="mailerror"></span>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
+                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 6 characters long)" onblur="validatepass(this)">
                                     </div>
 									<span style="color:#df576f; font-style:italic;" id="passerror"></span>
                                     <br/>
@@ -813,7 +808,7 @@
 									<div class="input-group">
 										<input type="hidden" name="sa" value="true" />
 									</div>
-                                    <button type="submit" class="btn btn-default">REGISTER</button>
+                                    <input type="submit" class="btn btn-default" value="Register">
                                 </form>
                                 <br/>
                                 <div class="oldreglink"><a>Already registered as student ambassdor?</a></div>
@@ -830,12 +825,12 @@
                                 <form style="width:90%;">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                        <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
                                     </div>
                                     <br>							
                                     <button type="submit" class="btn btn-default">LOGIN</button><br>
