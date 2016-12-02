@@ -137,7 +137,7 @@
                                 <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".about"><span>About</span></a></li>
 								
 								<?php 
-								if(!isset($_SESSION['user_id']))
+								if(!isset($_SESSION['user']['userId']))
 								{
 								?>	
 									<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".login"><span>Login/Register</span></a></li>

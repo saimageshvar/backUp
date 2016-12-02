@@ -37,7 +37,7 @@
 	if ($response['responseCode'] == 1)
 	{
 		$_SESSION['registration'] = "success";
-		$_SESSION['user_id'] = $response['data']['userId'];
+		$_SESSION['user']['userId'] = $response['data']['userId'];
 	}
 	else
 	{
