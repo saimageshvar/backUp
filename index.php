@@ -38,6 +38,7 @@
 			{
 				width: 40px !important;
 			}
+<<<<<<< HEAD
 			.fp-nav ul li a span
 			{
 				border-color:#fff; !important;
@@ -48,6 +49,8 @@
 			{
 				background-color:#f7e3e5;
 			}
+=======
+>>>>>>> origin/xceed
         </style>
         
         <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
@@ -722,7 +725,11 @@
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+<<<<<<< HEAD
                                         <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
+=======
+                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 6 characters long)" onblur="validatepass(this)">
+>>>>>>> origin/xceed
                                     </div>
                                     <br>							
                                     <button type="submit" class="btn btn-default">LOGIN</button>
@@ -747,7 +754,11 @@
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+<<<<<<< HEAD
                                         <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
+=======
+                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 6 characters long)" onblur="validatepass(this)">
+>>>>>>> origin/xceed
                                     </div>
                                     <br/>
 									<div class="input-group">
@@ -772,7 +783,11 @@
                                     </div>
                                     <div class="form-group year">
                                     </div>
+<<<<<<< HEAD
                                     <input type="submit" class="btn btn-outline-primary btn-block" value="Register">
+=======
+                                    <input type="submit" class="btn btn-default" value="Register">
+>>>>>>> origin/xceed
                                 </form>
                             </div>
                         </div>
@@ -786,10 +801,16 @@
                         <h3 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h3>						
                         <center>
                             <div class="newreg">
+<<<<<<< HEAD
 							<div class="oldreglink col-sm-12" style="text-align:right; cursor:pointer"><a><i>Already registered for k!?</i></a></div>
                                 <form id="saregister" style="width:90%;" onsubmit="Validate(this)">								
                                     <div class="input-group">
                                         <span class="input-group-addon"><i style="color:#d73e4d;" class="glyphicon glyphicon-user"></i></span>
+=======
+                                <form id="saregister" style="width:90%;" onsubmit="Validate()">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+>>>>>>> origin/xceed
                                         <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
                                     </div>
                                     <br>
@@ -804,12 +825,21 @@
                                     </div>
                                     <br>
                                     <div class="input-group">
+<<<<<<< HEAD
                                         <span class="input-group-addon"><i style="color:#d73e4d;" class="glyphicon glyphicon-lock"></i></span>
                                         <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
+=======
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 6 characters long)" onblur="validatepass(this)">
+>>>>>>> origin/xceed
                                     </div>
                                     <br/>
 									<div class="input-group">
+<<<<<<< HEAD
 										<span class="input-group-addon"><i style="color:#d73e4d;" class="fa fa-calendar"></i></span>
+=======
+										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+>>>>>>> origin/xceed
 										<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
 									</div>
                                     <div class="input-group radio">
@@ -833,10 +863,16 @@
 									<div class="input-group">
 										<input type="hidden" name="sa" value="true" />
 									</div>									
+<<<<<<< HEAD
                                     <input type="submit" class="btn btn-success" value="Register">
 									<br/><br/>
                                 </form>
                                 
+=======
+                                    <input type="submit" class="btn btn-default" value="Register">
+                                </form>
+                                <div class="oldreglink" style="cursor:pointer"><a>Already registered as student ambassdor?</a></div>
+>>>>>>> origin/xceed
                             </div>
                         </center>
                         <div class="main clearfix oldreg" style="display:none;">
