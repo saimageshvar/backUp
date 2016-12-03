@@ -811,6 +811,7 @@
                                         <input type="radio" name="gender" value="F"> Female
                                         </label>
                                     </div>
+                                    <br>
                                     <div class="form-group college">
                                     </div>
                                     <div class="form-group courses">
@@ -818,7 +819,10 @@
                                     <div class="form-group degree">
                                     </div>
                                     <div class="form-group year">
-                                    </div>	
+                                    </div>
+									<div class="input-group">
+										<input type="hidden" name="sa" value="true" />
+									</div>									
                                     <input type="submit" class="btn btn-default" value="Register">
                                 </form>
                                 <div class="oldreglink" style="cursor:pointer"><a>Already registered as student ambassdor?</a></div>
@@ -827,7 +831,7 @@
                         <div class="main clearfix oldreg" style="display:none;">
                             <div class="back">
                                 <a>
-                                    <p style="cursor:pointer">&nbsp;&nbsp;<i class="fa fa-arrow-left"></i>&nbsp;Back</p>
+                                    <p style="cursor:pointer;">&nbsp;&nbsp;<i class="fa fa-arrow-left"></i>&nbsp;Back</p>
                                 </a>
                             </div>
                             <br/>
