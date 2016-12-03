@@ -166,6 +166,12 @@
 									<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
 								<?php
 								}
+								if(isset($_SESSION['user']))
+								{
+									?>	
+									<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
+								<?php
+								}
 								?>
                             </ul>
                         </nav>

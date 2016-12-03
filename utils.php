@@ -8,13 +8,29 @@
 			if($_SESSION['registration'] == "failure")
 			{
 			?>
-			<script>alert('Your registration failed');</script>
+			<script>
+				BootstrapDialog.show({
+					title: 'Dai Loosu',
+					message: 'Registration Failed',
+					type: BootstrapDialog.TYPE_DANGER,
+					closable: true,
+					draggable: true
+				});
+			</script>
 			<?php
 			}
 			else if($_SESSION['registration'] == "success")
 			{
 			?>
-			<script>alert('<?php echo $_SESSION['user_id'] ?>');</script>
+			<script>
+				BootstrapDialog.show({
+					title: 'Hey!',
+					message: 'Successfully logged in!Your k! id is <?php echo $_SESSION['user']['userId'] ?>',
+					type: BootstrapDialog.TYPE_SUCCESS,
+					closable: true,
+					draggable: true
+				});
+			</script>
 			<?php
 			}
 			unset($_SESSION['registration']);
