@@ -29,13 +29,29 @@
 			if($_SESSION['login'] == "failure")
 			{
 			?>
-			<script>alert('Your login failed');</script>
+			<script>
+				BootstrapDialog.show({
+					title: 'Dai Loosu',
+					message: 'Login Failed',
+					type: BootstrapDialog.TYPE_DANGER,
+					closable: true,
+					draggable: true
+				});
+			</script>
 			<?php
 			}
 			else if($_SESSION['login'] == "success")
 			{
 			?>
-			<script>alert('<?php echo $_SESSION['user']['_id'] ?>');</script>
+			<script>
+				BootstrapDialog.show({
+					title: 'Hey!',
+					message: 'Successfully logged in!Your k! id is <?php echo $_SESSION['user']['userId'] ?>',
+					type: BootstrapDialog.TYPE_SUCCESS,
+					closable: true,
+					draggable: true
+				});
+			</script>
 			<?php
 			}
 			unset($_SESSION['login']);

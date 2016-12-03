@@ -20,6 +20,8 @@
         <link rel='stylesheet' id='promogear-jquery-fullpage-css'  href='wp-content/themes/promo-gear/assets/css/jquery.fullPage3a05.css' type='text/css' media='all' />
         <link rel='stylesheet' id='promogear-main-styles-css'  href='wp-content/themes/promo-gear/assets/css/style3a05.css' type='text/css' media='all' />
         <link rel='stylesheet' href="css/res.css">
+		
+		<link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css'/>
 
         <!--hospitality-->
         <link rel="stylesheet" type="text/css" href="css/hospi/demo.css" />
@@ -968,6 +970,7 @@
         <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap.min68b3.js'></script>
         <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-select.min68b3.js'></script>
         <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-datepicker.min68b3.js'></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js">
         
         <!-- the jScrollPane script -->
 		<script type='text/javascript' src='js/register.js'></script>
