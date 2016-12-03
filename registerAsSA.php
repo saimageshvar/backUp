@@ -24,8 +24,6 @@
 	
 	$response = curl_exec( $ch );
 	$response = json_decode($response, true);
-	unset($_SESSION['user']);
-
 	if ($response['responseCode'] == 1)
 	{
 		$_SESSION['SARegistration'] = "success";
