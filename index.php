@@ -18,10 +18,12 @@
         <link rel='stylesheet' id='promogear-animate-min-css'  href='wp-content/themes/promo-gear/assets/css/animate.min3a05.css' type='text/css' media='all' />
         <link rel='stylesheet' id='promogear-jquery-fullpage-css'  href='wp-content/themes/promo-gear/assets/css/jquery.fullPage3a05.css' type='text/css' media='all' />
         <link rel='stylesheet' id='promogear-main-styles-css'  href='wp-content/themes/promo-gear/assets/css/style3a05.css' type='text/css' media='all' />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+		
         <link rel='stylesheet' href="css/res.css">
 		
-		 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Proza+Libre"/>
-
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Proza+Libre"/>
+		<link rel="stylesheet" href="css/landio.css">
         <!--hospitality-->
         <link rel="stylesheet" type="text/css" href="css/hospi/demo.css" />
         <!-- event and workshop -->
@@ -31,6 +33,21 @@
             margin: 0 auto;
             }                
             h1, .h1 {font-family: Miso;font-size: 56px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h2, .h2 {font-family: Miso;font-size: 48px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h3, .h3 {font-family: Miso;font-size: 40px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h4, .h4 {font-family: Miso;font-size: 32px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h5, .h5 {font-family: Miso;font-size: 24px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h6, .h6 {font-family: Miso;font-size: 19px;font-weight: 700;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}a {font-family: Lato;font-size: 18px;text-transform: none;}a {color: #d73e4d}a:hover {color: #d73e4d}a:active {color: #d73e4d}.btn {padding-top:6px;padding-bottom:6px;padding-left:30px;padding-right:30px;}.btn.btn-sm {padding-top:2px;padding-bottom:2px;padding-left:20px;padding-right:20px;}.btn.btn-lg {padding-top:6px;padding-bottom:6px;padding-left:40px;padding-right:40px;}p {margin-top:0px;margin-bottom:30px;}blockquote {border-left-width:1px;border-color:#d73e4d;padding-top:0px;padding-bottom:0px;padding-left:20px;padding-right:0px;}table th, table td {padding-top:1px;padding-bottom:1px;padding-left:1px;padding-right:1px;}
+			
+			.dow
+			{
+				width: 40px !important;
+			}
+			.fp-nav ul li a span
+			{
+				border-color:#fff; !important;
+				color:#fff; !important;
+				background:#fff; !important;
+			}
+			.input-group-addon
+			{
+				background-color:#f7e3e5;
+			}
         </style>
         
         <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
@@ -298,35 +315,35 @@
                                 </div>
                             </div>
                             <!-- .section-title-block -->
-                            <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
+                            <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details">
                                 <div class="col-sm-3">
                                     <a class="hi-icon fa fa-gear"></a>
-                                    <p style="font-family:'Proza Libre',serif;">ENGINEERING</p>
+                                    <p>Engineering
                                 </div>
                                 </li>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-android"></a>
-                                    <p style="font-family:'Proza Libre',serif;">ROBOTICS
+                                    <p>Robotics
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-money"></a>
-                                    <p style="font-family:'Proza Libre',serif;">MANAGEMENT
+                                    <p>Management
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
-                                    <p style="font-family:'Proza Libre',serif;">QUIZ
+                                    <p>Quiz
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-archive"></a>
-                                    <p style="font-family:'Proza Libre',serif;">GENERAL
+                                    <p>General
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-terminal"></a>
-                                    <p style="font-family:'Proza Libre',serif;">CODING
+                                    <p>Coding
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="events.html" class="hi-icon fa fa-laptop"></a>
-                                    <p style="font-family:'Proza Libre',serif;">ONLINE
+                                    <p>Online
                                 </div>
                                 <!-- events will come here -->
                                 <!-- workshop should come in tab -->
@@ -446,7 +463,7 @@
                         <h4 style="color:rgb(255, 247, 204);" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Battle of Bots</h4>
                         <p style="color:#fff; font-size:16px; margin-left:30px;">
                             Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra.<br/><br/> 
-							<i>For more details check out our <a target="_blank" href="http://www.xceed.kurukshetra.org.in" style="color:#fff; font-size:20px;"><b>WEBSITE</b></i></a><br/>
+							<i>For more details check out our <a target="_blank" href="http://www.xceed.kurukshetra.org.in" style="color:#fff; font-size:20px;"><b>website</b></i></a><br/>
                                 
                         </p>
                     </div>
@@ -700,46 +717,47 @@
                                 <form id="login">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                        <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
                                     </div>
                                     <br>							
                                     <button type="submit" class="btn btn-default">LOGIN</button>
                                 </form>
                             </div>
                             <div id="register" class="tab-pane fade">
-                                <form id="register" method="post" action="register.php">
+                                <form id="register" onsubmit="Validate(this)">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name">
+                                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-phone" style="width:16px;"></i></span>
                                         <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
                                     </div>
-									<span style="color:#df576f; font-style:italic;" id="phoneerror"></span>
                                     <br>							
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                                         <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
                                     </div>
-									<span style="color:#df576f; font-style:italic;" id="mailerror"></span>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
+                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
                                     </div>
-									<span style="color:#df576f; font-style:italic;" id="passerror"></span>
                                     <br/>
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+									</div>
                                     <div class="input-group radio">
                                         Gender:
                                         <label class="radio-inline">
-                                        <input type="radio" name="gender"  value="M"> Male
+                                        <input type="radio" name="gender"  value="M" checked> Male
                                         </label>
                                         <label class="radio-inline">
                                         <input type="radio" name="gender" value="F"> Female
@@ -754,7 +772,7 @@
                                     </div>
                                     <div class="form-group year">
                                     </div>
-                                    <button type="submit" class="btn btn-default">REGISTER</button>
+                                    <input type="submit" class="btn btn-outline-primary btn-block" value="Register">
                                 </form>
                             </div>
                         </div>
@@ -765,37 +783,39 @@
             <div class="modal fade registersa" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
-                        <h3 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h3>
+                        <h3 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h3>						
                         <center>
                             <div class="newreg">
-                                <form id="saregister" style="width:90%;" method="post" action="register.php">
+							<div class="oldreglink col-sm-12" style="text-align:right; cursor:pointer"><a><i>Already registered for k!?</i></a></div>
+                                <form id="saregister" style="width:90%;" onsubmit="Validate(this)">								
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name">
+                                        <span class="input-group-addon"><i style="color:#d73e4d;" class="glyphicon glyphicon-user"></i></span>
+                                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-phone" style="width:16px;"></i></span>
+                                        <span class="input-group-addon"><i style="color:#d73e4d;" class="fa fa-phone" style="width:16px;"></i></span>
                                         <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
                                     </div>
-									<span style="color:#df576f; font-style:italic;" id="phoneerror"></span>
                                     <br>							
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                        <span class="input-group-addon"><i style="color:#d73e4d;" class="fa fa-envelope"></i></span>
                                         <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
                                     </div>
-									<span style="color:#df576f; font-style:italic;" id="mailerror"></span>
                                     <br>
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
+                                        <span class="input-group-addon"><i style="color:#d73e4d;" class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
                                     </div>
-									<span style="color:#df576f; font-style:italic;" id="passerror"></span>
                                     <br/>
+									<div class="input-group">
+										<span class="input-group-addon"><i style="color:#d73e4d;" class="fa fa-calendar"></i></span>
+										<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+									</div>
                                     <div class="input-group radio">
                                         Gender:
                                         <label class="radio-inline">
-                                        <input type="radio" name="gender"  value="M"> Male
+                                        <input type="radio" name="gender"  value="M" checked> Male
                                         </label>
                                         <label class="radio-inline">
                                         <input type="radio" name="gender" value="F"> Female
@@ -812,17 +832,17 @@
                                     </div>
 									<div class="input-group">
 										<input type="hidden" name="sa" value="true" />
-									</div>
-                                    <button type="submit" class="btn btn-default">REGISTER</button>
+									</div>									
+                                    <input type="submit" class="btn btn-success" value="Register">
+									<br/><br/>
                                 </form>
-                                <br/>
-                                <div class="oldreglink"><a>Already registered as student ambassdor?</a></div>
+                                
                             </div>
                         </center>
                         <div class="main clearfix oldreg" style="display:none;">
                             <div class="back">
                                 <a>
-                                    <p>&nbsp;&nbsp;<i class="fa fa-arrow-left"></i>&nbsp;Back</p>
+                                    <p style="cursor:pointer;">&nbsp;&nbsp;<i class="fa fa-arrow-left"></i>&nbsp;Back</p>
                                 </a>
                             </div>
                             <br/>
@@ -830,12 +850,12 @@
                                 <form style="width:90%;">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                        <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
                                     </div>
                                     <br>							
                                     <button type="submit" class="btn btn-default">LOGIN</button><br>
@@ -943,7 +963,19 @@
             	setTimeout(randomBackground, 5000);
             });
         </script>
-      
+		<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+</script>
         
         <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.easings.min68b3.js'></script>
         <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.carouFredSel-6.2.1-packed68b3.js'></script>
@@ -962,6 +994,8 @@
 		<!-- form data -->
         <script src="js/list.js"></script>
         <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/main68b3.js?ver=1'></script>
+		
+		<script src="js/landio.min.js"></script>
         <script>
 			//switching events and workshops
             $( ".workshops-menu" ).click(function() {

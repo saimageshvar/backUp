@@ -7,6 +7,7 @@
 	$gender = sanitizeParams($_POST['gender']);
 	$collegeName =$_POST['collegeName'];
 	$department = sanitizeParams($_POST['department']);
+	$date = sanitizeParams($_POST['date']);
 	$isSA = '';
 	if(isset($_POST['sa']))
 		$isSA = true;
