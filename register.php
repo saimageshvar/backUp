@@ -38,14 +38,13 @@
 	{
 		$_SESSION['registration'] = "success";
 		$_SESSION['user']['userId'] = $response['data']['userId'];
+		$_SESSION['user']['isSA'] = $isSA;
 	}
 	else
 	{
 		$_SESSION['registration'] = "failure";
 
 	}
-	//echo $response['responseCode'];
-	//echo $_SESSION['user_id'];
 	header("Location: index.php");
 	
 	function sanitizeParams($param)
@@ -53,16 +52,12 @@
 		$param = strip_tags(trim($param));
 		if (isset($param) && empty($param) != 1)
 		{
-			//echo "ffd<br/>";
-			return $param;
-			
+			return $param;			
 		}
 		else
 		{
 			$_SESSION['registration'] = "failure";
-			//echo $param;
 			header("Location: index.php");
-			//echo "asd<br/>";
 		}
 	}
 	

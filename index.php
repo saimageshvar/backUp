@@ -151,7 +151,20 @@
 								}
 								?>
 								
-                                <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".registersa"><span>Register as SA</span></a></li>
+								<?php 
+								if(!isset($_SESSION['user']))
+								{
+								?>	
+									<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".registersa"><span>Register as SA</span></a></li>
+								<?php
+								}
+								else if(!isset($_SESSION['user']['isSA']))
+								{
+									?>	
+									<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
+								<?php
+								}
+								?>
                             </ul>
                         </nav>
                     </div>
@@ -826,7 +839,7 @@
                             </div>
                             <br/>
                             <center>
-                                <form style="width:90%;" method="post" action="login.php">
+                                <form style="width:90%;" method="post" action="registerAsSA.php">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="email" type="text" class="form-control" name="email" placeholder="Email">
@@ -993,5 +1006,6 @@
 <?php
 	checkRegistration();
 	checkLogin();
+	checkSA();
 ?>
 

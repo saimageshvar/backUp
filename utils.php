@@ -43,5 +43,27 @@
 		
 	}
 	
+	//checkSA
+	function checkSA()
+	{
+		if(isset($_SESSION['SARegistration']))
+		{
+			if($_SESSION['SARegistration'] == "failure")
+			{
+			?>
+			<script>alert('Your SA registration failed');</script>
+			<?php
+			}
+			else if($_SESSION['SARegistration'] == "success")
+			{
+			?>
+			<script>alert('Your SA registration is successful');</script>
+			<?php
+			}
+			unset($_SESSION['SARegistration']);
+		}
+		
+	}
+	
 	
 ?>
