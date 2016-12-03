@@ -44,6 +44,7 @@ function populateForm()
 	{
 		var child=document.createElement("option");
 		child.textContent = year[i];
+		child.value = year[i];
 		outer3.append(child);
 	}
 	document.getElementsByClassName("year")[0].append(outer3);
