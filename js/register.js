@@ -68,3 +68,13 @@ function Validate(formid)
 	else
 		alert("Invalid")
 }
+function Validatesa(formid)
+{
+	if(check)
+	{
+		formid.method = "post";
+		formid.action = "register.php";
+	}
+	else
+		alert("Invalid")
+}

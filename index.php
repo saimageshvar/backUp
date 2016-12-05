@@ -38,16 +38,19 @@
 			.dow
 			{
 				width: 40px !important;
-			}
-			.fp-nav ul li a span
-			{
-				border-color:#fff; !important;
-				color:#fff; !important;
-				background:#fff; !important;
-			}
+			}			
 			.input-group-addon
 			{
 				background-color:#f7e3e5;
+			}
+			.reicon
+			{
+				color:#d73e4d;
+			}
+			@media screen and (max-width: 800px) {
+			.unescodiv {
+				display:none;
+				}
 			}
         </style>
         
@@ -111,7 +114,7 @@
                 <header class="site-header  second-site-header">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-xs-3 col-sm-4 left-align no-left-indent" id="one" >
+                            <div class="col-xs-4 col-sm-4 left-align no-left-indent" id="one" >
                                 <div class="navbar navbar-default " role="navigation">
                                     <div class="navbar-header">
                                         <button type="button" class="btn navbar-toggle collapsed" style=""
@@ -134,10 +137,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-3 col-sm-4 logo-box" id="two"><img src="img/k orange white.png" style="margin-left: 10px; height: auto; margin-top: 5px; width: 75%;">
+                            <div class="col-xs-4 col-sm-4 logo-box" id="two"><center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
                             </div>
-                            <div class="col-xs-3 col-sm-4 logo-box" id="three">								
-                                <img src="img/unesco white and blue.png" style=" height: auto;width: 60%;margin-top: -15px;margin-left:200px;">								
+                            <div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">								
+                                <img src="img/unesco white and blue1.png" style="height: auto;width: 55%;">								
                             </div>
                         </div>
                     </div>
@@ -337,7 +340,7 @@
                             <!-- .section-title-block -->
                             <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details">
                                 <div class="col-sm-3">
-                                    <a class="hi-icon fa fa-gear"></a>
+                                    <a href="events.html" class="hi-icon fa fa-gear"></a>
                                     <p>Engineering
                                 </div>
                                 </li>
@@ -370,28 +373,28 @@
                             </div>
                             <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains_work workshops-details" style="display:none">
                                 <div class="col-sm-3">
-                                    <a class="hi-icon fa fa-gear"></a>
+                                    <a href="workshops.html" class="hi-icon fa fa-gear"></a>
                                     <p>Engineering
                                 </div>
                                 </li>
                                 <div class="col-sm-3">
-                                    <a href="#" class="hi-icon fa fa-laptop"></a>
+                                    <a href="workshops.html" class="hi-icon fa fa-laptop"></a>
                                     <p>Coding
                                 </div>
                                 <div class="col-sm-3">
-                                    <a href="#" class="hi-icon fa fa-terminal"></a>
+                                    <a href="workshops.html" class="hi-icon fa fa-terminal"></a>
                                     <p>Online
                                 </div>
                                 <div class="col-sm-3">
-                                    <a href="#" class="hi-icon fa fa-money"></a>
+                                    <a href="workshops.html" class="hi-icon fa fa-money"></a>
                                     <p>Management
                                 </div>
                                 <div class="col-sm-3">
-                                    <a href="#" class="hi-icon fa fa-android"></a>
+                                    <a href="workshops.html" class="hi-icon fa fa-android"></a>
                                     <p>Robotics
                                 </div>
                                 <div class="col-sm-3">
-                                    <a href="#" class="hi-icon fa fa-archive"></a>
+                                    <a href="workshops.html" class="hi-icon fa fa-archive"></a>
                                     <p>General
                                 </div>
                                 <!-- workshops will come here -->
@@ -422,40 +425,81 @@
                                 <h1 class="col-sm-8 section-title" data-appear-animation="fadeInLeftBig" data-appear-animation-delay="500">Initiatives</h1>
                             </div>
                             <!-- .section-title-block -->
-                            <!--neon run-->                            
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <a href="#" class="work"
-                                    data-id="128"
-                                    data-link=""
-                                    data-appear-animation="fadeInDown"
-                                    data-appear-animation-delay="100"
-                                    data-toggle="modal"
-                                    data-target="#neonrun">
-                                    <div style="width:400px; height:auto;" class="image">
-                                        <img src="img/neon.jpg" class="attachment-270x182 wp-post-image" alt="Laptop" />                                    
+                            <div class="success-carousel carousel-success  inverse"
+                            data-options='{"itemsCustom": [[0, 1]], "navigation": true, "pagination": false}'>
+                            <div class="stories" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
+                                <div class="avatars">
+                                    <div class="avatars-carousel">
+                                        <div id="avatar-76"></div>
+                                        <div id="avatar-74"></div>                                        
                                     </div>
-                                    <div style="width:400px; height:auto;" class="hover"><i class="fa fa-arrows-alt"></i></div>
-                                    <h3 class="title">NEON RUN</h3>
-                                </a>
-                                <!-- .work -->
-                            </div>
-                            <!--e for educate-->
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <a href="#" class="work"
-                                    data-id="128"
-                                    data-link=""
-                                    data-appear-animation="fadeInDown"
-                                    data-appear-animation-delay="100"
-                                    data-toggle="modal"
-                                    data-target="#eforeducate">
-                                    <div style="width:400px; height:auto;" class="image">
-                                        <img width="270" height="auto" src="img/e4e.jpg" class="attachment-270x182 wp-post-image" alt="Laptop" />                                    
+                                    <!-- .avatars-carousel -->
+                                </div>
+                                <!-- .avatars -->
+                                <div class="content">
+                                    <div class="story" style="padding:1px;">
+									<h3>NEON RUN</h3>
+									<div class="col-sm-2">
+										<img width="120" height="120" src="wp-content/uploads/2015/07/avatar-2.jpg" class="attachment-120x120 wp-post-image" alt="avatar-2" />
+									</div>
+									<div class="col-sm-10">                                        
+                                            <p style="text-align:left; font-style:'Open Sans', Serif;">"Itembridge" became famous among thousands of purchasers of the most known online resource copyright works during its short existence. Our company is the friendly team of professionals, who create exclusive designs, unique and clear functionality of the templates.</p>
+                                        
+									</div>
                                     </div>
-                                    <div style="width:400px; height:auto;" class="hover"><i class="fa fa-arrows-alt"></i></div>
-                                    <h3 class="title">E FOR EDUCATE</h3>
-                                </a>
-                                <!-- .work -->
+                                    <!-- .story -->
+                                    <div class="story" style="padding:1px;">
+									<h3>NEON RUN</h3>
+									<div class="col-sm-2">
+										<img width="120" height="120" src="wp-content/uploads/2015/07/avatar-2.jpg" class="attachment-120x120 wp-post-image" alt="avatar-2" />
+									</div>
+                                    <div class="col-sm-10">
+                                            <p>"Itembridge" offers a number of creative products: online stores, templates, one page promo sites, graphic works and corporate style for wide audience. They always have the perfect design so you do not have to change a lot of settings to achieve the desired style.</p>
+                                    </div>
+                                    </div>
+                                    <!-- .story -->
+                                    <div class="story">
+                                        <blockquote>
+                                            <p>This is a team of talented people with big ideas and creative minds. They develop exclusive designs, unique, easy and clear functionality of the products. They are a team of young professionals who are always open to new knowledge.</p>
+                                            <footer>Bill Sparks</footer>
+                                        </blockquote>
+                                    </div>
+                                    <!-- .story -->
+                                    <div class="story">
+                                        <blockquote>
+                                            <p>Exclusive designs, unique and clear functionality of the templates are created here. The company produces exclusive creative products such as online stores templates, one page promo sites, graphic works and corporate style for the wide audience.</p>
+                                            <footer>Samanta McStewarts</footer>
+                                        </blockquote>
+                                    </div>
+                                    <!-- .story -->                
+                                </div>
+                                <!-- .content -->
+                                <div class="clearfix"></div>
+                                <div class="navigation">
+                                    <a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
+                                    <a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+                                    <div class="pager"></div>
+                                </div>
+                                <!-- .navigation -->
                             </div>
+                            <!-- .stories -->
+                            <div class="row logos">
+                                <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
+                                    <a href="#avatar-76" class="logo"></a>
+                                </div>
+                                <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
+                                    <a href="#avatar-74" class="logo"></a>
+                                </div>
+                                <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
+                                    <a href="#avatar-72" class="logo"></a>
+                                </div>
+                                <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
+                                    <a href="#avatar-60" class="logo"></a>
+                                </div>
+                            </div>
+                            <!-- .logos -->
+                        </div>
+                        <!-- .success-carousel -->					
                         </div>
                     </div>
                 </div>
@@ -736,42 +780,42 @@
                             <div id="login" class="tab-pane fade in active">
                                 <form id="login" method="post" action="login.php">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
                                         <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
                                         <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
                                     </div>
                                     <br>							
-                                    <button type="submit" class="btn btn-default">LOGIN</button>
+                                    <input type="submit" class="btn btn-success" value="Login">
                                 </form>
                             </div>
                             <div id="register" class="tab-pane fade">
                                 <form id="register" onsubmit="Validate(this)">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
                                         <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-phone" style="width:16px;"></i></span>
+                                        <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
                                         <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
                                     </div>
                                     <br>							
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                        <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
                                         <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
                                         <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
                                     </div>
                                     <br/>
 									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										<span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
 										<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
 									</div>
                                     <div class="input-group radio">
@@ -792,7 +836,7 @@
                                     </div>
                                     <div class="form-group year">
                                     </div>
-                                    <input type="submit" class="btn btn-outline-primary btn-block" value="Register">
+                                    <input type="submit" class="btn btn-success" value="Register">
                                 </form>
                             </div>
                         </div>
@@ -807,29 +851,29 @@
                         <center>
                             <div class="newreg">
 							<div class="oldreglink col-sm-12" style="text-align:right; cursor:pointer"><a><i>Already registered for k!?</i></a></div>
-                                <form id="saregister" style="width:90%;" onsubmit="Validate(this)">								
+                                <form id="saregister" style="width:90%;" onsubmit="Validatesa(this)">								
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i style="color:#d73e4d;" class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
                                         <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i style="color:#d73e4d;" class="fa fa-phone" style="width:16px;"></i></span>
+                                        <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
                                         <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
                                     </div>
                                     <br>							
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i style="color:#d73e4d;" class="fa fa-envelope"></i></span>
+                                        <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
                                         <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i style="color:#d73e4d;" class="glyphicon glyphicon-lock"></i></span>
+                                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
                                         <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
                                     </div>
                                     <br/>
 									<div class="input-group">
-										<span class="input-group-addon"><i style="color:#d73e4d;" class="fa fa-calendar"></i></span>
+										<span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
 										<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
 									</div>
                                     <div class="input-group radio">
@@ -841,7 +885,6 @@
                                         <input type="radio" name="gender" value="F"> Female
                                         </label>
                                     </div>
-                                    <br>
                                     <div class="form-group college">
                                     </div>
                                     <div class="form-group courses">
@@ -868,16 +911,16 @@
                             <center>
                                 <form style="width:90%;" method="post" action="registerAsSA.php">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
                                         <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
                                     </div>
                                     <br>
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
                                         <input id="password" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
                                     </div>
                                     <br>							
-                                    <button type="submit" class="btn btn-default">LOGIN</button><br>
+                                    <input type="submit" class="btn btn-success" value="Login"><br/>
                                     <br>
                                 </form>
                             </center>
