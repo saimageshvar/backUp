@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="shortcut icon" href="wp-content/themes/promo-gear/assets/img/favicon.ico">
         <title>Kurukshetra'17</title>
         <link rel='stylesheet' id='promogear-bootstrap-css'  href='wp-content/themes/promo-gear/assets/css/bootstrap3a05.css' type='text/css' media='all' />
         
@@ -52,7 +52,7 @@
 				display:none;
 				}
 			}
-		</style>
+        </style>
         
         <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
         <!--[if lt IE 9]>
@@ -208,7 +208,7 @@
                                 <div class="animation"
                                     data-appear-animation="bounceInUp"
                                     data-appear-animation-delay="300">
-                                    <p class="descriptions"
+                                    <p class="descriptions "
                                         style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim, nisl vel accumsan mollis, dui nisl maximus ante, nec pellentesque purus nunc sed est. 
                                         <br/>
                                         Maecenas efficitur dictum imperdiet.
@@ -222,17 +222,6 @@
                                 </div>
                             </div>
                         </div>
-						<div class="row">
-							<div class="col-md-3 col-sm-12 col-md-offset-10 col-sm-offset-9" style="align:right;">
-								<div class="animation"
-                                    data-appear-animation="bounceInUp"
-                                    data-appear-animation-delay="300">
-                                    <h1 class="section-title "
-                                        style="">Hey Participant,</h1>
-										
-                                </div>
-							</div>
-						</div>
                     </div>
                 </div>
                 <!-- .section-content -->				
@@ -448,27 +437,14 @@
                                 </div>
                                 <!-- .avatars -->
                                 <div class="content">
-                                    <div class="story" style="text-align:left;max-height:300px;overflow:auto; padding-top:1px;">
-									<h3><center>NEON RUN</center></h3>
-									<div class="col-sm-4">
-										<img width="400px" height="auto" src="img/neon.jpg" style="padding-top:40px;"class="attachment-120x120 wp-post-image" alt="avatar-2" />
-										<p><b>
-										Run Distance  :  3 km <br/>
-Venue             :  Anna University,Guindy <br/>
-Date               :  Feb 2nd <br/>
-Start time        : 6.30 pm <br/>
-Entry fees        : 150 Rs <br/>
-                                       </b> </p>
+                                    <div class="story" style="padding:1px;">
+									<h3>NEON RUN</h3>
+									<div class="col-sm-2">
+										<img width="120" height="120" src="wp-content/uploads/2015/07/avatar-2.jpg" class="attachment-120x120 wp-post-image" alt="avatar-2" />
 									</div>
-									<div class="col-sm-8">                                        
-                                        <p style="align:left; font-style:'Open Sans', Serif;"><blockquote>"Education is the movement from darkness to light."</blockquote>
-                                                     <blockquote style="text-align:right; margin-right:50px;">-Allan Bloom</blockquote>
-
-         &emsp;&emsp;&emsp;&emsp;The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/>
-         &emsp;&emsp;&emsp;&emsp;Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels (Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/>
-         &emsp;&emsp;&emsp;&emsp;Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/>
-         &emsp;&emsp;&emsp;&emsp;Come join us and help us light up the world.</p>
-									<p align="right"><button type="button" class="btn btn-danger">SUBSCRIBE</button></p>	
+									<div class="col-sm-10">                                        
+                                            <p style="text-align:left; font-style:'Open Sans', Serif;">"Itembridge" became famous among thousands of purchasers of the most known online resource copyright works during its short existence. Our company is the friendly team of professionals, who create exclusive designs, unique and clear functionality of the templates.</p>
+                                        
 									</div>
                                     </div>
                                     <!-- .story -->
@@ -728,7 +704,7 @@ Entry fees        : 150 Rs <br/>
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <p style="font-size:20px; color:#fff;">							
-                                    <i class="fa fa-envelope-o fa-lg"></i>&nbsp;&nbsp;pr@kurukshetra.org.in
+                                    <i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;pr@kurukshetra.org.in
                                     <br/>
                                     <i class="fa fa-phone fa-lg"></i>&nbsp;							
                                     +91 44 2235 9002
@@ -755,7 +731,8 @@ Entry fees        : 150 Rs <br/>
                                 <div style="font-size:15px;" class="copyright"><b>Copyright 2016 @ CEG Tech Forum. All rights reserved.</b></div>
                             </div>
                             <div class="col-sm-6 right-align">
-                                <a style="color:grey;" href="http://www.archive16.kurukshetra.org.in" target="_blank">k!16</a>&nbsp;
+                                <a href="http://www.archive16.kurukshetra.org.in" target="_blank">k!16</a>&nbsp;
+                                <a href="http://www.archive16.kurukshetra.org.in" target="_blank">k!15</a>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
                             </div>
@@ -874,7 +851,7 @@ Entry fees        : 150 Rs <br/>
                         <center>
                             <div class="newreg">
 							<div class="oldreglink col-sm-12" style="text-align:right; cursor:pointer"><a><i>Already registered for k!?</i></a></div>
-                                <form id="saregister" style="width:90%;" onsubmit="Validate(this)">								
+                                <form id="saregister" style="width:90%;" onsubmit="Validatesa(this)">								
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
                                         <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
@@ -1006,13 +983,7 @@ Entry fees        : 150 Rs <br/>
                             <h4 class="modal-title" style="color: rgb(255,255,255);" >NEON RUN</h4>
                         </div>
                         <div class="modal-body">
-                            <h6 class="desc"><blockquote>"Education is the movement from darkness to light."
-                                                     -Allan Bloom</blockquote>
-
-         The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/>
-         Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/>
-         Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/>
-         Come join us and help us light up the world.</h6>
+                            <h6 class="desc">Exclusive designs, unique and clear functionality of the templates are created here. The company produces exclusive creative products such as online stores templates, one page promo sites, graphic works and corporate style for the wide audienExclusive designs, unique and clear functionality of the templates are created here. The company produces exclusive creative products such as online stores templates, one page promo sites, graphic works and corporate style for the wide audienExclusive designs, unique and clear functionality of the templates are created here. The company produces exclusive creative products such as online stores templates, one page promo sites, graphic works and corporate style for the wide audienExclusive designs, unique and clear .</h6>
                         </div>
                     </div>
                 </div>
