@@ -6,8 +6,11 @@ function myFunction(arr)
 	//hospitality
 	
 	var outer = document.createElement("ul");
-	outer.className = "nav nav-tabs nav-justified";
+	outer.className = "nav nav-tabs nav-justified hospitab";
 	outer.style = "background-color:transparent;"
+	if ( $(window).width() < 1110) { 
+        $('outer').addClass('accordion-tab');  
+        } 
 	var i;	
 	for(i=0;i<6;i++)
 	{
