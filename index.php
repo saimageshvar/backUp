@@ -22,6 +22,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 		
         <link rel='stylesheet' href="css/res.css">
+                <link rel='stylesheet' href="css/loader.css">
+
 		
 		<link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css'/>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Proza+Libre"/>
@@ -68,6 +70,7 @@
             xmlhttp.onreadystatechange = function() {
             	if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             		myArr.push(JSON.parse(xmlhttp.responseText));
+                    $('.cssload-loader').hide();
             		myFunction(myArr);
             }
             };
@@ -222,17 +225,6 @@
                                 </div>
                             </div>
                         </div>
-						<div class="row">
-							<div class="col-md-3 col-sm-12 col-md-offset-10 col-sm-offset-9" style="align:right;">
-								<div class="animation"
-                                    data-appear-animation="bounceInUp"
-                                    data-appear-animation-delay="300">
-                                    <h1 class="section-title "
-                                        style="">Hey Participant,</h1>
-										
-                                </div>
-							</div>
-						</div>
                     </div>
                 </div>
                 <!-- .section-content -->				
@@ -578,6 +570,8 @@ Entry fees        : 150 Rs <br/>
                         <div style="background:transparent; border:transparent; color:#fff;"class="tab-content hospi-details">
                         </div>
                     </div>
+                                            <span class="cssload-loader"><span class="cssload-loader-inner"></span></span>
+
                 </div>
                 <!-- .section-content -->
             </section>
