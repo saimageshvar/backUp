@@ -1,12 +1,12 @@
 <?php
-	
+
 	//check valid registration
-	function checkRegistration()
+function checkRegistration()
+{
+	if(isset($_SESSION['registration']))
 	{
-		if(isset($_SESSION['registration']))
+		if($_SESSION['registration'] == "failure")
 		{
-			if($_SESSION['registration'] == "failure")
-			{
 			?>
 			<script>
 				BootstrapDialog.show({
@@ -18,9 +18,9 @@
 				});
 			</script>
 			<?php
-			}
-			else if($_SESSION['registration'] == "success")
-			{
+		}
+		else if($_SESSION['registration'] == "success")
+		{
 			?>
 			<script>
 				BootstrapDialog.show({
@@ -32,18 +32,18 @@
 				});
 			</script>
 			<?php
-			}
-			unset($_SESSION['registration']);
 		}
+		unset($_SESSION['registration']);
 	}
-	
+}
+
 	//check login
-	function checkLogin()
+function checkLogin()
+{
+	if(isset($_SESSION['login']))
 	{
-		if(isset($_SESSION['login']))
+		if($_SESSION['login'] == "failure")
 		{
-			if($_SESSION['login'] == "failure")
-			{
 			?>
 			<script>
 				BootstrapDialog.show({
@@ -55,9 +55,9 @@
 				});
 			</script>
 			<?php
-			}
-			else if($_SESSION['login'] == "success")
-			{
+		}
+		else if($_SESSION['login'] == "success")
+		{
 			?>
 			<script>
 				BootstrapDialog.show({
@@ -69,33 +69,49 @@
 				});
 			</script>
 			<?php
-			}
-			unset($_SESSION['login']);
 		}
-		
+		unset($_SESSION['login']);
 	}
-	
+
+}
+
 	//checkSA
-	function checkSA()
+function checkSA()
+{
+	if(isset($_SESSION['SARegistration']))
 	{
-		if(isset($_SESSION['SARegistration']))
+		if($_SESSION['SARegistration'] == "failure")
 		{
-			if($_SESSION['SARegistration'] == "failure")
-			{
 			?>
-			<script>alert('Your SA registration failed');</script>
+			<script>
+				BootstrapDialog.show({
+					title: 'Dai Loosu',
+					message: 'Login as SA Failed',
+					type: BootstrapDialog.TYPE_DANGER,
+					closable: true,
+					draggable: true
+				});
+			</script>			
 			<?php
-			}
-			else if($_SESSION['SARegistration'] == "success")
-			{
-			?>
-			<script>alert('Your SA registration is successful');</script>
-			<?php
-			}
-			unset($_SESSION['SARegistration']);
 		}
-		
+		else if($_SESSION['SARegistration'] == "success")
+		{
+			?>
+			<script>
+				BootstrapDialog.show({
+					title: 'Hey!',
+					message: 'Successfully logged in as SA !Your k! id is <?php echo $_SESSION['user']['userId'] ?>',
+					type: BootstrapDialog.TYPE_SUCCESS,
+					closable: true,
+					draggable: true
+				});
+			</script>
+			<?php
+		}
+		unset($_SESSION['SARegistration']);
 	}
-	
-	
+
+}
+
+
 ?>
