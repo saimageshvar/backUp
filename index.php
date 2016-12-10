@@ -197,7 +197,7 @@ require 'utils.php';
                 data-appear-animation="bounceInUp"
                 data-appear-animation-delay="300">
                 <div class="updates" style="height: 100px">
-                <h2 class="update" style="color: white"></h2>
+                <h2 class="update" style="color: white;font-size: 3vw"></h2>
                 </div>
                 <hr class="pg-gap" style="margin-bottom: 29px;">
             </div>
