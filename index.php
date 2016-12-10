@@ -83,6 +83,18 @@ require 'utils.php';
                 color: blue;
             }
         </style>
+		<style>
+		table {
+			border-collapse: collapse !important;
+			width: 100% !important;
+		}
+
+		th, td {
+			padding: 8px !important;
+			text-align: left !important;
+			border-bottom: 1px solid #ddd !important;
+		}
+		</style>
     </head>
     <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
         <div class="preloader">
@@ -197,7 +209,7 @@ require 'utils.php';
                 data-appear-animation="bounceInUp"
                 data-appear-animation-delay="300">
                 <div class="updates" style="height: 100px">
-                <h2 class="update" style="color: white"></h2>
+                <h2 class="update" style="color: white;font-size: 3vw"></h2>
                 </div>
                 <hr class="pg-gap" style="margin-bottom: 29px;">
             </div>
@@ -417,7 +429,7 @@ data-anchor="initiatives">
             <div class="overlay">
                 <h2 style="font-size: 30px">Neon Run</h2>
                 <p>
-                    <a href="#" data-toggle="modal" data-target="#neonrun">know more</a>
+					<a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
                 </p>
             </div>
         </div>
@@ -426,9 +438,9 @@ data-anchor="initiatives">
         <div class="hovereffect">
             <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:220px;opacity: 0.2">
             <div class="overlay">
-                <h2 style="font-size: 30px">E for E</h2>
+                <h2 style="font-size: 30px">E for Educate</h2>
                 <p>
-                    <a href="#">know more</a>
+                    <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".eforeducate">know more</a>
                 </p>
             </div>
         </div>
@@ -440,29 +452,33 @@ data-anchor="initiatives">
 <!-- .section -->
 <!--Xceed-->
 <section class="section  random"
-data-background-image="img/xceed.gif"
-data-background="rgba(10, 79, 67, 0.870588)"
-data-shadow=""
-data-nav-color="#d73e4d"
-data-nav-color-text=""
-data-color="#768088"
-data-title-color="#fff7cc"
-data-title="Xceed"
-data-anchor="xceed">
-<div class="section-content ">
-    <div class="container section-wrap"
-    style="">
-    <h3 class="section-title"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h3>
-    <p style="color:#fff; font-size:16px; margin-left:30px; text-align:justify;">
-        Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra. Quite simply, XCEED provides those beyond our state borders the chance to experience Kurukshetra first hand. Since 2008, XCEED has visited some of the top institutions in our country. We have hosted XCEED in a lot of colleges.<br/><br/>
-    </p>
-    <h4 style="color:rgb(255, 247, 204);" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Battle of Bots</h4>
-    <p style="color:#fff; font-size:16px; margin-left:30px;">
-        Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra.<br/><br/> 
-        <i>For more details check out our <a target="_blank" href="http://www.xceed.kurukshetra.org.in" style="color:#fff; font-size:20px;"><b>website</b></i></a><br/>
-    </p>
-</div>
-</div>
+    data-background-image="img/xceed.gif"
+    data-background="rgba(10, 79, 67, 0.870588)"
+    data-shadow=""
+    data-nav-color="#d73e4d"
+    data-nav-color-text=""
+    data-color="#768088"
+    data-title-color="#fff7cc"
+    data-title="Xceed"
+    data-anchor="xceed">
+    <div class="section-content ">
+		<div class="container section-wrap"
+			style="">
+            <!--h3 class="section-title"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h3-->
+			<h1 class="section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h1>
+            <p style="color:#fff; font-size:16px; margin-left:30px; text-align:justify;">
+            Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra. Quite simply, XCEED provides those beyond our state borders the chance to experience Kurukshetra first hand. Since 2008, XCEED has visited some of the top institutions in our country including IIM Ahmedabad, IIM Bangalore and IIT Kanpur among others.<br/>
+			<b><i><a style="color:#fff; font-size:20px;" href="#" data-toggle="modal" data-target=".xceed">Click here </a></i></b>for full schedule.<br/>
+            </p>
+            <h4 style="color:rgb(255, 247, 204);" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Battle of Bots</h4>
+            <p style="color:#fff; font-size:16px; margin-left:30px;">
+            "Battle does not determine who is right - only who is left.”<br/><br/> 
+			Eight cities. One champion. No machine is safe in the Battle of Bots. Xceed's Battle of Bots, a nationwide robotics championship with prizes worth 1 Lakh, for Kurukshetra 2017 is coming to a city near you. Do you have what it takes to win them all?
+			<br/>
+            <i>For more details check out our <a target="_blank" href="http://www.xceed.kurukshetra.org.in" style="color:#fff; font-size:20px;"><b>website</b></i></a><br/>
+			</p>
+            </div>
+        </div>
 <!-- .section-content -->
 </section>
 <!-- .section -->
@@ -606,7 +622,13 @@ data-anchor="theme">
                 <blockquote class="text-left">
                     <h3>Climate Change</h3>
                 </blockquote>
-                <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <p style="max-height:400px; font-family:Lora; font-size:16px;" class="text-left">Climate change, also called global warming at times, refers to the rise in average surface temperatures on Earth. In a nutshell, it occurs when long-term weather patterns are altered.Observations throughout the world make it clear that climate change is occurring, and rigorous scientific research demonstrates that the greenhouse gases emitted by human activities are the primary driver of this mass phenomenon.<br/><br/>
+It didn’t happen overnight. <br/><br/>
+The Earth's climate has changed throughout history.The current warming trend is of particular significance because most of it is very likely human-induced and proceeding at a rate that is unprecedented in the past 1,300 years. For example, the atmospheric concentration of CO2 did not rise above 300 parts per million (ppm) between the advent of human civilization roughly 10,000 years ago and 1900. Today it is at about 400 ppm, a level not reached in more than 400,000 years.<br/><br/>
+The evidence is incontrovertible: Global warming is occurring. If no mitigating actions are taken, our way of life and the lives of future generations are at risk – be it through rising sea levels, more frequent natural disasters, loss of biodiversity or any of the host of consequences identified by the scientific community.<br/><br/>
+Despite the international scientific community's consensus on climate change, a small number of people continue to deny that climate change exists or that humans are causing it. <br/><br/>
+We think that the debate is over about whether or not climate change is real; it is now time to act to solve the problem. And Team Kurukshetra is doing just that. Through social initiatives, awareness drives, workshops, lectures, projects and much more, we are trying to do our part to fight climate change – and we ask you to join us.
+</p>
             </blockquote>
         </div>
     </div>
@@ -679,6 +701,70 @@ data-anchor="footer">
 </section>
 <!-- .section -->
 <!-- .section -->
+<!-- xceed battle of bots schedule -->
+<div class="modal fade xceed" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <h3 style="text-align:center;margin-top:30px">Xceed Schedule</h3>
+            <hr/>
+			<center>
+            <table>
+				<tr>
+					<th>City</th>
+					<th>Date</th>
+					<th>Venue</th>
+				</tr>
+				<tr>
+					<td>Tirupati</td>
+					<td>7, 8 January’17</td>
+					<td>IIT Tirupati</td>
+				</tr>
+				<tr>
+					<td>Trichy</td>
+					<td>7, 8 January’17</td>
+					<td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
+				</tr>
+				<tr>
+					<td>Chennai</td>
+					<td>21,22 January’17</td>
+					<td>Easwari Engineering College</td>
+				</tr>
+				<tr>
+					<td>Madurai</td>
+					<td>21,22 January’17</td>
+					<td>Thiagarajar College of Engineering</td>
+				</tr>
+				<tr>
+					<td>Vellore</td>
+					<td>21,22 January’17</td>
+					<td>Vellore Institute of Technology</td>
+				</tr>
+				<tr>
+					<td>Coimbatore</td>
+					<td>17, 18 December’16</td>
+					<td>Coimbatore Institute of Technology</td>
+				</tr>
+				<tr>
+					<td>Pilani</td>
+					<td>17, 18 October’16</td>
+					<td>BITS Pilani</td>
+				</tr>
+				<tr>
+					<td>Suratkal</td>
+					<td>2,3 October’16</td>
+					<td>NIT Suratkal</td>
+				</tr>
+				<tr>
+					<td>Salem</td>
+					<td>17, 18 September’16</td>
+					<td>Annapoorana Engineering College</td>
+				</tr>
+			</table>
+			</center>
+            <br/>
+        </div>
+    </div>
+</div>
 <!-- sponsors -->
 <div class="modal fade sponsors" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -905,26 +991,39 @@ data-anchor="footer">
     </div>
 </div>
 <!--neon run-->
-<div id="neonrun" class="modal fade">
-    <div class="modal-dialog" role="document">
+<div class="modal fade neonrun" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header bg-info">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" style="color: rgb(255,255,255);" >NEON RUN</h4>
-            </div>
-            <div class="modal-body">
-                <h6 class="desc">
-                    <blockquote>"Education is the movement from darkness to light."
-                        -Allan Bloom
-                    </blockquote>
-                    The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/>
-                    Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/>
-                    Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/>
-                    Come join us and help us light up the world.
-                </h6>
-            </div>
+            <h3 style="text-align:center;margin-top:30px">Neon Run</h3>
+            <hr/>
+            <blockquote>"Education is the movement from darkness to light."
+                   -Allan Bloom</blockquote>
+
+                   <p style="padding-left:10px;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
+                   Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
+                   Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
+                   Come join us and help us light up the world.</p>
+				   <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
+            <br/><br/>
+        </div>
+    </div>
+</div>
+
+<!--e for educate-->
+<div class="modal fade eforeducate" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <h3 style="text-align:center;margin-top:30px">E for Educate</h3>
+            <hr/>
+                <p style="padding-left:10px;">E-for-Educate, an e-waste drive with a charitable twist is being undertaken by CEG Tech Forum - the technical hub of the College of Engineering, Guindy, Anna University. CTF is the pillar of Kurukshetra 2016, which is an international techno-management fest under the patronage of UNESCO. What do we plan to do? Seen Wall-E? If you have, you know what we plan to do. And if you haven't, well, our aim is to spread awareness about the indiscriminate disposal and dumping of e-waste.<br/><br/>
+                Didn't many of us toss our Samsung Galaxy Note 3 when Note 4 came out? 'Fess up. You did :P With technology advancing by lightyears in nanoseconds, don't we tend to change our gadgets every year? Switching from CRT to LCD and from LED to 3D and 3D to 4K. Where do you think all our discarded gizmos go? In the dumpyards, overflowing landfills and lakesides. You must have seen the humongous pile of garbage that was unearthed during the Chennai floods. All our devil-may-care attitude has led to accumulation of e-waste of unmanageable proportions. We, comrades, have created a gigantic metal monster and I'm not talking about Iron Man.<br/><br/>
+                That's one half of our initiative. The other side tackles the alarming rate of school dropouts.<br/><br/>
+                We're considered one of the smartest people in the world but how much do we actually care about educating our kids and making sure that they stay through? About 1.4 million children in India in the age group of 6-11 drop out. This alarming fact is based on the UNESCO's Education for All(EFA) Global Monitoring Report on out of school populations.<br/><br/>
+                It is time to act.<br/><br/>
+                YOU can help. Yes, You sitting there and reading this. Don't just read it, forget it and walk away. This is your earth and your life as much as the other seven billion people on the planet. Taking baby steps to disposing our e-waste responsible is a move towards a greener, safer environment.<br/><br/>
+                The funds raised through the initiative would be used to support schooling for underprivileged children.</p>
+				<div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
+            <br/><br/>
         </div>
     </div>
 </div>
