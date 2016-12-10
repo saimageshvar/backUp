@@ -197,7 +197,7 @@ require 'utils.php';
                 data-appear-animation="bounceInUp"
                 data-appear-animation-delay="300">
                 <div class="updates" style="height: 100px">
-                <h2 class="update"></h2>
+                <h2 class="update" style="color: white"></h2>
                 </div>
                 <hr class="pg-gap" style="margin-bottom: 29px;">
             </div>
@@ -415,7 +415,7 @@ data-anchor="initiatives">
         <div class="hovereffect">
             <img class="img-responsive" src="img/neon.jpg" alt="" style="height:220px;opacity:0.2">
             <div class="overlay">
-                <h2>Neon Run</h2>
+                <h2 style="font-size: 30px">Neon Run</h2>
                 <p>
                     <a href="#" data-toggle="modal" data-target="#neonrun">know more</a>
                 </p>
@@ -426,7 +426,7 @@ data-anchor="initiatives">
         <div class="hovereffect">
             <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:220px;opacity: 0.2">
             <div class="overlay">
-                <h2>E 4 E</h2>
+                <h2 style="font-size: 30px">E for E</h2>
                 <p>
                     <a href="#">know more</a>
                 </p>
