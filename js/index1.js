@@ -20,6 +20,7 @@ function myFunction(arr)
 		$(child).attr('data-toggle', 'tab');
 		
 		var child2 = document.createElement("h6");
+		child2.style = "font-family: 'Aref Ruqaa', serif; font-style: normal; text-transform: none";
 		
 		var innerchild = document.createElement("i");
 		innerchild.className=icons[i];
@@ -43,7 +44,7 @@ function myFunction(arr)
 		parent.id="hospi"+i;
 		
 		var child = document.createElement("p")
-		child.style="color:#fff; font-family: 'Open Sans',serif"
+		child.style="color:#fff;font-style:normal;";
 		child.innerHTML = arr[0].hospitalities[i].desc;
 		parent.append(child);
 		document.getElementsByClassName("hospi-details")[0].append(parent);
@@ -69,4 +70,43 @@ function typeUpdates(arr)
 		backDelay: 1000,
 		backSpeed: 10
 	});
+}
+
+function displayGls(arr)
+{
+
+	var i;
+	var baseURL = "http://enct29fa5ae.kurukshetra.org.in";
+	for(i=0; i < arr[0].gls.length; i++)
+	{
+		var div = document.createElement('div');
+		div.className = "avatar animated";
+
+		var img = document.createElement('img');
+		img.src = baseURL + arr[0].gls[i].avatar;
+		img.className = "attachment-120x120 wp-post-image";
+		img.height = 120;
+		img.width = 120;
+
+		$(div).append(img);
+		$('.gls-avatar').append(div);
+
+
+
+
+		var contentDiv = document.createElement('div');
+		contentDiv.className = "story";
+		blockQuote = document.createElement('blockquote');
+		var title = document.createElement('p');
+		title.textContent = arr[0].gls[i].title;
+		var description = document.createElement('p');
+		description.innerHTML = arr[0].gls[i].desc;
+
+		$(blockQuote).append(title);
+		$(blockQuote).append(description);
+
+		$(contentDiv).append(blockQuote);
+		$('.gls-content').append(contentDiv);
+	}
+
 }

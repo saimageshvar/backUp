@@ -83,142 +83,142 @@ require 'utils.php';
                 color: blue;
             }
         </style>
-		<style>
-		table {
-			border-collapse: collapse !important;
-			width: 100% !important;
-		}
+        <style>
+          table {
+           border-collapse: collapse !important;
+           width: 100% !important;
+       }
 
-		th, td {
-			padding: 8px !important;
-			text-align: left !important;
-			border-bottom: 1px solid #ddd !important;
-		}
-		</style>
-    </head>
-    <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
-        <div class="preloader">
-            <span class="loader"><span class="loader-inner"></span></span>
-        </div>
-        <div class="main" data-nav-position="left">
-            <!--h1 style="position:fixed;right:1em;">sadds</h1-->
-            <section class="section  random"
-            data-background-image="img/ceg.gif"
-            data-background="rgba(30,45,58,0.80)"
-            data-shadow=""
-            data-nav-color="#ffffff"
-            data-nav-color-text="#1e2d3a"
-            data-color="#ffffff"
-            data-title-color="#ffffff"
-            data-title="Home"
-            data-anchor="home-section">
-            <header class="site-header  second-site-header">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-4 col-sm-4 left-align no-left-indent" id="one" >
-                            <div class="navbar navbar-default " role="navigation">
-                                <div class="navbar-header">
-                                    <button type="button" class="btn navbar-toggle collapsed" style=""
-                                    data-toggle="collapse"
-                                    data-target="#main-menu">
-                                    <span class="icon close-icon">
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                                            <path fill="#D73E4D" d="M23.3,23.3c-0.6,0.6-1.5,0.6-2.1,0L0.7,2.8c-0.6-0.6-0.6-1.5,0-2.1c0.6-0.6,1.5-0.6,2.1,0
-                                            l20.5,20.5C23.9,21.8,23.9,22.7,23.3,23.3L23.3,23.3z M23.3,2.8L2.8,23.3c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2.1L21.2,0.7
-                                            c0.6-0.6,1.5-0.6,2.1,0C23.9,1.3,23.9,2.2,23.3,2.8L23.3,2.8z"/>
-                                        </svg>
-                                    </span>
-                                    <!-- .close -->
-                                    <span class="icon open-icon">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </span><!-- .open -->
-                                </button>
-                            </div>
+       th, td {
+           padding: 8px !important;
+           text-align: left !important;
+           border-bottom: 1px solid #ddd !important;
+       }
+   </style>
+</head>
+<body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
+    <div class="preloader">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div class="main" data-nav-position="left">
+        <!--h1 style="position:fixed;right:1em;">sadds</h1-->
+        <section class="section  random"
+        data-background-image="img/ceg.gif"
+        data-background="rgba(30,45,58,0.80)"
+        data-shadow=""
+        data-nav-color="#ffffff"
+        data-nav-color-text="#1e2d3a"
+        data-color="#ffffff"
+        data-title-color="#ffffff"
+        data-title="Home"
+        data-anchor="home-section">
+        <header class="site-header  second-site-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 left-align no-left-indent" id="one" >
+                        <div class="navbar navbar-default " role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="btn navbar-toggle collapsed" style=""
+                                data-toggle="collapse"
+                                data-target="#main-menu">
+                                <span class="icon close-icon">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                        <path fill="#D73E4D" d="M23.3,23.3c-0.6,0.6-1.5,0.6-2.1,0L0.7,2.8c-0.6-0.6-0.6-1.5,0-2.1c0.6-0.6,1.5-0.6,2.1,0
+                                        l20.5,20.5C23.9,21.8,23.9,22.7,23.3,23.3L23.3,23.3z M23.3,2.8L2.8,23.3c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2.1L21.2,0.7
+                                        c0.6-0.6,1.5-0.6,2.1,0C23.9,1.3,23.9,2.2,23.3,2.8L23.3,2.8z"/>
+                                    </svg>
+                                </span>
+                                <!-- .close -->
+                                <span class="icon open-icon">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </span><!-- .open -->
+                            </button>
                         </div>
                     </div>
-                    <div class="col-xs-4 col-sm-4 logo-box" id="two">
-                        <center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
-                    </div>
-                    <div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
-                        <img src="img/unesco white and blue1.png" style="height: auto;width: 55%;">                             
-                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 logo-box" id="two">
+                    <center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
+                </div>
+                <div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
+                    <img src="img/unesco white and blue1.png" style="height: auto;width: 55%;">                             
                 </div>
             </div>
-            <div class="clearfix"></div>
-            <div class="header-menu">
-                <nav id="main-menu" class="collapse navbar-collapse">
-                    <ul id="menu-main-menu" class="col-sm-12 col-md-6 nav navbar-nav">
-                        <li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="index.html#home-section"><span>Intro</span></a></li>
-                        <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="index.html#highlights"><span>Highlights</span></a></li>
-                        <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="index.html#eventsAndWorkshops"><span>Events & Workshops</span></a></li>
-                        <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="index.html#initiatives"><span>Initiatives</span></a></li>
-                        <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="index.html#gl"><span>Guest Lectures</span></a></li>
-                        <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="index.html#xceed"><span>Xceed</span></a></li>
-                        <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="contact.html"><span>Contact</span></a></li>
-                        <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".sponsors"><span>Sponsors</span></a></li>
-                        <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".about"><span>About</span></a></li>
-                        <?php 
-                        if(!isset($_SESSION['user']['userId']))
-                        {
-                            ?>  
-                            <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".login"><span>Login/Register</span></a></li>
-                            <?php
-                        }
-                        else
-                        {
-                            ?>  
-                            <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='logout.php'><span>Logout</span></a></li>
-                            <?php
-                        }
-                        ?>
-                        <?php 
-                        if(!isset($_SESSION['user']))
-                        {
-                            ?>  
-                            <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".registersa"><span>Register as SA</span></a></li>
-                            <?php
-                        }
-                        else if(!isset($_SESSION['user']['isSA']))
-                        {
-                         ?>   
-                         <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
-                         <?php
-                     }
-                     if(isset($_SESSION['user']))
-                     {
-                        ?>   
-                        <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
+        </div>
+        <div class="clearfix"></div>
+        <div class="header-menu">
+            <nav id="main-menu" class="collapse navbar-collapse">
+                <ul id="menu-main-menu" class="col-sm-12 col-md-6 nav navbar-nav">
+                    <li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="index.html#home-section"><span>Intro</span></a></li>
+                    <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="index.html#highlights"><span>Highlights</span></a></li>
+                    <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="index.html#eventsAndWorkshops"><span>Events & Workshops</span></a></li>
+                    <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="index.html#initiatives"><span>Initiatives</span></a></li>
+                    <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="index.html#gl"><span>Guest Lectures</span></a></li>
+                    <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="index.html#xceed"><span>Xceed</span></a></li>
+                    <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="contact.html"><span>Contact</span></a></li>
+                    <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".sponsors"><span>Sponsors</span></a></li>
+                    <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".about"><span>About</span></a></li>
+                    <?php 
+                    if(!isset($_SESSION['user']['userId']))
+                    {
+                        ?>  
+                        <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".login"><span>Login/Register</span></a></li>
+                        <?php
+                    }
+                    else
+                    {
+                        ?>  
+                        <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='logout.php'><span>Logout</span></a></li>
                         <?php
                     }
                     ?>
-                </ul>
-            </nav>
-        </div>
-        <!-- .header-menu -->
-    </header>
-    <!-- .site-header -->
-    <div class="section-content ">
-        <div class="container section-wrap"
-        style="">
-        <div class="row ">
-            <div class="col-md-12  text-center">
-                <h1 class="section-title "  data-appear-animation="bounceInUp" data-appear-animation-delay="100">kurukshetra 2017</h1>
-                <div class="animation"
-                data-appear-animation="bounceInUp"
-                data-appear-animation-delay="300">
-                <div class="updates" style="height: 100px">
-                <h2 class="update" style="color: white;font-size: 3vw"></h2>
-                </div>
-                <hr class="pg-gap" style="margin-bottom: 29px;">
-            </div>
-            <div class="animation "
-            data-appear-animation="bounceInUp"
-            data-appear-animation-delay="500">
-            <a href="#highlights"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
-        </div>
+                    <?php 
+                    if(!isset($_SESSION['user']))
+                    {
+                        ?>  
+                        <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".registersa"><span>Register as SA</span></a></li>
+                        <?php
+                    }
+                    else if(!isset($_SESSION['user']['isSA']))
+                    {
+                     ?>   
+                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
+                     <?php
+                 }
+                 if(isset($_SESSION['user']))
+                 {
+                    ?>   
+                    <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
+                    <?php
+                }
+                ?>
+            </ul>
+        </nav>
     </div>
+    <!-- .header-menu -->
+</header>
+<!-- .site-header -->
+<div class="section-content ">
+    <div class="container section-wrap"
+    style="">
+    <div class="row ">
+        <div class="col-md-12  text-center">
+            <h1 class="section-title "  data-appear-animation="bounceInUp" data-appear-animation-delay="100">kurukshetra 2017</h1>
+            <div class="animation"
+            data-appear-animation="bounceInUp"
+            data-appear-animation-delay="300">
+            <div class="updates" style="height: 100px">
+                <h2 class="update" style="color: white;font-size: 3vw"></h2>
+            </div>
+            <hr class="pg-gap" style="margin-bottom: 29px;">
+        </div>
+        <div class="animation "
+        data-appear-animation="bounceInUp"
+        data-appear-animation-delay="500">
+        <a href="#highlights"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+    </div>
+</div>
 </div>
 </div>
 </div>
@@ -242,7 +242,7 @@ data-anchor="highlights">
     <div class="facts no-appear  inverse">
         <div class="facts-title" data-appear-animation="zoomIn" data-appear-animation-delay="100">
             <div class="title-wrap">
-                <h2 class="title">we at k! do <br/> many things</h2>
+                <h2 class="title">We at k! do <br/> many things</h2>
             </div>
             <div class="line"></div>
             <div class="line"></div>
@@ -253,31 +253,31 @@ data-anchor="highlights">
         <div class="facts-list">
             <div id="pg-fact-1" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="400">
                 <div class="skill-wrap full-skill">
-                    <div class="skill-percent"  style="color:#d73e4d;">10+</div>
-                    <div class="skill-name">Workshops</div>
+                    <div class="skill-percent"  style="color:#d73e4d;font-family:'Abril Fatface', cursive;">10+</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Workshops</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-3 .skill-wrap.full-skill:before { border-color: #d73e4d;}
                 </style>
-                <i  style="color:#d73e4d;" class="fa fa-briefcase"></i>
+                <i  style="color:#d73e4d;" class="fa fa-wrench"></i>
             </div>
             <div id="pg-fact-2" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="400">
                 <div class="skill-wrap full-skill">
-                    <div class="skill-percent"  style="color:#375099;">1 M</div>
-                    <div class="skill-name">Worth Prizes</div>
+                    <div class="skill-percent"  style="color:#375099;font-family:'Abril Fatface', cursive;">1M</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Worth Prizes</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-3 .skill-wrap.full-skill:before { border-color: #375099;}
                 </style>
-                <i  style="color:#375099;" class="fa fa-trophy"></i>
+                <i  style="color:#375099;" class="fa fa-money"></i>
             </div>
         </div>
         <!-- .facts-list -->
         <div class="facts-list">
             <div id="pg-fact-3" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="400">
                 <div class="skill-wrap full-skill">
-                    <div class="skill-percent"  style="color:#d6973d;">50000+</div>
-                    <div class="skill-name">Likes On <br/>Facebook</div>
+                    <div class="skill-percent"  style="color:#d6973d;font-family:'Abril Fatface', cursive;">50K+</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Likes</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-3 .skill-wrap.full-skill:before { border-color: #d6973d;}
@@ -287,13 +287,13 @@ data-anchor="highlights">
             <!-- .fact -->
             <div id="pg-fact-4" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="400">
                 <div class="skill-wrap full-skill">
-                    <div class="skill-percent"  style="color:#179680;">30+</div>
-                    <div class="skill-name">Events</div>
+                    <div class="skill-percent"  style="color:#179680;font-family:'Abril Fatface', cursive;">30+</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Events</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-4 .skill-wrap.full-skill:before { border-color: #179680;}
                 </style>
-                <i  style="color:#179680;" class="fa fa-comment"></i>
+                <i  style="color:#179680;" class="fa fa-star"></i>
             </div>
             <!-- .fact -->
         </div>
@@ -327,8 +327,8 @@ data-anchor="eventsAndWorkshops">
                     <button type="button" class="btn btn-danger btn-sm dropdown-toggle" data-toggle="dropdown">
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" data-filter=".events" class="active events-menu">Events</a></li>
-                        <li><a href="#" data-filter=".workshops" class="workshops-menu">Workshops</a></li>
+                        <li><a href="#" data-filter=".events" class="active events-menu" style="font-family: 'Aref Ruqaa', serif;">Events</a></li>
+                        <li><a href="#" data-filter=".workshops" class="workshops-menu" style="font-family: 'Aref Ruqaa', serif;">Workshops</a></li>
                     </ul>
                     <div class="clearfix"></div>
                 </div>
@@ -339,7 +339,7 @@ data-anchor="eventsAndWorkshops">
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-gear"></a>
-                <p style="font-family: 'Reem Kufi', sans-serif; font-style: normal;">Engineering</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Engineering</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-android"></a>
@@ -347,23 +347,23 @@ data-anchor="eventsAndWorkshops">
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-money"></a>
-                <p>Management</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Management</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
-                <p>Quiz</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Quiz</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-archive"></a>
-                <p>General</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">General</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-terminal"></a>
-                <p>Coding</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Coding</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-laptop"></a>
-                <p>Online</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Online</p>
             </div>
             <!-- events will come here -->
             <!-- workshop should come in tab -->
@@ -371,27 +371,27 @@ data-anchor="eventsAndWorkshops">
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains_work workshops-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100" style="display:none">
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-gear"></a>
-                <p>Engineering</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Engineering</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-laptop"></a>
-                <p>Coding</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Coding</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-terminal"></a>
-                <p>Online</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Online</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-money"></a>
-                <p>Management</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Management</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-android"></a>
-                <p>Robotics</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Robotics</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-archive"></a>
-                <p>General</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">General</p>
             </div>
             <!-- workshops will come here -->
             <!-- workshop should come in tab -->
@@ -418,23 +418,19 @@ data-anchor="initiatives">
     style="">
     <div class="col-md-12  text-center">
         <h1 class="section-title "  data-appear-animation="fadeInDown" data-appear-animation-delay="100">initiatives</h1>
-        <div class="animation"
-        data-appear-animation="bounceInUp"
-        data-appear-animation-delay="300">
-        <hr class="pg-gap" style="margin-bottom: 29px;">
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <div class="hovereffect">
-            <img class="img-responsive" src="img/neon.jpg" alt="" style="height:220px;opacity:0.2">
-            <div class="overlay">
-                <h2 style="font-size: 30px">Neon Run</h2>
-                <p>
-					<a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/neon.jpg" alt="" style="height:220px;opacity:0.2">
+                <div class="overlay">
+                    <h2 style="font-size: 30px">Neon Run</h2>
+                    <p>
+                     <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
+                 </p>
+             </div>
+         </div>
+     </div>
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
             <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:220px;opacity: 0.2">
             <div class="overlay">
@@ -452,33 +448,33 @@ data-anchor="initiatives">
 <!-- .section -->
 <!--Xceed-->
 <section class="section  random"
-    data-background-image="img/xceed.gif"
-    data-background="rgba(10, 79, 67, 0.870588)"
-    data-shadow=""
-    data-nav-color="#d73e4d"
-    data-nav-color-text=""
-    data-color="#768088"
-    data-title-color="#fff7cc"
-    data-title="Xceed"
-    data-anchor="xceed">
-    <div class="section-content ">
-		<div class="container section-wrap"
-			style="">
-            <!--h3 class="section-title"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h3-->
-			<h1 class="section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h1>
-            <p style="color:#fff; font-size:16px; margin-left:30px; text-align:justify;">
-            Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra. Quite simply, XCEED provides those beyond our state borders the chance to experience Kurukshetra first hand. Since 2008, XCEED has visited some of the top institutions in our country including IIM Ahmedabad, IIM Bangalore and IIT Kanpur among others.<br/>
-			<b><i><a style="color:#fff; font-size:20px;" href="#" data-toggle="modal" data-target=".xceed">Click here </a></i></b>for full schedule.<br/>
-            </p>
-            <h4 style="color:rgb(255, 247, 204);" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Battle of Bots</h4>
-            <p style="color:#fff; font-size:16px; margin-left:30px;">
-            "Battle does not determine who is right - only who is left.”<br/><br/> 
-			Eight cities. One champion. No machine is safe in the Battle of Bots. Xceed's Battle of Bots, a nationwide robotics championship with prizes worth 1 Lakh, for Kurukshetra 2017 is coming to a city near you. Do you have what it takes to win them all?
-			<br/>
-            <i>For more details check out our <a target="_blank" href="http://www.xceed.kurukshetra.org.in" style="color:#fff; font-size:20px;"><b>website</b></i></a><br/>
-			</p>
-            </div>
-        </div>
+data-background-image="img/xceed.gif"
+data-background="rgba(10, 79, 67, 0.870588)"
+data-shadow=""
+data-nav-color="#d73e4d"
+data-nav-color-text=""
+data-color="#768088"
+data-title-color="#fff7cc"
+data-title="Xceed"
+data-anchor="xceed">
+<div class="section-content ">
+  <div class="container section-wrap"
+  style="">
+  <!--h3 class="section-title"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h3-->
+  <h1 class="section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h1>
+  <p style="color:#fff; font-size:16px; margin-left:30px; text-align:justify;font-style: normal">
+    Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra. Quite simply, XCEED provides those beyond our state borders the chance to experience Kurukshetra first hand. Since 2008, XCEED has visited some of the top institutions in our country including IIM Ahmedabad, IIM Bangalore and IIT Kanpur among others.<br/>
+    <b><i><a style="color:#fff; font-size:20px;" href="#" data-toggle="modal" data-target=".xceed">Click here </a></i></b>for full schedule.<br/>
+</p>
+<h2 style="color:rgb(255, 247, 204);" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Battle of Bots</h2>
+<p style="color:#fff; font-size:16px; margin-left:30px;font-style: normal">
+    "Battle does not determine who is right - only who is left.”<br/><br/> 
+    Eight cities. One champion. No machine is safe in the Battle of Bots. Xceed's Battle of Bots, a nationwide robotics championship with prizes worth 1 Lakh, for Kurukshetra 2017 is coming to a city near you. Do you have what it takes to win them all?
+    <br/>
+    <i>For more details check out our <a target="_blank" href="http://www.xceed.kurukshetra.org.in" style="color:#fff; font-size:20px;"><b>website</b></i></a><br/>
+</p>
+</div>
+</div>
 <!-- .section-content -->
 </section>
 <!-- .section -->
@@ -531,41 +527,17 @@ data-anchor="gl">
 data-options='{"itemsCustom": [[0, 1]], "navigation": true, "pagination": false}'>
 <div class="stories" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
     <div class="avatars">
-        <div class="avatars-carousel">
+        <div class="avatars-carousel gls-avatar">
             <div id="avatar-76" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-1.jpg" class="attachment-120x120 wp-post-image" alt="avatar-1" /></div>
-            <div id="avatar-74" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-2.jpg" class="attachment-120x120 wp-post-image" alt="avatar-2" /></div>
-            <div id="avatar-72" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-3.jpg" class="attachment-120x120 wp-post-image" alt="avatar-3" /></div>
-            <div id="avatar-60" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-4.jpg" class="attachment-120x120 wp-post-image" alt="avatar-4" /></div>
         </div>
         <!-- .avatars-carousel -->
     </div>
     <!-- .avatars -->
-    <div class="content">
+    <div class="content gls-content">
         <div class="story">
             <blockquote>
                 <p>"Itembridge" became famous among thousands of purchasers of the most known online resource copyright works during its short existence. Our company is the friendly team of professionals, who create exclusive designs, unique and clear functionality of the templates.</p>
                 <footer>George Brown</footer>
-            </blockquote>
-        </div>
-        <!-- .story -->
-        <div class="story">
-            <blockquote>
-                <p>"Itembridge" offers a number of creative products: online stores, templates, one page promo sites, graphic works and corporate style for wide audience. They always have the perfect design so you do not have to change a lot of settings to achieve the desired style.</p>
-                <footer>Arthur Middleton</footer>
-            </blockquote>
-        </div>
-        <!-- .story -->
-        <div class="story">
-            <blockquote>
-                <p>This is a team of talented people with big ideas and creative minds. They develop exclusive designs, unique, easy and clear functionality of the products. They are a team of young professionals who are always open to new knowledge.</p>
-                <footer>Bill Sparks</footer>
-            </blockquote>
-        </div>
-        <!-- .story -->
-        <div class="story">
-            <blockquote>
-                <p>Exclusive designs, unique and clear functionality of the templates are created here. The company produces exclusive creative products such as online stores templates, one page promo sites, graphic works and corporate style for the wide audience.</p>
-                <footer>Samanta McStewarts</footer>
             </blockquote>
         </div>
         <!-- .story -->                
@@ -623,12 +595,12 @@ data-anchor="theme">
                     <h3>Climate Change</h3>
                 </blockquote>
                 <p style="max-height:400px; font-family:Lora; font-size:16px;" class="text-left">Climate change, also called global warming at times, refers to the rise in average surface temperatures on Earth. In a nutshell, it occurs when long-term weather patterns are altered.Observations throughout the world make it clear that climate change is occurring, and rigorous scientific research demonstrates that the greenhouse gases emitted by human activities are the primary driver of this mass phenomenon.<br/><br/>
-It didn’t happen overnight. <br/><br/>
-The Earth's climate has changed throughout history.The current warming trend is of particular significance because most of it is very likely human-induced and proceeding at a rate that is unprecedented in the past 1,300 years. For example, the atmospheric concentration of CO2 did not rise above 300 parts per million (ppm) between the advent of human civilization roughly 10,000 years ago and 1900. Today it is at about 400 ppm, a level not reached in more than 400,000 years.<br/><br/>
-The evidence is incontrovertible: Global warming is occurring. If no mitigating actions are taken, our way of life and the lives of future generations are at risk – be it through rising sea levels, more frequent natural disasters, loss of biodiversity or any of the host of consequences identified by the scientific community.<br/><br/>
-Despite the international scientific community's consensus on climate change, a small number of people continue to deny that climate change exists or that humans are causing it. <br/><br/>
-We think that the debate is over about whether or not climate change is real; it is now time to act to solve the problem. And Team Kurukshetra is doing just that. Through social initiatives, awareness drives, workshops, lectures, projects and much more, we are trying to do our part to fight climate change – and we ask you to join us.
-</p>
+                    It didn’t happen overnight. <br/><br/>
+                    The Earth's climate has changed throughout history.The current warming trend is of particular significance because most of it is very likely human-induced and proceeding at a rate that is unprecedented in the past 1,300 years. For example, the atmospheric concentration of CO2 did not rise above 300 parts per million (ppm) between the advent of human civilization roughly 10,000 years ago and 1900. Today it is at about 400 ppm, a level not reached in more than 400,000 years.<br/><br/>
+                    The evidence is incontrovertible: Global warming is occurring. If no mitigating actions are taken, our way of life and the lives of future generations are at risk – be it through rising sea levels, more frequent natural disasters, loss of biodiversity or any of the host of consequences identified by the scientific community.<br/><br/>
+                    Despite the international scientific community's consensus on climate change, a small number of people continue to deny that climate change exists or that humans are causing it. <br/><br/>
+                    We think that the debate is over about whether or not climate change is real; it is now time to act to solve the problem. And Team Kurukshetra is doing just that. Through social initiatives, awareness drives, workshops, lectures, projects and much more, we are trying to do our part to fight climate change – and we ask you to join us.
+                </p>
             </blockquote>
         </div>
     </div>
@@ -705,65 +677,64 @@ data-anchor="footer">
 <div class="modal fade xceed" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <h3 style="text-align:center;margin-top:30px">Xceed Schedule</h3>
-            <hr/>
-			<center>
-            <table>
-				<tr>
-					<th>City</th>
-					<th>Date</th>
-					<th>Venue</th>
-				</tr>
-				<tr>
-					<td>Tirupati</td>
-					<td>7, 8 January’17</td>
-					<td>IIT Tirupati</td>
-				</tr>
-				<tr>
-					<td>Trichy</td>
-					<td>7, 8 January’17</td>
-					<td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
-				</tr>
-				<tr>
-					<td>Chennai</td>
-					<td>21,22 January’17</td>
-					<td>Easwari Engineering College</td>
-				</tr>
-				<tr>
-					<td>Madurai</td>
-					<td>21,22 January’17</td>
-					<td>Thiagarajar College of Engineering</td>
-				</tr>
-				<tr>
-					<td>Vellore</td>
-					<td>21,22 January’17</td>
-					<td>Vellore Institute of Technology</td>
-				</tr>
-				<tr>
-					<td>Coimbatore</td>
-					<td>17, 18 December’16</td>
-					<td>Coimbatore Institute of Technology</td>
-				</tr>
-				<tr>
-					<td>Pilani</td>
-					<td>17, 18 October’16</td>
-					<td>BITS Pilani</td>
-				</tr>
-				<tr>
-					<td>Suratkal</td>
-					<td>2,3 October’16</td>
-					<td>NIT Suratkal</td>
-				</tr>
-				<tr>
-					<td>Salem</td>
-					<td>17, 18 September’16</td>
-					<td>Annapoorana Engineering College</td>
-				</tr>
-			</table>
-			</center>
-            <br/>
-        </div>
-    </div>
+            <h2 style="text-align:center;margin-top:30px">Xceed Schedule</h2>
+            <center>
+                <table class="table table-hover table-bordered">
+                    <tr>
+                     <th>City</th>
+                     <th>Date</th>
+                     <th>Venue</th>
+                 </tr>
+                 <tr>
+                     <td>Tirupati</td>
+                     <td>7, 8 January’17</td>
+                     <td>IIT Tirupati</td>
+                 </tr>
+                 <tr>
+                     <td>Trichy</td>
+                     <td>7, 8 January’17</td>
+                     <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
+                 </tr>
+                 <tr>
+                     <td>Chennai</td>
+                     <td>21,22 January’17</td>
+                     <td>Easwari Engineering College</td>
+                 </tr>
+                 <tr>
+                     <td>Madurai</td>
+                     <td>21,22 January’17</td>
+                     <td>Thiagarajar College of Engineering</td>
+                 </tr>
+                 <tr>
+                     <td>Vellore</td>
+                     <td>21,22 January’17</td>
+                     <td>Vellore Institute of Technology</td>
+                 </tr>
+                 <tr>
+                     <td>Coimbatore</td>
+                     <td>17, 18 December’16</td>
+                     <td>Coimbatore Institute of Technology</td>
+                 </tr>
+                 <tr>
+                     <td>Pilani</td>
+                     <td>17, 18 October’16</td>
+                     <td>BITS Pilani</td>
+                 </tr>
+                 <tr>
+                     <td>Suratkal</td>
+                     <td>2,3 October’16</td>
+                     <td>NIT Suratkal</td>
+                 </tr>
+                 <tr>
+                     <td>Salem</td>
+                     <td>17, 18 September’16</td>
+                     <td>Annapoorana Engineering College</td>
+                 </tr>
+             </table>
+         </center>
+         <br/>
+     </div>
+ </div>
 </div>
 <!-- sponsors -->
 <div class="modal fade sponsors" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -997,116 +968,134 @@ data-anchor="footer">
             <h3 style="text-align:center;margin-top:30px">Neon Run</h3>
             <hr/>
             <blockquote>"Education is the movement from darkness to light."
-                   -Allan Bloom</blockquote>
+               -Allan Bloom</blockquote>
 
-                   <p style="padding-left:10px;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
+               <p style="padding-left:10px;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
                    Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
                    Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
                    Come join us and help us light up the world.</p>
-				   <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
-            <br/><br/>
-        </div>
-    </div>
-</div>
+                   <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
+                   <br/><br/>
+               </div>
+           </div>
+       </div>
 
-<!--e for educate-->
-<div class="modal fade eforeducate" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <h3 style="text-align:center;margin-top:30px">E for Educate</h3>
-            <hr/>
+       <!--e for educate-->
+       <div class="modal fade eforeducate" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <h3 style="text-align:center;margin-top:30px">E for Educate</h3>
+                <hr/>
                 <p style="padding-left:10px;">E-for-Educate, an e-waste drive with a charitable twist is being undertaken by CEG Tech Forum - the technical hub of the College of Engineering, Guindy, Anna University. CTF is the pillar of Kurukshetra 2016, which is an international techno-management fest under the patronage of UNESCO. What do we plan to do? Seen Wall-E? If you have, you know what we plan to do. And if you haven't, well, our aim is to spread awareness about the indiscriminate disposal and dumping of e-waste.<br/><br/>
-                Didn't many of us toss our Samsung Galaxy Note 3 when Note 4 came out? 'Fess up. You did :P With technology advancing by lightyears in nanoseconds, don't we tend to change our gadgets every year? Switching from CRT to LCD and from LED to 3D and 3D to 4K. Where do you think all our discarded gizmos go? In the dumpyards, overflowing landfills and lakesides. You must have seen the humongous pile of garbage that was unearthed during the Chennai floods. All our devil-may-care attitude has led to accumulation of e-waste of unmanageable proportions. We, comrades, have created a gigantic metal monster and I'm not talking about Iron Man.<br/><br/>
-                That's one half of our initiative. The other side tackles the alarming rate of school dropouts.<br/><br/>
-                We're considered one of the smartest people in the world but how much do we actually care about educating our kids and making sure that they stay through? About 1.4 million children in India in the age group of 6-11 drop out. This alarming fact is based on the UNESCO's Education for All(EFA) Global Monitoring Report on out of school populations.<br/><br/>
-                It is time to act.<br/><br/>
-                YOU can help. Yes, You sitting there and reading this. Don't just read it, forget it and walk away. This is your earth and your life as much as the other seven billion people on the planet. Taking baby steps to disposing our e-waste responsible is a move towards a greener, safer environment.<br/><br/>
-                The funds raised through the initiative would be used to support schooling for underprivileged children.</p>
-				<div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
-            <br/><br/>
-        </div>
-    </div>
-</div>
-<!--e for educate-->
-<div id="eforeducate" class="modal fade">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-info">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" style="color: rgb(255,255,255);" >E FOR EDUCATE</h4>
-            </div>
-            <div class="modal-body" style="max-height:500px;overflow:auto;">
-                <h6 class="desc">E-for-Educate, an e-waste drive with a charitable twist is being undertaken by CEG Tech Forum - the technical hub of the College of Engineering, Guindy, Anna University. CTF is the pillar of Kurukshetra 2016, which is an international techno-management fest under the patronage of UNESCO. What do we plan to do? Seen Wall-E? If you have, you know what we plan to do. And if you haven't, well, our aim is to spread awareness about the indiscriminate disposal and dumping of e-waste.<br/><br/>
                     Didn't many of us toss our Samsung Galaxy Note 3 when Note 4 came out? 'Fess up. You did :P With technology advancing by lightyears in nanoseconds, don't we tend to change our gadgets every year? Switching from CRT to LCD and from LED to 3D and 3D to 4K. Where do you think all our discarded gizmos go? In the dumpyards, overflowing landfills and lakesides. You must have seen the humongous pile of garbage that was unearthed during the Chennai floods. All our devil-may-care attitude has led to accumulation of e-waste of unmanageable proportions. We, comrades, have created a gigantic metal monster and I'm not talking about Iron Man.<br/><br/>
                     That's one half of our initiative. The other side tackles the alarming rate of school dropouts.<br/><br/>
                     We're considered one of the smartest people in the world but how much do we actually care about educating our kids and making sure that they stay through? About 1.4 million children in India in the age group of 6-11 drop out. This alarming fact is based on the UNESCO's Education for All(EFA) Global Monitoring Report on out of school populations.<br/><br/>
                     It is time to act.<br/><br/>
                     YOU can help. Yes, You sitting there and reading this. Don't just read it, forget it and walk away. This is your earth and your life as much as the other seven billion people on the planet. Taking baby steps to disposing our e-waste responsible is a move towards a greener, safer environment.<br/><br/>
-                    The funds raised through the initiative would be used to support schooling for underprivileged children.<br/><br/>
-                </h6>
+                    The funds raised through the initiative would be used to support schooling for underprivileged children.</p>
+                    <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
+                    <br/><br/>
+                </div>
+            </div>
+        </div>
+        <!--e for educate-->
+        <div id="eforeducate" class="modal fade">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-info">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" style="color: rgb(255,255,255);" >E FOR EDUCATE</h4>
+                    </div>
+                    <div class="modal-body" style="max-height:500px;overflow:auto;">
+                        <h6 class="desc">E-for-Educate, an e-waste drive with a charitable twist is being undertaken by CEG Tech Forum - the technical hub of the College of Engineering, Guindy, Anna University. CTF is the pillar of Kurukshetra 2016, which is an international techno-management fest under the patronage of UNESCO. What do we plan to do? Seen Wall-E? If you have, you know what we plan to do. And if you haven't, well, our aim is to spread awareness about the indiscriminate disposal and dumping of e-waste.<br/><br/>
+                            Didn't many of us toss our Samsung Galaxy Note 3 when Note 4 came out? 'Fess up. You did :P With technology advancing by lightyears in nanoseconds, don't we tend to change our gadgets every year? Switching from CRT to LCD and from LED to 3D and 3D to 4K. Where do you think all our discarded gizmos go? In the dumpyards, overflowing landfills and lakesides. You must have seen the humongous pile of garbage that was unearthed during the Chennai floods. All our devil-may-care attitude has led to accumulation of e-waste of unmanageable proportions. We, comrades, have created a gigantic metal monster and I'm not talking about Iron Man.<br/><br/>
+                            That's one half of our initiative. The other side tackles the alarming rate of school dropouts.<br/><br/>
+                            We're considered one of the smartest people in the world but how much do we actually care about educating our kids and making sure that they stay through? About 1.4 million children in India in the age group of 6-11 drop out. This alarming fact is based on the UNESCO's Education for All(EFA) Global Monitoring Report on out of school populations.<br/><br/>
+                            It is time to act.<br/><br/>
+                            YOU can help. Yes, You sitting there and reading this. Don't just read it, forget it and walk away. This is your earth and your life as much as the other seven billion people on the planet. Taking baby steps to disposing our e-waste responsible is a move towards a greener, safer environment.<br/><br/>
+                            The funds raised through the initiative would be used to support schooling for underprivileged children.<br/><br/>
+                        </h6>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
-<!-- .main -->
-<!-- random color -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/index1.js"></script>
+    <!-- .main -->
+    <!-- random color -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/index1.js"></script>
 
-<!-- hospitality cms -->
-<script>
-    var myArr = new Array();
-    var xmlhttp = new XMLHttpRequest();
-    var url = "http://cms16.kurukshetra.org.in/hospitalities.json";
+    <!-- hospitality cms -->
+    <script>
+        var myArr = new Array();
+        var xmlhttp = new XMLHttpRequest();
+        var url = "http://cms16.kurukshetra.org.in/hospitalities.json";
 
-    xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            myArr.push(JSON.parse(xmlhttp.responseText));
-            $('.cssload-loader').hide();
-            myFunction(myArr);
-        }
-    };
-    xmlhttp.open("GET", url, true);
-    xmlhttp.setRequestHeader('origin', 'http');
-    xmlhttp.send();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                myArr.push(JSON.parse(xmlhttp.responseText));
+                $('.cssload-loader').hide();
+                myFunction(myArr);
+            }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.setRequestHeader('origin', 'http');
+        xmlhttp.send();
 
-</script>
+    </script>
 
-<!-- updates cms -->
-<script>
-    var updatesArray = new Array();
-    var updates = new XMLHttpRequest();
-    var updatesUrl = "http://enct29fa5ae.kurukshetra.org.in/updates.json";
+    <!-- updates cms -->
+    <script>
+        var updatesArray = new Array();
+        var updates = new XMLHttpRequest();
+        var updatesUrl = "http://enct29fa5ae.kurukshetra.org.in/updates.json";
 
-    updates.onreadystatechange = function() {
-        if (updates.readyState == 4 && updates.status == 200) {
-            updatesArray.push(JSON.parse(updates.responseText));
-            $('.cssload-loader').hide();
-            typeUpdates(updatesArray);
-        }
-    };
-    updates.open("GET", updatesUrl, true);
-    updates.setRequestHeader('origin', 'http');
-    updates.send();
+        updates.onreadystatechange = function() {
+            if (updates.readyState == 4 && updates.status == 200) {
+                updatesArray.push(JSON.parse(updates.responseText));
+                $('.cssload-loader').hide();
+                typeUpdates(updatesArray);
+            }
+        };
+        updates.open("GET", updatesUrl, true);
+        updates.setRequestHeader('origin', 'http');
+        updates.send();
 
-</script>
+    </script>
+
+    <!-- gls cms -->
+    <script>
+        var glsArray = new Array();
+        var gls = new XMLHttpRequest();
+        var glsUrl = "http://enct29fa5ae.kurukshetra.org.in/gls.json";
+
+        gls.onreadystatechange = function() {
+            if (gls.readyState == 4 && gls.status == 200) {
+                glsArray.push(JSON.parse(gls.responseText));
+                displayGls(glsArray);
+            }
+        };
+        gls.open("GET", glsUrl, true);
+        gls.setRequestHeader('origin', 'http');
+        gls.send();
+
+    </script>
 
 
 
-<script type="text/javascript" src="js/randomColorMaster.js"></script>
-<script>
-    $(document).ready(function randomBackground(){
-     num2 = 0.8;
-     var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
-     $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
-     setTimeout(randomBackground, 5000);
- });
-</script>
-<script>
+    <script type="text/javascript" src="js/randomColorMaster.js"></script>
+    <script>
+        $(document).ready(function randomBackground(){
+         num2 = 0.8;
+         var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
+         $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
+         setTimeout(randomBackground, 5000);
+     });
+ </script>
+ <script>
     $(document).ready(function(){
               var date_input=$('input[name="date"]'); //our date input has the name "date"
               var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
