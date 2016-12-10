@@ -85,18 +85,18 @@ require 'utils.php';
         </style>
         <style>
           table {
-           border-collapse: collapse !important;
-           width: 100% !important;
-       }
+             border-collapse: collapse !important;
+             width: 100% !important;
+         }
 
-       th, td {
-           padding: 8px !important;
-           text-align: left !important;
-           border-bottom: 1px solid #ddd !important;
-       }
-   </style>
-</head>
-<body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
+         th, td {
+             padding: 8px !important;
+             text-align: left !important;
+             border-bottom: 1px solid #ddd !important;
+         }
+     </style>
+ </head>
+ <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
     <div class="preloader">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
@@ -182,12 +182,12 @@ require 'utils.php';
                     }
                     else if(!isset($_SESSION['user']['isSA']))
                     {
-                     ?>   
-                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
-                     <?php
-                 }
-                 if(isset($_SESSION['user']))
-                 {
+                       ?>   
+                       <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
+                       <?php
+                   }
+                   if(isset($_SESSION['user']))
+                   {
                     ?>   
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
                     <?php
@@ -404,7 +404,7 @@ data-anchor="eventsAndWorkshops">
 <!-- .section -->
 <!-- initiatives -->
 <section class="section  random"
-data-background-image="img/init.jpg"
+data-background-image="img/init.gif"
 data-background="rgba(255,247,204,0.80)"
 data-shadow=""
 data-nav-color="#d73e4d"
@@ -425,12 +425,12 @@ data-anchor="initiatives">
                 <div class="overlay">
                     <h2 style="font-size: 30px">Neon Run</h2>
                     <p>
-                     <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
-                 </p>
-             </div>
-         </div>
-     </div>
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                       <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
+                   </p>
+               </div>
+           </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
             <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:220px;opacity: 0.2">
             <div class="overlay">
@@ -497,7 +497,7 @@ data-anchor="hospitality">
     <div style="background:transparent; border:transparent; color:#fff;"class="tab-content hospi-details">
     </div>
 </div>
-<span class="cssload-loader"><span class="cssload-loader-inner"></span></span>
+<span class="cssload-loader hospi-loader"><span class="cssload-loader-inner"></span></span>
 </div>
 <!-- .section-content -->
 </section>
@@ -524,23 +524,17 @@ data-anchor="gl">
     style="font-size:1.5em;">where you meet great people, in action</p>
 </div>
 <div class="success-carousel carousel-success  inverse"
-data-options='{"itemsCustom": [[0, 1]], "navigation": true, "pagination": false}'>
+data-options='{"itemsCustom": [[0, 1]], "navigation": true, "pagination": false}' >
 <div class="stories" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
     <div class="avatars">
         <div class="avatars-carousel gls-avatar">
-            <div id="avatar-76" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-1.jpg" class="attachment-120x120 wp-post-image" alt="avatar-1" /></div>
+
         </div>
         <!-- .avatars-carousel -->
     </div>
     <!-- .avatars -->
     <div class="content gls-content">
-        <div class="story">
-            <blockquote>
-                <p>"Itembridge" became famous among thousands of purchasers of the most known online resource copyright works during its short existence. Our company is the friendly team of professionals, who create exclusive designs, unique and clear functionality of the templates.</p>
-                <footer>George Brown</footer>
-            </blockquote>
-        </div>
-        <!-- .story -->                
+
     </div>
     <!-- .content -->
     <div class="clearfix"></div>
@@ -552,21 +546,6 @@ data-options='{"itemsCustom": [[0, 1]], "navigation": true, "pagination": false}
     <!-- .navigation -->
 </div>
 <!-- .stories -->
-<div class="row logos">
-    <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
-        <a href="#avatar-76" class="logo"></a>
-    </div>
-    <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
-        <a href="#avatar-74" class="logo"></a>
-    </div>
-    <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
-        <a href="#avatar-72" class="logo"></a>
-    </div>
-    <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
-        <a href="#avatar-60" class="logo"></a>
-    </div>
-</div>
-<!-- .logos -->
 </div>
 <!-- .success-carousel -->                  
 </div>
@@ -681,60 +660,60 @@ data-anchor="footer">
             <center>
                 <table class="table table-hover table-bordered">
                     <tr>
-                     <th>City</th>
-                     <th>Date</th>
-                     <th>Venue</th>
-                 </tr>
-                 <tr>
-                     <td>Tirupati</td>
-                     <td>7, 8 January’17</td>
-                     <td>IIT Tirupati</td>
-                 </tr>
-                 <tr>
-                     <td>Trichy</td>
-                     <td>7, 8 January’17</td>
-                     <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
-                 </tr>
-                 <tr>
-                     <td>Chennai</td>
-                     <td>21,22 January’17</td>
-                     <td>Easwari Engineering College</td>
-                 </tr>
-                 <tr>
-                     <td>Madurai</td>
-                     <td>21,22 January’17</td>
-                     <td>Thiagarajar College of Engineering</td>
-                 </tr>
-                 <tr>
-                     <td>Vellore</td>
-                     <td>21,22 January’17</td>
-                     <td>Vellore Institute of Technology</td>
-                 </tr>
-                 <tr>
-                     <td>Coimbatore</td>
-                     <td>17, 18 December’16</td>
-                     <td>Coimbatore Institute of Technology</td>
-                 </tr>
-                 <tr>
-                     <td>Pilani</td>
-                     <td>17, 18 October’16</td>
-                     <td>BITS Pilani</td>
-                 </tr>
-                 <tr>
-                     <td>Suratkal</td>
-                     <td>2,3 October’16</td>
-                     <td>NIT Suratkal</td>
-                 </tr>
-                 <tr>
-                     <td>Salem</td>
-                     <td>17, 18 September’16</td>
-                     <td>Annapoorana Engineering College</td>
-                 </tr>
-             </table>
-         </center>
-         <br/>
-     </div>
- </div>
+                       <th>City</th>
+                       <th>Date</th>
+                       <th>Venue</th>
+                   </tr>
+                   <tr>
+                       <td>Tirupati</td>
+                       <td>7, 8 January’17</td>
+                       <td>IIT Tirupati</td>
+                   </tr>
+                   <tr>
+                       <td>Trichy</td>
+                       <td>7, 8 January’17</td>
+                       <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
+                   </tr>
+                   <tr>
+                       <td>Chennai</td>
+                       <td>21,22 January’17</td>
+                       <td>Easwari Engineering College</td>
+                   </tr>
+                   <tr>
+                       <td>Madurai</td>
+                       <td>21,22 January’17</td>
+                       <td>Thiagarajar College of Engineering</td>
+                   </tr>
+                   <tr>
+                       <td>Vellore</td>
+                       <td>21,22 January’17</td>
+                       <td>Vellore Institute of Technology</td>
+                   </tr>
+                   <tr>
+                       <td>Coimbatore</td>
+                       <td>17, 18 December’16</td>
+                       <td>Coimbatore Institute of Technology</td>
+                   </tr>
+                   <tr>
+                       <td>Pilani</td>
+                       <td>17, 18 October’16</td>
+                       <td>BITS Pilani</td>
+                   </tr>
+                   <tr>
+                       <td>Suratkal</td>
+                       <td>2,3 October’16</td>
+                       <td>NIT Suratkal</td>
+                   </tr>
+                   <tr>
+                       <td>Salem</td>
+                       <td>17, 18 September’16</td>
+                       <td>Annapoorana Engineering College</td>
+                   </tr>
+               </table>
+           </center>
+           <br/>
+       </div>
+   </div>
 </div>
 <!-- sponsors -->
 <div class="modal fade sponsors" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -968,20 +947,20 @@ data-anchor="footer">
             <h3 style="text-align:center;margin-top:30px">Neon Run</h3>
             <hr/>
             <blockquote>"Education is the movement from darkness to light."
-               -Allan Bloom</blockquote>
+             -Allan Bloom</blockquote>
 
-               <p style="padding-left:10px;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
-                   Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
-                   Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
-                   Come join us and help us light up the world.</p>
-                   <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
-                   <br/><br/>
-               </div>
-           </div>
-       </div>
+             <p style="padding-left:10px;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
+                 Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
+                 Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
+                 Come join us and help us light up the world.</p>
+                 <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
+                 <br/><br/>
+             </div>
+         </div>
+     </div>
 
-       <!--e for educate-->
-       <div class="modal fade eforeducate" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+     <!--e for educate-->
+     <div class="modal fade eforeducate" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <h3 style="text-align:center;margin-top:30px">E for Educate</h3>
@@ -1037,7 +1016,7 @@ data-anchor="footer">
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 myArr.push(JSON.parse(xmlhttp.responseText));
-                $('.cssload-loader').hide();
+                $('.hospi-loader').hide();
                 myFunction(myArr);
             }
         };
@@ -1056,7 +1035,6 @@ data-anchor="footer">
         updates.onreadystatechange = function() {
             if (updates.readyState == 4 && updates.status == 200) {
                 updatesArray.push(JSON.parse(updates.responseText));
-                $('.cssload-loader').hide();
                 typeUpdates(updatesArray);
             }
         };
@@ -1089,13 +1067,13 @@ data-anchor="footer">
     <script type="text/javascript" src="js/randomColorMaster.js"></script>
     <script>
         $(document).ready(function randomBackground(){
-         num2 = 0.8;
-         var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
-         $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
-         setTimeout(randomBackground, 5000);
-     });
- </script>
- <script>
+           num2 = 0.8;
+           var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
+           $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
+           setTimeout(randomBackground, 5000);
+       });
+   </script>
+   <script>
     $(document).ready(function(){
               var date_input=$('input[name="date"]'); //our date input has the name "date"
               var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";

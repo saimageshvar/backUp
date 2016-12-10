@@ -81,12 +81,12 @@ function displayGls(arr)
 	{
 		var div = document.createElement('div');
 		div.className = "avatar animated";
+		div.style = "height:120px !important; width:120px !important;";
 
 		var img = document.createElement('img');
 		img.src = baseURL + arr[0].gls[i].avatar;
 		img.className = "attachment-120x120 wp-post-image";
-		img.height = 120;
-		img.width = 120;
+		img.style = "height:120px !important; width:120px !important;";
 
 		$(div).append(img);
 		$('.gls-avatar').append(div);
