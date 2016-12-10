@@ -12,20 +12,15 @@ require 'utils.php';
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>Kurukshetra'17</title>
     <link rel='stylesheet' id='promogear-bootstrap-css'  href='wp-content/themes/promo-gear/assets/css/bootstrap3a05.css' type='text/css' media='all' />
-
     <!--<link rel='stylesheet' id='promogear-bootstrap-select-min-css'  href='wp-content/themes/promo-gear/assets/css/bootstrap-select.min3a05.css' type='text/css' media='all' />-->
-
     <link rel='stylesheet' id='promogear-font-awesome-min-css'  href='wp-content/themes/promo-gear/assets/css/font-awesome.min3a05.css' type='text/css' media='all' />
     <link rel='stylesheet' id='promogear-animate-min-css'  href='wp-content/themes/promo-gear/assets/css/animate.min3a05.css' type='text/css' media='all' />
     <link rel='stylesheet' id='promogear-jquery-fullpage-css'  href='wp-content/themes/promo-gear/assets/css/jquery.fullPage3a05.css' type='text/css' media='all' />
     <link rel='stylesheet' id='promogear-main-styles-css'  href='wp-content/themes/promo-gear/assets/css/style3a05.css' type='text/css' media='all' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-
     <link rel='stylesheet' href="css/res.css">
     <link rel='stylesheet' href="css/loader.css">
     <link rel='stylesheet' href="css/initiatives.css">
-
-
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css'/>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Proza+Libre"/>
     <!--hospitality-->
@@ -37,7 +32,6 @@ require 'utils.php';
             margin: 0 auto;
         }                
         h1, .h1 {font-family: Miso;font-size: 56px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h2, .h2 {font-family: Miso;font-size: 48px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h3, .h3 {font-family: Miso;font-size: 40px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h4, .h4 {font-family: Miso;font-size: 32px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h5, .h5 {font-family: Miso;font-size: 24px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h6, .h6 {font-family: Miso;font-size: 19px;font-weight: 700;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}a {font-family: Lato;font-size: 18px;text-transform: none;}a {color: #d73e4d}a:hover {color: #d73e4d}a:active {color: #d73e4d}.btn {padding-top:6px;padding-bottom:6px;padding-left:30px;padding-right:30px;}.btn.btn-sm {padding-top:2px;padding-bottom:2px;padding-left:20px;padding-right:20px;}.btn.btn-lg {padding-top:6px;padding-bottom:6px;padding-left:40px;padding-right:40px;}p {margin-top:0px;margin-bottom:30px;}blockquote {border-left-width:1px;border-color:#d73e4d;padding-top:0px;padding-bottom:0px;padding-left:20px;padding-right:0px;}table th, table td {padding-top:1px;padding-bottom:1px;padding-left:1px;padding-right:1px;}
-
         .dow
         {
             width: 40px !important;
@@ -51,18 +45,16 @@ require 'utils.php';
             color:#d73e4d;
         }
         @media screen and (max-width: 800px) {
-         .unescodiv {
-            display:none;
+            .unescodiv {
+                display:none;
+            }
         }
-    }
-</style>
-
-<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+    </style>
+    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
         <!--[if lt IE 9]>
         <script src="http://wordpress.promo-gear.itembridge.com/5/wp-content/themes/promo-gear/assets/js/html5shiv.js"></script>
         <script src="http://wordpress.promo-gear.itembridge.com/5/wp-content/themes/promo-gear/assets/js/respond.min.js"></script>
         <![endif]-->
-     
         <style>
             .img-with-text {
                 text-align: justify;
@@ -124,7 +116,8 @@ require 'utils.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-4 col-sm-4 logo-box" id="two"><center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
+                    <div class="col-xs-4 col-sm-4 logo-box" id="two">
+                        <center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
                     </div>
                     <div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
                         <img src="img/unesco white and blue1.png" style="height: auto;width: 55%;">                             
@@ -144,7 +137,6 @@ require 'utils.php';
                         <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="contact.html"><span>Contact</span></a></li>
                         <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".sponsors"><span>Sponsors</span></a></li>
                         <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".about"><span>About</span></a></li>
-
                         <?php 
                         if(!isset($_SESSION['user']['userId']))
                         {
@@ -159,7 +151,6 @@ require 'utils.php';
                             <?php
                         }
                         ?>
-
                         <?php 
                         if(!isset($_SESSION['user']))
                         {
@@ -169,24 +160,24 @@ require 'utils.php';
                         }
                         else if(!isset($_SESSION['user']['isSA']))
                         {
-                           ?>   
-                           <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
-                           <?php
-                       }
-                       if(isset($_SESSION['user']))
-                       {
-                           ?>   
-                           <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
-                           <?php
-                       }
-                       ?>
-                   </ul>
-               </nav>
-           </div>
-           <!-- .header-menu -->
-       </header>
-       <!-- .site-header -->
-       <div class="section-content ">
+                         ?>   
+                         <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
+                         <?php
+                     }
+                     if(isset($_SESSION['user']))
+                     {
+                        ?>   
+                        <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
+                        <?php
+                    }
+                    ?>
+                </ul>
+            </nav>
+        </div>
+        <!-- .header-menu -->
+    </header>
+    <!-- .site-header -->
+    <div class="section-content ">
         <div class="container section-wrap"
         style="">
         <div class="row ">
@@ -195,19 +186,16 @@ require 'utils.php';
                 <div class="animation"
                 data-appear-animation="bounceInUp"
                 data-appear-animation-delay="300">
-                <p class="descriptions"
-                style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim, nisl vel accumsan mollis, dui nisl maximus ante, nec pellentesque purus nunc sed est. 
-                <br/>
-                Maecenas efficitur dictum imperdiet.
-            </p>
-            <hr class="pg-gap" style="margin-bottom: 29px;">
+                <div class="descriptions" style="height: 100px">
+                </p>
+                <hr class="pg-gap" style="margin-bottom: 29px;">
+            </div>
+            <div class="animation "
+            data-appear-animation="bounceInUp"
+            data-appear-animation-delay="500">
+            <a href="#highlights"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
         </div>
-        <div class="animation "
-        data-appear-animation="bounceInUp"
-        data-appear-animation-delay="500">
-        <a href="#highlights"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
     </div>
-</div>
 </div>
 </div>
 </div>
@@ -407,15 +395,14 @@ data-anchor="eventsAndWorkshops">
                                     <div class="section-content ">
                                         <div class="container section-wrap"
                                         style="">
-
                                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                             <div class="hovereffect">
                                                 <img class="img-responsive" src="img/neon.jpg" alt="" style="height:220px;opacity:0.4">
                                                 <div class="overlay">
                                                     <h2>Neon Run</h2>
                                                     <p>
-                                                        <a href="#">know more</a>
-                                                    </p> 
+                                                        <a href="#" data-toggle="modal" data-target="#neonrun">know more</a>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -426,12 +413,10 @@ data-anchor="eventsAndWorkshops">
                                                     <h2>E 4 E</h2>
                                                     <p>
                                                         <a href="#">know more</a>
-                                                    </p> 
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                                 <!-- .section-content -->
@@ -459,7 +444,6 @@ data-anchor="eventsAndWorkshops">
                                 <p style="color:#fff; font-size:16px; margin-left:30px;">
                                     Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra.<br/><br/> 
                                     <i>For more details check out our <a target="_blank" href="http://www.xceed.kurukshetra.org.in" style="color:#fff; font-size:20px;"><b>website</b></i></a><br/>
-
                                 </p>
                             </div>
                         </div>
@@ -486,7 +470,6 @@ data-anchor="eventsAndWorkshops">
                         </div>
                     </div>
                     <span class="cssload-loader"><span class="cssload-loader-inner"></span></span>
-
                 </div>
                 <!-- .section-content -->
             </section>
@@ -633,7 +616,6 @@ data-anchor="footer">
         <h1 style="color:rgb(255, 247, 204);" class="col-sm-8 section-title" data-appear-animation="fadeInLeftBig" data-appear-animation-delay="500">Reach Us</h1>
         <br/>
         <div class="col-sm-12 col-md-8">
-           
         </div>
         <div class="col-sm-12 col-md-4">
             <p style="font-size:20px; color:#fff;">                         
@@ -687,7 +669,9 @@ data-anchor="footer">
         <div class="modal-content">
             <h3 style="text-align:center;margin-top:30px">Sponsors</h3>
             <hr/>
-            <center><p> Will be updated soon</p></center>
+            <center>
+                <p> Will be updated soon</p>
+            </center>
             <br/>
         </div>
     </div>
@@ -747,118 +731,118 @@ data-anchor="footer">
                         </div>
                         <br/>
                         <div class="input-group">
-                          <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
-                          <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
-                      </div>
-                      <div class="input-group radio">
-                        Gender:
-                        <label class="radio-inline">
-                            <input type="radio" name="gender"  value="M" checked> Male
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="gender" value="F"> Female
-                        </label>
-                    </div>
-                    <br>
-                    <div class="form-group college">
-                    </div>
-                    <div class="form-group courses">
-                    </div>
-                    <div class="form-group degree">
-                    </div>
-                    <div class="form-group year">
-                    </div>
-                    <input type="submit" class="btn btn-success" value="Register">
-                </form>
+                            <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
+                            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                        </div>
+                        <div class="input-group radio">
+                            Gender:
+                            <label class="radio-inline">
+                                <input type="radio" name="gender"  value="M" checked> Male
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="gender" value="F"> Female
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-group college">
+                        </div>
+                        <div class="form-group courses">
+                        </div>
+                        <div class="form-group degree">
+                        </div>
+                        <div class="form-group year">
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Register">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 <!-- Register as Student Ambassdor -->
 <div class="modal fade registersa" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <h3 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h3>                        
+            <h3 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h3>
             <center>
                 <div class="newreg">
-                 <div class="oldreglink col-sm-12" style="text-align:right; cursor:pointer"><a><i>Already registered for k!?</i></a></div>
-                 <form id="saregister" style="width:90%;" onsubmit="Validate(this)">                                
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
-                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
-                        <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
-                    </div>
-                    <br>                            
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-                        <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
-                    </div>
-                    <br/>
-                    <div class="input-group">
-                      <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
-                      <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
-                  </div>
-                  <div class="input-group radio">
-                    Gender:
-                    <label class="radio-inline">
-                        <input type="radio" name="gender"  value="M" checked> Male
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="gender" value="F"> Female
-                    </label>
+                    <div class="oldreglink col-sm-12" style="text-align:right; cursor:pointer"><a><i>Already registered for k!?</i></a></div>
+                    <form id="saregister" style="width:90%;" onsubmit="Validate(this)">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
+                            <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
+                            <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
+                        </div>
+                        <br>                            
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
+                            <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
+                            <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
+                        </div>
+                        <br/>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
+                            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                        </div>
+                        <div class="input-group radio">
+                            Gender:
+                            <label class="radio-inline">
+                                <input type="radio" name="gender"  value="M" checked> Male
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="gender" value="F"> Female
+                            </label>
+                        </div>
+                        <div class="form-group college">
+                        </div>
+                        <div class="form-group courses">
+                        </div>
+                        <div class="form-group degree">
+                        </div>
+                        <div class="form-group year">
+                        </div>
+                        <div class="input-group">
+                            <input type="hidden" name="sa" value="true" />
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Register">
+                        <br/><br/>
+                    </form>
                 </div>
-                <div class="form-group college">
+            </center>
+            <div class="main clearfix oldreg" style="display:none;">
+                <div class="back">
+                    <a>
+                        <p style="cursor:pointer;">&nbsp;&nbsp;<i class="fa fa-arrow-left"></i>&nbsp;Back</p>
+                    </a>
                 </div>
-                <div class="form-group courses">
-                </div>
-                <div class="form-group degree">
-                </div>
-                <div class="form-group year">
-                </div>
-                <div class="input-group">
-                  <input type="hidden" name="sa" value="true" />
-              </div>                                    
-              <input type="submit" class="btn btn-success" value="Register">
-              <br/><br/>
-          </form>
-      </div>
-  </center>
-  <div class="main clearfix oldreg" style="display:none;">
-    <div class="back">
-        <a>
-            <p style="cursor:pointer;">&nbsp;&nbsp;<i class="fa fa-arrow-left"></i>&nbsp;Back</p>
-        </a>
+                <br/>
+                <center>
+                    <form style="width:90%;" method="post" action="registerAsSA.php">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
+                            <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
+                        </div>
+                        <br>                            
+                        <input type="submit" class="btn btn-success" value="Login"><br/>
+                        <br>
+                    </form>
+                </center>
+            </div>
+        </div>
     </div>
-    <br/>
-    <center>
-        <form style="width:90%;" method="post" action="registerAsSA.php">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-                <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
-            </div>
-            <br>
-            <div class="input-group">
-                <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                <input id="password" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
-            </div>
-            <br>                            
-            <input type="submit" class="btn btn-success" value="Login"><br/>
-            <br>
-        </form>
-    </center>
-</div>
-</div>
-</div>
 </div>
 <!-- about -->
 <div class="modal fade about" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -915,19 +899,21 @@ data-anchor="footer">
                 <h4 class="modal-title" style="color: rgb(255,255,255);" >NEON RUN</h4>
             </div>
             <div class="modal-body">
-                <h6 class="desc"><blockquote>"Education is the movement from darkness to light."
-                   -Allan Bloom</blockquote>
-
-                   The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/>
-                   Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/>
-                   Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/>
-                   Come join us and help us light up the world.</h6>
-               </div>
-           </div>
-       </div>
-   </div>
-   <!--e for educate-->
-   <div id="eforeducate" class="modal fade">
+                <h6 class="desc">
+                    <blockquote>"Education is the movement from darkness to light."
+                        -Allan Bloom
+                    </blockquote>
+                    The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/>
+                    Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/>
+                    Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/>
+                    Come join us and help us light up the world.
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>
+<!--e for educate-->
+<div id="eforeducate" class="modal fade">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header bg-info">
@@ -954,69 +940,90 @@ data-anchor="footer">
 <!-- random color -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/index1.js"></script>
 
-   <script type="text/javascript" src="js/index1.js"></script>
-        <script>
-            var myArr = new Array();
-            var xmlhttp = new XMLHttpRequest();
-            var url = "http://cms16.kurukshetra.org.in/hospitalities.json";
-            
-            xmlhttp.onreadystatechange = function() {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                    myArr.push(JSON.parse(xmlhttp.responseText));
-                    $('.cssload-loader').hide();
-                    myFunction(myArr);
-                }
-            };
-            xmlhttp.open("GET", url, true);
-            xmlhttp.setRequestHeader('origin', 'http');
-            xmlhttp.send();
-            
-        </script>
+<!-- hospitality cms -->
+<script>
+    var myArr = new Array();
+    var xmlhttp = new XMLHttpRequest();
+    var url = "http://cms16.kurukshetra.org.in/hospitalities.json";
+
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            myArr.push(JSON.parse(xmlhttp.responseText));
+            $('.cssload-loader').hide();
+            myFunction(myArr);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.setRequestHeader('origin', 'http');
+    xmlhttp.send();
+
+</script>
+
+<!-- updates cms -->
+<script>
+    var updatesArray = new Array();
+    var updates = new XMLHttpRequest();
+    var updatesUrl = "http://enct29fa5ae.kurukshetra.org.in/updates.json";
+
+    updates.onreadystatechange = function() {
+        if (updates.readyState == 4 && updates.status == 200) {
+            updatesArray.push(JSON.parse(updates.responseText));
+            $('.cssload-loader').hide();
+            typeUpdates(updatesArray);
+        }
+    };
+    updates.open("GET", updatesUrl, true);
+    updates.setRequestHeader('origin', 'http');
+    updates.send();
+
+</script>
+
 
 
 <script type="text/javascript" src="js/randomColorMaster.js"></script>
 <script>
     $(document).ready(function randomBackground(){
-       num2 = 0.8;
-       var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
-       $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
-       setTimeout(randomBackground, 5000);
-   });
+     num2 = 0.8;
+     var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
+     $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
+     setTimeout(randomBackground, 5000);
+ });
 </script>
 <script>
     $(document).ready(function(){
-      var date_input=$('input[name="date"]'); //our date input has the name "date"
-      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-      var options={
-        format: 'mm/dd/yyyy',
-        container: container,
-        todayHighlight: true,
-        autoclose: true,
-    };
-    date_input.datepicker(options);
-})
-</script>
+              var date_input=$('input[name="date"]'); //our date input has the name "date"
+              var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+              var options={
+                format: 'mm/dd/yyyy',
+                container: container,
+                todayHighlight: true,
+                autoclose: true,
+            };
+            date_input.datepicker(options);
+        });
+    </script>
+    <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.easings.min68b3.js'></script>
+    <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.carouFredSel-6.2.1-packed68b3.js'></script>
+    <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.touchwipe.min68b3.js'></script>
+    <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.mCustomScrollbar.min68b3.js'></script>
+    <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.validate.min68b3.js'></script>
+    <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.fullPage.min68b3.js'></script>
+    <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap.min68b3.js'></script>
+    <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-select.min68b3.js'></script>
+    <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-datepicker.min68b3.js'></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+    <!-- the jScrollPane script -->
+    <script type='text/javascript' src='js/register.js'></script>
+    <!-- typed js -->
+    <script type='text/javascript' src='js/typed.min.js'></script>
 
-<script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.easings.min68b3.js'></script>
-<script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.carouFredSel-6.2.1-packed68b3.js'></script>
-<script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.touchwipe.min68b3.js'></script>
 
-<script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.mCustomScrollbar.min68b3.js'></script>
-
-<script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.validate.min68b3.js'></script>
-<script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/jquery.fullPage.min68b3.js'></script>
-<script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap.min68b3.js'></script>
-<script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-select.min68b3.js'></script>
-<script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-datepicker.min68b3.js'></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
-
-<!-- the jScrollPane script -->
-<script type='text/javascript' src='js/register.js'></script>
-<!-- form data -->
-<script src="js/list.js"></script>
-<script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/main68b3.js'></script>
-<script>
+    <!-- form data -->
+    <script src="js/list.js"></script>
+    <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/main68b3.js'></script>
+    <script>
             //populate form
             $(document).ready(function() {
                 populateForm();
@@ -1026,7 +1033,7 @@ data-anchor="footer">
                 $(".events-details").hide();
                 $(".workshops-details").show();
             });
-
+            
             $( ".events-menu" ).click(function() {
                 $(".workshops-details").hide();
                 $(".events-details").show();            
@@ -1050,4 +1057,3 @@ data-anchor="footer">
     checkLogin();
     checkSA();
     ?>
-

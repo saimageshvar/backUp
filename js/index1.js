@@ -37,9 +37,9 @@ function myFunction(arr)
 	{
 		var parent = document.createElement("div");
 		if(i==0)
-		parent.className = "tab-pane fade in active";
+			parent.className = "tab-pane fade in active";
 		else
-		parent.className = "tab-pane fade";
+			parent.className = "tab-pane fade";
 		parent.id="hospi"+i;
 		
 		var child = document.createElement("p")
@@ -50,4 +50,23 @@ function myFunction(arr)
 	}
 	//document.getElementsByClassName("hospi-details")[0].append(outer);
 	
+}
+
+function typeUpdates(arr)
+{
+	var i;
+	var updates = [];
+	for(i=0; i<arr[0].length; i++)
+	{
+		updates[i] = arr[0][i].title;
+	}
+	$(".descriptions").typed({
+		strings: updates,
+		typeSpeed: 0,
+		loop: true,
+		showCursor: false,
+		typeSpeed: 10,
+		backDelay: 1000,
+		backSpeed: 10
+	});
 }
