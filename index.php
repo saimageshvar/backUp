@@ -23,6 +23,7 @@ require 'utils.php';
     <link rel='stylesheet' href="css/initiatives.css">
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css'/>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Proza+Libre"/>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <!--hospitality-->
     <link rel="stylesheet" type="text/css" href="css/hospi/demo.css" />
     <!-- event and workshop -->
@@ -31,7 +32,10 @@ require 'utils.php';
         #mystyle {
             margin: 0 auto;
         }                
-        h1, .h1 {font-family: Miso;font-size: 56px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h2, .h2 {font-family: Miso;font-size: 48px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h3, .h3 {font-family: Miso;font-size: 40px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h4, .h4 {font-family: Miso;font-size: 32px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h5, .h5 {font-family: Miso;font-size: 24px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h6, .h6 {font-family: Miso;font-size: 19px;font-weight: 700;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}a {font-family: Lato;font-size: 18px;text-transform: none;}a {color: #d73e4d}a:hover {color: #d73e4d}a:active {color: #d73e4d}.btn {padding-top:6px;padding-bottom:6px;padding-left:30px;padding-right:30px;}.btn.btn-sm {padding-top:2px;padding-bottom:2px;padding-left:20px;padding-right:20px;}.btn.btn-lg {padding-top:6px;padding-bottom:6px;padding-left:40px;padding-right:40px;}p {margin-top:0px;margin-bottom:30px;}blockquote {border-left-width:1px;border-color:#d73e4d;padding-top:0px;padding-bottom:0px;padding-left:20px;padding-right:0px;}table th, table td {padding-top:1px;padding-bottom:1px;padding-left:1px;padding-right:1px;}
+        h1, .h1 {font-family:'Abril Fatface', cursive;font-size: 56px;font-weight: 400;color: #d73e4d;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}
+        h2, .h2 {font-family: Miso;font-size: 48px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h3, .h3 {font-family: Miso;font-size: 40px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}
+        h4, .h4 {font-family: Miso;font-size: 32px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h5, .h5 {font-family: Miso;font-size: 24px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}
+        h6, .h6 {font-family: Miso;font-size: 19px;font-weight: 700;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}a {font-family: Lato;font-size: 18px;text-transform: none;}a {color: #d73e4d}a:hover {color: #d73e4d}a:active {color: #d73e4d}.btn {padding-top:6px;padding-bottom:6px;padding-left:30px;padding-right:30px;}.btn.btn-sm {padding-top:2px;padding-bottom:2px;padding-left:20px;padding-right:20px;}.btn.btn-lg {padding-top:6px;padding-bottom:6px;padding-left:40px;padding-right:40px;}p {margin-top:0px;margin-bottom:30px;}blockquote {border-left-width:1px;border-color:#d73e4d;padding-top:0px;padding-bottom:0px;padding-left:20px;padding-right:0px;}table th, table td {padding-top:1px;padding-bottom:1px;padding-left:1px;padding-right:1px;}
         .dow
         {
             width: 40px !important;
@@ -182,7 +186,7 @@ require 'utils.php';
         style="">
         <div class="row ">
             <div class="col-md-12  text-center">
-                <h1 class="section-title "  data-appear-animation="bounceInUp" data-appear-animation-delay="100">k!urukshetra 2017</h1>
+                <h1 class="section-title "  data-appear-animation="bounceInUp" data-appear-animation-delay="100">kurukshetra 2017</h1>
                 <div class="animation"
                 data-appear-animation="bounceInUp"
                 data-appear-animation-delay="300">
@@ -298,7 +302,7 @@ data-anchor="eventsAndWorkshops">
     style="">
     <div class="filter-box works-box">
         <div class="row section-title-block">
-            <h1 class="col-sm-8 section-title" data-appear-animation="fadeInLeftBig" data-appear-animation-delay="500">Events and Workshops</h1>
+            <h1 class="col-sm-8 section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Events and Workshops</h1>
             <div class="col-sm-4 text-right" data-appear-animation="fadeInRightBig" data-appear-animation-delay="500">
                 <div class="btn-group filter-buttons filter-list">
                     <button type="button" class="btn btn-danger btn-sm dropdown-toggle" data-toggle="dropdown">
@@ -313,259 +317,264 @@ data-anchor="eventsAndWorkshops">
             </div>
         </div>
         <!-- .section-title-block -->
-        <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details">
+        <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-gear"></a>
-                <p>Engineering
-                </div>
-            </li>
+                <p>Engineering</p>
+            </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-android"></a>
-                <p>Robotics
-                </div>
-                <div class="col-sm-3">
-                    <a href="events.html" class="hi-icon fa fa-money"></a>
-                    <p>Management
-                    </div>
-                    <div class="col-sm-3">
-                        <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
-                        <p>Quiz
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="events.html" class="hi-icon fa fa-archive"></a>
-                            <p>General
-                            </div>
-                            <div class="col-sm-3">
-                                <a href="events.html" class="hi-icon fa fa-terminal"></a>
-                                <p>Coding
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="events.html" class="hi-icon fa fa-laptop"></a>
-                                    <p>Online
-                                    </div>
-                                    <!-- events will come here -->
-                                    <!-- workshop should come in tab -->
-                                </div>
-                                <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains_work workshops-details" style="display:none">
-                                    <div class="col-sm-3">
-                                        <a href="workshops.html" class="hi-icon fa fa-gear"></a>
-                                        <p>Engineering
-                                        </div>
-                                    </li>
-                                    <div class="col-sm-3">
-                                        <a href="workshops.html" class="hi-icon fa fa-laptop"></a>
-                                        <p>Coding
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <a href="workshops.html" class="hi-icon fa fa-terminal"></a>
-                                            <p>Online
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <a href="workshops.html" class="hi-icon fa fa-money"></a>
-                                                <p>Management
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <a href="workshops.html" class="hi-icon fa fa-android"></a>
-                                                    <p>Robotics
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <a href="workshops.html" class="hi-icon fa fa-archive"></a>
-                                                        <p>General
-                                                        </div>
-                                                        <!-- workshops will come here -->
-                                                        <!-- workshop should come in tab -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- .section-content -->
-                                    </section>
-                                    <!-- .section -->
-                                    <!-- initiatives -->
-                                    <section class="section  random"
-                                    data-background-image="img/init.jpg"
-                                    data-background="rgba(255,247,204,0.80)"
-                                    data-shadow=""
-                                    data-nav-color="#d73e4d"
-                                    data-nav-color-text="#ffffff"
-                                    data-color="#fff"
-                                    data-title-color="#fff"
-                                    data-title="Initiatives"
-                                    data-anchor="initiatives">
-                                    <div class="section-content ">
-                                        <div class="container section-wrap"
-                                        style="">
-                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                            <div class="hovereffect">
-                                                <img class="img-responsive" src="img/neon.jpg" alt="" style="height:220px;opacity:0.4">
-                                                <div class="overlay">
-                                                    <h2>Neon Run</h2>
-                                                    <p>
-                                                        <a href="#" data-toggle="modal" data-target="#neonrun">know more</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-                                            <div class="hovereffect">
-                                                <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:220px;opacity: 0.4">
-                                                <div class="overlay">
-                                                    <h2>E 4 E</h2>
-                                                    <p>
-                                                        <a href="#">know more</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- .section-content -->
-                            </section>
-                            <!-- .section -->
-                            <!--Xceed-->
-                            <section class="section  random"
-                            data-background-image="img/xceed.gif"
-                            data-background="rgba(10, 79, 67, 0.870588)"
-                            data-shadow=""
-                            data-nav-color="#d73e4d"
-                            data-nav-color-text=""
-                            data-color="#768088"
-                            data-title-color="#fff7cc"
-                            data-title="Xceed"
-                            data-anchor="xceed">
-                            <div class="section-content ">
-                                <div class="container section-wrap"
-                                style="">
-                                <h3 class="section-title"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h3>
-                                <p style="color:#fff; font-size:16px; margin-left:30px; text-align:justify;">
-                                    Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra. Quite simply, XCEED provides those beyond our state borders the chance to experience Kurukshetra first hand. Since 2008, XCEED has visited some of the top institutions in our country. We have hosted XCEED in a lot of colleges.<br/><br/>
-                                </p>
-                                <h4 style="color:rgb(255, 247, 204);" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Battle of Bots</h4>
-                                <p style="color:#fff; font-size:16px; margin-left:30px;">
-                                    Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra.<br/><br/> 
-                                    <i>For more details check out our <a target="_blank" href="http://www.xceed.kurukshetra.org.in" style="color:#fff; font-size:20px;"><b>website</b></i></a><br/>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- .section-content -->
-                    </section>
-                    <!-- .section -->
-                    <!--Hospitality-->
-                    <section class="section  random"
-                    data-background-image="img/hospi.gif"
-                    data-background="rgba(10, 79, 67, 0.870588)"
-                    data-shadow=""
-                    data-nav-color="#d73e4d"
-                    data-nav-color-text=""
-                    data-color="#768088"
-                    data-title-color="#fff7cc"
-                    data-title="hospitality"
-                    data-anchor="hospitality">
-                    <div class="section-content ">
-                        <div class="container section-wrap"
-                        style="">
-                        <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Hospitality</h1>
-                        <div class="hospi-header"></div>
-                        <div style="background:transparent; border:transparent; color:#fff;"class="tab-content hospi-details">
-                        </div>
-                    </div>
-                    <span class="cssload-loader"><span class="cssload-loader-inner"></span></span>
-                </div>
-                <!-- .section-content -->
-            </section>
-            <!-- .section -->
-            <!-- gl -->
-            <section class="section  random"
-            data-background-image="img/gl.gif"
-            data-background="rgba(35,184,158,0.80)"
-            data-shadow=""
-            data-nav-color="#d73e4d"
-            data-nav-color-text=""
-            data-color="#ffffff"
-            data-title-color="#fff7cc"
-            data-title="Guest Lectures"
-            data-anchor="gl">
-            <div class="section-content ">
-                <div class="container section-wrap"
-                style="">
-                <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Guest Lectures</h1>
-                <div class="animation "
-                data-appear-animation="fadeInDown"
-                data-appear-animation-delay="300">
-                <p class="description text-center"
-                style="font-size:1.5em;">where you meet great people, in action</p>
+                <p>Robotics</p>
             </div>
-            <div class="success-carousel carousel-success  inverse"
-            data-options='{"itemsCustom": [[0, 1]], "navigation": true, "pagination": false}'>
-            <div class="stories" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
-                <div class="avatars">
-                    <div class="avatars-carousel">
-                        <div id="avatar-76" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-1.jpg" class="attachment-120x120 wp-post-image" alt="avatar-1" /></div>
-                        <div id="avatar-74" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-2.jpg" class="attachment-120x120 wp-post-image" alt="avatar-2" /></div>
-                        <div id="avatar-72" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-3.jpg" class="attachment-120x120 wp-post-image" alt="avatar-3" /></div>
-                        <div id="avatar-60" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-4.jpg" class="attachment-120x120 wp-post-image" alt="avatar-4" /></div>
-                    </div>
-                    <!-- .avatars-carousel -->
-                </div>
-                <!-- .avatars -->
-                <div class="content">
-                    <div class="story">
-                        <blockquote>
-                            <p>"Itembridge" became famous among thousands of purchasers of the most known online resource copyright works during its short existence. Our company is the friendly team of professionals, who create exclusive designs, unique and clear functionality of the templates.</p>
-                            <footer>George Brown</footer>
-                        </blockquote>
-                    </div>
-                    <!-- .story -->
-                    <div class="story">
-                        <blockquote>
-                            <p>"Itembridge" offers a number of creative products: online stores, templates, one page promo sites, graphic works and corporate style for wide audience. They always have the perfect design so you do not have to change a lot of settings to achieve the desired style.</p>
-                            <footer>Arthur Middleton</footer>
-                        </blockquote>
-                    </div>
-                    <!-- .story -->
-                    <div class="story">
-                        <blockquote>
-                            <p>This is a team of talented people with big ideas and creative minds. They develop exclusive designs, unique, easy and clear functionality of the products. They are a team of young professionals who are always open to new knowledge.</p>
-                            <footer>Bill Sparks</footer>
-                        </blockquote>
-                    </div>
-                    <!-- .story -->
-                    <div class="story">
-                        <blockquote>
-                            <p>Exclusive designs, unique and clear functionality of the templates are created here. The company produces exclusive creative products such as online stores templates, one page promo sites, graphic works and corporate style for the wide audience.</p>
-                            <footer>Samanta McStewarts</footer>
-                        </blockquote>
-                    </div>
-                    <!-- .story -->                
-                </div>
-                <!-- .content -->
-                <div class="clearfix"></div>
-                <div class="navigation">
-                    <a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
-                    <a href="#" class="next"><i class="fa fa-angle-right"></i></a>
-                    <div class="pager"></div>
-                </div>
-                <!-- .navigation -->
+            <div class="col-sm-3">
+                <a href="events.html" class="hi-icon fa fa-money"></a>
+                <p>Management</p>
             </div>
-            <!-- .stories -->
-            <div class="row logos">
-                <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
-                    <a href="#avatar-76" class="logo"></a>
-                </div>
-                <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
-                    <a href="#avatar-74" class="logo"></a>
-                </div>
-                <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
-                    <a href="#avatar-72" class="logo"></a>
-                </div>
-                <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
-                    <a href="#avatar-60" class="logo"></a>
-                </div>
+            <div class="col-sm-3">
+                <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
+                <p>Quiz</p>
             </div>
-            <!-- .logos -->
+            <div class="col-sm-3">
+                <a href="events.html" class="hi-icon fa fa-archive"></a>
+                <p>General</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="events.html" class="hi-icon fa fa-terminal"></a>
+                <p>Coding</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="events.html" class="hi-icon fa fa-laptop"></a>
+                <p>Online</p>
+            </div>
+            <!-- events will come here -->
+            <!-- workshop should come in tab -->
         </div>
-        <!-- .success-carousel -->                  
+        <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains_work workshops-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100" style="display:none">
+            <div class="col-sm-3">
+                <a href="workshops.html" class="hi-icon fa fa-gear"></a>
+                <p>Engineering</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="workshops.html" class="hi-icon fa fa-laptop"></a>
+                <p>Coding</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="workshops.html" class="hi-icon fa fa-terminal"></a>
+                <p>Online</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="workshops.html" class="hi-icon fa fa-money"></a>
+                <p>Management</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="workshops.html" class="hi-icon fa fa-android"></a>
+                <p>Robotics</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="workshops.html" class="hi-icon fa fa-archive"></a>
+                <p>General</p>
+            </div>
+            <!-- workshops will come here -->
+            <!-- workshop should come in tab -->
+        </div>
     </div>
+</div>
+</div>
+<!-- .section-content -->
+</section>
+<!-- .section -->
+<!-- initiatives -->
+<section class="section  random"
+data-background-image="img/init.jpg"
+data-background="rgba(255,247,204,0.80)"
+data-shadow=""
+data-nav-color="#d73e4d"
+data-nav-color-text="#ffffff"
+data-color="#fff"
+data-title-color="#fff"
+data-title="Initiatives"
+data-anchor="initiatives">
+<div class="section-content ">
+    <div class="container section-wrap"
+    style="">
+    <div class="col-md-12  text-center">
+        <h1 class="section-title "  data-appear-animation="fadeInDown" data-appear-animation-delay="100">initiatives</h1>
+        <div class="animation"
+        data-appear-animation="bounceInUp"
+        data-appear-animation-delay="300">
+        <hr class="pg-gap" style="margin-bottom: 29px;">
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="hovereffect">
+            <img class="img-responsive" src="img/neon.jpg" alt="" style="height:220px;opacity:0.4">
+            <div class="overlay">
+                <h2>Neon Run</h2>
+                <p>
+                    <a href="#" data-toggle="modal" data-target="#neonrun">know more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+        <div class="hovereffect">
+            <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:220px;opacity: 0.4">
+            <div class="overlay">
+                <h2>E 4 E</h2>
+                <p>
+                    <a href="#">know more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- .section-content -->
+</section>
+<!-- .section -->
+<!--Xceed-->
+<section class="section  random"
+data-background-image="img/xceed.gif"
+data-background="rgba(10, 79, 67, 0.870588)"
+data-shadow=""
+data-nav-color="#d73e4d"
+data-nav-color-text=""
+data-color="#768088"
+data-title-color="#fff7cc"
+data-title="Xceed"
+data-anchor="xceed">
+<div class="section-content ">
+    <div class="container section-wrap"
+    style="">
+    <h3 class="section-title"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h3>
+    <p style="color:#fff; font-size:16px; margin-left:30px; text-align:justify;">
+        Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra. Quite simply, XCEED provides those beyond our state borders the chance to experience Kurukshetra first hand. Since 2008, XCEED has visited some of the top institutions in our country. We have hosted XCEED in a lot of colleges.<br/><br/>
+    </p>
+    <h4 style="color:rgb(255, 247, 204);" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Battle of Bots</h4>
+    <p style="color:#fff; font-size:16px; margin-left:30px;">
+        Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra.<br/><br/> 
+        <i>For more details check out our <a target="_blank" href="http://www.xceed.kurukshetra.org.in" style="color:#fff; font-size:20px;"><b>website</b></i></a><br/>
+    </p>
+</div>
+</div>
+<!-- .section-content -->
+</section>
+<!-- .section -->
+<!--Hospitality-->
+<section class="section  random"
+data-background-image="img/hospi.gif"
+data-background="rgba(10, 79, 67, 0.870588)"
+data-shadow=""
+data-nav-color="#d73e4d"
+data-nav-color-text=""
+data-color="#768088"
+data-title-color="#fff7cc"
+data-title="hospitality"
+data-anchor="hospitality">
+<div class="section-content ">
+    <div class="container section-wrap"
+    style="">
+    <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Hospitality</h1>
+    <div class="hospi-header"></div>
+    <div style="background:transparent; border:transparent; color:#fff;"class="tab-content hospi-details">
+    </div>
+</div>
+<span class="cssload-loader"><span class="cssload-loader-inner"></span></span>
+</div>
+<!-- .section-content -->
+</section>
+<!-- .section -->
+<!-- gl -->
+<section class="section  random"
+data-background-image="img/gl.gif"
+data-background="rgba(35,184,158,0.80)"
+data-shadow=""
+data-nav-color="#d73e4d"
+data-nav-color-text=""
+data-color="#ffffff"
+data-title-color="#fff7cc"
+data-title="Guest Lectures"
+data-anchor="gl">
+<div class="section-content ">
+    <div class="container section-wrap"
+    style="">
+    <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Guest Lectures</h1>
+    <div class="animation "
+    data-appear-animation="fadeInDown"
+    data-appear-animation-delay="300">
+    <p class="description text-center"
+    style="font-size:1.5em;">where you meet great people, in action</p>
+</div>
+<div class="success-carousel carousel-success  inverse"
+data-options='{"itemsCustom": [[0, 1]], "navigation": true, "pagination": false}'>
+<div class="stories" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
+    <div class="avatars">
+        <div class="avatars-carousel">
+            <div id="avatar-76" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-1.jpg" class="attachment-120x120 wp-post-image" alt="avatar-1" /></div>
+            <div id="avatar-74" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-2.jpg" class="attachment-120x120 wp-post-image" alt="avatar-2" /></div>
+            <div id="avatar-72" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-3.jpg" class="attachment-120x120 wp-post-image" alt="avatar-3" /></div>
+            <div id="avatar-60" class="avatar animated"><img width="120" height="120" src="wp-content/uploads/2015/07/avatar-4.jpg" class="attachment-120x120 wp-post-image" alt="avatar-4" /></div>
+        </div>
+        <!-- .avatars-carousel -->
+    </div>
+    <!-- .avatars -->
+    <div class="content">
+        <div class="story">
+            <blockquote>
+                <p>"Itembridge" became famous among thousands of purchasers of the most known online resource copyright works during its short existence. Our company is the friendly team of professionals, who create exclusive designs, unique and clear functionality of the templates.</p>
+                <footer>George Brown</footer>
+            </blockquote>
+        </div>
+        <!-- .story -->
+        <div class="story">
+            <blockquote>
+                <p>"Itembridge" offers a number of creative products: online stores, templates, one page promo sites, graphic works and corporate style for wide audience. They always have the perfect design so you do not have to change a lot of settings to achieve the desired style.</p>
+                <footer>Arthur Middleton</footer>
+            </blockquote>
+        </div>
+        <!-- .story -->
+        <div class="story">
+            <blockquote>
+                <p>This is a team of talented people with big ideas and creative minds. They develop exclusive designs, unique, easy and clear functionality of the products. They are a team of young professionals who are always open to new knowledge.</p>
+                <footer>Bill Sparks</footer>
+            </blockquote>
+        </div>
+        <!-- .story -->
+        <div class="story">
+            <blockquote>
+                <p>Exclusive designs, unique and clear functionality of the templates are created here. The company produces exclusive creative products such as online stores templates, one page promo sites, graphic works and corporate style for the wide audience.</p>
+                <footer>Samanta McStewarts</footer>
+            </blockquote>
+        </div>
+        <!-- .story -->                
+    </div>
+    <!-- .content -->
+    <div class="clearfix"></div>
+    <div class="navigation">
+        <a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
+        <a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+        <div class="pager"></div>
+    </div>
+    <!-- .navigation -->
+</div>
+<!-- .stories -->
+<div class="row logos">
+    <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
+        <a href="#avatar-76" class="logo"></a>
+    </div>
+    <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
+        <a href="#avatar-74" class="logo"></a>
+    </div>
+    <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
+        <a href="#avatar-72" class="logo"></a>
+    </div>
+    <div class="" data-appear-animation="fadeInUp" data-appear-animation-delay="500">
+        <a href="#avatar-60" class="logo"></a>
+    </div>
+</div>
+<!-- .logos -->
+</div>
+<!-- .success-carousel -->                  
+</div>
 </div>
 <!-- .section-content -->
 </section>
@@ -613,7 +622,7 @@ data-anchor="footer">
     <div class="container section-wrap"
     style="">
     <div class="row section-title-block">
-        <h1 style="color:rgb(255, 247, 204);" class="col-sm-8 section-title" data-appear-animation="fadeInLeftBig" data-appear-animation-delay="500">Reach Us</h1>
+        <h1 style="color:rgb(255, 247, 204);" class="col-sm-8 section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="500">Reach Us</h1>
         <br/>
         <div class="col-sm-12 col-md-8">
         </div>
