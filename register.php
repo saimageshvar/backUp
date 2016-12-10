@@ -23,7 +23,8 @@
 	"gender" => $gender, 
 	"contactNumber" => $contactNumber, 
 	"password" => $password, 
-	"isSA" => $isSA
+	"isSA" => $isSA,
+	"dateOfBirth" => $date
 	)));
 	$ch = curl_init( $url );
 	curl_setopt( $ch, CURLOPT_POST, 1);
