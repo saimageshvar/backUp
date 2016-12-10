@@ -1,64 +1,70 @@
-<?php
-session_start();
-$name = sanitizeParams($_POST['name']);
-$contactNumber = sanitizeParams($_POST['contactNumber']);
-$emailId = sanitizeParams($_POST['emailId']);
-$password = sanitizeParams($_POST['password']);
-$gender = sanitizeParams($_POST['gender']);
-$collegeName =$_POST['collegeName'];
-$department = sanitizeParams($_POST['department']);
-$date = sanitizeParams($_POST['date']);
-$isSA = '';
-if(isset($_POST['sa']))
-	$isSA = true;
-else
-	$isSA = false;
-$url = 'http://login.kurukshetra.org.in/create.json';
-$params =  json_encode(array("user" => array(
-	"name" => $name, 
-	"emailId" => $emailId, 
-	"collegeName" => $collegeName, 
-	"department" => $department, 
-	"gender" => $gender, 
-	"contactNumber" => $contactNumber, 
-	"password" => $password, 
-	"isSA" => $isSA,
-	"dateOfBirth" => $date
-	)));
-$ch = curl_init( $url );
-curl_setopt( $ch, CURLOPT_POST, 1);
-curl_setopt( $ch, CURLOPT_POSTFIELDS, $params);
-curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
-curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
-curl_setopt( $ch, CURLOPT_HEADER, 0);
-curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
-$response = curl_exec( $ch );
-$response = json_decode($response, true);
-if ($response['responseCode'] == 1)
+var check;
+function validatename(key)
 {
-	$_SESSION['registration'] = "success";
-	$_SESSION['user']['userId'] = $response['data']['userId'];
-	$_SESSION['user']['emailId'] = $response['data']['emailId'];
-	$_SESSION['user']['_id'] = $response['data']['_id'];
-	$_SESSION['user']['name'] = $response['data']['name'];
-	$_SESSION['user']['isSA'] = $isSA;
-}
-else
-{
-	$_SESSION['registration'] = "failure";
-}
-header("Location: index.php");
-function sanitizeParams($param)
-{
-	$param = strip_tags(trim($param));
-	if (isset($param) && empty($param) != 1)
+	var name=key.value;
+	if (!name.match(/^[a-zA-Z. ]*$/))
 	{
-		return $param;			
+		key.style.borderColor="red";
+		check = false;
 	}
 	else
 	{
-		$_SESSION['registration'] = "failure";
-		header("Location: index.php");
+		key.style.borderColor="green";
+		check = true;
 	}
+	key.style.borderWidth="1px";
 }
-?>
+function validatephone(key) {      
+        var phone = key.value;				
+        if((phone.match(/^[0-9]+$/) == null) || phone.length != 10)
+		{
+			check = false;
+			key.style.borderColor="red";
+		}	
+		else
+		{
+			key.style.borderColor="green";
+			check =true;
+		}
+		key.style.borderWidth="1px";
+} 
+function validatepass(key) {      
+		var pass = key.value;
+        if(pass.length<8)
+		{
+			check = false;
+			key.style.borderColor="red";
+		}	
+		else
+		{
+			key.style.borderColor="green";
+			check = true;
+		}
+		key.style.borderWidth="1px";
+}
+function validatemail(key) { 
+		var x = key.value;
+		var atpos = x.indexOf("@");
+		var dotpos = x.lastIndexOf(".");
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) 
+		{
+			check = false;
+			key.style.borderColor="red";
+		}
+		else
+		{
+			key.style.borderColor="green";
+			check = true;
+		}			
+		key.style.borderWidth="1px";		
+}
+function Validate(formid)
+{
+	if(check)
+	{
+		formid.method = "post";
+		formid.action = "register.php";
+	}
+	else
+		alert("Invalid")
+}
