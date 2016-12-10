@@ -1,64 +1,41 @@
-<?php
-session_start();
-$name = sanitizeParams($_POST['name']);
-$contactNumber = sanitizeParams($_POST['contactNumber']);
-$emailId = sanitizeParams($_POST['emailId']);
-$password = sanitizeParams($_POST['password']);
-$gender = sanitizeParams($_POST['gender']);
-$collegeName =$_POST['collegeName'];
-$department = sanitizeParams($_POST['department']);
-$date = sanitizeParams($_POST['date']);
-$isSA = '';
-if(isset($_POST['sa']))
-	$isSA = true;
-else
-	$isSA = false;
-$url = 'http://login.kurukshetra.org.in/create.json';
-$params =  json_encode(array("user" => array(
-	"name" => $name, 
-	"emailId" => $emailId, 
-	"collegeName" => $collegeName, 
-	"department" => $department, 
-	"gender" => $gender, 
-	"contactNumber" => $contactNumber, 
-	"password" => $password, 
-	"isSA" => $isSA,
-	"dateOfBirth" => $date
-	)));
-$ch = curl_init( $url );
-curl_setopt( $ch, CURLOPT_POST, 1);
-curl_setopt( $ch, CURLOPT_POSTFIELDS, $params);
-curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
-curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
-curl_setopt( $ch, CURLOPT_HEADER, 0);
-curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
-$response = curl_exec( $ch );
-$response = json_decode($response, true);
-if ($response['responseCode'] == 1)
-{
-	$_SESSION['registration'] = "success";
-	$_SESSION['user']['userId'] = $response['data']['userId'];
-	$_SESSION['user']['emailId'] = $response['data']['emailId'];
-	$_SESSION['user']['_id'] = $response['data']['_id'];
-	$_SESSION['user']['name'] = $response['data']['name'];
-	$_SESSION['user']['isSA'] = $isSA;
+function validatephone() {      
+        var phone = document.forms["register"]["phone"].value;				
+        if((phone.match(/^[0-9]+$/) == null) || phone.length != 10)
+		{
+			document.getElementById("phoneerror").innerHTML="Invalid Phone no.";
+			document.register.phone.value="";
+			document.register.phone.focus();
+		}	
+		else
+		{
+			document.getElementById("phoneerror").innerHTML="";
+		}
+} 
+function validatepass() {      
+		var pass = document.forms["register"]["pass"].value;
+        if(pass.length<6)
+		{
+			document.getElementById("passerror").innerHTML="Invalid Password";
+			document.register.pass.value="";
+			document.register.pass.focus();
+		}	
+		else
+		{
+			document.getElementById("passerror").innerHTML="";
+		}
 }
-else
-{
-	$_SESSION['registration'] = "failure";
+function validatemail() { 
+		var x = document.forms["register"]["email"].value;
+		var atpos = x.indexOf("@");
+		var dotpos = x.lastIndexOf(".");
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) 
+		{
+			document.getElementById("mailerror").innerHTML="Invalid Email-id";
+			document.register.email.value="";
+			document.register.email.focus();
+		}
+		else
+		{
+			document.getElementById("mailerror").innerHTML="";			
+		}			
 }
-header("Location: index.php");
-function sanitizeParams($param)
-{
-	$param = strip_tags(trim($param));
-	if (isset($param) && empty($param) != 1)
-	{
-		return $param;			
-	}
-	else
-	{
-		$_SESSION['registration'] = "failure";
-		header("Location: index.php");
-	}
-}
-?>
