@@ -28,7 +28,8 @@ require 'utils.php';
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
     <!-- h2 font -->
-    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Reem+Kufi" rel="stylesheet">     
+
     <!--hospitality-->
     <link rel="stylesheet" type="text/css" href="css/hospi/demo.css" />
     <!-- event and workshop -->
@@ -38,7 +39,7 @@ require 'utils.php';
             margin: 0 auto;
         }                
         h1, .h1 {font-family:'Abril Fatface', cursive;font-size: 56px;font-weight: 400;color: #d73e4d;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}
-        h2, .h2 {font-family: 'Aref Ruqaa', serif;font-size: 48px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h3, .h3 {font-family: Miso;font-size: 40px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}
+        h2, .h2 {font-family: 'Aref Ruqaa', serif;font-size: 48px;font-weight: 400;color: #d73e4d;text-transform: none;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h3, .h3 {font-family: Miso;font-size: 40px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}
         h4, .h4 {font-family: Miso;font-size: 32px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h5, .h5 {font-family: Miso;font-size: 24px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}
         h6, .h6 {font-family: Miso;font-size: 19px;font-weight: 700;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}a {font-family: Lato;font-size: 18px;text-transform: none;}a {color: #d73e4d}a:hover {color: #d73e4d}a:active {color: #d73e4d}.btn {padding-top:6px;padding-bottom:6px;padding-left:30px;padding-right:30px;}.btn.btn-sm {padding-top:2px;padding-bottom:2px;padding-left:20px;padding-right:20px;}.btn.btn-lg {padding-top:6px;padding-bottom:6px;padding-left:40px;padding-right:40px;}p {margin-top:0px;margin-bottom:30px;}blockquote {border-left-width:1px;border-color:#d73e4d;padding-top:0px;padding-bottom:0px;padding-left:20px;padding-right:0px;}table th, table td {padding-top:1px;padding-bottom:1px;padding-left:1px;padding-right:1px;}
         .dow
@@ -195,8 +196,9 @@ require 'utils.php';
                 <div class="animation"
                 data-appear-animation="bounceInUp"
                 data-appear-animation-delay="300">
-                <div class="descriptions" style="height: 100px">
-                </p>
+                <div class="updates" style="height: 100px">
+                <h2 class="update"></h2>
+                </div>
                 <hr class="pg-gap" style="margin-bottom: 29px;">
             </div>
             <div class="animation "
@@ -325,11 +327,11 @@ data-anchor="eventsAndWorkshops">
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-gear"></a>
-                <p>Engineering</p>
+                <p style="font-family: 'Reem Kufi', sans-serif; font-style: normal;">Engineering</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-android"></a>
-                <p>Robotics</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Robotics</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-money"></a>
@@ -411,7 +413,7 @@ data-anchor="initiatives">
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
-            <img class="img-responsive" src="img/neon.jpg" alt="" style="height:220px;opacity:0.4">
+            <img class="img-responsive" src="img/neon.jpg" alt="" style="height:220px;opacity:0.2">
             <div class="overlay">
                 <h2>Neon Run</h2>
                 <p>
@@ -422,7 +424,7 @@ data-anchor="initiatives">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
-            <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:220px;opacity: 0.4">
+            <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:220px;opacity: 0.2">
             <div class="overlay">
                 <h2>E 4 E</h2>
                 <p>
@@ -1028,6 +1030,7 @@ data-anchor="footer">
     <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-select.min68b3.js'></script>
     <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/bootstrap-datepicker.min68b3.js'></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+    <script type='text/javascript' src='wp-content/themes/promo-gear/assets/js/isotope.pkgd.min68b3.js?ver=1'></script>
     <!-- the jScrollPane script -->
     <script type='text/javascript' src='js/register.js'></script>
     <!-- typed js -->

@@ -60,7 +60,7 @@ function typeUpdates(arr)
 	{
 		updates[i] = arr[0][i].title;
 	}
-	$(".descriptions").typed({
+	$(".update").typed({
 		strings: updates,
 		typeSpeed: 0,
 		loop: true,
