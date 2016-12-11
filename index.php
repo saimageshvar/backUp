@@ -54,6 +54,11 @@ require 'utils.php';
         {
             color:#d73e4d;
         }
+        body.modal-open {
+            overflow: hidden !important;
+            position:fixed !important;
+            width: 100%;
+        }
         @media screen and (max-width: 800px) {
             .unescodiv {
                 display:none;
@@ -85,18 +90,18 @@ require 'utils.php';
         </style>
         <style>
           table {
-             border-collapse: collapse !important;
-             width: 100% !important;
-         }
+           border-collapse: collapse !important;
+           width: 100% !important;
+       }
 
-         th, td {
-             padding: 8px !important;
-             text-align: left !important;
-             border-bottom: 1px solid #ddd !important;
-         }
-     </style>
- </head>
- <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
+       th, td {
+           padding: 8px !important;
+           text-align: left !important;
+           border-bottom: 1px solid #ddd !important;
+       }
+   </style>
+</head>
+<body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
     <div class="preloader">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
@@ -147,10 +152,10 @@ require 'utils.php';
             </div>
         </div>
         <div class="clearfix"></div>
-        <div class="header-menu">
+        <div class="header-menu" style="background: white">
             <nav id="main-menu" class="collapse navbar-collapse">
                 <ul id="menu-main-menu" class="col-sm-12 col-md-6 nav navbar-nav">
-                    <li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="index.html#home-section"><span>Intro</span></a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html#home-section"><span>Intro</span></a></li>
                     <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="index.html#highlights"><span>Highlights</span></a></li>
                     <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="index.html#eventsAndWorkshops"><span>Events & Workshops</span></a></li>
                     <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="index.html#initiatives"><span>Initiatives</span></a></li>
@@ -182,12 +187,12 @@ require 'utils.php';
                     }
                     else if(!isset($_SESSION['user']['isSA']))
                     {
-                       ?>   
-                       <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
-                       <?php
-                   }
-                   if(isset($_SESSION['user']))
-                   {
+                     ?>   
+                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
+                     <?php
+                 }
+                 if(isset($_SESSION['user']))
+                 {
                     ?>   
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
                     <?php
@@ -425,12 +430,12 @@ data-anchor="initiatives">
                 <div class="overlay">
                     <h2 style="font-size: 30px">Neon Run</h2>
                     <p>
-                       <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
-                   </p>
-               </div>
-           </div>
-       </div>
-       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                     <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
+                 </p>
+             </div>
+         </div>
+     </div>
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
             <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:220px;opacity: 0.2">
             <div class="overlay">
@@ -569,18 +574,14 @@ data-anchor="theme">
     <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Our Theme</h1>
     <div class="card card-outline-warning text-xs-center">
         <div class="card-block">
-            <blockquote class="card-blockquote">
-                <blockquote class="text-left">
-                    <h3>Climate Change</h3>
-                </blockquote>
-                <p style="max-height:400px; font-family:Lora; font-size:16px;" class="text-left">Climate change, also called global warming at times, refers to the rise in average surface temperatures on Earth. In a nutshell, it occurs when long-term weather patterns are altered.Observations throughout the world make it clear that climate change is occurring, and rigorous scientific research demonstrates that the greenhouse gases emitted by human activities are the primary driver of this mass phenomenon.<br/><br/>
-                    It didn’t happen overnight. <br/><br/>
-                    The Earth's climate has changed throughout history.The current warming trend is of particular significance because most of it is very likely human-induced and proceeding at a rate that is unprecedented in the past 1,300 years. For example, the atmospheric concentration of CO2 did not rise above 300 parts per million (ppm) between the advent of human civilization roughly 10,000 years ago and 1900. Today it is at about 400 ppm, a level not reached in more than 400,000 years.<br/><br/>
-                    The evidence is incontrovertible: Global warming is occurring. If no mitigating actions are taken, our way of life and the lives of future generations are at risk – be it through rising sea levels, more frequent natural disasters, loss of biodiversity or any of the host of consequences identified by the scientific community.<br/><br/>
-                    Despite the international scientific community's consensus on climate change, a small number of people continue to deny that climate change exists or that humans are causing it. <br/><br/>
-                    We think that the debate is over about whether or not climate change is real; it is now time to act to solve the problem. And Team Kurukshetra is doing just that. Through social initiatives, awareness drives, workshops, lectures, projects and much more, we are trying to do our part to fight climate change – and we ask you to join us.
-                </p>
-            </blockquote>
+            <h2>Climate Change</h2>
+            <p style="max-height:400px; font-size:16px; font-style: normal" class="text-left">Climate change, also called global warming at times, refers to the rise in average surface temperatures on Earth. In a nutshell, it occurs when long-term weather patterns are altered.Observations throughout the world make it clear that climate change is occurring, and rigorous scientific research demonstrates that the greenhouse gases emitted by human activities are the primary driver of this mass phenomenon.<br/><br/>
+                It didn’t happen overnight. <br/><br/>
+                The Earth's climate has changed throughout history.The current warming trend is of particular significance because most of it is very likely human-induced and proceeding at a rate that is unprecedented in the past 1,300 years. For example, the atmospheric concentration of CO2 did not rise above 300 parts per million (ppm) between the advent of human civilization roughly 10,000 years ago and 1900. Today it is at about 400 ppm, a level not reached in more than 400,000 years.<br/><br/>
+                The evidence is incontrovertible: Global warming is occurring. If no mitigating actions are taken, our way of life and the lives of future generations are at risk – be it through rising sea levels, more frequent natural disasters, loss of biodiversity or any of the host of consequences identified by the scientific community.<br/><br/>
+                Despite the international scientific community's consensus on climate change, a small number of people continue to deny that climate change exists or that humans are causing it. <br/><br/>
+                We think that the debate is over about whether or not climate change is real; it is now time to act to solve the problem. And Team Kurukshetra is doing just that. Through social initiatives, awareness drives, workshops, lectures, projects and much more, we are trying to do our part to fight climate change – and we ask you to join us.
+            </p>
         </div>
     </div>
 </div>
@@ -607,14 +608,14 @@ data-anchor="footer">
         <div class="col-sm-12 col-md-8">
         </div>
         <div class="col-sm-12 col-md-4">
-            <p style="font-size:20px; color:#fff;">                         
-                <i class="fa fa-envelope-o fa-lg"></i>&nbsp;&nbsp;pr@kurukshetra.org.in
+            <p style="font-size:20px; color:#fff; font-style: normal">                         
+                <i class="fa fa-envelope-o"></i>&nbsp;&nbsp;pr@kurukshetra.org.in
                 <br/>
-                <i class="fa fa-phone fa-lg"></i>&nbsp;                         
+                <i class="fa fa-phone"></i>&nbsp;                         
                 +91 44 2235 9002
             </p>
             <br/>
-            <p style="font-size:20px; color:#fff; margin-bottom:2px;">
+            <p style="font-size:20px; color:#fff; margin-bottom:2px; font-style: normal">
                 You can find us on                  
             </p>
             <div class="social">
@@ -632,12 +633,12 @@ data-anchor="footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-6 left-align">
-                <div style="font-size:15px;" class="copyright"><b>Copyright 2016 @ CEG Tech Forum. All rights reserved.</b></div>
+                <div style="font-size:15px; font-style: normal;" class="copyright"><b>Copyright 2016 @ CEG Tech Forum. All rights reserved.</b></div>
             </div>
             <div class="col-sm-6 right-align">
                 <a style="color:grey;" href="http://www.archive16.kurukshetra.org.in" target="_blank">k!16</a>&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+                <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
             </div>
         </div>
     </div>
@@ -660,66 +661,66 @@ data-anchor="footer">
             <center>
                 <table class="table table-hover table-bordered">
                     <tr>
-                       <th>City</th>
-                       <th>Date</th>
-                       <th>Venue</th>
-                   </tr>
-                   <tr>
-                       <td>Tirupati</td>
-                       <td>7, 8 January’17</td>
-                       <td>IIT Tirupati</td>
-                   </tr>
-                   <tr>
-                       <td>Trichy</td>
-                       <td>7, 8 January’17</td>
-                       <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
-                   </tr>
-                   <tr>
-                       <td>Chennai</td>
-                       <td>21,22 January’17</td>
-                       <td>Easwari Engineering College</td>
-                   </tr>
-                   <tr>
-                       <td>Madurai</td>
-                       <td>21,22 January’17</td>
-                       <td>Thiagarajar College of Engineering</td>
-                   </tr>
-                   <tr>
-                       <td>Vellore</td>
-                       <td>21,22 January’17</td>
-                       <td>Vellore Institute of Technology</td>
-                   </tr>
-                   <tr>
-                       <td>Coimbatore</td>
-                       <td>17, 18 December’16</td>
-                       <td>Coimbatore Institute of Technology</td>
-                   </tr>
-                   <tr>
-                       <td>Pilani</td>
-                       <td>17, 18 October’16</td>
-                       <td>BITS Pilani</td>
-                   </tr>
-                   <tr>
-                       <td>Suratkal</td>
-                       <td>2,3 October’16</td>
-                       <td>NIT Suratkal</td>
-                   </tr>
-                   <tr>
-                       <td>Salem</td>
-                       <td>17, 18 September’16</td>
-                       <td>Annapoorana Engineering College</td>
-                   </tr>
-               </table>
-           </center>
-           <br/>
-       </div>
-   </div>
+                     <th>City</th>
+                     <th>Date</th>
+                     <th>Venue</th>
+                 </tr>
+                 <tr>
+                     <td>Tirupati</td>
+                     <td>7, 8 January’17</td>
+                     <td>IIT Tirupati</td>
+                 </tr>
+                 <tr>
+                     <td>Trichy</td>
+                     <td>7, 8 January’17</td>
+                     <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
+                 </tr>
+                 <tr>
+                     <td>Chennai</td>
+                     <td>21,22 January’17</td>
+                     <td>Easwari Engineering College</td>
+                 </tr>
+                 <tr>
+                     <td>Madurai</td>
+                     <td>21,22 January’17</td>
+                     <td>Thiagarajar College of Engineering</td>
+                 </tr>
+                 <tr>
+                     <td>Vellore</td>
+                     <td>21,22 January’17</td>
+                     <td>Vellore Institute of Technology</td>
+                 </tr>
+                 <tr>
+                     <td>Coimbatore</td>
+                     <td>17, 18 December’16</td>
+                     <td>Coimbatore Institute of Technology</td>
+                 </tr>
+                 <tr>
+                     <td>Pilani</td>
+                     <td>17, 18 October’16</td>
+                     <td>BITS Pilani</td>
+                 </tr>
+                 <tr>
+                     <td>Suratkal</td>
+                     <td>2,3 October’16</td>
+                     <td>NIT Suratkal</td>
+                 </tr>
+                 <tr>
+                     <td>Salem</td>
+                     <td>17, 18 September’16</td>
+                     <td>Annapoorana Engineering College</td>
+                 </tr>
+             </table>
+         </center>
+         <br/>
+     </div>
+ </div>
 </div>
 <!-- sponsors -->
 <div class="modal fade sponsors" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <h3 style="text-align:center;margin-top:30px">Sponsors</h3>
+            <h2 style="text-align:center;margin-top:30px">Sponsors</h2>
             <hr/>
             <center>
                 <p> Will be updated soon</p>
@@ -735,12 +736,12 @@ data-anchor="footer">
             <ul class="nav nav-tabs nav-justified">
                 <li role="navigation" class="active">
                     <a data-toggle="tab" href="#login">
-                        <h5>LOGIN</h5>
+                        <h5 style="font-family: 'Aref Ruqaa', serif;">LOGIN</h5>
                     </a>
                 </li>
                 <li role="navigation">
                     <a data-toggle="tab" href="#register">
-                        <h5>REGISTRATION</h5>
+                        <h5 style="font-family: 'Aref Ruqaa', serif;">REGISTRATION</h5>
                     </a>
                 </li>
             </ul>
@@ -786,6 +787,7 @@ data-anchor="footer">
                             <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
                             <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
                         </div>
+                        <br/>
                         <div class="input-group radio">
                             Gender:
                             <label class="radio-inline">
@@ -815,7 +817,7 @@ data-anchor="footer">
 <div class="modal fade registersa" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <h3 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h3>
+        <h2 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h2>
             <center>
                 <div class="newreg">
                     <div class="oldreglink col-sm-12" style="text-align:right; cursor:pointer"><a><i>Already registered for k!?</i></a></div>
@@ -900,7 +902,7 @@ data-anchor="footer">
 <div class="modal fade about" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <h3 style="text-align:center;margin-top:30px">About</h3>
+            <h2 style="text-align:center;margin-top:30px">About</h2>
             <ul class="nav nav-tabs nav-justified">
                 <li role="navigation" class="active">
                     <a data-toggle="tab" href="#ceg">
@@ -925,16 +927,16 @@ data-anchor="footer">
             </ul>
             <div class="tab-content" style="border:none">
                 <div id="ceg" class="tab-pane fade in active">
-                    <p>College of Engineering, Guindy, is the oldest engineering college in the country. Started in May, 1794 as a School of Survey and established as a college in 1859 under the Madras University, CEG has been a reservoir of technical excellence ever since its inception. At CEG, learning is a passion; excellence is the endeavour and knowledge, the goal.</p>
+                    <p style="font-style: normal;">College of Engineering, Guindy, is the oldest engineering college in the country. Started in May, 1794 as a School of Survey and established as a college in 1859 under the Madras University, CEG has been a reservoir of technical excellence ever since its inception. At CEG, learning is a passion; excellence is the endeavour and knowledge, the goal.</p>
                 </div>
                 <div id="ctf" class="tab-pane fade">
-                    <p>CEG Tech Forum was established in the year 2006. The sole aim behind its formulation was to nurture the scientific temper of CEG’s student populace via a three pronged network - industry, academia and the students. Over the years, it has developed into the all-encompassing Technical Forum of the college. At CTF, we aim, aspire and achieve more.</p>
+                    <p style="font-style: normal;">CEG Tech Forum was established in the year 2006. The sole aim behind its formulation was to nurture the scientific temper of CEG’s student populace via a three pronged network - industry, academia and the students. Over the years, it has developed into the all-encompassing Technical Forum of the college. At CTF, we aim, aspire and achieve more.</p>
                 </div>
                 <div id="unesco" class="tab-pane fade">
-                    <p>Patronage is UNESCO’s highest form of support. It is granted to demonstrate the organization’s moral endorsement of exceptional activity. We take immense pride in being the first Techno-Management festival in the country to be accorded this high honour. As a mark of our sustained excellence, we have retained UNESCO&#39;s Patronage over the years.</p>
+                    <p style="font-style: normal;">Patronage is UNESCO’s highest form of support. It is granted to demonstrate the organization’s moral endorsement of exceptional activity. We take immense pride in being the first Techno-Management festival in the country to be accorded this high honour. As a mark of our sustained excellence, we have retained UNESCO&#39;s Patronage over the years.</p>
                 </div>
                 <div id="cyclotron" class="tab-pane fade">
-                    <p>The Cyclotron symbolizes the celebration of the indomitable spirit of engineering and innovation. Just as a cyclotron accelerates a charged particle using high frequency, Kurukshetra provides that extra impetus for the engineer to excel.</p>
+                    <p style="font-style: normal;">The Cyclotron symbolizes the celebration of the indomitable spirit of engineering and innovation. Just as a cyclotron accelerates a charged particle using high frequency, Kurukshetra provides that extra impetus for the engineer to excel.</p>
                 </div>
             </div>
         </div>
@@ -944,28 +946,29 @@ data-anchor="footer">
 <div class="modal fade neonrun" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <h3 style="text-align:center;margin-top:30px">Neon Run</h3>
+            <h2 style="text-align:center;margin-top:30px">Neon Run</h2>
             <hr/>
             <blockquote>"Education is the movement from darkness to light."
-             -Allan Bloom</blockquote>
+               -Allan Bloom</blockquote>
 
-             <p style="padding-left:10px;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
-                 Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
-                 Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
-                 Come join us and help us light up the world.</p>
-                 <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
-                 <br/><br/>
-             </div>
-         </div>
-     </div>
+               <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
+                   Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
+                   Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
+                   Come join us and help us light up the world.</p>
+                   <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
+                   <br/><br/>
+               </div>
+           </div>
+       </div>
 
-     <!--e for educate-->
-     <div class="modal fade eforeducate" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+       <!--e for educate-->
+       <div class="modal fade eforeducate" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <h3 style="text-align:center;margin-top:30px">E for Educate</h3>
+
+                <h2 style="text-align:center;margin-top:30px">E for Educate</h2>
                 <hr/>
-                <p style="padding-left:10px;">E-for-Educate, an e-waste drive with a charitable twist is being undertaken by CEG Tech Forum - the technical hub of the College of Engineering, Guindy, Anna University. CTF is the pillar of Kurukshetra 2016, which is an international techno-management fest under the patronage of UNESCO. What do we plan to do? Seen Wall-E? If you have, you know what we plan to do. And if you haven't, well, our aim is to spread awareness about the indiscriminate disposal and dumping of e-waste.<br/><br/>
+                <p style="padding-left:10px;font-style: normal;">E-for-Educate, an e-waste drive with a charitable twist is being undertaken by CEG Tech Forum - the technical hub of the College of Engineering, Guindy, Anna University. CTF is the pillar of Kurukshetra 2016, which is an international techno-management fest under the patronage of UNESCO. What do we plan to do? Seen Wall-E? If you have, you know what we plan to do. And if you haven't, well, our aim is to spread awareness about the indiscriminate disposal and dumping of e-waste.<br/><br/>
                     Didn't many of us toss our Samsung Galaxy Note 3 when Note 4 came out? 'Fess up. You did :P With technology advancing by lightyears in nanoseconds, don't we tend to change our gadgets every year? Switching from CRT to LCD and from LED to 3D and 3D to 4K. Where do you think all our discarded gizmos go? In the dumpyards, overflowing landfills and lakesides. You must have seen the humongous pile of garbage that was unearthed during the Chennai floods. All our devil-may-care attitude has led to accumulation of e-waste of unmanageable proportions. We, comrades, have created a gigantic metal monster and I'm not talking about Iron Man.<br/><br/>
                     That's one half of our initiative. The other side tackles the alarming rate of school dropouts.<br/><br/>
                     We're considered one of the smartest people in the world but how much do we actually care about educating our kids and making sure that they stay through? About 1.4 million children in India in the age group of 6-11 drop out. This alarming fact is based on the UNESCO's Education for All(EFA) Global Monitoring Report on out of school populations.<br/><br/>
@@ -978,28 +981,6 @@ data-anchor="footer">
             </div>
         </div>
         <!--e for educate-->
-        <div id="eforeducate" class="modal fade">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header bg-info">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h4 class="modal-title" style="color: rgb(255,255,255);" >E FOR EDUCATE</h4>
-                    </div>
-                    <div class="modal-body" style="max-height:500px;overflow:auto;">
-                        <h6 class="desc">E-for-Educate, an e-waste drive with a charitable twist is being undertaken by CEG Tech Forum - the technical hub of the College of Engineering, Guindy, Anna University. CTF is the pillar of Kurukshetra 2016, which is an international techno-management fest under the patronage of UNESCO. What do we plan to do? Seen Wall-E? If you have, you know what we plan to do. And if you haven't, well, our aim is to spread awareness about the indiscriminate disposal and dumping of e-waste.<br/><br/>
-                            Didn't many of us toss our Samsung Galaxy Note 3 when Note 4 came out? 'Fess up. You did :P With technology advancing by lightyears in nanoseconds, don't we tend to change our gadgets every year? Switching from CRT to LCD and from LED to 3D and 3D to 4K. Where do you think all our discarded gizmos go? In the dumpyards, overflowing landfills and lakesides. You must have seen the humongous pile of garbage that was unearthed during the Chennai floods. All our devil-may-care attitude has led to accumulation of e-waste of unmanageable proportions. We, comrades, have created a gigantic metal monster and I'm not talking about Iron Man.<br/><br/>
-                            That's one half of our initiative. The other side tackles the alarming rate of school dropouts.<br/><br/>
-                            We're considered one of the smartest people in the world but how much do we actually care about educating our kids and making sure that they stay through? About 1.4 million children in India in the age group of 6-11 drop out. This alarming fact is based on the UNESCO's Education for All(EFA) Global Monitoring Report on out of school populations.<br/><br/>
-                            It is time to act.<br/><br/>
-                            YOU can help. Yes, You sitting there and reading this. Don't just read it, forget it and walk away. This is your earth and your life as much as the other seven billion people on the planet. Taking baby steps to disposing our e-waste responsible is a move towards a greener, safer environment.<br/><br/>
-                            The funds raised through the initiative would be used to support schooling for underprivileged children.<br/><br/>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- .main -->
     <!-- random color -->
@@ -1067,13 +1048,13 @@ data-anchor="footer">
     <script type="text/javascript" src="js/randomColorMaster.js"></script>
     <script>
         $(document).ready(function randomBackground(){
-           num2 = 0.8;
-           var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
-           $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
-           setTimeout(randomBackground, 5000);
-       });
-   </script>
-   <script>
+         num2 = 0.8;
+         var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
+         $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
+         setTimeout(randomBackground, 5000);
+     });
+ </script>
+ <script>
     $(document).ready(function(){
               var date_input=$('input[name="date"]'); //our date input has the name "date"
               var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
