@@ -62,7 +62,7 @@ function displayDetails(e)
 		$(outerDiv).append(tabHeading);
 		$(outerDiv).append(tabContent);		
 	}
-	$('#eventsDetails .modal-body')[0].append(outerDiv);
+	$('#eventsDetails .modal-body').html(outerDiv);
 	$('#eventsDetails').modal('show');
 }
 
