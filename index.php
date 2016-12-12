@@ -207,7 +207,7 @@ require 'utils.php';
             <h1 class="section-title "  data-appear-animation="bounceInUp" data-appear-animation-delay="100">kurukshetra 2017</h1>
             <div class="animation"
             data-appear-animation="bounceInUp"
-            data-appear-animation-delay="300">
+            data-appear-animation-delay="100">
             <div class="updates" style="height: 100px">
                 <h2 class="update" style="color: white;font-size: 3vw"></h2>
             </div>
@@ -215,7 +215,7 @@ require 'utils.php';
         </div>
         <div class="animation "
         data-appear-animation="bounceInUp"
-        data-appear-animation-delay="500">
+        data-appear-animation-delay="100">
         <a href="#highlights"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
     </div>
 </div>
@@ -242,8 +242,11 @@ data-anchor="highlights">
     <div class="facts no-appear  inverse">
         <div class="facts-title" data-appear-animation="zoomIn" data-appear-animation-delay="100">
             <div class="title-wrap">
-                <h2 class="title">We at k! do <br/> many things</h2>
+                <h2 class="title" style="color:  #581845 ">We at k! do <br/> many things</h2>
             </div>
+            <style type="text/css" scoped="">
+                    .facts-title:before { border-color:  #581845;}
+                </style>
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -251,30 +254,30 @@ data-anchor="highlights">
         </div>
         <!-- .facts-title -->
         <div class="facts-list">
-            <div id="pg-fact-1" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="400">
+            <div id="pg-fact-1" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#d73e4d;font-family:'Abril Fatface', cursive;">10+</div>
                     <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Workshops</div>
                 </div>
                 <style type="text/css" scoped="">
-                    #pg-fact-3 .skill-wrap.full-skill:before { border-color: #d73e4d;}
+                    #pg-fact-1 .skill-wrap.full-skill:before { border-color: #d73e4d;}
                 </style>
                 <i  style="color:#d73e4d;" class="fa fa-wrench"></i>
             </div>
-            <div id="pg-fact-2" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="400">
+            <div id="pg-fact-2" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#375099;font-family:'Abril Fatface', cursive;">1M</div>
                     <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Worth Prizes</div>
                 </div>
                 <style type="text/css" scoped="">
-                    #pg-fact-3 .skill-wrap.full-skill:before { border-color: #375099;}
+                    #pg-fact-2 .skill-wrap.full-skill:before { border-color: #375099;}
                 </style>
                 <i  style="color:#375099;" class="fa fa-money"></i>
             </div>
         </div>
         <!-- .facts-list -->
         <div class="facts-list">
-            <div id="pg-fact-3" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="400">
+            <div id="pg-fact-3" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#d6973d;font-family:'Abril Fatface', cursive;">50K+</div>
                     <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Likes</div>
@@ -285,7 +288,7 @@ data-anchor="highlights">
                 <i  style="color:#d6973d;" class="fa fa-thumbs-up"></i>
             </div>
             <!-- .fact -->
-            <div id="pg-fact-4" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="400">
+            <div id="pg-fact-4" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#179680;font-family:'Abril Fatface', cursive;">30+</div>
                     <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Events</div>
@@ -322,7 +325,7 @@ data-anchor="eventsAndWorkshops">
     <div class="filter-box works-box">
         <div class="row section-title-block">
             <h1 class="col-sm-8 section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Events and Workshops</h1>
-            <div class="col-sm-4 text-right" data-appear-animation="fadeInRightBig" data-appear-animation-delay="500">
+            <div class="col-sm-4 text-right" data-appear-animation="fadeInRightBig" data-appear-animation-delay="100">
                 <div class="btn-group filter-buttons filter-list">
                     <button type="button" class="btn btn-danger btn-sm dropdown-toggle" data-toggle="dropdown">
                     </button>
@@ -517,11 +520,12 @@ data-anchor="gl">
     <div class="container section-wrap"
     style="">
     <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Guest Lectures</h1>
+    <br/>
     <div class="animation "
     data-appear-animation="fadeInDown"
-    data-appear-animation-delay="300">
-    <p class="description text-center"
-    style="font-size:1.5em;">where you meet great people, in action</p>
+    data-appear-animation-delay="100">
+    <h2 class="description text-center"
+    style="font-size:1.5em;">where you meet great people, in action</h2>
 </div>
 <div class="success-carousel carousel-success  inverse"
 data-options='{"itemsCustom": [[0, 1]], "navigation": true, "pagination": false}' >
@@ -601,7 +605,7 @@ data-anchor="footer">
         <h1 style="color:rgb(255, 247, 204);" class="col-sm-8 section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="500">Reach Us</h1>
         <br/>
         <div class="col-sm-12 col-md-8">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3888654732154!2d80.23317031390987!3d13.010890790830125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679e8ab07191%3A0xd034864eb4cef07a!2sAnna+University+-+College+Of+Engineering!5e0!3m2!1sen!2sus!4v1480493857269" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
         </div>
         <div class="col-sm-12 col-md-4">
             <p style="font-size:20px; color:#fff; font-style: normal">                         
@@ -988,7 +992,7 @@ data-anchor="footer">
     <script>
         var myArr = new Array();
         var xmlhttp = new XMLHttpRequest();
-        var url = "http://cms16.kurukshetra.org.in/hospitalities.json";
+        var url = "http://enct29fa5ae.kurukshetra.org.in/hospitalities.json";
 
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {

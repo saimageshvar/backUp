@@ -9,7 +9,7 @@ function myFunction(arr)
 	outer.className = "nav nav-tabs nav-justified";
 	outer.style = "background-color:transparent;"
 	var i;	
-	for(i=0;i<6;i++)
+	for(i=0;i<arr[0].hospitalities.length;i++)
 	{
 		var parent = document.createElement("li");
 		if(i==0)
@@ -34,7 +34,7 @@ function myFunction(arr)
 	
 	outer = document.createElement("div");	
 	outer.className = "hospi";
-	for(i=0;i<6;i++)
+	for(i=0;i<arr[0].hospitalities.length;i++)
 	{
 		var parent = document.createElement("div");
 		if(i==0)
