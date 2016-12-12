@@ -8,7 +8,7 @@ function myFunction(arr)
 	{
 		var outer = document.createElement("div");
 		if(domains != 0)
-		outer.style="display:none";
+			outer.style="display:none";
 		outer.className = "events-"+arr[0].events[domains].name;
 		var i;
 		for(i=0; i<arr[0].events[domains].events.length; i++)
@@ -31,6 +31,9 @@ function myFunction(arr)
 		}
 		document.getElementsByClassName("events")[0].append(outer);
 	}
+
+	$('.events-loader').hide();
+	$('.main').show();
 	
 	
 	
