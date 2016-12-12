@@ -520,13 +520,8 @@ data-anchor="gl">
     <div class="container section-wrap"
     style="">
     <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Guest Lectures</h1>
-    <br/>
-    <div class="animation "
-    data-appear-animation="fadeInDown"
-    data-appear-animation-delay="100">
-    <h2 class="description text-center"
+    <h2 class="description text-center" data-appear-animation="fadeInDown" data-appear-animation-delay="100"
     style="font-size:1.5em;">where you meet great people, in action</h2>
-</div>
 <div class="success-carousel carousel-success  inverse"
 data-options='{"itemsCustom": [[0, 1]], "navigation": true, "pagination": false}' >
 <div class="stories" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
