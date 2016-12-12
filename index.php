@@ -65,36 +65,36 @@ require 'utils.php';
         }
     </style>
     <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-        <style>
-            .img-with-text {
-                text-align: justify;
-                width: [width of img];
-            }
-            .img-with-text img {
-                display: block;
-                margin: 0 auto;
-            }
-            .errspan {
-                float: right;
-                margin-left: 6px;
-                margin-top: -10px;
-                position: relative;
-                z-index: 2;
-                color: blue;
-            }
-        </style>
-        <style>
-          table {
-           border-collapse: collapse !important;
-           width: 100% !important;
-       }
+    <style>
+        .img-with-text {
+            text-align: justify;
+            width: [width of img];
+        }
+        .img-with-text img {
+            display: block;
+            margin: 0 auto;
+        }
+        .errspan {
+            float: right;
+            margin-left: 6px;
+            margin-top: -10px;
+            position: relative;
+            z-index: 2;
+            color: blue;
+        }
+    </style>
+    <style>
+      table {
+         border-collapse: collapse !important;
+         width: 100% !important;
+     }
 
-       th, td {
-           padding: 8px !important;
-           text-align: left !important;
-           border-bottom: 1px solid #ddd !important;
-       }
-   </style>
+     th, td {
+         padding: 8px !important;
+         text-align: left !important;
+         border-bottom: 1px solid #ddd !important;
+     }
+ </style>
 </head>
 <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
     <div class="preloader">
@@ -182,12 +182,12 @@ require 'utils.php';
                     }
                     else if(!isset($_SESSION['user']['isSA']))
                     {
-                     ?>   
-                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
-                     <?php
-                 }
-                 if(isset($_SESSION['user']))
-                 {
+                       ?>   
+                       <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
+                       <?php
+                   }
+                   if(isset($_SESSION['user']))
+                   {
                     ?>   
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
                     <?php
@@ -425,12 +425,12 @@ data-anchor="initiatives">
                 <div class="overlay">
                     <h2 style="font-size: 30px">Neon Run</h2>
                     <p>
-                     <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
-                 </p>
-             </div>
-         </div>
-     </div>
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                       <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
+                   </p>
+               </div>
+           </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
             <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:220px;opacity: 0.2">
             <div class="overlay">
@@ -601,6 +601,7 @@ data-anchor="footer">
         <h1 style="color:rgb(255, 247, 204);" class="col-sm-8 section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="500">Reach Us</h1>
         <br/>
         <div class="col-sm-12 col-md-8">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3888654732154!2d80.23317031390987!3d13.010890790830125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679e8ab07191%3A0xd034864eb4cef07a!2sAnna+University+-+College+Of+Engineering!5e0!3m2!1sen!2sus!4v1480493857269" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="col-sm-12 col-md-4">
             <p style="font-size:20px; color:#fff; font-style: normal">                         
@@ -656,60 +657,60 @@ data-anchor="footer">
             <center>
                 <table class="table table-hover table-bordered">
                     <tr>
-                     <th>City</th>
-                     <th>Date</th>
-                     <th>Venue</th>
-                 </tr>
-                 <tr>
-                     <td>Tirupati</td>
-                     <td>7, 8 January’17</td>
-                     <td>IIT Tirupati</td>
-                 </tr>
-                 <tr>
-                     <td>Trichy</td>
-                     <td>7, 8 January’17</td>
-                     <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
-                 </tr>
-                 <tr>
-                     <td>Chennai</td>
-                     <td>21,22 January’17</td>
-                     <td>Easwari Engineering College</td>
-                 </tr>
-                 <tr>
-                     <td>Madurai</td>
-                     <td>21,22 January’17</td>
-                     <td>Thiagarajar College of Engineering</td>
-                 </tr>
-                 <tr>
-                     <td>Vellore</td>
-                     <td>21,22 January’17</td>
-                     <td>Vellore Institute of Technology</td>
-                 </tr>
-                 <tr>
-                     <td>Coimbatore</td>
-                     <td>17, 18 December’16</td>
-                     <td>Coimbatore Institute of Technology</td>
-                 </tr>
-                 <tr>
-                     <td>Pilani</td>
-                     <td>17, 18 October’16</td>
-                     <td>BITS Pilani</td>
-                 </tr>
-                 <tr>
-                     <td>Suratkal</td>
-                     <td>2,3 October’16</td>
-                     <td>NIT Suratkal</td>
-                 </tr>
-                 <tr>
-                     <td>Salem</td>
-                     <td>17, 18 September’16</td>
-                     <td>Annapoorana Engineering College</td>
-                 </tr>
-             </table>
-         </center>
-         <br/>
-     </div>
- </div>
+                       <th>City</th>
+                       <th>Date</th>
+                       <th>Venue</th>
+                   </tr>
+                   <tr>
+                       <td>Tirupati</td>
+                       <td>7, 8 January’17</td>
+                       <td>IIT Tirupati</td>
+                   </tr>
+                   <tr>
+                       <td>Trichy</td>
+                       <td>7, 8 January’17</td>
+                       <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
+                   </tr>
+                   <tr>
+                       <td>Chennai</td>
+                       <td>21,22 January’17</td>
+                       <td>Easwari Engineering College</td>
+                   </tr>
+                   <tr>
+                       <td>Madurai</td>
+                       <td>21,22 January’17</td>
+                       <td>Thiagarajar College of Engineering</td>
+                   </tr>
+                   <tr>
+                       <td>Vellore</td>
+                       <td>21,22 January’17</td>
+                       <td>Vellore Institute of Technology</td>
+                   </tr>
+                   <tr>
+                       <td>Coimbatore</td>
+                       <td>17, 18 December’16</td>
+                       <td>Coimbatore Institute of Technology</td>
+                   </tr>
+                   <tr>
+                       <td>Pilani</td>
+                       <td>17, 18 October’16</td>
+                       <td>BITS Pilani</td>
+                   </tr>
+                   <tr>
+                       <td>Suratkal</td>
+                       <td>2,3 October’16</td>
+                       <td>NIT Suratkal</td>
+                   </tr>
+                   <tr>
+                       <td>Salem</td>
+                       <td>17, 18 September’16</td>
+                       <td>Annapoorana Engineering College</td>
+                   </tr>
+               </table>
+           </center>
+           <br/>
+       </div>
+   </div>
 </div>
 <!-- sponsors -->
 <div class="modal fade sponsors" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -812,7 +813,7 @@ data-anchor="footer">
 <div class="modal fade registersa" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-        <h2 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h2>
+            <h2 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h2>
             <center>
                 <div class="newreg">
                     <div class="oldreglink col-sm-12" style="text-align:right; cursor:pointer"><a><i>Already registered for k!?</i></a></div>
@@ -944,20 +945,20 @@ data-anchor="footer">
             <h2 style="text-align:center;margin-top:30px">Neon Run</h2>
             <hr/>
             <blockquote>"Education is the movement from darkness to light."
-               -Allan Bloom</blockquote>
+             -Allan Bloom</blockquote>
 
-               <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
-                   Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
-                   Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
-                   Come join us and help us light up the world.</p>
-                   <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
-                   <br/><br/>
-               </div>
-           </div>
-       </div>
+             <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
+                 Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
+                 Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
+                 Come join us and help us light up the world.</p>
+                 <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
+                 <br/><br/>
+             </div>
+         </div>
+     </div>
 
-       <!--e for educate-->
-       <div class="modal fade eforeducate" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+     <!--e for educate-->
+     <div class="modal fade eforeducate" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
@@ -1043,13 +1044,13 @@ data-anchor="footer">
     <script type="text/javascript" src="js/randomColorMaster.js"></script>
     <script>
         $(document).ready(function randomBackground(){
-         num2 = 0.8;
-         var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
-         $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
-         setTimeout(randomBackground, 5000);
-     });
- </script>
- <script>
+           num2 = 0.8;
+           var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
+           $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
+           setTimeout(randomBackground, 5000);
+       });
+   </script>
+   <script>
     $(document).ready(function(){
               var date_input=$('input[name="date"]'); //our date input has the name "date"
               var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";

@@ -4,26 +4,26 @@ function myFunction(arr)
 	
 	//events
 	var domains;
-	for(domains=0; domains < arr[0].events.length; domains++)
+	for(domains=0; domains < arr[0].workshops.length; domains++)
 	{
 		var outer = document.createElement("div");
 		if(domains != 0)
-		outer.style="display:none";
-		outer.className = "events-"+arr[0].events[domains].name;
+			outer.style="display:none";
+		outer.className = "events-"+arr[0].workshops[domains].name;
 		var i;
-		for(i=0; i<arr[0].events[domains].events.length; i++)
+		for(i=0; i<arr[0].workshops[domains].workshops.length; i++)
 		{
 			var column = document.createElement("div");
 			column.id = i;
-			$(column).data('name',arr[0].events[domains].events[i].name);
-			$(column).data('tabs',arr[0].events[domains].events[i].tabs);
+			$(column).data('name',arr[0].workshops[domains].workshops[i].name);
+			$(column).data('tabs',arr[0].workshops[domains].workshops[i].tabs);
 			column.className = "col-sm-3";
 			column.addEventListener("click", function() { displayDetails(this); });
 			var link = document.createElement("a");
 			link.href = "#";
 			link.className = "hi-icon fa fa-twitter";
 			var content = document.createElement("p");
-			content.textContent = arr[0].events[domains].events[i].name;
+			content.textContent = arr[0].workshops[domains].workshops[i].name;
 			
 			column.append(link);
 			column.append(content);
@@ -31,6 +31,9 @@ function myFunction(arr)
 		}
 		document.getElementsByClassName("events")[0].append(outer);
 	}
+
+	$('.events-loader').hide();
+	$('.main').show();
 	
 	
 	
@@ -62,7 +65,7 @@ function displayDetails(e)
 		$(outerDiv).append(tabHeading);
 		$(outerDiv).append(tabContent);		
 	}
-	$('#eventsDetails .modal-body')[0].append(outerDiv);
+	$('#eventsDetails .modal-body').html(outerDiv);
 	$('#eventsDetails').modal('show');
 }
 
