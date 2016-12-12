@@ -245,8 +245,8 @@ data-anchor="highlights">
                 <h2 class="title" style="color:  #581845 ">We at k! do <br/> many things</h2>
             </div>
             <style type="text/css" scoped="">
-                    .facts-title:before { border-color:  #581845;}
-                </style>
+                .facts-title:before { border-color:  #581845;}
+            </style>
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -522,29 +522,29 @@ data-anchor="gl">
     <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Guest Lectures</h1>
     <h2 class="description text-center" data-appear-animation="fadeInDown" data-appear-animation-delay="100"
     style="font-size:1.5em;">where you meet great people, in action</h2>
-<div class="success-carousel carousel-success  inverse"
-data-options='{"itemsCustom": [[0, 1]], "navigation": true, "pagination": false}' >
-<div class="stories" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
-    <div class="avatars">
-        <div class="avatars-carousel gls-avatar">
+    <div class="success-carousel carousel-success  inverse"
+    data-options='{"itemsCustom": [[0, 1]], "navigation": true, "pagination": false}' >
+    <div class="stories" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
+        <div class="avatars">
+            <div class="avatars-carousel gls-avatar">
+
+            </div>
+            <!-- .avatars-carousel -->
+        </div>
+        <!-- .avatars -->
+        <div class="content gls-content">
 
         </div>
-        <!-- .avatars-carousel -->
+        <!-- .content -->
+        <div class="clearfix"></div>
+        <div class="navigation">
+            <a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
+            <a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+            <div class="pager"></div>
+        </div>
+        <!-- .navigation -->
     </div>
-    <!-- .avatars -->
-    <div class="content gls-content">
-
-    </div>
-    <!-- .content -->
-    <div class="clearfix"></div>
-    <div class="navigation">
-        <a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
-        <a href="#" class="next"><i class="fa fa-angle-right"></i></a>
-        <div class="pager"></div>
-    </div>
-    <!-- .navigation -->
-</div>
-<!-- .stories -->
+    <!-- .stories -->
 </div>
 <!-- .success-carousel -->                  
 </div>
@@ -599,8 +599,8 @@ data-anchor="footer">
     <div class="row section-title-block">
         <h1 style="color:rgb(255, 247, 204);" class="col-sm-8 section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="500">Reach Us</h1>
         <br/>
-        <div class="col-sm-12 col-md-8">
-            
+        <div class="col-sm-12 col-md-8 anna-univ-location">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3888654732154!2d80.23317031390987!3d13.010890790830125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679e8ab07191%3A0xd034864eb4cef07a!2sAnna+University+-+College+Of+Engineering!5e0!3m2!1sen!2sus!4v1480493857269" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
         </div>
         <div class="col-sm-12 col-md-4">
             <p style="font-size:20px; color:#fff; font-style: normal">                         
@@ -1108,11 +1108,21 @@ data-anchor="footer">
                 $(".oldreg").hide();
                 $(".newreg").show();            
             });
-        </script>                               
-    </body>
-    </html>
-    <?php
-    checkRegistration();
-    checkLogin();
-    checkSA();
-    ?>
+        </script>  
+        <!--load iframe onload  -->
+        <script type="text/javascript">
+          $(window).load(function() {
+            var f = document.createElement('iframe');
+            f.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3888654732154!2d80.23317031390987!3d13.010890790830125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679e8ab07191%3A0xd034864eb4cef07a!2sAnna+University+-+College+Of+Engineering!5e0!3m2!1sen!2sus!4v1480493857269'; 
+            f.width = 600; 
+            f.height = 300;
+            $('.anna-univ-location').append(f);
+        });
+    </script>
+</body>
+</html>
+<?php
+checkRegistration();
+checkLogin();
+checkSA();
+?>
