@@ -85,16 +85,16 @@ require 'utils.php';
     </style>
     <style>
       table {
-         border-collapse: collapse !important;
-         width: 100% !important;
-     }
+       border-collapse: collapse !important;
+       width: 100% !important;
+   }
 
-     th, td {
-         padding: 8px !important;
-         text-align: left !important;
-         border-bottom: 1px solid #ddd !important;
-     }
- </style>
+   th, td {
+       padding: 8px !important;
+       text-align: left !important;
+       border-bottom: 1px solid #ddd !important;
+   }
+</style>
 </head>
 <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
     <div class="preloader">
@@ -182,12 +182,12 @@ require 'utils.php';
                     }
                     else if(!isset($_SESSION['user']['isSA']))
                     {
-                       ?>   
-                       <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
-                       <?php
-                   }
-                   if(isset($_SESSION['user']))
-                   {
+                     ?>   
+                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
+                     <?php
+                 }
+                 if(isset($_SESSION['user']))
+                 {
                     ?>   
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
                     <?php
@@ -424,18 +424,18 @@ data-anchor="initiatives">
 
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/neon.jpg" alt="" style="height:220px;opacity:0.2">
+                <img class="img-responsive" src="img/neon.jpg" alt="" style="height:250px;opacity:0.2">
                 <div class="overlay">
                     <h2 style="font-size: 30px">Neon Run</h2>
                     <p>
-                       <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
-                   </p>
-               </div>
-           </div>
-       </div>
-       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                     <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
+                 </p>
+             </div>
+         </div>
+     </div>
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
-            <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:220px;opacity: 0.2">
+            <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:250px;opacity: 0.2">
             <div class="overlay">
                 <h2 style="font-size: 30px">E for Educate</h2>
                 <p>
@@ -467,7 +467,7 @@ data-anchor="xceed">
   <h1 class="section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h1>
   <p style="color:#fff; font-size:16px; margin-left:30px; text-align:justify;font-style: normal">
     Distance must not be a barrier to spreading knowledge. Transcending geographical boundaries, Xceed serves as miniature version of Kurukshetra encompassing interesting events and workshops. Apart from bagging lots of prizes, the winners of Xceed get the enviable opportunity to be a part of the grand final stage at Kurukshetra. Quite simply, XCEED provides those beyond our state borders the chance to experience Kurukshetra first hand. Since 2008, XCEED has visited some of the top institutions in our country including IIM Ahmedabad, IIM Bangalore and IIT Kanpur among others.<br/>
-    <b><i><a style="color:#fff; font-size:20px;" href="#" data-toggle="modal" data-target=".xceed">Click here </a></i></b>for full schedule.<br/>
+    <b><i><a style="color:#fff; font-size:20px;" href="#" data-toggle="modal" data-target=".xceed-table">Click here </a></i></b>for full schedule.<br/>
 </p>
 <h2 style="color:rgb(255, 247, 204);" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Battle of Bots</h2>
 <p style="color:#fff; font-size:16px; margin-left:30px;font-style: normal">
@@ -649,83 +649,100 @@ data-anchor="footer">
 <!-- .section -->
 <!-- .section -->
 <!-- xceed battle of bots schedule -->
-<div class="modal fade xceed" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade xceed-table" role="dialog">
     <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
         <div class="modal-content">
-            <h2 style="text-align:center;margin-top:30px">Xceed Schedule</h2>
-            <center>
-                <table class="table table-hover table-bordered">
-                    <tr>
-                       <th>City</th>
-                       <th>Date</th>
-                       <th>Venue</th>
-                   </tr>
-                   <tr>
-                       <td>Tirupati</td>
-                       <td>7, 8 January’17</td>
-                       <td>IIT Tirupati</td>
-                   </tr>
-                   <tr>
-                       <td>Trichy</td>
-                       <td>7, 8 January’17</td>
-                       <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
-                   </tr>
-                   <tr>
-                       <td>Chennai</td>
-                       <td>21,22 January’17</td>
-                       <td>Easwari Engineering College</td>
-                   </tr>
-                   <tr>
-                       <td>Madurai</td>
-                       <td>21,22 January’17</td>
-                       <td>Thiagarajar College of Engineering</td>
-                   </tr>
-                   <tr>
-                       <td>Vellore</td>
-                       <td>21,22 January’17</td>
-                       <td>Vellore Institute of Technology</td>
-                   </tr>
-                   <tr>
-                       <td>Coimbatore</td>
-                       <td>17, 18 December’16</td>
-                       <td>Coimbatore Institute of Technology</td>
-                   </tr>
-                   <tr>
-                       <td>Pilani</td>
-                       <td>17, 18 October’16</td>
-                       <td>BITS Pilani</td>
-                   </tr>
-                   <tr>
-                       <td>Suratkal</td>
-                       <td>2,3 October’16</td>
-                       <td>NIT Suratkal</td>
-                   </tr>
-                   <tr>
-                       <td>Salem</td>
-                       <td>17, 18 September’16</td>
-                       <td>Annapoorana Engineering College</td>
-                   </tr>
-               </table>
-           </center>
-           <br/>
-       </div>
-   </div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title" style="text-align:center;margin-top:30px">Xceed Schedule</h2>
+            </div>
+            <div class="modal-body" style="color:black">
+                <center>
+                    <table class="table table-hover table-bordered">
+                        <tr>
+                         <th>City</th>
+                         <th>Date</th>
+                         <th>Venue</th>
+                     </tr>
+                     <tr>
+                         <td>Tirupati</td>
+                         <td>7, 8 January’17</td>
+                         <td>IIT Tirupati</td>
+                     </tr>
+                     <tr>
+                         <td>Trichy</td>
+                         <td>7, 8 January’17</td>
+                         <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
+                     </tr>
+                     <tr>
+                         <td>Chennai</td>
+                         <td>21,22 January’17</td>
+                         <td>Easwari Engineering College</td>
+                     </tr>
+                     <tr>
+                         <td>Madurai</td>
+                         <td>21,22 January’17</td>
+                         <td>Thiagarajar College of Engineering</td>
+                     </tr>
+                     <tr>
+                         <td>Vellore</td>
+                         <td>21,22 January’17</td>
+                         <td>Vellore Institute of Technology</td>
+                     </tr>
+                     <tr>
+                         <td>Coimbatore</td>
+                         <td>17, 18 December’16</td>
+                         <td>Coimbatore Institute of Technology</td>
+                     </tr>
+                     <tr>
+                         <td>Pilani</td>
+                         <td>17, 18 October’16</td>
+                         <td>BITS Pilani</td>
+                     </tr>
+                     <tr>
+                         <td>Suratkal</td>
+                         <td>2,3 October’16</td>
+                         <td>NIT Suratkal</td>
+                     </tr>
+                     <tr>
+                         <td>Salem</td>
+                         <td>17, 18 September’16</td>
+                         <td>Annapoorana Engineering College</td>
+                     </tr>
+                 </table>
+             </center>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+
+</div>
 </div>
 <!-- sponsors -->
-<div class="modal fade sponsors" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade sponsors" role="dialog">
     <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
         <div class="modal-content">
-            <h2 style="text-align:center;margin-top:30px">Sponsors</h2>
-            <hr/>
-            <center>
-                <p> Will be updated soon</p>
-            </center>
-            <br/>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title" style="text-align:center;margin-top:30px">Sponsors</h2>
+            </div>
+            <div class="modal-body" style="color:black">
+                Will be updated soon
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
+
     </div>
 </div>
 <!-- Login/ Registration -->
-<div class="modal fade login" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade login" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <ul class="nav nav-tabs nav-justified">
@@ -809,7 +826,7 @@ data-anchor="footer">
     </div>
 </div>
 <!-- Register as Student Ambassdor -->
-<div class="modal fade registersa" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade registersa" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <h2 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h2>
@@ -937,119 +954,140 @@ data-anchor="footer">
         </div>
     </div>
 </div>
+
+
+
+<!-- initiatives modal area -->
 <!--neon run-->
-<div class="modal fade neonrun" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade neonrun" role="dialog">
     <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
         <div class="modal-content">
-            <h2 style="text-align:center;margin-top:30px">Neon Run</h2>
-            <hr/>
-            <blockquote>"Education is the movement from darkness to light."
-             -Allan Bloom</blockquote>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title" style="text-align:center;margin-top:30px">Neon Run</h2>
+            </div>
+            <div class="modal-body" style="color:black">
+                <blockquote>"Education is the movement from darkness to light."
+                   -Allan Bloom
+               </blockquote>
 
-             <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
-                 Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
-                 Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
-                 Come join us and help us light up the world.</p>
-                 <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
-                 <br/><br/>
-             </div>
-         </div>
-     </div>
+               <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
+                   Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
+                   Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
+                   Come join us and help us light up the world.
+               </p>
+           </div>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
 
-     <!--e for educate-->
-     <div class="modal fade eforeducate" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+</div>
+</div>
 
-                <h2 style="text-align:center;margin-top:30px">E for Educate</h2>
-                <hr/>
-                <p style="padding-left:10px;font-style: normal;">E-for-Educate, an e-waste drive with a charitable twist is being undertaken by CEG Tech Forum - the technical hub of the College of Engineering, Guindy, Anna University. CTF is the pillar of Kurukshetra 2016, which is an international techno-management fest under the patronage of UNESCO. What do we plan to do? Seen Wall-E? If you have, you know what we plan to do. And if you haven't, well, our aim is to spread awareness about the indiscriminate disposal and dumping of e-waste.<br/><br/>
-                    Didn't many of us toss our Samsung Galaxy Note 3 when Note 4 came out? 'Fess up. You did :P With technology advancing by lightyears in nanoseconds, don't we tend to change our gadgets every year? Switching from CRT to LCD and from LED to 3D and 3D to 4K. Where do you think all our discarded gizmos go? In the dumpyards, overflowing landfills and lakesides. You must have seen the humongous pile of garbage that was unearthed during the Chennai floods. All our devil-may-care attitude has led to accumulation of e-waste of unmanageable proportions. We, comrades, have created a gigantic metal monster and I'm not talking about Iron Man.<br/><br/>
-                    That's one half of our initiative. The other side tackles the alarming rate of school dropouts.<br/><br/>
-                    We're considered one of the smartest people in the world but how much do we actually care about educating our kids and making sure that they stay through? About 1.4 million children in India in the age group of 6-11 drop out. This alarming fact is based on the UNESCO's Education for All(EFA) Global Monitoring Report on out of school populations.<br/><br/>
-                    It is time to act.<br/><br/>
-                    YOU can help. Yes, You sitting there and reading this. Don't just read it, forget it and walk away. This is your earth and your life as much as the other seven billion people on the planet. Taking baby steps to disposing our e-waste responsible is a move towards a greener, safer environment.<br/><br/>
-                    The funds raised through the initiative would be used to support schooling for underprivileged children.</p>
-                    <div align="right" style="padding-right:50px;" ><button type="button" class="btn btn-success">SUBSCRIBE</button></div>
-                    <br/><br/>
-                </div>
+<!--e for educate-->
+<div class="modal fade eforeducate" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title" style="text-align:center;margin-top:30px">E for Educate</h2>
+            </div>
+            <div class="modal-body" style="color:black">
+              <p style="padding-left:10px;font-style: normal;">E-for-Educate, an e-waste drive with a charitable twist is being undertaken by CEG Tech Forum - the technical hub of the College of Engineering, Guindy, Anna University. CTF is the pillar of Kurukshetra 2016, which is an international techno-management fest under the patronage of UNESCO. What do we plan to do? Seen Wall-E? If you have, you know what we plan to do. And if you haven't, well, our aim is to spread awareness about the indiscriminate disposal and dumping of e-waste.<br/><br/>
+                Didn't many of us toss our Samsung Galaxy Note 3 when Note 4 came out? 'Fess up. You did :P With technology advancing by lightyears in nanoseconds, don't we tend to change our gadgets every year? Switching from CRT to LCD and from LED to 3D and 3D to 4K. Where do you think all our discarded gizmos go? In the dumpyards, overflowing landfills and lakesides. You must have seen the humongous pile of garbage that was unearthed during the Chennai floods. All our devil-may-care attitude has led to accumulation of e-waste of unmanageable proportions. We, comrades, have created a gigantic metal monster and I'm not talking about Iron Man.<br/><br/>
+                That's one half of our initiative. The other side tackles the alarming rate of school dropouts.<br/><br/>
+                We're considered one of the smartest people in the world but how much do we actually care about educating our kids and making sure that they stay through? About 1.4 million children in India in the age group of 6-11 drop out. This alarming fact is based on the UNESCO's Education for All(EFA) Global Monitoring Report on out of school populations.<br/><br/>
+                It is time to act.<br/><br/>
+                YOU can help. Yes, You sitting there and reading this. Don't just read it, forget it and walk away. This is your earth and your life as much as the other seven billion people on the planet. Taking baby steps to disposing our e-waste responsible is a move towards a greener, safer environment.<br/><br/>
+                The funds raised through the initiative would be used to support schooling for underprivileged children.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
-        <!--e for educate-->
+
     </div>
-    <!-- .main -->
-    <!-- random color -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/index1.js"></script>
+</div>
 
-    <!-- hospitality cms -->
-    <script>
-        var myArr = new Array();
-        var xmlhttp = new XMLHttpRequest();
-        var url = "http://enct29fa5ae.kurukshetra.org.in/hospitalities.json";
+<!--e for educate-->
+<!-- .main -->
+<!-- random color -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/index1.js"></script>
 
-        xmlhttp.onreadystatechange = function() {
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                myArr.push(JSON.parse(xmlhttp.responseText));
-                $('.hospi-loader').hide();
-                myFunction(myArr);
-            }
-        };
-        xmlhttp.open("GET", url, true);
-        xmlhttp.setRequestHeader('origin', 'http');
-        xmlhttp.send();
+<!-- hospitality cms -->
+<script>
+    var myArr = new Array();
+    var xmlhttp = new XMLHttpRequest();
+    var url = "http://enct29fa5ae.kurukshetra.org.in/hospitalities.json";
 
-    </script>
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            myArr.push(JSON.parse(xmlhttp.responseText));
+            $('.hospi-loader').hide();
+            myFunction(myArr);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.setRequestHeader('origin', 'http');
+    xmlhttp.send();
 
-    <!-- updates cms -->
-    <script>
-        var updatesArray = new Array();
-        var updates = new XMLHttpRequest();
-        var updatesUrl = "http://enct29fa5ae.kurukshetra.org.in/updates.json";
+</script>
 
-        updates.onreadystatechange = function() {
-            if (updates.readyState == 4 && updates.status == 200) {
-                updatesArray.push(JSON.parse(updates.responseText));
-                typeUpdates(updatesArray);
-            }
-        };
-        updates.open("GET", updatesUrl, true);
-        updates.setRequestHeader('origin', 'http');
-        updates.send();
+<!-- updates cms -->
+<script>
+    var updatesArray = new Array();
+    var updates = new XMLHttpRequest();
+    var updatesUrl = "http://enct29fa5ae.kurukshetra.org.in/updates.json";
 
-    </script>
+    updates.onreadystatechange = function() {
+        if (updates.readyState == 4 && updates.status == 200) {
+            updatesArray.push(JSON.parse(updates.responseText));
+            typeUpdates(updatesArray);
+        }
+    };
+    updates.open("GET", updatesUrl, true);
+    updates.setRequestHeader('origin', 'http');
+    updates.send();
 
-    <!-- gls cms -->
-    <script>
-        var glsArray = new Array();
-        var gls = new XMLHttpRequest();
-        var glsUrl = "http://enct29fa5ae.kurukshetra.org.in/gls.json";
+</script>
 
-        gls.onreadystatechange = function() {
-            if (gls.readyState == 4 && gls.status == 200) {
-                glsArray.push(JSON.parse(gls.responseText));
-                displayGls(glsArray);
-            }
-        };
-        gls.open("GET", glsUrl, true);
-        gls.setRequestHeader('origin', 'http');
-        gls.send();
+<!-- gls cms -->
+<script>
+    var glsArray = new Array();
+    var gls = new XMLHttpRequest();
+    var glsUrl = "http://enct29fa5ae.kurukshetra.org.in/gls.json";
 
-    </script>
+    gls.onreadystatechange = function() {
+        if (gls.readyState == 4 && gls.status == 200) {
+            glsArray.push(JSON.parse(gls.responseText));
+            displayGls(glsArray);
+        }
+    };
+    gls.open("GET", glsUrl, true);
+    gls.setRequestHeader('origin', 'http');
+    gls.send();
+
+</script>
 
 
 
-    <script type="text/javascript" src="js/randomColorMaster.js"></script>
-    <script>
-        $(document).ready(function randomBackground(){
-           num2 = 0.8;
-           var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
-           $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
-           setTimeout(randomBackground, 5000);
-       });
-   </script>
-   <script>
+<script type="text/javascript" src="js/randomColorMaster.js"></script>
+<script>
+    $(document).ready(function randomBackground(){
+     num2 = 0.8;
+     var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
+     $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
+     setTimeout(randomBackground, 5000);
+ });
+</script>
+<script>
     $(document).ready(function(){
               var date_input=$('input[name="date"]'); //our date input has the name "date"
               var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
