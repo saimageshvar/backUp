@@ -23,6 +23,10 @@ require 'utils.php';
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css'/>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Proza+Libre"/>
 
+    <!-- select2 -->
+    <link rel='stylesheet' href="css/select2-bootstrap.min.css">
+    <link rel='stylesheet' href="css/select2.min.css">
+
     <!-- h1 font -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
@@ -1115,6 +1119,8 @@ data-anchor="footer">
     <script type='text/javascript' src='js/register.js'></script>
     <!-- typed js -->
     <script type='text/javascript' src='js/typed.min.js'></script>
+    <!-- select2 -->
+    <script type='text/javascript' src='js/select2.min.js'></script>
 
 
     <!-- form data -->
