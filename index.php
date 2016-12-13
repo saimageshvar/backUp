@@ -113,8 +113,8 @@ require 'utils.php';
         data-background-image=""
         data-background="rgba(30,45,58,0.80)"
         data-shadow=""
-        data-nav-color="#ffffff"
-        data-nav-color-text="#d73e4d"
+        data-nav-color="#FFC300"
+        data-nav-color-text=" #212f3c "
         data-color="#ffffff"
         data-title-color="#ffffff"
         data-title="Home"
@@ -239,8 +239,8 @@ require 'utils.php';
 data-background-image=""
 data-background="rgba(94,142,189,0.80)"
 data-shadow=""
-data-nav-color="#d73e4d"
-data-nav-color-text="#ffffff"
+data-nav-color="#FFC300"
+data-nav-color-text=" #212f3c "
 data-color=""
 data-title-color=""
 data-title="Highlights"
@@ -277,7 +277,7 @@ data-anchor="highlights">
             <div id="pg-fact-2" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#375099;font-family:'Abril Fatface', cursive;">1M</div>
-                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Worth Prizes</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Worth<br/>Prizes</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-2 .skill-wrap.full-skill:before { border-color: #375099;}
@@ -289,13 +289,13 @@ data-anchor="highlights">
         <div class="facts-list">
             <div id="pg-fact-3" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
-                    <div class="skill-percent"  style="color:#d6973d;font-family:'Abril Fatface', cursive;">50K+</div>
-                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Likes</div>
+                    <div class="skill-percent"  style="color:#d6973d;font-family:'Abril Fatface', cursive;">6+</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Guest<br/>Lectures</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-3 .skill-wrap.full-skill:before { border-color: #d6973d;}
                 </style>
-                <i  style="color:#d6973d;" class="fa fa-thumbs-up"></i>
+                <i  style="color:#d6973d;" class="fa fa-user"></i>
             </div>
             <!-- .fact -->
             <div id="pg-fact-4" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
@@ -323,8 +323,8 @@ data-anchor="highlights">
 data-background-image=""
 data-background="rgba(255,247,204,0.80)"
 data-shadow=""
-data-nav-color="#ffffff"
-data-nav-color-text="#d73e4d"
+data-nav-color="#FFC300"
+data-nav-color-text=" #212f3c "
 data-color="#fff"
 data-title-color="#fff"
 data-title="Events & Workshops"
@@ -421,8 +421,8 @@ data-anchor="eventsAndWorkshops">
 data-background-image=""
 data-background="rgba(255,247,204,0.80)"
 data-shadow=""
-data-nav-color="#d73e4d"
-data-nav-color-text="#ffffff"
+data-nav-color="#FFC300"
+data-nav-color-text=" #212f3c "
 data-color="#fff"
 data-title-color="#fff"
 data-title="Initiatives"
@@ -466,8 +466,8 @@ data-anchor="initiatives">
 data-background-image=""
 data-background="rgba(10, 79, 67, 0.870588)"
 data-shadow=""
-data-nav-color="#ffffff"
-data-nav-color-text="#d73e4d"
+data-nav-color="#FFC300"
+data-nav-color-text=" #212f3c "
 data-color="#768088"
 data-title-color="#fff7cc"
 data-title="Xceed"
@@ -499,8 +499,8 @@ data-anchor="xceed">
 data-background-image=""
 data-background="rgba(10, 79, 67, 0.870588)"
 data-shadow=""
-data-nav-color="#d73e4d"
-data-nav-color-text="#ffffff"
+data-nav-color="#FFC300"
+data-nav-color-text=" #212f3c "
 data-color="#768088"
 data-title-color="#fff7cc"
 data-title="hospitality"
@@ -524,8 +524,8 @@ data-anchor="hospitality">
 data-background-image=""
 data-background="rgba(35,184,158,0.80)"
 data-shadow=""
-data-nav-color="#ffffff"
-data-nav-color-text="#d73e4d"
+data-nav-color="#FFC300"
+data-nav-color-text=" #212f3c "
 data-color="#ffffff"
 data-title-color="#fff7cc"
 data-title="Guest Lectures"
@@ -571,8 +571,8 @@ data-anchor="gl">
 data-background-image=""
 data-background="rgba(35,184,158,0.80)"
 data-shadow=""
-data-nav-color="#d73e4d"
-data-nav-color-text="#ffffff"
+data-nav-color="#FFC300"
+data-nav-color-text=" #212f3c "
 data-color="#ffffff"
 data-title-color="#fff7cc"
 data-title="Theme"
@@ -603,8 +603,8 @@ data-anchor="theme">
 data-background-image=""
 data-background=""
 data-shadow=""
-data-nav-color="#ffffff"
-data-nav-color-text="#d73e4d"
+data-nav-color="#FFC300"
+data-nav-color-text=" #212f3c "
 data-color=""
 data-title-color=""
 data-title="Footer"
