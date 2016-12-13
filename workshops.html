@@ -117,6 +117,8 @@
 
 
 		<div class="section-content ">
+			<div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
+
 			<div class="container section-wrap"
 			style="">
 			<div class="filter-box works-box">
@@ -230,25 +232,38 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
 <script type='text/javascript' src='assets/js/isotope.pkgd.min68b3.js?ver=1'></script>
 <script type='text/javascript' src='assets/js/main68b3.js'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-<script>
-	WebFont.load({
-		google: {
-			families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
-		}
-	});
-</script>
-<noscript>
-	<!-- h1 font -->
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+<!-- particles -->
+<script type="text/javascript" src="js/particleground.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+            // initialize particles
+            $('.particle').particleground({
+            	dotColor: '#ffffff',
+            	density: 20000,
+            	proximity: 100
+            });
+        });
+    </script>
 
-	<!-- h2 font -->
-	<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">     
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    	WebFont.load({
+    		google: {
+    			families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
+    		}
+    	});
+    </script>
+    <noscript>
+    	<!-- h1 font -->
+    	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
-	<!-- p font -->
-	<link href="http://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+    	<!-- h2 font -->
+    	<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">     
 
-</noscript>
+    	<!-- p font -->
+    	<link href="http://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+
+    </noscript>
 
 </body>
 </html>    
