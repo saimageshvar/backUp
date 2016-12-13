@@ -61,15 +61,18 @@ function typeUpdates(arr)
 	{
 		updates[i] = arr[0][i].title;
 	}
-	$(".update").typed({
-		strings: updates,
-		typeSpeed: 0,
-		loop: true,
-		showCursor: false,
-		typeSpeed: 10,
-		backDelay: 1000,
-		backSpeed: 10
+	$(document).ready(function() {
+		$(".update").typed({
+			strings: updates,
+			typeSpeed: 0,
+			loop: true,
+			showCursor: false,
+			typeSpeed: 10,
+			backDelay: 1000,
+			backSpeed: 10
+		});
 	});
+	
 }
 
 function displayGls(arr)
@@ -111,65 +114,65 @@ function displayGls(arr)
 
 	var success = $('.success-carousel');
 
-		success.each(function(){
-			var $this   = $(this),
-					avatars = $this.find('.avatars-carousel'),
-					content = $this.find('.content'),
-					logo    = $this.find('.logo');
+	success.each(function(){
+		var $this   = $(this),
+		avatars = $this.find('.avatars-carousel'),
+		content = $this.find('.content'),
+		logo    = $this.find('.logo');
 
-			avatars.carouFredSel({
-				synchronise : ['.success-carousel .content', false],
-				auto        : false,
-				items       : {
-					visible : 1
+		avatars.carouFredSel({
+			synchronise : ['.success-carousel .content', false],
+			auto        : false,
+			items       : {
+				visible : 1
+			},
+			scroll      : {
+				items    : 1,
+				fx       : 'fade',
+				duration : 0,
+				onBefore : function(){
+					avatars.find('.avatar').removeClass('flipInX').addClass('flipOutX');
+					logo.removeClass('selected');
 				},
-				scroll      : {
-					items    : 1,
-					fx       : 'fade',
-					duration : 0,
-					onBefore : function(){
-						avatars.find('.avatar').removeClass('flipInX').addClass('flipOutX');
-						logo.removeClass('selected');
-					},
-					onAfter   : function(){
-						var current = avatars.triggerHandler('currentVisible'),
-								id = current.attr('id');
+				onAfter   : function(){
+					var current = avatars.triggerHandler('currentVisible'),
+					id = current.attr('id');
 
-						current.removeClass('flipOutX').addClass('flipInX');
-						$this.find('.logos a[href="#' + id + '"]').addClass('selected');
-					}
-				},
-				next        : $this.find('.navigation .next'),
-				prev        : $this.find('.navigation .prev'),
-				pagination  : $this.find('.navigation .pager')
-			}).addClass('loaded');
+					current.removeClass('flipOutX').addClass('flipInX');
+					$this.find('.logos a[href="#' + id + '"]').addClass('selected');
+				}
+			},
+			next        : $this.find('.navigation .next'),
+			prev        : $this.find('.navigation .prev'),
+			pagination  : $this.find('.navigation .pager')
+		}).addClass('loaded');
 
-			content.carouFredSel({
-						responsive : true,
-						auto       : false,
-						width      : '100%',
-						items: {
-							visible  : 1
-						}
-					})
-					.addClass('loaded')
-					.touchwipe({
-						wipeLeft: function(){
-							avatars.trigger('next', 1);
-						},
-						wipeRight: function(){
-							avatars.trigger('prev', 1);
-						},
-						preventDefaultEvents: false
-					});
-
-			logo.click(function(){
-				avatars.trigger('slideTo', '#' + this.href.split('#').pop() );
-				logo.removeClass('selected');
-				$(this).addClass('selected');
-				return false;
-			});
+		content.carouFredSel({
+			responsive : true,
+			auto       : false,
+			width      : '100%',
+			items: {
+				visible  : 1
+			}
+		})
+		.addClass('loaded')
+		.touchwipe({
+			wipeLeft: function(){
+				avatars.trigger('next', 1);
+			},
+			wipeRight: function(){
+				avatars.trigger('prev', 1);
+			},
+			preventDefaultEvents: false
 		});
+
+		logo.click(function(){
+			avatars.trigger('slideTo', '#' + this.href.split('#').pop() );
+			logo.removeClass('selected');
+			$(this).addClass('selected');
+			return false;
+		});
+	});
 	
 	$('.stories').show();
 
