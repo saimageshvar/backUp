@@ -69,7 +69,7 @@
 	</div>
 	<span class="cssload-loader workshops-loader"><span class="cssload-loader-inner"></span></span>
 
-	<div class="main" data-nav-position="left" style="display: none">			
+	<div class="main" data-nav-position="left" style="">			
 		<section class="section  random"
 		data-background-image=""
 		data-background="rgba(30,45,58,0.80)"
@@ -78,8 +78,8 @@
 		data-nav-color-text="#1e2d3a"
 		data-color="#ffffff"
 		data-title-color="#ffffff"
-		data-title="Home"
-		data-anchor="home-section">
+		data-title="Workshops"
+		data-anchor="workshops">
 
 
 
@@ -195,8 +195,8 @@
 <script type="text/javascript" src="js/randomColorMaster.js"></script>
 <script>
 	$(document).ready(function randomBackground(){
-		num2 = 0.8;
-		var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
+		num2 = 0.3;
+		var num1 = randomColor({luminosity: 'dark', hue: 'random', format: 'rgbArray'});
 		$(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
 		setTimeout(randomBackground, 5000);
 	});

@@ -2117,8 +2117,6 @@
 				$parent_content.eq(0).before($this);
 		});
 
-		// Google map init
-		initialize();
 
 		// Career tab content init
 		var $career_tabs_container = $('.numbered-list-description');

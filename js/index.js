@@ -33,7 +33,7 @@ function myFunction(arr)
 	}
 
 	$('.events-loader').hide();
-	$('.main').show();
+	//$('.main').show();
 	
 	
 	

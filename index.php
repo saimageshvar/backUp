@@ -1124,8 +1124,8 @@ data-anchor="footer">
 <script type="text/javascript" src="js/randomColorMaster.js"></script>
 <script>
     $(document).ready(function randomBackground(){
-       num2 = 0.8;
-       var num1 = randomColor({luminosity: 'dark', hue: 'monochrome', format: 'rgbArray'});
+       num2 = 0.3;
+       var num1 = randomColor({luminosity: 'dark', hue: 'random', format: 'rgbArray'});
        $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
        setTimeout(randomBackground, 5000);
    });
