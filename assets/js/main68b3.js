@@ -1928,11 +1928,12 @@
 			carousels();
 			blogGallery();
 			carouselWork();
-			successCarousels();
+			//successCarousels();
 			isotopFilter();
 			promo();
 			numberedlist();
 		});
+
 
 		//Scroll Up
 		$('.scroll-to-top').click(function(e){
