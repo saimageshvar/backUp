@@ -1054,7 +1054,7 @@ data-anchor="footer">
         }
     };
     xmlhttp.open("GET", url, true);
-    xmlhttp.setRequestHeader('origin', 'http');
+    //xmlhttp.setRequestHeader('origin', 'http');
     xmlhttp.send();
 
 </script>
@@ -1072,7 +1072,7 @@ data-anchor="footer">
         }
     };
     updates.open("GET", updatesUrl, true);
-    updates.setRequestHeader('origin', 'http');
+    //updates.setRequestHeader('origin', 'http');
     updates.send();
 
 </script>
@@ -1090,7 +1090,7 @@ data-anchor="footer">
         }
     };
     gls.open("GET", glsUrl, true);
-    gls.setRequestHeader('origin', 'http');
+    //gls.setRequestHeader('origin', 'http');
     gls.send();
 
 </script>
