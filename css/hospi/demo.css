@@ -63,7 +63,6 @@ a:hover, a:focus {
 
 p {
 	padding: 0.1em;
-	font-style:italic;
 	font-size:16px;
 	overflow-y:auto;
 	max-height:320px;

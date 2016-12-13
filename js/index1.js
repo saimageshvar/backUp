@@ -108,8 +108,6 @@ function displayGls(arr)
 		$(contentDiv).append(blockQuote);
 		$('.gls-content').append(contentDiv);
 	}
-	$('.caroufredsel_wrapper').css({"overflow" : "visible"});
-
 
 	var success = $('.success-carousel');
 
