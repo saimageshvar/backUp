@@ -21,20 +21,11 @@ require 'utils.php';
     <link rel='stylesheet' href="css/loader.css">
     <link rel='stylesheet' href="css/initiatives.css">
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css'/>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Proza+Libre"/>
 
     <!-- select2 -->
     <link rel='stylesheet' href="css/select2-bootstrap.min.css">
     <link rel='stylesheet' href="css/select2.min.css">
 
-    <!-- h1 font -->
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-
-    <!-- h2 font -->
-    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Reem+Kufi" rel="stylesheet">  
-
-    <!-- p font -->
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
 
 
     <!-- event and workshop -->
@@ -1089,6 +1080,30 @@ data-anchor="footer">
     gls.send();
 
 </script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+<script>
+ WebFont.load({
+    google: {
+        families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
+    }
+});
+</script>
+<noscript>
+    <!-- h1 font -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+    <!-- h2 font -->
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">     
+
+    <!-- p font -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+
+</noscript>
+
+
 
 
 
