@@ -10,7 +10,7 @@ function checkRegistration()
 			?>
 			<script>
 				BootstrapDialog.show({
-					title: 'Dai Loosu',
+					title: 'Oops!',
 					message: 'Registration Failed',
 					type: BootstrapDialog.TYPE_DANGER,
 					closable: true,
@@ -47,7 +47,7 @@ function checkLogin()
 			?>
 			<script>
 				BootstrapDialog.show({
-					title: 'Dai Loosu',
+					title: 'Oops',
 					message: 'Login Failed',
 					type: BootstrapDialog.TYPE_DANGER,
 					closable: true,
