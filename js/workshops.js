@@ -32,7 +32,7 @@ function myFunction(arr)
 		document.getElementsByClassName("events")[0].append(outer);
 	}
 
-	$('.events-loader').hide();
+	$('.workshops-loader').hide();
 	$('.main').show();
 	
 	
