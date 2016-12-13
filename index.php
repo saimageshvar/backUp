@@ -110,7 +110,7 @@ require 'utils.php';
 
         <!--h1 style="position:fixed;right:1em;">sadds</h1-->
         <section class="section  random"
-        data-background-image="img/ceg.gif"
+        data-background-image=""
         data-background="rgba(30,45,58,0.80)"
         data-shadow=""
         data-nav-color="#ffffff"
@@ -207,7 +207,7 @@ require 'utils.php';
 </header>
 <!-- .site-header -->
 <div class="section-content">
-    <div class="asd" id="home-particles-js" style="width: 100%;height: 100%;position: absolute;"></div>
+    <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
 
     <div class="container section-wrap"
     style="">
@@ -236,7 +236,7 @@ require 'utils.php';
 <!-- .section -->
 <!-- facts abt k! -->
 <section class="section  random"
-data-background-image="img/highlights.gif"
+data-background-image=""
 data-background="rgba(94,142,189,0.80)"
 data-shadow=""
 data-nav-color="#d73e4d"
@@ -246,7 +246,7 @@ data-title-color=""
 data-title="Highlights"
 data-anchor="highlights">
 <div class="section-content ">
-    <div class="asd" id="highlights-particles-js" style="width: 100%;height: 100%;position: absolute;"></div>
+    <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
     <div class="container section-wrap"
     style="">
     <div class="facts no-appear  inverse">
@@ -320,7 +320,7 @@ data-anchor="highlights">
 <!-- .section -->
 <!-- events and workshops -->
 <section class="section  random"
-data-background-image="img/events.gif"
+data-background-image=""
 data-background="rgba(255,247,204,0.80)"
 data-shadow=""
 data-nav-color="#ffffff"
@@ -330,7 +330,7 @@ data-title-color="#fff"
 data-title="Events & Workshops"
 data-anchor="eventsAndWorkshops">
 <div class="section-content ">
-    <div class="asd" id="events-particles-js" style="width: 100%;height: 100%;position: absolute;"></div>
+    <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
     <div class="container section-wrap"
     style="">
     <div class="filter-box works-box">
@@ -418,7 +418,7 @@ data-anchor="eventsAndWorkshops">
 <!-- .section -->
 <!-- initiatives -->
 <section class="section  random"
-data-background-image="img/init.gif"
+data-background-image=""
 data-background="rgba(255,247,204,0.80)"
 data-shadow=""
 data-nav-color="#d73e4d"
@@ -428,7 +428,7 @@ data-title-color="#fff"
 data-title="Initiatives"
 data-anchor="initiatives">
 <div class="section-content ">
-    <div class="asd" id="initiatives-particles-js" style="width: 100%;height: 100%;position: absolute;"></div>
+    <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
     <div class="container section-wrap"
     style="">
     <div class="col-md-12  text-center">
@@ -463,7 +463,7 @@ data-anchor="initiatives">
 <!-- .section -->
 <!--Xceed-->
 <section class="section  random"
-data-background-image="img/xceed.gif"
+data-background-image=""
 data-background="rgba(10, 79, 67, 0.870588)"
 data-shadow=""
 data-nav-color="#ffffff"
@@ -473,7 +473,7 @@ data-title-color="#fff7cc"
 data-title="Xceed"
 data-anchor="xceed">
 <div class="section-content ">
-    <div class="asd" id="xceed-particles-js" style="width: 100%;height: 100%;position: absolute;"></div>
+    <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
     <div class="container section-wrap"
     style="">
     <!--h3 class="section-title"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h3-->
@@ -496,7 +496,7 @@ data-anchor="xceed">
 <!-- .section -->
 <!--Hospitality-->
 <section class="section  random"
-data-background-image="img/hospi.gif"
+data-background-image=""
 data-background="rgba(10, 79, 67, 0.870588)"
 data-shadow=""
 data-nav-color="#d73e4d"
@@ -506,7 +506,7 @@ data-title-color="#fff7cc"
 data-title="hospitality"
 data-anchor="hospitality">
 <div class="section-content ">
-    <div class="asd" id="hospi-particles-js" style="width: 100%;height: 100%;position: absolute;"></div>
+    <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
     <div class="container section-wrap"
     style="">
     <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Hospitality</h1>
@@ -521,7 +521,7 @@ data-anchor="hospitality">
 <!-- .section -->
 <!-- gl -->
 <section class="section  random"
-data-background-image="img/gl.gif"
+data-background-image=""
 data-background="rgba(35,184,158,0.80)"
 data-shadow=""
 data-nav-color="#ffffff"
@@ -531,7 +531,7 @@ data-title-color="#fff7cc"
 data-title="Guest Lectures"
 data-anchor="gl">
 <div class="section-content ">
-    <div class="asd" id="gl-particles-js" style="width: 100%;height: 100%;position: absolute;"></div>
+    <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
     <div class="container section-wrap"
     style="">
     <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Guest Lectures</h1>
@@ -568,7 +568,7 @@ data-anchor="gl">
 </section>
 <!-- theme -->
 <section class="section  random"
-data-background-image="img/gl.gif"
+data-background-image=""
 data-background="rgba(35,184,158,0.80)"
 data-shadow=""
 data-nav-color="#d73e4d"
@@ -578,7 +578,7 @@ data-title-color="#fff7cc"
 data-title="Theme"
 data-anchor="theme">
 <div class="section-content ">
-    <div class="asd" id="theme-particles-js" style="width: 100%;height: 100%;position: absolute;"></div>
+    <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
     <div class="container section-wrap"
     style="">
     <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Our Theme</h1>
@@ -600,7 +600,7 @@ data-anchor="theme">
 </section>
 <!-- footer and contact -->
 <section class="section  random"
-data-background-image="img/footer.gif"
+data-background-image=""
 data-background=""
 data-shadow=""
 data-nav-color="#ffffff"
@@ -610,7 +610,7 @@ data-title-color=""
 data-title="Footer"
 data-anchor="footer">
 <div class="section-content ">
-    <div class="asd" id="footer-particles-js" style="width: 100%;height: 100%;position: absolute;"></div>
+    <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
     <div class="container section-wrap"
     style="">
 
@@ -1038,10 +1038,7 @@ data-anchor="footer">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/index1.js"></script>
-<script type="text/javascript" src="js/particle.min.js"></script>
 <script type="text/javascript" src="js/particleground.min.js"></script>
-
-<script type="text/javascript" src="js/app.js"></script>
 
 <!-- hospitality cms -->
 <script>
@@ -1169,10 +1166,15 @@ data-anchor="footer">
     <script src="js/list.js"></script>
     <script type='text/javascript' src='assets/js/main68b3.js'></script>
     <script>
-            //populate form
-            $(document).ready(function() {
-                populateForm();
-            });
+        $(document).ready(function() {
+            // initialize particles
+            $('.particle').particleground({
+              dotColor: '#ffffff',
+             });
+
+            // populate forms
+            populateForm();
+        });
             //switching events and workshops
             $( ".workshops-menu" ).click(function() {
                 $(".events-details").hide();
