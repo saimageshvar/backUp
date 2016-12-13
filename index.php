@@ -313,6 +313,11 @@ data-anchor="highlights">
         <!-- .facts-list -->
     </div>
     <!-- .facts -->
+    <div class="animation text-center"
+    data-appear-animation="bounceInUp"
+    data-appear-animation-delay="100">
+    <a href="#eventsAndWorkshops"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+</div>
 </div>
 </div>
 <!-- .section-content -->
@@ -412,6 +417,11 @@ data-anchor="eventsAndWorkshops">
         </div>
     </div>
 </div>
+<div class="animation text-center"
+data-appear-animation="bounceInUp"
+data-appear-animation-delay="100">
+<a href="#initiatives"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+</div>
 </div>
 <!-- .section-content -->
 </section>
@@ -458,6 +468,11 @@ data-anchor="initiatives">
     </div>
 </div>
 </div>
+<div class="animation text-center"
+data-appear-animation="bounceInUp"
+data-appear-animation-delay="100">
+<a href="#xceed"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+</div>
 <!-- .section-content -->
 </section>
 <!-- .section -->
@@ -494,6 +509,11 @@ data-anchor="xceed">
 
 </div>
 <!-- .section-content -->
+<div class="animation text-center"
+data-appear-animation="bounceInUp"
+data-appear-animation-delay="100">
+<a href="#hospitality"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+</div>
 </section>
 <!-- .section -->
 <!--Hospitality-->
@@ -520,6 +540,11 @@ data-anchor="hospitality">
 <span class="cssload-loader hospi-loader"><span class="cssload-loader-inner"></span></span>
 </div>
 <!-- .section-content -->
+<div class="animation text-center"
+data-appear-animation="bounceInUp"
+data-appear-animation-delay="100">
+<a href="#gl"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+</div>
 </section>
 <!-- .section -->
 <!-- gl -->
@@ -568,6 +593,11 @@ data-anchor="gl">
 </div>
 </div>
 <!-- .section-content -->
+<div class="animation text-center"
+data-appear-animation="bounceInUp"
+data-appear-animation-delay="100">
+<a href="#theme"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+</div>
 </section>
 <!-- theme -->
 <section class="section  random"
@@ -600,6 +630,11 @@ data-anchor="theme">
 </div>
 </div>
 <!-- .section-content -->
+<div class="animation text-center"
+data-appear-animation="bounceInUp"
+data-appear-animation-delay="100">
+<a href="#footer"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+</div>
 </section>
 <!-- footer and contact -->
 <section class="section  random"
@@ -1127,11 +1162,11 @@ data-anchor="footer">
 <script type="text/javascript" src="js/randomColorMaster.js"></script>
 <script>
     $(document).ready(function randomBackground(){
-     num2 = 0.3;
-     var num1 = randomColor({luminosity: 'dark', hue: 'random', format: 'rgbArray'});
-     $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
-     setTimeout(randomBackground, 5000);
- });
+        num2 = 0.25;
+        var num1 = randomColor({luminosity: 'dark', hue: 'random', format: 'rgbArray'});
+        $(".random").animate({"background-color":"rgba("+num1[0]+","+num1[1]+","+num1[2]+","+num2+")"}, 5000);
+        setTimeout(randomBackground, 5000);
+    });
 </script>
 <script>
     $(document).ready(function(){
