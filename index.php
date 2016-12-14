@@ -145,7 +145,7 @@ require 'utils.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 col-sm-4 logo-box" id="two">
+                <div class="col-xs-4 col-sm-4 klogo logo-box">
                     <center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
                 </div>
                 <div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
@@ -267,7 +267,7 @@ data-anchor="highlights">
             <div id="pg-fact-1" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#d73e4d;font-family:'Abril Fatface', cursive;">10+</div>
-                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Workshops</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size:1.1em">Workshops</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-1 .skill-wrap.full-skill:before { border-color: #d73e4d;}
@@ -277,7 +277,7 @@ data-anchor="highlights">
             <div id="pg-fact-2" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#375099;font-family:'Abril Fatface', cursive;">1M</div>
-                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Worth<br/>Prizes</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1em">Worth<br/>Prizes</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-2 .skill-wrap.full-skill:before { border-color: #375099;}
@@ -290,7 +290,7 @@ data-anchor="highlights">
             <div id="pg-fact-3" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#d6973d;font-family:'Abril Fatface', cursive;">6+</div>
-                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Guest<br/>Lectures</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1em">Guest<br/>Lectures</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-3 .skill-wrap.full-skill:before { border-color: #d6973d;}
@@ -301,7 +301,7 @@ data-anchor="highlights">
             <div id="pg-fact-4" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#179680;font-family:'Abril Fatface', cursive;">30+</div>
-                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Events</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1em">Events</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-4 .skill-wrap.full-skill:before { border-color: #179680;}
@@ -359,31 +359,31 @@ data-anchor="eventsAndWorkshops">
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-gear"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Engineering</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Engineering</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-android"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Robotics</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Robotics</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-money"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Management</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Management</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Quiz</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Quiz</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-archive"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">General</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">General</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-terminal"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Coding</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Coding</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-laptop"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Online</p>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Online</p>
             </div>
             <!-- events will come here -->
             <!-- workshop should come in tab -->
@@ -1215,7 +1215,18 @@ data-anchor="footer">
               density: 20000,
               proximity: 100
           });
+			 $('.klogo').addClass('col-sm-4');
+			 $('.klogo').addClass('col-xs-4');
+			 $('.klogo').removeClass('col-xs-8');
+			 $('.klogo').removeClass('col-sm-8');
+		
         }
+			else{
+				$('.klogo').addClass('col-sm-8');
+				$('.klogo').addClass('col-xs-8');
+				$('.klogo').removeClass('col-xs-4');
+				$('.klogo').removeClass('col-sm-4');
+			}
             // populate forms
             populateForm();
         });
