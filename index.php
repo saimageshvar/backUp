@@ -373,6 +373,7 @@ data-anchor="eventsAndWorkshops">
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-gear"></a>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <p>Engineering</p>
             </div>
             <div class="col-sm-3">
@@ -400,30 +401,37 @@ data-anchor="eventsAndWorkshops">
                 <p>Online</p>
 =======
                 <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Engineering</p>
+=======
+                <p>Engineering</p>
+>>>>>>> origin/updated
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-android"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Robotics</p>
+                <p>Robotics</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-money"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Management</p>
+                <p>Management</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Quiz</p>
+                <p>Quiz</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-archive"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">General</p>
+                <p>General</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-terminal"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Coding</p>
+                <p>Coding</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-laptop"></a>
+<<<<<<< HEAD
                 <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Online</p>
+>>>>>>> origin/updated
+=======
+                <p>Online</p>
 >>>>>>> origin/updated
             </div>
             <!-- events will come here -->
@@ -1257,8 +1265,12 @@ data-anchor="footer">
               proximity: 100
           });
 <<<<<<< HEAD
+<<<<<<< HEAD
 			//retain small size of k logo in large screen
 =======
+>>>>>>> origin/updated
+=======
+			//retain small size of k logo in large screen
 >>>>>>> origin/updated
 			 $('.klogo').addClass('col-sm-4');
 			 $('.klogo').addClass('col-xs-4');
@@ -1268,8 +1280,12 @@ data-anchor="footer">
         }
 			else{
 <<<<<<< HEAD
+<<<<<<< HEAD
 				//increase k logo size in mobile
 =======
+>>>>>>> origin/updated
+=======
+				//increase k logo size in mobile
 >>>>>>> origin/updated
 				$('.klogo').addClass('col-sm-8');
 				$('.klogo').addClass('col-xs-8');
