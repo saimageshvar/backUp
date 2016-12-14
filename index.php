@@ -372,6 +372,7 @@ data-anchor="eventsAndWorkshops">
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-gear"></a>
+<<<<<<< HEAD
                 <p>Engineering</p>
             </div>
             <div class="col-sm-3">
@@ -397,6 +398,33 @@ data-anchor="eventsAndWorkshops">
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-laptop"></a>
                 <p>Online</p>
+=======
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Engineering</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="events.html" class="hi-icon fa fa-android"></a>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Robotics</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="events.html" class="hi-icon fa fa-money"></a>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Management</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Quiz</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="events.html" class="hi-icon fa fa-archive"></a>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">General</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="events.html" class="hi-icon fa fa-terminal"></a>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Coding</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="events.html" class="hi-icon fa fa-laptop"></a>
+                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Online</p>
+>>>>>>> origin/updated
             </div>
             <!-- events will come here -->
             <!-- workshop should come in tab -->
@@ -1228,7 +1256,10 @@ data-anchor="footer">
               density: 20000,
               proximity: 100
           });
+<<<<<<< HEAD
 			//retain small size of k logo in large screen
+=======
+>>>>>>> origin/updated
 			 $('.klogo').addClass('col-sm-4');
 			 $('.klogo').addClass('col-xs-4');
 			 $('.klogo').removeClass('col-xs-8');
@@ -1236,7 +1267,10 @@ data-anchor="footer">
 		
         }
 			else{
+<<<<<<< HEAD
 				//increase k logo size in mobile
+=======
+>>>>>>> origin/updated
 				$('.klogo').addClass('col-sm-8');
 				$('.klogo').addClass('col-xs-8');
 				$('.klogo').removeClass('col-xs-4');
