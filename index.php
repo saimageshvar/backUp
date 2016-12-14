@@ -20,6 +20,7 @@ require 'utils.php';
     <link rel='stylesheet' href="css/res.css">
     <link rel='stylesheet' href="css/loader.css">
     <link rel='stylesheet' href="css/initiatives.css">
+	<link rel='stylesheet' href="css/scroll.css">
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css'/>
 
     <!-- select2 -->
@@ -50,6 +51,18 @@ require 'utils.php';
         {
             color:#d73e4d;
         }
+		.events-details p
+		{
+			font-family: 'Aref Ruqaa', serif; 
+			font-style: normal; 
+			font-size:23px;
+		}
+		.workshops-details p
+		{
+			font-family: 'Aref Ruqaa', serif; 
+			font-style: normal; 
+			font-size:23px;
+		}		
         p {
             padding: 0.1em;
             font-size:16px;
@@ -359,31 +372,31 @@ data-anchor="eventsAndWorkshops">
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-gear"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Engineering</p>
+                <p>Engineering</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-android"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Robotics</p>
+                <p>Robotics</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-money"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Management</p>
+                <p>Management</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Quiz</p>
+                <p>Quiz</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-archive"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">General</p>
+                <p>General</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-terminal"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Coding</p>
+                <p>Coding</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-laptop"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Online</p>
+                <p>Online</p>
             </div>
             <!-- events will come here -->
             <!-- workshop should come in tab -->
@@ -391,27 +404,27 @@ data-anchor="eventsAndWorkshops">
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains_work workshops-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100" style="display:none">
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-gear"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Engineering</p>
+                <p>Engineering</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-laptop"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Coding</p>
+                <p>Coding</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-terminal"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Online</p>
+                <p>Online</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-money"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Management</p>
+                <p>Management</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-android"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Robotics</p>
+                <p>Robotics</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-archive"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">General</p>
+                <p>General</p>
             </div>
             <!-- workshops will come here -->
             <!-- workshop should come in tab -->
@@ -883,7 +896,7 @@ data-anchor="footer">
     </div>
 </div>
 <!-- Register as Student Ambassdor -->
-<div class="modal fade registersa" role="dialog">
+<div class="modal fade registersa" role="dialog" id="SAregistration">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <h2 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h2>
@@ -1215,6 +1228,7 @@ data-anchor="footer">
               density: 20000,
               proximity: 100
           });
+			//retain small size of k logo in large screen
 			 $('.klogo').addClass('col-sm-4');
 			 $('.klogo').addClass('col-xs-4');
 			 $('.klogo').removeClass('col-xs-8');
@@ -1222,6 +1236,7 @@ data-anchor="footer">
 		
         }
 			else{
+				//increase k logo size in mobile
 				$('.klogo').addClass('col-sm-8');
 				$('.klogo').addClass('col-xs-8');
 				$('.klogo').removeClass('col-xs-4');
@@ -1252,6 +1267,17 @@ data-anchor="footer">
                 $(".newreg").show();            
             });
         </script>  
+				
+		<script>
+		//student ambassdor registration direct link
+		$(document).ready(function() {
+
+		  if(window.location.href.indexOf('#SAregistration') != -1) {
+			$('#SAregistration').modal('show');
+		  }
+
+		});
+		</script>
         <!--load iframe onload  -->
         <script type="text/javascript">
           $(window).load(function() {
