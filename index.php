@@ -20,6 +20,7 @@ require 'utils.php';
     <link rel='stylesheet' href="css/res.css">
     <link rel='stylesheet' href="css/loader.css">
     <link rel='stylesheet' href="css/initiatives.css">
+	<link rel='stylesheet' href="css/scroll.css">
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css'/>
 
     <!-- select2 -->
@@ -50,6 +51,18 @@ require 'utils.php';
         {
             color:#d73e4d;
         }
+		.events-details p
+		{
+			font-family: 'Aref Ruqaa', serif; 
+			font-style: normal; 
+			font-size:23px;
+		}
+		.workshops-details p
+		{
+			font-family: 'Aref Ruqaa', serif; 
+			font-style: normal; 
+			font-size:23px;
+		}		
         p {
             padding: 0.1em;
             font-size:16px;
@@ -145,7 +158,7 @@ require 'utils.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 col-sm-4 logo-box" id="two">
+                <div class="col-xs-4 col-sm-4 klogo logo-box">
                     <center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
                 </div>
                 <div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
@@ -267,7 +280,7 @@ data-anchor="highlights">
             <div id="pg-fact-1" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#d73e4d;font-family:'Abril Fatface', cursive;">10+</div>
-                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Workshops</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size:1.1em">Workshops</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-1 .skill-wrap.full-skill:before { border-color: #d73e4d;}
@@ -277,7 +290,7 @@ data-anchor="highlights">
             <div id="pg-fact-2" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#375099;font-family:'Abril Fatface', cursive;">1M</div>
-                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Worth<br/>Prizes</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1em">Worth<br/>Prizes</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-2 .skill-wrap.full-skill:before { border-color: #375099;}
@@ -290,7 +303,7 @@ data-anchor="highlights">
             <div id="pg-fact-3" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#d6973d;font-family:'Abril Fatface', cursive;">6+</div>
-                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Guest<br/>Lectures</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1em">Guest<br/>Lectures</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-3 .skill-wrap.full-skill:before { border-color: #d6973d;}
@@ -301,7 +314,7 @@ data-anchor="highlights">
             <div id="pg-fact-4" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
                     <div class="skill-percent"  style="color:#179680;font-family:'Abril Fatface', cursive;">30+</div>
-                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1vw">Events</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1em">Events</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-4 .skill-wrap.full-skill:before { border-color: #179680;}
@@ -359,31 +372,31 @@ data-anchor="eventsAndWorkshops">
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-gear"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Engineering</p>
+                <p>Engineering</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-android"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Robotics</p>
+                <p>Robotics</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-money"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Management</p>
+                <p>Management</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Quiz</p>
+                <p>Quiz</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-archive"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">General</p>
+                <p>General</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-terminal"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Coding</p>
+                <p>Coding</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-laptop"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Online</p>
+                <p>Online</p>
             </div>
             <!-- events will come here -->
             <!-- workshop should come in tab -->
@@ -391,27 +404,27 @@ data-anchor="eventsAndWorkshops">
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains_work workshops-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100" style="display:none">
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-gear"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Engineering</p>
+                <p>Engineering</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-laptop"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Coding</p>
+                <p>Coding</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-terminal"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Online</p>
+                <p>Online</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-money"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Management</p>
+                <p>Management</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-android"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">Robotics</p>
+                <p>Robotics</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-archive"></a>
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal;">General</p>
+                <p>General</p>
             </div>
             <!-- workshops will come here -->
             <!-- workshop should come in tab -->
@@ -883,7 +896,7 @@ data-anchor="footer">
     </div>
 </div>
 <!-- Register as Student Ambassdor -->
-<div class="modal fade registersa" role="dialog">
+<div class="modal fade registersa" role="dialog" id="SAregistration">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <h2 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h2>
@@ -1215,7 +1228,20 @@ data-anchor="footer">
               density: 20000,
               proximity: 100
           });
+			//retain small size of k logo in large screen
+			 $('.klogo').addClass('col-sm-4');
+			 $('.klogo').addClass('col-xs-4');
+			 $('.klogo').removeClass('col-xs-8');
+			 $('.klogo').removeClass('col-sm-8');
+		
         }
+			else{
+				//increase k logo size in mobile
+				$('.klogo').addClass('col-sm-8');
+				$('.klogo').addClass('col-xs-8');
+				$('.klogo').removeClass('col-xs-4');
+				$('.klogo').removeClass('col-sm-4');
+			}
             // populate forms
             populateForm();
         });
@@ -1241,6 +1267,17 @@ data-anchor="footer">
                 $(".newreg").show();            
             });
         </script>  
+				
+		<script>
+		//student ambassdor registration direct link
+		$(document).ready(function() {
+
+		  if(window.location.href.indexOf('#SAregistration') != -1) {
+			$('#SAregistration').modal('show');
+		  }
+
+		});
+		</script>
         <!--load iframe onload  -->
         <script type="text/javascript">
           $(window).load(function() {
