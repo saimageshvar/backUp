@@ -90,16 +90,16 @@ require 'utils.php';
     </style>
     <style>
       table {
-       border-collapse: collapse !important;
-       width: 100% !important;
-   }
+         border-collapse: collapse !important;
+         width: 100% !important;
+     }
 
-   th, td {
-       padding: 8px !important;
-       text-align: left !important;
-       border-bottom: 1px solid #ddd !important;
-   }
-</style>
+     th, td {
+         padding: 8px !important;
+         text-align: left !important;
+         border-bottom: 1px solid #ddd !important;
+     }
+ </style>
 </head>
 <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
     <div class="preloader">
@@ -157,13 +157,13 @@ require 'utils.php';
         <div class="header-menu" style="background: white">
             <nav id="main-menu" class="collapse navbar-collapse">
                 <ul id="menu-main-menu" class="col-sm-12 col-md-6 nav navbar-nav">
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html#home-section"><span>Intro</span></a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#home-section"><span>Intro</span></a></li>
                     <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="#highlights"><span>Highlights</span></a></li>
                     <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="#eventsAndWorkshops"><span>Events & Workshops</span></a></li>
                     <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="#initiatives"><span>Initiatives</span></a></li>
                     <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="#gl"><span>Guest Lectures</span></a></li>
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="#xceed"><span>Xceed</span></a></li>
-                    <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="contact.html"><span>Contact</span></a></li>
+                    <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="#"><span>Contact</span></a></li>
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".sponsors"><span>Sponsors</span></a></li>
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".about"><span>About</span></a></li>
                     <?php 
@@ -189,12 +189,12 @@ require 'utils.php';
                     }
                     else if(!isset($_SESSION['user']['isSA']))
                     {
-                     ?>   
-                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
-                     <?php
-                 }
-                 if(isset($_SESSION['user']))
-                 {
+                       ?>   
+                       <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
+                       <?php
+                   }
+                   if(isset($_SESSION['user']))
+                   {
                     ?>   
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
                     <?php
@@ -313,14 +313,15 @@ data-anchor="highlights">
         <!-- .facts-list -->
     </div>
     <!-- .facts -->
-    <div class="animation text-center"
-    data-appear-animation="bounceInUp"
-    data-appear-animation-delay="100">
-    <a href="#eventsAndWorkshops"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
-</div>
+    
 </div>
 </div>
 <!-- .section-content -->
+<div class="animation text-center"
+data-appear-animation="bounceInUp"
+data-appear-animation-delay="100">
+<a href="#eventsAndWorkshops"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+</div>
 </section>
 <!-- .section -->
 <!-- events and workshops -->
@@ -450,12 +451,12 @@ data-anchor="initiatives">
                 <div class="overlay">
                     <h2 style="font-size: 30px">Neon Run</h2>
                     <p>
-                     <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
-                 </p>
-             </div>
-         </div>
-     </div>
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                       <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
+                   </p>
+               </div>
+           </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
             <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:250px;opacity: 0.2">
             <div class="overlay">
@@ -718,59 +719,59 @@ data-anchor="footer">
                 <center>
                     <table class="table table-hover table-bordered">
                         <tr>
-                         <th>City</th>
-                         <th>Date</th>
-                         <th>Venue</th>
-                     </tr>
-                     <tr>
-                         <td>Tirupati</td>
-                         <td>7, 8 January’17</td>
-                         <td>IIT Tirupati</td>
-                     </tr>
-                     <tr>
-                         <td>Trichy</td>
-                         <td>7, 8 January’17</td>
-                         <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
-                     </tr>
-                     <tr>
-                         <td>Chennai</td>
-                         <td>21,22 January’17</td>
-                         <td>Easwari Engineering College</td>
-                     </tr>
-                     <tr>
-                         <td>Madurai</td>
-                         <td>21,22 January’17</td>
-                         <td>Thiagarajar College of Engineering</td>
-                     </tr>
-                     <tr>
-                         <td>Vellore</td>
-                         <td>21,22 January’17</td>
-                         <td>Vellore Institute of Technology</td>
-                     </tr>
-                     <tr>
-                         <td>Coimbatore</td>
-                         <td>17, 18 December’16</td>
-                         <td>Coimbatore Institute of Technology</td>
-                     </tr>
-                     <tr>
-                         <td>Pilani</td>
-                         <td>17, 18 October’16</td>
-                         <td>BITS Pilani</td>
-                     </tr>
-                     <tr>
-                         <td>Suratkal</td>
-                         <td>2,3 October’16</td>
-                         <td>NIT Suratkal</td>
-                     </tr>
-                     <tr>
-                         <td>Salem</td>
-                         <td>17, 18 September’16</td>
-                         <td>Annapoorana Engineering College</td>
-                     </tr>
-                 </table>
-             </center>
-         </div>
-         <div class="modal-footer">
+                           <th>City</th>
+                           <th>Date</th>
+                           <th>Venue</th>
+                       </tr>
+                       <tr>
+                           <td>Tirupati</td>
+                           <td>7, 8 January’17</td>
+                           <td>IIT Tirupati</td>
+                       </tr>
+                       <tr>
+                           <td>Trichy</td>
+                           <td>7, 8 January’17</td>
+                           <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
+                       </tr>
+                       <tr>
+                           <td>Chennai</td>
+                           <td>21,22 January’17</td>
+                           <td>Easwari Engineering College</td>
+                       </tr>
+                       <tr>
+                           <td>Madurai</td>
+                           <td>21,22 January’17</td>
+                           <td>Thiagarajar College of Engineering</td>
+                       </tr>
+                       <tr>
+                           <td>Vellore</td>
+                           <td>21,22 January’17</td>
+                           <td>Vellore Institute of Technology</td>
+                       </tr>
+                       <tr>
+                           <td>Coimbatore</td>
+                           <td>17, 18 December’16</td>
+                           <td>Coimbatore Institute of Technology</td>
+                       </tr>
+                       <tr>
+                           <td>Pilani</td>
+                           <td>17, 18 October’16</td>
+                           <td>BITS Pilani</td>
+                       </tr>
+                       <tr>
+                           <td>Suratkal</td>
+                           <td>2,3 October’16</td>
+                           <td>NIT Suratkal</td>
+                       </tr>
+                       <tr>
+                           <td>Salem</td>
+                           <td>17, 18 September’16</td>
+                           <td>Annapoorana Engineering College</td>
+                       </tr>
+                   </table>
+               </center>
+           </div>
+           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
     </div>
@@ -1026,16 +1027,16 @@ data-anchor="footer">
             </div>
             <div class="modal-body" style="color:black">
                 <blockquote>"Education is the movement from darkness to light."
-                   -Allan Bloom
-               </blockquote>
+                 -Allan Bloom
+             </blockquote>
 
-               <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
-                   Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
-                   Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
-                   Come join us and help us light up the world.
-               </p>
-           </div>
-           <div class="modal-footer">
+             <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
+                 Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
+                 Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
+                 Come join us and help us light up the world.
+             </p>
+         </div>
+         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
     </div>
@@ -1137,7 +1138,7 @@ data-anchor="footer">
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script>
-   WebFont.load({
+ WebFont.load({
     google: {
         families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
     }
@@ -1205,13 +1206,16 @@ data-anchor="footer">
     <script type='text/javascript' src='assets/js/main68b3.js'></script>
     <script>
         $(document).ready(function() {
+
+            if($(window).width() >= 900){
+
             // initialize particles
             $('.particle').particleground({
               dotColor: '#ffffff',
               density: 20000,
               proximity: 100
           });
-
+        }
             // populate forms
             populateForm();
         });
