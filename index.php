@@ -20,7 +20,7 @@ require 'utils.php';
     <link rel='stylesheet' href="css/res.css">
     <link rel='stylesheet' href="css/loader.css">
     <link rel='stylesheet' href="css/initiatives.css">
-	<link rel='stylesheet' href="css/scroll.css">
+    <link rel='stylesheet' href="css/scroll.css">
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css'/>
 
     <!-- select2 -->
@@ -51,68 +51,68 @@ require 'utils.php';
         {
             color:#d73e4d;
         }
-		.events-details p
-		{
-			font-family: 'Aref Ruqaa', serif; 
-			font-style: normal; 
-			font-size:23px;
-		}
-		.workshops-details p
-		{
-			font-family: 'Aref Ruqaa', serif; 
-			font-style: normal; 
-			font-size:23px;
-		}		
-        p {
-            padding: 0.1em;
-            font-size:16px;
-            overflow-y:auto;
-            max-height:320px;
-            font-family: 'Raleway', Arial, sans-serif;
-
-        }
-        body.modal-open {
-            overflow: hidden !important;
-            position:fixed !important;
-            width: 100%;
-        }
-        @media screen and (max-width: 800px) {
-            .unescodiv {
-                display:none;
-            }
-        }
-    </style>
-    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-    <style>
-        .img-with-text {
-            text-align: justify;
-            width: [width of img];
-        }
-        .img-with-text img {
-            display: block;
-            margin: 0 auto;
-        }
-        .errspan {
-            float: right;
-            margin-left: 6px;
-            margin-top: -10px;
-            position: relative;
-            z-index: 2;
-            color: blue;
-        }
-    </style>
-    <style>
-      table {
-         border-collapse: collapse !important;
-         width: 100% !important;
+        .events-details p
+        {
+         font-family: 'Aref Ruqaa', serif; 
+         font-style: normal; 
+         font-size:23px;
      }
+     .workshops-details p
+     {
+         font-family: 'Aref Ruqaa', serif; 
+         font-style: normal; 
+         font-size:23px;
+     }		
+     p {
+        padding: 0.1em;
+        font-size:16px;
+        overflow-y:auto;
+        max-height:320px;
+        font-family: 'Raleway', Arial, sans-serif;
 
-     th, td {
-         padding: 8px !important;
-         text-align: left !important;
-         border-bottom: 1px solid #ddd !important;
-     }
- </style>
+    }
+    body.modal-open {
+        overflow: hidden !important;
+        position:fixed !important;
+        width: 100%;
+    }
+    @media screen and (max-width: 800px) {
+        .unescodiv {
+            display:none;
+        }
+    }
+</style>
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style>
+    .img-with-text {
+        text-align: justify;
+        width: [width of img];
+    }
+    .img-with-text img {
+        display: block;
+        margin: 0 auto;
+    }
+    .errspan {
+        float: right;
+        margin-left: 6px;
+        margin-top: -10px;
+        position: relative;
+        z-index: 2;
+        color: blue;
+    }
+</style>
+<style>
+  table {
+   border-collapse: collapse !important;
+   width: 100% !important;
+}
+
+th, td {
+   padding: 8px !important;
+   text-align: left !important;
+   border-bottom: 1px solid #ddd !important;
+}
+</style>
 </head>
 <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
     <div class="preloader">
@@ -202,12 +202,12 @@ require 'utils.php';
                     }
                     else if(!isset($_SESSION['user']['isSA']))
                     {
-                       ?>   
-                       <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
-                       <?php
-                   }
-                   if(isset($_SESSION['user']))
-                   {
+                     ?>   
+                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
+                     <?php
+                 }
+                 if(isset($_SESSION['user']))
+                 {
                     ?>   
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
                     <?php
@@ -372,8 +372,6 @@ data-anchor="eventsAndWorkshops">
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-gear"></a>
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <p>Engineering</p>
             </div>
             <div class="col-sm-3">
@@ -399,40 +397,6 @@ data-anchor="eventsAndWorkshops">
             <div class="col-sm-3">
                 <a href="events.html" class="hi-icon fa fa-laptop"></a>
                 <p>Online</p>
-=======
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Engineering</p>
-=======
-                <p>Engineering</p>
->>>>>>> origin/updated
-            </div>
-            <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-android"></a>
-                <p>Robotics</p>
-            </div>
-            <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-money"></a>
-                <p>Management</p>
-            </div>
-            <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
-                <p>Quiz</p>
-            </div>
-            <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-archive"></a>
-                <p>General</p>
-            </div>
-            <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-terminal"></a>
-                <p>Coding</p>
-            </div>
-            <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-laptop"></a>
-<<<<<<< HEAD
-                <p style="font-family: 'Aref Ruqaa', serif; font-style: normal; font-size:23px;">Online</p>
->>>>>>> origin/updated
-=======
-                <p>Online</p>
->>>>>>> origin/updated
             </div>
             <!-- events will come here -->
             <!-- workshop should come in tab -->
@@ -500,12 +464,12 @@ data-anchor="initiatives">
                 <div class="overlay">
                     <h2 style="font-size: 30px">Neon Run</h2>
                     <p>
-                       <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
-                   </p>
-               </div>
-           </div>
-       </div>
-       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                     <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
+                 </p>
+             </div>
+         </div>
+     </div>
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
             <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:250px;opacity: 0.2">
             <div class="overlay">
@@ -768,59 +732,59 @@ data-anchor="footer">
                 <center>
                     <table class="table table-hover table-bordered">
                         <tr>
-                           <th>City</th>
-                           <th>Date</th>
-                           <th>Venue</th>
-                       </tr>
-                       <tr>
-                           <td>Tirupati</td>
-                           <td>7, 8 January’17</td>
-                           <td>IIT Tirupati</td>
-                       </tr>
-                       <tr>
-                           <td>Trichy</td>
-                           <td>7, 8 January’17</td>
-                           <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
-                       </tr>
-                       <tr>
-                           <td>Chennai</td>
-                           <td>21,22 January’17</td>
-                           <td>Easwari Engineering College</td>
-                       </tr>
-                       <tr>
-                           <td>Madurai</td>
-                           <td>21,22 January’17</td>
-                           <td>Thiagarajar College of Engineering</td>
-                       </tr>
-                       <tr>
-                           <td>Vellore</td>
-                           <td>21,22 January’17</td>
-                           <td>Vellore Institute of Technology</td>
-                       </tr>
-                       <tr>
-                           <td>Coimbatore</td>
-                           <td>17, 18 December’16</td>
-                           <td>Coimbatore Institute of Technology</td>
-                       </tr>
-                       <tr>
-                           <td>Pilani</td>
-                           <td>17, 18 October’16</td>
-                           <td>BITS Pilani</td>
-                       </tr>
-                       <tr>
-                           <td>Suratkal</td>
-                           <td>2,3 October’16</td>
-                           <td>NIT Suratkal</td>
-                       </tr>
-                       <tr>
-                           <td>Salem</td>
-                           <td>17, 18 September’16</td>
-                           <td>Annapoorana Engineering College</td>
-                       </tr>
-                   </table>
-               </center>
-           </div>
-           <div class="modal-footer">
+                         <th>City</th>
+                         <th>Date</th>
+                         <th>Venue</th>
+                     </tr>
+                     <tr>
+                         <td>Tirupati</td>
+                         <td>7, 8 January’17</td>
+                         <td>IIT Tirupati</td>
+                     </tr>
+                     <tr>
+                         <td>Trichy</td>
+                         <td>7, 8 January’17</td>
+                         <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
+                     </tr>
+                     <tr>
+                         <td>Chennai</td>
+                         <td>21,22 January’17</td>
+                         <td>Easwari Engineering College</td>
+                     </tr>
+                     <tr>
+                         <td>Madurai</td>
+                         <td>21,22 January’17</td>
+                         <td>Thiagarajar College of Engineering</td>
+                     </tr>
+                     <tr>
+                         <td>Vellore</td>
+                         <td>21,22 January’17</td>
+                         <td>Vellore Institute of Technology</td>
+                     </tr>
+                     <tr>
+                         <td>Coimbatore</td>
+                         <td>17, 18 December’16</td>
+                         <td>Coimbatore Institute of Technology</td>
+                     </tr>
+                     <tr>
+                         <td>Pilani</td>
+                         <td>17, 18 October’16</td>
+                         <td>BITS Pilani</td>
+                     </tr>
+                     <tr>
+                         <td>Suratkal</td>
+                         <td>2,3 October’16</td>
+                         <td>NIT Suratkal</td>
+                     </tr>
+                     <tr>
+                         <td>Salem</td>
+                         <td>17, 18 September’16</td>
+                         <td>Annapoorana Engineering College</td>
+                     </tr>
+                 </table>
+             </center>
+         </div>
+         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
     </div>
@@ -1076,16 +1040,16 @@ data-anchor="footer">
             </div>
             <div class="modal-body" style="color:black">
                 <blockquote>"Education is the movement from darkness to light."
-                 -Allan Bloom
-             </blockquote>
+                   -Allan Bloom
+               </blockquote>
 
-             <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
-                 Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
-                 Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
-                 Come join us and help us light up the world.
-             </p>
-         </div>
-         <div class="modal-footer">
+               <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
+                   Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
+                   Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
+                   Come join us and help us light up the world.
+               </p>
+           </div>
+           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
     </div>
@@ -1187,7 +1151,7 @@ data-anchor="footer">
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script>
- WebFont.load({
+   WebFont.load({
     google: {
         families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
     }
@@ -1264,29 +1228,16 @@ data-anchor="footer">
               density: 20000,
               proximity: 100
           });
-<<<<<<< HEAD
-<<<<<<< HEAD
 			//retain small size of k logo in large screen
-=======
->>>>>>> origin/updated
-=======
-			//retain small size of k logo in large screen
->>>>>>> origin/updated
-			 $('.klogo').addClass('col-sm-4');
-			 $('.klogo').addClass('col-xs-4');
-			 $('.klogo').removeClass('col-xs-8');
-			 $('.klogo').removeClass('col-sm-8');
-		
+            $('.klogo').addClass('col-sm-4');
+            $('.klogo').addClass('col-xs-4');
+            $('.klogo').removeClass('col-xs-8');
+            $('.klogo').removeClass('col-sm-8');
+            
         }
-			else{
-<<<<<<< HEAD
-<<<<<<< HEAD
+        else{
+
 				//increase k logo size in mobile
-=======
->>>>>>> origin/updated
-=======
-				//increase k logo size in mobile
->>>>>>> origin/updated
 				$('.klogo').addClass('col-sm-8');
 				$('.klogo').addClass('col-xs-8');
 				$('.klogo').removeClass('col-xs-4');
@@ -1317,27 +1268,27 @@ data-anchor="footer">
                 $(".newreg").show();            
             });
         </script>  
-				
-		<script>
+        
+        <script>
 		//student ambassdor registration direct link
 		$(document).ready(function() {
 
-		  if(window.location.href.indexOf('#SAregistration') != -1) {
-			$('#SAregistration').modal('show');
-		  }
+            if(window.location.href.indexOf('#SAregistration') != -1) {
+             $('#SAregistration').modal('show');
+         }
 
-		});
-		</script>
-        <!--load iframe onload  -->
-        <script type="text/javascript">
-          $(window).load(function() {
-            var f = document.createElement('iframe');
-            f.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3888654732154!2d80.23317031390987!3d13.010890790830125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679e8ab07191%3A0xd034864eb4cef07a!2sAnna+University+-+College+Of+Engineering!5e0!3m2!1sen!2sus!4v1480493857269'; 
-            f.width = 600; 
-            f.height = 300;
-            $('.anna-univ-location').append(f);
-        });
-    </script>
+     });
+ </script>
+ <!--load iframe onload  -->
+ <script type="text/javascript">
+  $(window).load(function() {
+    var f = document.createElement('iframe');
+    f.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3888654732154!2d80.23317031390987!3d13.010890790830125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679e8ab07191%3A0xd034864eb4cef07a!2sAnna+University+-+College+Of+Engineering!5e0!3m2!1sen!2sus!4v1480493857269'; 
+    f.width = 600; 
+    f.height = 300;
+    $('.anna-univ-location').append(f);
+});
+</script>
 </body>
 </html>
 <?php
