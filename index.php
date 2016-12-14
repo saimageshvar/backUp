@@ -1147,6 +1147,22 @@ data-anchor="footer">
 
 </script>
 
+<!--colleges list-->
+<script>
+	var collegesArray = new Array();
+	var col = new XMLHttpRequest();
+	var colUrl = "https://api.myjson.com/bins/buxtx";
+	
+	col.onreadystatechange = function() {
+		if(col.readyState == 4 && col.status == 200){
+			collegesArray.push(JSON.parse(col.responseText));
+			displaycolleges(collegesArray);
+		}
+	};
+	col.open("GET", colUrl, true);
+	col.send();
+</script>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
