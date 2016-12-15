@@ -19,7 +19,9 @@
 	$response = curl_exec( $ch );
 	if (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 200)
 	{
-		$_SESSION['user'] = json_decode($response, true);
+		$response = json_decode($response, true);
+		$_SESSION['user'] = $response['user'];
+		$_SESSION['access_token'] = $response['token'];
 		$_SESSION['login'] = "success";
 		
 	}

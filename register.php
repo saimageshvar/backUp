@@ -39,12 +39,6 @@ $response = json_decode($response, true);
 if ($response['responseCode'] == 1)
 {
 	$_SESSION['registration'] = "success";
-	$_SESSION['user']['userId'] = $response['data']['userId'];
-	$_SESSION['user']['emailId'] = $response['data']['emailId'];
-	$_SESSION['user']['_id'] = $response['data']['_id'];
-	$_SESSION['user']['name'] = $response['data']['name'];
-
-	$_SESSION['user']['isSA'] = $isSA;
 }
 else
 {

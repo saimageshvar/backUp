@@ -25,7 +25,7 @@ function checkRegistration()
 			<script>
 				BootstrapDialog.show({
 					title: 'Hey!',
-					message: 'Successfully logged in!Your k! id is <?php echo $_SESSION['user']['userId'] ?>',
+					message: 'Registered Successfully. Please login to continue.<br/>Dont forget to check your mail :D',
 					type: BootstrapDialog.TYPE_SUCCESS,
 					closable: true,
 					draggable: true
