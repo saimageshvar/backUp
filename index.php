@@ -114,7 +114,7 @@ th, td {
 }
 </style>
 </head>
-<body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
+<body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php one-page">
     <div class="preloader">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
@@ -1048,6 +1048,8 @@ data-anchor="footer">
                    Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
                    Come join us and help us light up the world.
                </p>
+			   <button type="button" class="btn btn-success neonrunsub">Subscribe</button>
+			   <div id="subscription"></div>
            </div>
            <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1084,7 +1086,33 @@ data-anchor="footer">
     </div>
 </div>
 
-<!--e for educate-->
+<!--Forgot password-->
+<div class="modal fade forgotpass" role="dialog" id="forgotpass">
+    <div class="modal-dialog modal-lg">
+		<!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title" style="text-align:center;margin-top:30px">ENTER PASSWORD</h2>
+            </div>
+            <div class="modal-body" style="color:black">
+                <form id="forgotpass" method="post">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="reicon fa fa-calculator"></i></span>
+                            <input id="email" type="text" class="form-control" name="email" placeholder="Enter token">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
+                        </div>
+                        <br>                            
+                        <input type="submit" class="btn btn-success" value="Submit">
+                    </form>
+            </div>
+        </div>       
+    </div>
+</div>
 <!-- .main -->
 <!-- random color -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -1145,6 +1173,22 @@ data-anchor="footer">
     //gls.setRequestHeader('origin', 'http');
     gls.send();
 
+</script>
+
+<!--colleges list-->
+<script>
+	var collegesArray = new Array();
+	var col = new XMLHttpRequest();
+	var colUrl = "https://api.myjson.com/bins/buxtx";
+	
+	col.onreadystatechange = function() {
+		if(col.readyState == 4 && col.status == 200){
+			collegesArray.push(JSON.parse(col.responseText));
+			displaycolleges(collegesArray);
+		}
+	};
+	col.open("GET", colUrl, true);
+	col.send();
 </script>
 
 
@@ -1277,8 +1321,25 @@ data-anchor="footer">
              $('#SAregistration').modal('show');
          }
 
-     });
- </script>
+		});
+		
+		//forgot password link
+		$(document).ready(function() {
+
+            if(window.location.href.indexOf('#forgotpass') != -1) {
+             $('#forgotpass').modal('show');
+         }
+
+		});
+		
+		//neon run subscription
+		$(document).ready(function(){
+			$('.neonrunsub').click(function(){
+				$("#subscription").load("sub.txt");
+				$(".neonrunsub").hide();
+			});
+		});
+		</script>
  <!--load iframe onload  -->
  <script type="text/javascript">
   $(window).load(function() {

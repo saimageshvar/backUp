@@ -84,3 +84,35 @@ $('.department-select').select2({
 
 
 }
+//colleges list
+function displaycolleges(collegesArray)
+{
+	var outer4 = document.createElement("select");
+	outer4.className="form-control college-select";
+	outer4.id="college";
+	outer4.name="college";
+	outer4.style = "width: 100%";
+	var child=document.createElement("option");
+	child.textContent ="";
+	child.value ="";
+	outer4.append(child);
+	for(i=0;i<collegesArray[0].colleges.length;i++)
+	{
+		child=document.createElement("option");
+		child.textContent = collegesArray[0].colleges[i];
+		child.value = collegesArray[0].colleges[i];
+		outer4.append(child);
+	}
+	document.getElementsByClassName("college")[0].append(outer4);
+	$(outer4).clone().appendTo($('.college')[1]);
+
+	// init select2
+	$('.college-select').first().select2({
+		placeholder: 'Select your college',
+		theme: 'bootstrap',
+	});
+	$('.college-select').select2({
+		placeholder: 'Select your college',
+		theme: 'bootstrap',
+	});	
+}
