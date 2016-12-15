@@ -45,7 +45,7 @@ else
 	$_SESSION['registration'] = "failure";
 
 }
-header("Location: index.php");
+//header("Location: index.php");
 
 function sanitizeParams($param)
 {

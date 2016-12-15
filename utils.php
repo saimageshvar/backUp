@@ -42,27 +42,13 @@ function checkLogin()
 {
 	if(isset($_SESSION['login']))
 	{
-		if($_SESSION['login'] == "failure")
+		if($_SESSION['login'] == "success")
 		{
 			?>
 			<script>
 				BootstrapDialog.show({
-					title: 'Oops',
-					message: 'Login Failed',
-					type: BootstrapDialog.TYPE_DANGER,
-					closable: true,
-					draggable: true
-				});
-			</script>
-			<?php
-		}
-		else if($_SESSION['login'] == "success")
-		{
-			?>
-			<script>
-				BootstrapDialog.show({
-					title: 'Hey!',
-					message: 'Successfully logged in!Your k! id is <?php echo $_SESSION['user']['userId'] ?>',
+					title: 'Hey <?php echo $_SESSION['user']['name'] ?> !',
+					message: 'Welcome back to Kurukshetra 2017',
 					type: BootstrapDialog.TYPE_SUCCESS,
 					closable: true,
 					draggable: true
@@ -70,7 +56,6 @@ function checkLogin()
 			</script>
 			<?php
 		}
-		unset($_SESSION['login']);
 	}
 
 }
