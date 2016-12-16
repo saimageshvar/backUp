@@ -34,9 +34,13 @@ function myFunction(arr)
 
 	$('.events-loader').hide();
 	//$('.main').show();
-	
-	
-	
+
+	// changing domain by url
+	if($(window.location.hash).length==1)
+	{
+		swapDomains($(window.location.hash)[0]);
+		// $('#Engineering').removeClass('active');
+	}
 }
 
 function swapDomains(ele)
@@ -69,4 +73,13 @@ function displayDetails(e)
 	$('#eventsDetails').modal('show');
 }
 
+$(window).load(function(){
 
+	if($(window.location.hash).length==1)
+	{
+		$(window.location.hash).addClass('active');
+		$('#Engineering').removeClass('active');
+
+	}
+
+});
