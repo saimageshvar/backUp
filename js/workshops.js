@@ -33,7 +33,14 @@ function myFunction(arr)
 	}
 
 	$('.workshops-loader').hide();
-	$('.main').show();
+	//$('.main').show();
+
+	// changing domain by url
+	if($(window.location.hash).length==1)
+	{
+		swapDomains($(window.location.hash)[0]);
+		// $('#Engineering').removeClass('active');
+	}
 	
 	
 	
@@ -70,3 +77,13 @@ function displayDetails(e)
 }
 
 
+$(window).load(function(){
+
+	if($(window.location.hash).length==1)
+	{
+		$(window.location.hash).addClass('active');
+		$('#General').removeClass('active');
+
+	}
+
+});

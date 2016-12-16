@@ -404,27 +404,27 @@ data-anchor="eventsAndWorkshops">
         </div>
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains_work workshops-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100" style="display:none">
             <div class="col-sm-3">
-                <a href="workshops.html" class="hi-icon fa fa-gear"></a>
+                <a href="workshops.html#General" class="hi-icon fa fa-gear"></a>
                 <p>General</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.html" class="hi-icon fa fa-laptop"></a>
+                <a href="workshops.html#Science" class="hi-icon fa fa-laptop"></a>
                 <p>Science</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.html" class="hi-icon fa fa-terminal"></a>
+                <a href="workshops.html#Engineering" class="hi-icon fa fa-terminal"></a>
                 <p>Engineering</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.html" class="hi-icon fa fa-money"></a>
+                <a href="workshops.html#Management" class="hi-icon fa fa-money"></a>
                 <p>Management</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.html" class="hi-icon fa fa-android"></a>
+                <a href="workshops.html#Robotics" class="hi-icon fa fa-android"></a>
                 <p>Robotics</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.html" class="hi-icon fa fa-archive"></a>
+                <a href="workshops.html#School" class="hi-icon fa fa-archive"></a>
                 <p>School</p>
             </div>
             <!-- workshops will come here -->
