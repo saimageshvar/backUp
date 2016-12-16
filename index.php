@@ -372,31 +372,31 @@ data-anchor="eventsAndWorkshops">
         <!-- .section-title-block -->
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
             <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-gear"></a>
+            <a href="events.html#Engineering" class="hi-icon fa fa-gear"></a>
                 <p>Engineering</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-android"></a>
+                <a href="events.html#Robotics" class="hi-icon fa fa-android"></a>
                 <p>Robotics</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-money"></a>
+                <a href="events.html#Management" class="hi-icon fa fa-money"></a>
                 <p>Management</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-puzzle-piece"></a>
+                <a href="events.html#Quiz" class="hi-icon fa fa-puzzle-piece"></a>
                 <p>Quiz</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-archive"></a>
+                <a href="events.html#General" class="hi-icon fa fa-archive"></a>
                 <p>General</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-terminal"></a>
+                <a href="events.html#Coding" class="hi-icon fa fa-terminal"></a>
                 <p>Coding</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html" class="hi-icon fa fa-laptop"></a>
+                <a href="events.html#Online" class="hi-icon fa fa-laptop"></a>
                 <p>Online</p>
             </div>
             <!-- events will come here -->
