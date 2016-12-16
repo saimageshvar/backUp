@@ -255,3 +255,43 @@ $('#sa_registration_form_existing').submit(function(e){
  });
     e.preventDefault();
 });
+
+// event subscription
+$("#subscribe_event").click(function(e) { 
+    $.ajax
+    ({ 
+        url: 'subscribe.php',
+        data: { 
+            'eventName': $('#eventsDetails .modal-title')[0].innerHTML
+        },
+        type: 'post',
+        success: function(result)
+        {
+            alert(result);
+            if(result==1)
+            {
+                BootstrapDialog.show({
+                    title: 'Hey!',
+                    message: 'Event Subscribed',
+                    type: BootstrapDialog.TYPE_SUCCESS,
+                    closable: true,
+                    draggable: true
+                });
+            }
+            else
+            {
+                BootstrapDialog.show({
+                    title: 'Oops!',
+                    message: 'Please login to subscribe events',
+                    type: BootstrapDialog.TYPE_DANGER,
+                    closable: true,
+                    draggable: true
+                });
+            }
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+         alert("some error");
+     }
+ });
+    e.preventDefault();
+});

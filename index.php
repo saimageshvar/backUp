@@ -504,7 +504,7 @@ data-title="Xceed"
 data-anchor="xceed">
 <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
 
-<div class="section-content ">
+<div class="section-content" style="position: relative;">
     <div class="container section-wrap"
     style="">
     <!--h3 class="section-title"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Xceed</h3-->

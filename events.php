@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en-US">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -187,7 +190,7 @@
 
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-success" id="subscribe_event">Subscribe</button>
 			</div>
 		</div>
 
@@ -242,6 +245,8 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
 <script type='text/javascript' src='assets/js/isotope.pkgd.min68b3.js?ver=1'></script>
 <script type='text/javascript' src='assets/js/main68b3.js'></script>
+<script type='text/javascript' src='js/utils.js'></script>
+
 
 <!-- particles -->
 <script type="text/javascript" src="js/particleground.min.js"></script>
@@ -257,17 +262,17 @@
             });
 			//retain small size of k logo in large screen
 			$('.klogo').addClass('col-sm-4');
-			 $('.klogo').addClass('col-xs-4');
-			 $('.klogo').removeClass('col-xs-8');
-			 $('.klogo').removeClass('col-sm-8');
-        }
+			$('.klogo').addClass('col-xs-4');
+			$('.klogo').removeClass('col-xs-8');
+			$('.klogo').removeClass('col-sm-8');
+		}
 		else{   //increase k logo size in mobile
-				$('.klogo').addClass('col-sm-8');
-				$('.klogo').addClass('col-xs-8');
-				$('.klogo').removeClass('col-xs-4');
-				$('.klogo').removeClass('col-sm-4');
-			}
-    });
+			$('.klogo').addClass('col-sm-8');
+			$('.klogo').addClass('col-xs-8');
+			$('.klogo').removeClass('col-xs-4');
+			$('.klogo').removeClass('col-sm-4');
+		}
+	});
 </script>
 
 
