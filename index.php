@@ -1,6 +1,5 @@
 <?php 
 session_start();
-require 'utils.php';
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -506,6 +505,4 @@ data-anchor="form">
     </script> 
 </body>
 </html>
-<?php
-checkLogin();
-?>
+
