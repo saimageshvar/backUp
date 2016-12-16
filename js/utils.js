@@ -58,8 +58,8 @@ $("#login_form").submit(function(e) {
         }
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
-       alert("some error");
-   }
+     alert("some error");
+ }
 });
     e.preventDefault();
 });
@@ -110,9 +110,9 @@ $("#registration_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     e.preventDefault();
 });
 
@@ -161,9 +161,9 @@ $("#sa_registration_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     e.preventDefault();
 });
 
@@ -200,9 +200,9 @@ $("#register_as_sa").click(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         alert("some error");
-     }
- });
+           alert("some error");
+       }
+   });
     e.preventDefault();
 });
 
@@ -250,9 +250,9 @@ $('#sa_registration_form_existing').submit(function(e){
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         alert("some error");
-     }
- });
+           alert("some error");
+       }
+   });
     e.preventDefault();
 });
 
@@ -261,13 +261,10 @@ $("#subscribe_event").click(function(e) {
     $.ajax
     ({ 
         url: 'subscribe.php',
-        data: { 
-            'eventName': $('#eventsDetails .modal-title')[0].innerHTML
-        },
+        data:'eventName=' + $('#eventsDetails .modal-title')[0].innerHTML,
         type: 'post',
         success: function(result)
         {
-            alert(result);
             if(result==1)
             {
                 BootstrapDialog.show({
@@ -278,11 +275,21 @@ $("#subscribe_event").click(function(e) {
                     draggable: true
                 });
             }
+            else if(result==0)
+            {
+                BootstrapDialog.show({
+                    title: 'Oops!',
+                    message: 'Your session ended.Please login again to subscribe',
+                    type: BootstrapDialog.TYPE_DANGER,
+                    closable: true,
+                    draggable: true
+                });
+            }
             else
             {
                 BootstrapDialog.show({
                     title: 'Oops!',
-                    message: 'Please login to subscribe events',
+                    message: 'You should login before you subscribe',
                     type: BootstrapDialog.TYPE_DANGER,
                     closable: true,
                     draggable: true
@@ -290,8 +297,8 @@ $("#subscribe_event").click(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         alert("some error");
-     }
- });
+           alert("some error");
+       }
+   });
     e.preventDefault();
 });

@@ -2,11 +2,10 @@
 session_start();
 if(isset($_SESSION['user']))
 {	
-	$request = json_decode(file_get_contents("php://input"), true);
 	$url = 'http://52.39.93.59:8080/web/api/subscribe';
 	$params =  json_encode(array(
 		"access_token" => $_SESSION['access_token'], 
-		"eventName" => $request['eventName']
+		"eventName" => $_POST['eventName']
 		));
 	$ch = curl_init( $url );
 	curl_setopt( $ch, CURLOPT_POST, 1);
@@ -19,7 +18,7 @@ if(isset($_SESSION['user']))
 	$response = curl_exec( $ch );
 	if (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 200)
 	{
-		//$_SESSION['user']['event'][$_POST['eventName']] = true;
+		$_SESSION['user']['event'][$_POST['eventName']] = true;
 		echo 1;
 	}
 	else
