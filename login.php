@@ -22,9 +22,13 @@ if(!isset($_SESSION['user']))
 	if (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 200)
 	{
 		$response = json_decode($response, true);
+		//print_r($response['user']['eventSubscriptionList']);
 		$_SESSION['user'] = $response['user'];
 		$_SESSION['access_token'] = $response['token'];
 		$_SESSION['login'] = "success";
+		foreach ($response['user']['eventSubscriptionList'] as $r) {
+			$_SESSION['user'][$r['eventName']] = true;
+		}
 		if ($_SESSION['user']['isSA'] == true)
 			echo 1;
 		else
