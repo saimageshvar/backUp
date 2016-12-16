@@ -127,11 +127,10 @@ $("#sa_registration_form").submit(function(e) {
         {
             if(result==1)
             {
-                $('.registersa').modal('toggle');
                 $('#sa_registration_form')[0].reset();
                 BootstrapDialog.show({
                     title: 'Hey!',
-                    message: 'Registered Successfully. Please login to continue.<br/>Dont forget to check your mail :D',
+                    message: 'Registered Successfully. We will contact you soon.<br/>Dont forget to check your mail :D',
                     type: BootstrapDialog.TYPE_SUCCESS,
                     closable: true,
                     draggable: true
@@ -150,7 +149,6 @@ $("#sa_registration_form").submit(function(e) {
             }
             else if(result==0)
             {
-                $('.registersa').modal('toggle');
                 BootstrapDialog.show({
                     title: 'Oops!',
                     message: 'Registration Failed',

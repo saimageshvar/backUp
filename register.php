@@ -59,7 +59,7 @@ function sanitizeParams($param)
 	else
 	{
 		$_SESSION['registration'] = "failure";
-		header("Location: index.php");
+		return 0;
 	}
 }
 

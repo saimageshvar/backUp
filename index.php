@@ -21,7 +21,7 @@ require 'utils.php';
     <link rel='stylesheet' href="css/loader.css">
     <link rel='stylesheet' href="css/scroll.css">
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css'/>
-	
+
     <!-- select2 -->
     <link rel='stylesheet' href="css/select2-bootstrap.min.css">
     <link rel='stylesheet' href="css/select2.min.css">
@@ -48,44 +48,44 @@ require 'utils.php';
         {
             color:#d73e4d;
         }	
-     p {
-        padding: 0.1em;
-        font-size:16px;
-        overflow-y:auto;
-        max-height:320px;
-        font-family: 'Raleway', Arial, sans-serif;
+        p {
+            padding: 0.1em;
+            font-size:16px;
+            overflow-y:auto;
+            max-height:320px;
+            font-family: 'Raleway', Arial, sans-serif;
 
-    }
-    body.modal-open {
-        overflow: hidden !important;
-        position:fixed !important;
-        width: 100%;
-    }
-    @media screen and (max-width: 800px) {
-        .unescodiv {
-            display:none;
         }
-    }
-</style>
-<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-<style>
-    .img-with-text {
-        text-align: justify;
-        width: [width of img];
-    }
-    .img-with-text img {
-        display: block;
-        margin: 0 auto;
-    }
-    .errspan {
-        float: right;
-        margin-left: 6px;
-        margin-top: -10px;
-        position: relative;
-        z-index: 2;
-        color: blue;
-    }
-</style>
+        body.modal-open {
+            overflow: hidden !important;
+            position:fixed !important;
+            width: 100%;
+        }
+        @media screen and (max-width: 800px) {
+            .unescodiv {
+                display:none;
+            }
+        }
+    </style>
+    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+    <style>
+        .img-with-text {
+            text-align: justify;
+            width: [width of img];
+        }
+        .img-with-text img {
+            display: block;
+            margin: 0 auto;
+        }
+        .errspan {
+            float: right;
+            margin-left: 6px;
+            margin-top: -10px;
+            position: relative;
+            z-index: 2;
+            color: blue;
+        }
+    </style>
 
 </head>
 <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
@@ -108,44 +108,44 @@ require 'utils.php';
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-4 col-sm-4 left-align no-left-indent" id="one" >
-                     
-                </div>
-                <div class="col-xs-4 col-sm-4 klogo logo-box">
-                    <center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
-                </div>
-                <div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
-                    <img src="img/unesco white and blue1.png" style="height: auto;width: 55%;">                             
-                </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-       
-    <!-- .header-menu -->
-</header>
-<!-- .site-header -->
-<div class="section-content">
-    <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
 
-    <div class="container section-wrap"
-    style="">
-    <div class="row ">
-        <div class="col-md-12  text-center">
-            <h1 class="section-title "  data-appear-animation="bounceInUp" data-appear-animation-delay="100">kurukshetra 2017</h1>
-            <div class="animation"
-            data-appear-animation="bounceInUp"
-            data-appear-animation-delay="100">
-            <div class="updates" style="height: 100px">
-                <h2 class="update" style="color: white;font-size: 3vw"></h2>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 klogo logo-box">
+                        <center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
+                    </div>
+                    <div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
+                        <img src="img/unesco white and blue1.png" style="height: auto;width: 55%;">                             
+                    </div>
+                </div>
             </div>
-            <hr class="pg-gap" style="margin-bottom: 29px;">
+            <div class="clearfix"></div>
+
+            <!-- .header-menu -->
+        </header>
+        <!-- .site-header -->
+        <div class="section-content">
+            <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
+
+            <div class="container section-wrap"
+            style="">
+            <div class="row ">
+                <div class="col-md-12  text-center">
+                    <h1 class="section-title "  data-appear-animation="bounceInUp" data-appear-animation-delay="100">kurukshetra 2017</h1>
+                    <div class="animation"
+                    data-appear-animation="bounceInUp"
+                    data-appear-animation-delay="100">
+                    <div class="updates" style="height: 100px">
+                        <h2 class="update" style="color: white;font-size: 3vw"></h2>
+                    </div>
+                    <hr class="pg-gap" style="margin-bottom: 29px;">
+                </div>
+                <div class="animation "
+                data-appear-animation="bounceInUp"
+                data-appear-animation-delay="100">
+                <a href="#introduction"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+            </div>
         </div>
-        <div class="animation "
-        data-appear-animation="bounceInUp"
-        data-appear-animation-delay="100">
-        <a href="#introduction"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
     </div>
-</div>
-</div>
 </div>
 </div>
 <!-- .section-content -->               
@@ -170,18 +170,18 @@ data-anchor="introduction">
     style="">
     <h1 class="section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">Introduction</h1>
     <p style="color:#fff; font-size:16px; margin-left:30px; text-align:justify;font-style: normal; max-height:460px;">
-		Kurukshetra embarked on its trend of pioneering ventures with the <b>S</b>tudent <b>A</b>mbassador Programme which was launched during its first edition. The K'12 Student Ambassador programme received an overwhelming response with more than thousand aspirants battling it out to don the most coveted mantle of K! And again K'13 is back with the K! Ambassador Programme, awaiting to surpass the past feats.<br/><br/>
-		<i>"Next to doing the right thing, the most important thing is to let people know you are doing the right thing."</i><br/><br/>
-To bridge the existing gap between the industry & academia, this upcoming edition aims to provide a platform for both the students and the professionals to become K!Ambassadors and represent their educational institutions and corporates respectively. This ensures a high degree of coherence between the corporate & student fraternity & also increases our magnitude of outreach to the masses.<br/><br/>
- 
-Here is a promising opportunity for the students to ameliorate their leadership, communication & management skills. Are you interested to portray your eloquence and marketing skills about the galore of events, workshops, guest lectures & exhibitions at Kurukshetra to your college peers? Are you interested to interact with the elite clique of ambassadors & involve in learning & information sharing?<br/><br/>
- 
-This portal is not just for students, it is also for the professionals who are eager to unleash the latent talent in them. If you are audacious enough to spearhead K! on your corporate base, convince your colleagues to participate in the corporate events of K!, interested to know about the ongoing projects in our campus and absorb the best of the talents, you are the ideal candidate to be a <b>C</b>orporate <b>A</b>mbassador.<br/><br/>
+      Kurukshetra embarked on its trend of pioneering ventures with the <b>S</b>tudent <b>A</b>mbassador Programme which was launched during its first edition. The K'12 Student Ambassador programme received an overwhelming response with more than thousand aspirants battling it out to don the most coveted mantle of K! And again K'13 is back with the K! Ambassador Programme, awaiting to surpass the past feats.<br/><br/>
+      <i>"Next to doing the right thing, the most important thing is to let people know you are doing the right thing."</i><br/><br/>
+      To bridge the existing gap between the industry & academia, this upcoming edition aims to provide a platform for both the students and the professionals to become K!Ambassadors and represent their educational institutions and corporates respectively. This ensures a high degree of coherence between the corporate & student fraternity & also increases our magnitude of outreach to the masses.<br/><br/>
 
-	<i>"You can have brilliant ideas, but if you cannot get them across, your ideas will not get you anywhere"
-	</i>
-    </p>
-    
+      Here is a promising opportunity for the students to ameliorate their leadership, communication & management skills. Are you interested to portray your eloquence and marketing skills about the galore of events, workshops, guest lectures & exhibitions at Kurukshetra to your college peers? Are you interested to interact with the elite clique of ambassadors & involve in learning & information sharing?<br/><br/>
+
+      This portal is not just for students, it is also for the professionals who are eager to unleash the latent talent in them. If you are audacious enough to spearhead K! on your corporate base, convince your colleagues to participate in the corporate events of K!, interested to know about the ongoing projects in our campus and absorb the best of the talents, you are the ideal candidate to be a <b>C</b>orporate <b>A</b>mbassador.<br/><br/>
+
+      <i>"You can have brilliant ideas, but if you cannot get them across, your ideas will not get you anywhere"
+      </i>
+  </p>
+
 </div>
 
 </div>
@@ -210,71 +210,71 @@ data-anchor="aboutsa">
     <div class="container section-wrap"
     style="">
     <div>
-	<ul class="nav nav-tabs nav-justified" style="background-color:transparent;">
-		<li class="active" data-toggle="tab">
-			<a href="#tab0">
-			<h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Why Student Ambassdor
-			</h6></a>
-		</li>
-		<li data-toggle="tab">
-			<a href="#tab1">
-			<h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Role of Student Ambassdor</h6></a>
-		</li>
-		<li data-toggle="tab">
-			<a href="#tab2" >
-			<h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Benefits</h6></a>
-		</li data-toggle="tab">
-		<li>
-			<a href="#tab3">
-			<h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Requirements</h6></a>
-		</li>
-		
-	</ul>
-	</div>
-    <div style="background:transparent; border:transparent; color:#fff;"class="tab-content">
-		<div class="tab-pane fade in active" id="tab0">
-			<ul style="color:#fff;font-style:normal;font-size:20px;">
-			<li>Enhance your professional development</li>
-			<li>Get to work with the elite Ambassadors from top notch colleges</li>
-			<li>Improve your leadership, marketing & communication skills</li>
-			<li>See your creativity, innovation & ideas come to fruition</li>
-			</ul>
-		</div>
-		<div class="tab-pane fade" id='tab1'>
-			<ul style="color:#fff;font-style:normal;font-size:20px;">
-			<li>Serve as a bridge between K! & your college</li>
-			<li>Spread the K! word to the students & faculties in your campus</li>
-			<li>Make your college students participate in the the events & workshops of K!</li>
-			<li>Display the marketing materials given by the K! team in your college</li>
-			</ul>
-		</div>
-		<div class="tab-pane fade" id='tab2'>
-			<ul style="color:#fff;font-style:normal;font-size:20px;">
-			<li>Delegate kits, T-shirts, Bags</li>
-			<li>Free onsite registration</li>
-			<li>One way travel allowance</li>
-			<li>Free passes to attend Guest Lectures</li>
-			<li>Cash prizes, free accomodation& workshop to best Ambassadors</li>
-			</ul>				
-		</div>
-		<div class="tab-pane fade" id='tab3'>
-			<ul style="color:#fff;font-style:normal;font-size:20px;">
-			<li>College student - any degree & any year</li>
-			<li>Good interpersonal skills</li>
-			<li>General marketing skills</li>
-			<li>Involvement in extra curricular activities</li>
-			<li>Passion for learning, creativity, innovation & information sharing</li>
-			</ul>
-		</div>
-    </div>
-</div>
-</div>
-<!-- .section-content -->
-<div class="animation text-center"
-data-appear-animation="bounceInUp"
-data-appear-animation-delay="100">
-<a href="#form"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
-</div>
+       <ul class="nav nav-tabs nav-justified" style="background-color:transparent;">
+          <li class="active" data-toggle="tab">
+             <a href="#tab0">
+                 <h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Why Student Ambassdor
+                 </h6></a>
+             </li>
+             <li data-toggle="tab">
+                 <a href="#tab1">
+                     <h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Role of Student Ambassdor</h6></a>
+                 </li>
+                 <li data-toggle="tab">
+                     <a href="#tab2" >
+                         <h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Benefits</h6></a>
+                     </li data-toggle="tab">
+                     <li>
+                         <a href="#tab3">
+                             <h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Requirements</h6></a>
+                         </li>
+
+                     </ul>
+                 </div>
+                 <div style="background:transparent; border:transparent; color:#fff;"class="tab-content">
+                  <div class="tab-pane fade in active" id="tab0">
+                     <ul style="color:#fff;font-style:normal;font-size:20px;">
+                         <li>Enhance your professional development</li>
+                         <li>Get to work with the elite Ambassadors from top notch colleges</li>
+                         <li>Improve your leadership, marketing & communication skills</li>
+                         <li>See your creativity, innovation & ideas come to fruition</li>
+                     </ul>
+                 </div>
+                 <div class="tab-pane fade" id='tab1'>
+                     <ul style="color:#fff;font-style:normal;font-size:20px;">
+                         <li>Serve as a bridge between K! & your college</li>
+                         <li>Spread the K! word to the students & faculties in your campus</li>
+                         <li>Make your college students participate in the the events & workshops of K!</li>
+                         <li>Display the marketing materials given by the K! team in your college</li>
+                     </ul>
+                 </div>
+                 <div class="tab-pane fade" id='tab2'>
+                     <ul style="color:#fff;font-style:normal;font-size:20px;">
+                         <li>Delegate kits, T-shirts, Bags</li>
+                         <li>Free onsite registration</li>
+                         <li>One way travel allowance</li>
+                         <li>Free passes to attend Guest Lectures</li>
+                         <li>Cash prizes, free accomodation& workshop to best Ambassadors</li>
+                     </ul>				
+                 </div>
+                 <div class="tab-pane fade" id='tab3'>
+                     <ul style="color:#fff;font-style:normal;font-size:20px;">
+                         <li>College student - any degree & any year</li>
+                         <li>Good interpersonal skills</li>
+                         <li>General marketing skills</li>
+                         <li>Involvement in extra curricular activities</li>
+                         <li>Passion for learning, creativity, innovation & information sharing</li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- .section-content -->
+     <div class="animation text-center"
+     data-appear-animation="bounceInUp"
+     data-appear-animation-delay="100">
+     <a href="#form"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+ </div>
 </section>
 <!-- .section -->
 
@@ -291,59 +291,59 @@ data-title="form"
 data-anchor="form">
 
 <div class="section-content">
-<div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
-		<div class="container section-wrap">
-				<div>
-					<div>
-					<h1 class="section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">STUDENT AMBASSDOR REGISTRATION</h1>						
-						<div align="center" style="max-height:500px;">
-							<form style="position: relative; width:90%; background-color:#f2efef; padding-bottom:10px; padding-left:20px; padding-right:20px; padding-top:10px;" id="saregister" onsubmit="Validate(this)">
-								<div class="input-group" style="padding-bottom:4px;">
-									<span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
-									<input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
-								</div>
-								<div class="input-group" style="padding-bottom:4px;">
-									<span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
-									<input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
-								</div>
-                            
-								<div class="input-group" style="padding-bottom:4px;">
-									<span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-									<input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
-								</div>
+    <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
+    <div class="container section-wrap">
+        <div>
+           <div>
+               <h1 class="section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">STUDENT AMBASSDOR REGISTRATION</h1>						
+               <div align="center" style="max-height:500px;">
+                 <form id="sa_registration_form" style="position: relative; width:90%; background-color:#f2efef; padding-bottom:10px; padding-left:20px; padding-right:20px; padding-top:10px;" method="post">
+                    <div class="input-group" style="padding-bottom:4px;">
+                       <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
+                       <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
+                   </div>
+                   <div class="input-group" style="padding-bottom:4px;">
+                       <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
+                       <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
+                   </div>
 
-								<div class="input-group" style="padding-bottom:4px;">
-									<span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-									<input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
-								</div>
-								<div class="input-group">
-									<span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
-									<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
-								</div>
-								<div class="input-group radio">
-									Gender:
-									<label class="radio-inline">
-										<input type="radio" name="gender"  value="M" checked> Male
-									</label>
-									<label class="radio-inline">
-										<input type="radio" name="gender" value="F"> Female
-									</label>
-								</div>
-								<div class="form-group college">
-								</div>
-								<div class="form-group courses">
-								</div>
-								<div class="form-group degree">
-								</div>
-								<div class="form-group year">
-								</div>
-								<input type="submit" class="btn btn-success" value="Register">
-							</form>
-						</div>
-					</div><!-- .section-title-block -->					
-				</div>
-			</div>
-		</div><!-- .section-content -->
+                   <div class="input-group" style="padding-bottom:4px;">
+                       <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
+                       <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
+                   </div>
+
+                   <div class="input-group" style="padding-bottom:4px;">
+                       <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
+                       <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
+                   </div>
+                   <div class="input-group">
+                       <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
+                       <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                   </div>
+                   <div class="input-group radio pull-left">
+                       Gender:
+                       <label class="radio-inline">
+                          <input type="radio" name="gender"  value="M" checked> Male
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" name="gender" value="F"> Female
+                      </label>
+                  </div>
+                  <div class="form-group college">
+                  </div>
+                  <div class="form-group courses">
+                  </div>
+                  <div class="form-group degree">
+                  </div>
+                  <div class="form-group year">
+                  </div>
+                  <input type="submit" class="btn btn-success" value="Register">
+              </form>
+          </div>
+      </div><!-- .section-title-block -->					
+  </div>
+</div>
+</div><!-- .section-content -->
 <!-- .section-content -->
 <footer class="site-footer" style="background-color: #f7f7f1;padding:18px; bottom:-80px;">
     <div class="container">
@@ -368,92 +368,6 @@ data-anchor="form">
     </style>
 </section>
 <!-- .section -->
-
-<!-- Register as Student Ambassdor -->
-<div class="modal fade registersa" role="dialog" id="SAregistration">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <h2 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h2>
-            <center>
-                <div class="newreg">
-                    <div class="oldreglink col-sm-12" style="text-align:right; cursor:pointer"><a><i>Already registered for k!?</i></a></div>
-                    <form id="saregister" style="width:90%;" onsubmit="Validate(this)">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
-                            <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
-                            <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
-                        </div>
-                        <br>                            
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-                            <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                            <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
-                        </div>
-                        <br/>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
-                            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
-                        </div>
-                        <div class="input-group radio">
-                            Gender:
-                            <label class="radio-inline">
-                                <input type="radio" name="gender"  value="M" checked> Male
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="gender" value="F"> Female
-                            </label>
-                        </div>
-                        <div class="form-group college">
-                        </div>
-                        <div class="form-group courses">
-                        </div>
-                        <div class="form-group degree">
-                        </div>
-                        <div class="form-group year">
-                        </div>
-                        <div class="input-group">
-                            <input type="hidden" name="sa" value="true" />
-                        </div>
-                        <input type="submit" class="btn btn-success" value="Register">
-                        <br/><br/>
-                    </form>
-                </div>
-            </center>
-            <div class="main clearfix oldreg" style="display:none;">
-                <div class="back">
-                    <a>
-                        <p style="cursor:pointer;">&nbsp;&nbsp;<i class="fa fa-arrow-left"></i>&nbsp;Back</p>
-                    </a>
-                </div>
-                <br/>
-                <center>
-                    <form style="width:90%;" method="post" action="registerAsSA.php">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-                            <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                            <input id="password" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
-                        </div>
-                        <br>                            
-                        <input type="submit" class="btn btn-success" value="Login"><br/>
-                        <br>
-                    </form>
-                </center>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- .main -->
 <!-- random color -->
@@ -481,7 +395,7 @@ data-anchor="form">
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script>
-   WebFont.load({
+ WebFont.load({
     google: {
         families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
     }
@@ -547,6 +461,8 @@ data-anchor="form">
     <!-- form data -->
     <script src="js/list.js"></script>
     <script type='text/javascript' src='assets/js/main68b3.js'></script>
+    <script type='text/javascript' src='js/utils.js'></script>
+
     <script>
         $(document).ready(function() {
 
@@ -575,44 +491,21 @@ data-anchor="form">
 			}
             // populate forms
             populateForm();
-        });
-            //switching events and workshops
-            $( ".workshops-menu" ).click(function() {
-                $(".events-details").hide();
-                $(".workshops-details").show();
-            });
-            
-            $( ".events-menu" ).click(function() {
-                $(".workshops-details").hide();
-                $(".events-details").show();            
-            });
-        </script>
-        <script>
-            //switching reg forms
-            $( ".oldreglink" ).click(function() {
-                $(".newreg").hide();
-                $(".oldreg").show();            
-            });
-            $( ".back" ).click(function() {
-                $(".oldreg").hide();
-                $(".newreg").show();            
-            });
-        </script>  
-        
-        <script>
-		//student ambassdor registration direct link
-		$(document).ready(function() {
 
-            if(window.location.href.indexOf('#SAregistration') != -1) {
-             $('#SAregistration').modal('show');
-         }
-
-     });
- </script> 
+            // rolling content
+            $(".update").typed({
+                strings: ["Some cachy content", "Dai edaadu podungadaa"],
+                typeSpeed: 0,
+                loop: true,
+                showCursor: false,
+                typeSpeed: 10,
+                backDelay: 1000,
+                backSpeed: 10
+            });
+        }); 
+    </script> 
 </body>
 </html>
 <?php
-checkRegistration();
 checkLogin();
-checkSA();
 ?>
