@@ -890,6 +890,7 @@ data-anchor="footer">
                         <div class="form-group year">
                         </div>
                         <input type="submit" class="btn btn-success" value="Register">
+                        <input type="reset" class="btn btn-success pull-right"  value="reset" />
                     </form>
                 </div>
             </div>
@@ -1316,7 +1317,6 @@ data-anchor="footer">
 </body>
 </html>
 <?php
-checkRegistration();
 checkSA();
 checkLogin();
 ?>

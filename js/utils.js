@@ -63,6 +63,7 @@ $("#registration_form").submit(function(e) {
             if(result==1)
             {
                 $('.login').modal('toggle');
+                $('#registration_form')[0].reset();
                 BootstrapDialog.show({
                     title: 'Hey!',
                     message: 'Registered Successfully. Please login to continue.<br/>Dont forget to check your mail :D',
