@@ -29,10 +29,10 @@ if(!isset($_SESSION['user']))
 		foreach ($response['user']['eventSubscriptionList'] as $r) {
 			$_SESSION['user']['events'][$r['eventName']] = true;
 		}
-		if ($_SESSION['user']['isSA'] == true)
-			echo 1;
-		else
-			echo 2;
+
+		$arr = array ('response'=>'1','name'=>$_SESSION['user']['name']);
+		echo json_encode($arr);
+
 	}
 	else
 	{

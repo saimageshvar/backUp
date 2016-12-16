@@ -830,6 +830,10 @@ data-anchor="footer">
             </ul>
             <div class="tab-content" style="border:none">
                 <div id="login" class="tab-pane fade in active">
+                    <div class="col-sm-12" style="text-align:right; cursor:pointer">
+                        <a href="#" data-toggle="modal" data-target=""><i>Forgot Password?</i></a>
+                    </div>
+
                     <form id="login_form" method="post">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
@@ -1120,10 +1124,10 @@ data-anchor="footer">
                    <p></p>
                    <hr/>
                    <!-- events -->
-                  <div class="col-sm-12 col-md-4">
+                   <div class="col-sm-12 col-md-4">
                     <ul class="list-group">
                         <li class="list-group-item active btn btn-primary">Events&nbsp;
-                        <span class="badge"><?php echo count($_SESSION['user']['events']); ?></span>
+                            <span class="badge"><?php echo count($_SESSION['user']['events']); ?></span>
                         </li>
                         <?php foreach ($_SESSION['user']['events'] as $event => $flag) {
                             echo"<li class='list-group-item'>".$event."</li>";
@@ -1133,17 +1137,17 @@ data-anchor="footer">
                 <div class="col-sm-12 col-md-4">
                     <ul class="list-group">
                         <li class="list-group-item active btn btn-primary">Workshops&nbsp;
-                        <span class="badge"><?php echo count($_SESSION['user']['events']); ?></span>
+                            <span class="badge"><?php echo count($_SESSION['user']['events']); ?></span>
                         </li>
                         <?php foreach ($_SESSION['user']['events'] as $event => $flag) {
                             echo"<li class='list-group-item'>".$event."</li>";
                         }?>
                     </ul>
                 </div>
-                 <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4">
                     <ul class="list-group">
                         <li class="list-group-item active btn btn-primary">Other&nbsp;
-                        <span class="badge"><?php echo count($_SESSION['user']['events']); ?></span>
+                            <span class="badge"><?php echo count($_SESSION['user']['events']); ?></span>
                         </li>
                         <?php foreach ($_SESSION['user']['events'] as $event => $flag) {
                             echo"<li class='list-group-item'>".$event."</li>";

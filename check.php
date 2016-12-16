@@ -1,4 +1,7 @@
- 
+<?php
+session_start();
+?>
+<script> 
 // handle login
 $("#login_form").submit(function(e) { 
     $.ajax
@@ -307,3 +310,4 @@ $("#subscribe_event").click(function(e) {
    });
     e.preventDefault();
 });
+</script>
