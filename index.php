@@ -180,36 +180,36 @@ th, td {
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".sponsors"><span>Sponsors</span></a></li>
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".about"><span>About</span></a></li>
                     <?php 
-                    if(!isset($_SESSION['user']['userId']))
-                    {
-                        ?>  
-                        <li id="login_link" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".login"><span>Login/Register</span></a></li>
-                        <?php
-                    }
-                    else
-                    {
-                        ?>  
-                        <li id="logout_link" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='logout.php'><span>Logout</span></a></li>
-                        <?php
-                    }
-                    ?>
-                    <?php 
                     if(!isset($_SESSION['user']))
                     {
                         ?>  
                         <li id="register_as_new_sa" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".registersa"><span>Register as SA</span></a></li>
                         <?php
                     }
-                    else if(!isset($_SESSION['user']['isSA']))
+                    else if($_SESSION['user']['isSA']==false)
                     {
                      ?>   
-                     <li id="register_as_sa" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='registerAsSA.php'><span>Register as SA</span></a></li>
+                     <li id="register_as_sa" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href=''><span>Register as SA</span></a></li>
                      <?php
                  }
                  if(isset($_SESSION['user']))
                  {
                     ?>   
                     <li id="username" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
+                    <?php
+                }
+                ?>
+                <?php 
+                if(!isset($_SESSION['user']['userId']))
+                {
+                    ?>  
+                    <li id="login_link" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".login"><span>Login/Register</span></a></li>
+                    <?php
+                }
+                else
+                {
+                    ?>  
+                    <li id="logout_link" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='logout.php'><span>Logout</span></a></li>
                     <?php
                 }
                 ?>
@@ -969,7 +969,7 @@ data-anchor="footer">
                 </div>
                 <br/>
                 <center>
-                    <form style="width:90%;" method="post" action="registerAsSA.php">
+                    <form id="sa_registration_form_existing" style="width:90%;" method="post">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
                             <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
@@ -1323,6 +1323,5 @@ data-anchor="footer">
 </body>
 </html>
 <?php
-checkSA();
 checkLogin();
 ?>

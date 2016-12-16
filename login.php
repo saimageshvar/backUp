@@ -25,7 +25,10 @@ if(!isset($_SESSION['user']))
 		$_SESSION['user'] = $response['user'];
 		$_SESSION['access_token'] = $response['token'];
 		$_SESSION['login'] = "success";
-		echo 1;
+		if ($_SESSION['user']['isSA'] == true)
+			echo 1;
+		else
+			echo 2;
 	}
 	else
 	{
