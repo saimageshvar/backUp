@@ -41,11 +41,11 @@ session_start();
         }           
         .input-group-addon
         {
-            background-color:#f7e3e5;
+            background: rgba(0, 0, 0, 0.2);
         }
         .reicon
         {
-            color:#d73e4d;
+			color:#fff;
         }	
         p {
             padding: 0.1em;
@@ -294,24 +294,24 @@ data-anchor="form">
     <div class="container section-wrap">
         <div>
            <div>
-               <h1 class="section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">STUDENT AMBASSDOR REGISTRATION</h1>						
+               <h1 style="color: rgb(255, 247, 204);"class="section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">STUDENT AMBASSDOR REGISTRATION</h1>						
                <div align="center" style="max-height:500px;">
-                 <form id="sa_registration_form" style="position: relative; width:90%; background-color:#f2efef; padding-bottom:10px; padding-left:20px; padding-right:20px; padding-top:10px;" method="post">
-                    <div class="input-group" style="padding-bottom:4px;">
+                 <form id="sa_registration_form" style="position: relative; width:90%; background: rgba(0, 0, 0, 0.3); padding-bottom:10px; padding-left:20px; padding-right:20px; padding-top:10px;" method="post">
+                    <div class="input-group" style="padding-bottom:13px;">
                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
                    </div>
-                   <div class="input-group" style="padding-bottom:4px;">
+                   <div class="input-group" style="padding-bottom:13px;">
                        <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
                        <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
                    </div>
 
-                   <div class="input-group" style="padding-bottom:4px;">
+                   <div class="input-group" style="padding-bottom:13px;">
                        <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
                        <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
                    </div>
 
-                   <div class="input-group" style="padding-bottom:4px;">
+                   <div class="input-group" style="padding-bottom:13px;">
                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
                    </div>
@@ -319,13 +319,21 @@ data-anchor="form">
                        <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
                    </div>
-                   <div class="input-group radio pull-left">
-                       Gender:
-                       <label class="radio-inline">
-                          <input type="radio" name="gender"  value="M" checked> Male
+                   <div style="color:#fff;" class="input-group">
+					Gender:
+                       <label style="color:#fff;" class="new radio-inline">
+						<!--div class="new-radio"-->
+                          <input type="radio" name="gender"  value="M" checked>
+						  <span></span>
+						  Male
+						<!--/div-->  
                       </label>
-                      <label class="radio-inline">
-                          <input type="radio" name="gender" value="F"> Female
+                      <label style="color:#fff;" class="radio-inline">
+						<!--div class="new-radio"-->
+                          <input type="radio" name="gender"  value="F">
+						  <span></span>
+						  Female
+						<!--/div-->  
                       </label>
                   </div>
                   <div class="form-group college">
