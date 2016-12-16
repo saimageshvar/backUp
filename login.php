@@ -27,7 +27,7 @@ if(!isset($_SESSION['user']))
 		$_SESSION['access_token'] = $response['token'];
 		$_SESSION['login'] = "success";
 		foreach ($response['user']['eventSubscriptionList'] as $r) {
-			$_SESSION['user'][$r['eventName']] = true;
+			$_SESSION['user']['events'][$r['eventName']] = true;
 		}
 		if ($_SESSION['user']['isSA'] == true)
 			echo 1;
