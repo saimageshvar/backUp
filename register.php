@@ -5,7 +5,7 @@ $contactNumber = sanitizeParams($_POST['contactNumber']);
 $emailId = sanitizeParams($_POST['emailId']);
 $password = sanitizeParams($_POST['password']);
 $gender = sanitizeParams($_POST['gender']);
-$collegeName =$_POST['collegeName'];
+$collegeName =$_POST['college'];
 $department = sanitizeParams($_POST['department']);
 $date = sanitizeParams($_POST['date']);
 $isSA = '';
@@ -14,7 +14,7 @@ if(isset($_POST['sa']))
 else
 	$isSA = false;
 
-$url = 'http://login.kurukshetra.org.in/create.json';
+$url = 'http://login.kurukshetra.org.in/create';
 $params =  json_encode(array("user" => array(
 	"name" => $name, 
 	"emailId" => $emailId, 
@@ -36,13 +36,15 @@ curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 
 $response = curl_exec( $ch );
 $response = json_decode($response, true);
-if ($response['responseCode'] == 1)
+if (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 200)
 {
 	$_SESSION['registration'] = "success";
+	echo 1;
 }
 else
 {
 	$_SESSION['registration'] = "failure";
+	echo 0;
 
 }
 //header("Location: index.php");

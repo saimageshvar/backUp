@@ -232,7 +232,7 @@ th, td {
             data-appear-animation="bounceInUp"
             data-appear-animation-delay="100">
             <div class="updates" style="height: 100px">
-                <h2 class="update" style="color: white;font-size: 3vw"></h2>
+                <h2 class="update" style="color: white;"></h2>
             </div>
             <hr class="pg-gap" style="margin-bottom: 29px;">
         </div>
@@ -405,15 +405,15 @@ data-anchor="eventsAndWorkshops">
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains_work workshops-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100" style="display:none">
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-gear"></a>
-                <p>Engineering</p>
+                <p>General</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-laptop"></a>
-                <p>Coding</p>
+                <p>Science</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-terminal"></a>
-                <p>Online</p>
+                <p>Engineering</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-money"></a>
@@ -425,7 +425,7 @@ data-anchor="eventsAndWorkshops">
             </div>
             <div class="col-sm-3">
                 <a href="workshops.html" class="hi-icon fa fa-archive"></a>
-                <p>General</p>
+                <p>School</p>
             </div>
             <!-- workshops will come here -->
             <!-- workshop should come in tab -->
@@ -845,7 +845,7 @@ data-anchor="footer">
                     </form>
                 </div>
                 <div id="register" class="tab-pane fade">
-                    <form id="register" onsubmit="Validate(this)">
+                    <form id="registration_form" method="post">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
                             <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
