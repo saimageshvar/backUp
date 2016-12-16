@@ -905,7 +905,7 @@ data-anchor="footer">
             <center>
                 <div class="newreg">
                     <div class="oldreglink col-sm-12" style="text-align:right; cursor:pointer"><a><i>Already registered for k!?</i></a></div>
-                    <form id="saregister" style="width:90%;" onsubmit="Validate(this)">
+                    <form id="sa_registration_form" style="width:90%;" >
                         <div class="input-group">
                             <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
                             <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
@@ -930,7 +930,7 @@ data-anchor="footer">
                             <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
                             <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
                         </div>
-                        <div class="input-group radio">
+                        <div class="input-group radio pull-left">
                             Gender:
                             <label class="radio-inline">
                                 <input type="radio" name="gender"  value="M" checked> Male
@@ -950,7 +950,13 @@ data-anchor="footer">
                         <div class="input-group">
                             <input type="hidden" name="sa" value="true" />
                         </div>
-                        <input type="submit" class="btn btn-success" value="Register">
+                        <div class="col-sm-12">
+                            <input type="submit" class="btn btn-success pull-left" value="Register">
+                        </div>
+                        <div class="col-sm-12">
+
+                            <input type="reset" class="btn btn-success pull-right"  value="reset" />
+                        </div>
                         <br/><br/>
                     </form>
                 </div>
