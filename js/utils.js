@@ -12,55 +12,58 @@ $("#login_form").submit(function(e) {
             {
                 $('#login_link').remove();
                 $('#register_as_new_sa').remove();
-               //  if(result==2)
-               //  {
-               //     var li = document.createElement('li');
-               //     li.id = "register_as_sa";
-               //     li.className = "menu-item menu-item-type-post_type menu-item-object-page";
-               //     var link = document.createElement('a');
-               //     link.href = "";
-               //     label = document.createElement('span');
-               //     label.textContent = "Register as SA";
-               //     $(link).append(label);
-               //     $(li).append(link);
-               //     $('#menu-main-menu').append(li);
-               // }
-               $('.login').modal('toggle');
-               BootstrapDialog.show({
-                title: 'Hey!',
-                message: 'Successfully logged in!',
-                type: BootstrapDialog.TYPE_SUCCESS,
-                closable: true,
-                draggable: true
-            });
-               var li = document.createElement('li');
-               li.className = "menu-item menu-item-type-post_type menu-item-object-page";
-               var link = document.createElement('a');
-               link.href = "logout.php";
-               label = document.createElement('span');
-               label.textContent = "Logout";
-               $(link).append(label);
-               $(li).append(link);
-               $('#menu-main-menu').append(li);
+                $('.login').modal('toggle');
+                BootstrapDialog.show({
+                    title: 'Hey!',
+                    message: 'Successfully logged in!',
+                    type: BootstrapDialog.TYPE_SUCCESS,
+                    closable: true,
+                    draggable: true
+                });
+
+                // adding dashboard
+                var li = document.createElement('li');
+                li.className = "menu-item menu-item-type-post_type menu-item-object-page";
+                var link = document.createElement('a');
+                link.href = "#"
+                $(link).attr('data-toggle', 'modal');
+                $(link).attr('data-target', '.dashboard');
+                label = document.createElement('span');
+                label.textContent = "Logout";
+                $(link).append(label);
+                $(li).append(link);
+                $('#menu-main-menu').append(li);
 
 
-           }
-           else if(result==0)
-           {
-            $('.login').modal('toggle');
-            BootstrapDialog.show({
-                title: 'Oops',
-                message: 'Login Failed',
-                type: BootstrapDialog.TYPE_DANGER,
-                closable: true,
-                draggable: true
-            });
-        }
-    },
-    error: function(XMLHttpRequest, textStatus, errorThrown) {
-     alert("some error");
- }
-});
+                // adding logout
+                var li = document.createElement('li');
+                li.className = "menu-item menu-item-type-post_type menu-item-object-page";
+                var link = document.createElement('a');
+                link.href = "logout.php";
+                label = document.createElement('span');
+                label.textContent = "Logout";
+                $(link).append(label);
+                $(li).append(link);
+                $('#menu-main-menu').append(li);
+
+
+            }
+            else if(result==0)
+            {
+                $('.login').modal('toggle');
+                BootstrapDialog.show({
+                    title: 'Oops',
+                    message: 'Login Failed',
+                    type: BootstrapDialog.TYPE_DANGER,
+                    closable: true,
+                    draggable: true
+                });
+            }
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+           alert("some error");
+       }
+   });
     e.preventDefault();
 });
 
@@ -110,9 +113,9 @@ $("#registration_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         alert("some error");
-     }
- });
+           alert("some error");
+       }
+   });
     e.preventDefault();
 });
 
@@ -161,9 +164,9 @@ $("#sa_registration_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         alert("some error");
-     }
- });
+           alert("some error");
+       }
+   });
     e.preventDefault();
 });
 
@@ -200,9 +203,9 @@ $("#register_as_sa").click(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     e.preventDefault();
 });
 
@@ -250,9 +253,9 @@ $('#sa_registration_form_existing').submit(function(e){
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     e.preventDefault();
 });
 
@@ -297,8 +300,8 @@ $("#subscribe_event").click(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     e.preventDefault();
 });
