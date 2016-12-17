@@ -61,10 +61,29 @@ function validatemail(key) {
 function Validate(formid)
 {
 	if(check)
+	{		
+		var degree = $('#degree-select');
+        if (degree.val() === '') 
+		{
+			alert("Invalid");
+            //$('#selBooks').focus();
+		}
+
+		/*if($('#degree-select').val()=="")
+		{
+			alert("Invalid")
+		}*/
+		else
+		{
+			formid.method = "post";
+			formid.action = "register.php";
+		}
+	}
+	/*if(check)
 	{
 		formid.method = "post";
 		formid.action = "register.php";
 	}
 	else
-		alert("Invalid")
+		alert("Invalid")*/
 }
