@@ -34,7 +34,7 @@ function populateForm()
 	outer2.className="form-control department-select";
 	outer2.id="department";
 	outer2.name="department";
-	outer2.style = "width: 100%";
+	outer2.style = "width: 100%;height:40px";
 	for(i=0;i<departments.length;i++)
 	{
 		var child=document.createElement("option");

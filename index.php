@@ -294,9 +294,9 @@ data-anchor="form">
     <div class="container section-wrap">
         <div>
            <div>
-               <h1 style="color: rgb(255, 247, 204);"class="section-title" data-appear-animation="fadeInDown" data-appear-animation-delay="100">STUDENT AMBASSDOR REGISTRATION</h1>						
+               <h1 style="color: rgb(255, 247, 204);" class="section-title text-center" data-appear-animation="fadeInDown" data-appear-animation-delay="100">STUDENT AMBASSDOR REGISTRATION</h1>						
                <div align="center" style="max-height:500px;">
-                 <form id="sa_registration_form" style="position: relative; width:90%; background: rgba(0, 0, 0, 0.3); padding-bottom:10px; padding-left:20px; padding-right:20px; padding-top:10px;" method="post">
+                 <form id="sa_registration_form" style="position: relative; width:50%; background: rgba(0, 0, 0, 0.2); padding-bottom:10px; padding-left:20px; padding-right:20px; padding-top:10px;" method="post">
                     <div class="input-group" style="padding-bottom:13px;">
                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
@@ -319,7 +319,7 @@ data-anchor="form">
                        <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
                    </div>
-                   <div style="color:#fff;" class="input-group">
+                   <div style="color:#fff;" class="input-group pull-left">
 					Gender:
                        <label style="color:#fff;" class="new radio-inline">
 						<!--div class="new-radio"-->
