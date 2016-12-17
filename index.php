@@ -295,8 +295,8 @@ data-anchor="form">
         <div>
            <div>
                <h1 style="color: rgb(255, 247, 204);" class="section-title text-center" data-appear-animation="fadeInDown" data-appear-animation-delay="100">STUDENT AMBASSDOR REGISTRATION</h1>						
-               <div align="center" style="max-height:500px;overflow-y: scroll;position: relative;">
-                 <form id="sa_registration_form" style="position: relative; width:50%; background: rgba(0, 0, 0, 0.2); padding-bottom:10px; padding-left:20px; padding-right:20px; padding-top:10px;" method="post">
+               <div align="center" style="max-height:800px;">
+                 <form id="sa_registration_form" style="position: relative; width:50%;min-width: 200px; background: rgba(0, 0, 0, 0.2); padding-bottom:10px; padding-left:20px; padding-right:20px; padding-top:10px;" method="post">
                     <div class="input-group" style="padding-bottom:13px;">
                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
