@@ -1,28 +1,32 @@
 
 // handle new sa registration
 $("#sa_registration_form").submit(function(e) { 
-    $.ajax
-    ({ 
-        url: 'register.php',
-        data: $("#sa_registration_form").serialize(),
-        type: 'post',
-        success: function(result)
-        {
-            if(result==1)
-            {
-                $('#sa_registration_form')[0].reset();
-                $("#city").empty().trigger('change');
-                $("#department").empty().trigger('change')
-                $("#degree").empty().trigger('change')
-                $("#year").empty().trigger('change')
+    var flag = returnCheck();
+    if(flag)
+    {
 
-                BootstrapDialog.show({
-                    title: 'Hey!',
-                    message: 'Registered Successfully. We will contact you soon.<br/>Dont forget to check your mail :D',
-                    type: BootstrapDialog.TYPE_SUCCESS,
-                    closable: true,
-                    draggable: true
-                });
+        $.ajax
+        ({ 
+            url: 'register.php',
+            data: $("#sa_registration_form").serialize(),
+            type: 'post',
+            success: function(result)
+            {
+                if(result==1)
+                {
+                    $('#sa_registration_form')[0].reset();
+                    $("#city").empty().trigger('change');
+                    $("#department").empty().trigger('change')
+                    $("#degree").empty().trigger('change')
+                    $("#year").empty().trigger('change')
+
+                    BootstrapDialog.show({
+                        title: 'Hey!',
+                        message: 'Registered Successfully. We will contact you soon.<br/>Dont forget to check your mail :D',
+                        type: BootstrapDialog.TYPE_SUCCESS,
+                        closable: true,
+                        draggable: true
+                    });
                 // var li = document.createElement('li');
                 // li.className = "menu-item menu-item-type-post_type menu-item-object-page";
                 // var link = document.createElement('a');
@@ -57,15 +61,26 @@ $("#sa_registration_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           BootstrapDialog.show({
+         BootstrapDialog.show({
             title: 'Oops!',
             message: 'Some error occured. Please try later',
             type: BootstrapDialog.TYPE_DANGER,
             closable: true,
             draggable: true
         });
-       }
-   });
+     }
+ });
+    }
+    else
+    {
+        BootstrapDialog.show({
+            title: 'Hey!',
+            message: 'We won\'t spam you. Please enter valid details',
+            type: BootstrapDialog.TYPE_WARNING,
+            closable: true,
+            draggable: true
+        });
+    }
     e.preventDefault();
 });
 

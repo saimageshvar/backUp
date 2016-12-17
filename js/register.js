@@ -87,3 +87,8 @@ function Validate(formid)
 	else
 		alert("Invalid")*/
 }
+
+function returnCheck()
+{
+	return check;
+}
