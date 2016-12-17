@@ -35,7 +35,11 @@
         .dow
         {
             width: 40px !important;
-        }           
+        }  
+		.new-radio.checked
+		{
+			background:rgba(0,0,0,0.8) !important;
+		}
         .input-group-addon
         {
             background: rgba(0, 0, 0, 0.2);
@@ -61,7 +65,16 @@
             .unescodiv {
                 display:none;
             }
+			.update{
+				font-size:5vw !important;
+			}
         }
+		@media screen and (min-width:799px){
+			.update{
+				font-size:3vw !important;
+			}
+		}
+		
     </style>
     <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
     <style>
@@ -107,7 +120,7 @@
 
                     </div>
                     <div class="col-xs-4 col-sm-4 klogo logo-box">
-                        <center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
+                        <center><img src="img/k logo.png" style="height: auto;width:75%;"></center>
                     </div>
                     <div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
                         <img src="img/unesco white and blue1.png" style="height: auto;width: 55%;">                             
@@ -131,7 +144,7 @@
                     data-appear-animation="bounceInUp"
                     data-appear-animation-delay="100">
                     <div class="updates" style="height: 100px">
-                        <h2 class="update" style="color: white;font-size: 3vw"></h2>
+                        <h2 class="update" style="color: white;"></h2>
                     </div>
                     <hr class="pg-gap" style="margin-bottom: 29px;">
                 </div>
@@ -209,20 +222,20 @@ data-anchor="aboutsa">
        <ul class="nav nav-tabs nav-justified" style="background-color:transparent;">
           <li class="active" data-toggle="tab">
              <a href="#tab0">
-                 <h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Why Student Ambassdor
+                 <h6 style="font-family:'Aref Ruqaa', serif; font-size:20px; font-style: normal; text-transform: none;">Why Student Ambassdor
                  </h6></a>
              </li>
              <li data-toggle="tab">
                  <a href="#tab1">
-                     <h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Role of Student Ambassdor</h6></a>
+                     <h6 style="font-family:'Aref Ruqaa', serif; font-size:20px; font-style: normal; text-transform: none;">Role of Student Ambassdor</h6></a>
                  </li>
                  <li data-toggle="tab">
                      <a href="#tab2" >
-                         <h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Benefits</h6></a>
+                         <h6 style="font-family:'Aref Ruqaa', serif; font-size:20px; font-style: normal; text-transform: none;">Benefits</h6></a>
                      </li data-toggle="tab">
                      <li>
                          <a href="#tab3">
-                             <h6 style="font-family:'Aref Ruqaa', serif; font-size:18px; font-style: normal; text-transform: none;">Requirements</h6></a>
+                             <h6 style="font-family:'Aref Ruqaa', serif; font-size:20px; font-style: normal; text-transform: none;">Requirements</h6></a>
                          </li>
 
                      </ul>
@@ -283,7 +296,7 @@ data-nav-color="#FFC300"
 data-nav-color-text=" #212f3c "
 data-color=""
 data-title-color=""
-data-title="form"
+data-title="Registration"
 data-anchor="form">
 
 <div class="section-content">
@@ -293,7 +306,7 @@ data-anchor="form">
            <div>
                <h1 style="color: rgb(255, 247, 204);" class="section-title text-center" data-appear-animation="fadeInDown" data-appear-animation-delay="100">STUDENT AMBASSDOR REGISTRATION</h1>						
                <div align="center" style="max-height:800px;">
-                 <form id="sa_registration_form" style="position: relative; width:50%;min-width: 200px; background: rgba(0, 0, 0, 0.2); padding-bottom:10px; padding-left:20px; padding-right:20px; padding-top:10px;" method="post">
+                 <form id="sa_registration_form" style="position: relative; width:50%;min-width: 300px; background: rgba(0, 0, 0, 0.2); padding-bottom:10px; padding-left:20px; padding-right:20px; padding-top:10px;" method="post">
                     <div class="input-group" style="padding-bottom:13px;">
                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
@@ -310,7 +323,7 @@ data-anchor="form">
 
                    <div class="input-group" style="padding-bottom:13px;">
                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                       <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
+                       <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters)" onblur="validatepass(this)">
                    </div>
                    <div class="input-group">
                        <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
@@ -320,7 +333,7 @@ data-anchor="form">
 					Gender:
                        <label style="color:#fff;" class="new radio-inline">
 						<!--div class="new-radio"-->
-                          <input type="radio" name="gender"  value="M" checked>
+                          <input style="background:rgba(0,0,0,0.2);" type="radio" name="gender"  value="M" checked>
 						  <span></span>
 						  Male
 						<!--/div-->  
