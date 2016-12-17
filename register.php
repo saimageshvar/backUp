@@ -10,6 +10,7 @@ $department = sanitizeParams($_POST['department']);
 $date = sanitizeParams($_POST['date']);
 $degree = sanitizeParams($_POST['degree']);
 $year = sanitizeParams($_POST['year']);
+$city = sanitizeParams($_POST['city']);
 $isSA = '';
 if(isset($_POST['sa']))
 	$isSA = true;
