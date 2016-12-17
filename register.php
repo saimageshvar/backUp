@@ -41,6 +41,12 @@ if (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 200)
 	$_SESSION['registration'] = "success";
 	echo 1;
 }
+else if(curl_getinfo($ch, CURLINFO_HTTP_CODE) == 409)
+{
+	$_SESSION['registration'] = "failure";
+	echo 2;
+
+}
 else
 {
 	$_SESSION['registration'] = "failure";
