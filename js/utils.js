@@ -11,6 +11,11 @@ $("#sa_registration_form").submit(function(e) {
             if(result==1)
             {
                 $('#sa_registration_form')[0].reset();
+                $("#city").empty().trigger('change');
+                $("#department").empty().trigger('change')
+                $("#degree").empty().trigger('change')
+                $("#year").empty().trigger('change')
+
                 BootstrapDialog.show({
                     title: 'Hey!',
                     message: 'Registered Successfully. We will contact you soon.<br/>Dont forget to check your mail :D',
@@ -52,15 +57,15 @@ $("#sa_registration_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         BootstrapDialog.show({
+           BootstrapDialog.show({
             title: 'Oops!',
             message: 'Some error occured. Please try later',
             type: BootstrapDialog.TYPE_DANGER,
             closable: true,
             draggable: true
         });
-     }
- });
+       }
+   });
     e.preventDefault();
 });
 
