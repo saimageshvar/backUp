@@ -96,6 +96,40 @@ $('.department-select').select2({
 
 
 }
+
+
+//city list
+function displaycity(cityArray)
+{
+	var outer5 = document.createElement("select");
+	outer5.className="form-control city-select";
+	outer5.id="city";
+	outer5.name="city";
+	outer5.style = "width: 100%";
+	var child=document.createElement("option");
+	child.textContent ="";
+	child.value ="";
+	outer5.append(child);
+	for(i=0;i<cityArray[0].states.length;i++)
+	{
+		child=document.createElement("option");
+		child.textContent = cityArray[0].states[i];
+		child.value = cityArray[0].states[i];
+		outer5.append(child);
+	}
+	document.getElementsByClassName("city")[0].append(outer5);
+	$(outer5).clone().appendTo($('.city')[1]);
+
+	// init select2
+	$('.city-select').first().select2({
+		placeholder: 'Select your city',
+		theme: 'bootstrap',
+	});
+	$('.city-select').select2({
+		placeholder: 'Select your city',
+		theme: 'bootstrap',
+	});	
+}
 //colleges list
 function displaycolleges(collegesArray)
 {

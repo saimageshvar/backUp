@@ -72,11 +72,17 @@ body.modal-open {
     .update{
         font-size:5vw !important;
     }
+	.formheader {
+	display:block;
+	}
 }
 @media screen and (min-width:799px){
  .update{
     font-size:3vw !important;
 }
+	.formheader{
+		display:none;
+	}
 }
 
 </style>
@@ -215,7 +221,7 @@ data-nav-color="#FFC300"
 data-nav-color-text=" #212f3c "
 data-color="#768088"
 data-title-color="#fff7cc"
-data-title="aboutsa"
+data-title="about"
 data-anchor="aboutsa">
 <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
 
@@ -305,12 +311,12 @@ data-anchor="form">
 
 <div class="section-content">
     <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
-    <div class="container section-wrap">
+    <div class="container section-wrap" style="margin-top:88px;">
         <div>
          <div>
-             <h1 style="color: rgb(255, 247, 204);" class="section-title text-center" data-appear-animation="fadeInDown" data-appear-animation-delay="100">STUDENT AMBASSDOR REGISTRATION</h1>						
+             <h1 style="color: rgb(255, 247, 204); padding-bottom:-10px;" class="section-title text-center formheader" data-appear-animation="fadeInDown" data-appear-animation-delay="100">STUDENT AMBASSDOR REGISTRATION</h1>						
              <div align="center" style="max-height:800px;">
-               <form id="sa_registration_form" style="position: relative; width:50%;min-width: 300px; background: rgba(0, 0, 0, 0.2); padding-bottom:10px; padding-left:20px; padding-right:20px; padding-top:10px;" method="post">
+               <form id="sa_registration_form" style="position: relative; width:50%;min-width: 300px; background: rgba(0, 0, 0, 0.2); padding-bottom:55px; padding-left:30px; padding-right:20px; padding-top:10px;" method="post">
                 <div class="input-group" style="padding-bottom:13px;">
                  <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
                  <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
@@ -357,6 +363,8 @@ data-anchor="form">
                       <!--/div-->  
                   </label>
               </div>
+			  <div class="form-group city">
+			  </div>
               <div class="form-group college">
               </div>
               <div class="form-group courses">
@@ -373,7 +381,7 @@ data-anchor="form">
 </div>
 </div><!-- .section-content -->
 <!-- .section-content -->
-<footer class="site-footer" style="background-color: #f7f7f1;padding:18px; bottom:-80px;">
+<footer class="site-footer" style="background-color: #f7f7f1;padding:18px; bottom:-85px;">
     <div class="container">
         <div class="row">
             <div class="col-sm-6 left-align">
@@ -419,7 +427,21 @@ data-anchor="form">
 	col.send();
 </script>
 
-
+<!--city, state list-->
+<script>
+	var cityArray = new Array();
+	var city = new XMLHttpRequest();
+	var cityUrl = "https://api.myjson.com/bins/1diai1";
+	
+	city.onreadystatechange = function() {
+		if(city.readyState == 4 && city.status == 200){
+			cityArray.push(JSON.parse(city.responseText));
+			displaycity(cityArray);
+		}
+	};
+	city.open("GET", cityUrl, true);
+	city.send();
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script>
