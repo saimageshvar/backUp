@@ -1,4 +1,4 @@
-var check;
+var check = true;
 function validatename(key)
 {
 	var name=key.value;
@@ -10,7 +10,6 @@ function validatename(key)
 	else
 	{
 		key.style.borderColor="green";
-		check = true;
 	}
 	key.style.borderWidth="1px";
 }
@@ -24,7 +23,6 @@ function validatephone(key) {
 		else
 		{
 			key.style.borderColor="green";
-			check =true;
 		}
 		key.style.borderWidth="1px";
 } 
@@ -38,7 +36,6 @@ function validatepass(key) {
 		else
 		{
 			key.style.borderColor="green";
-			check = true;
 		}
 		key.style.borderWidth="1px";
 }
@@ -54,7 +51,6 @@ function validatemail(key) {
 		else
 		{
 			key.style.borderColor="green";
-			check = true;
 		}			
 		key.style.borderWidth="1px";		
 }
