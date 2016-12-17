@@ -19,6 +19,8 @@ $("#sa_registration_form").submit(function(e) {
                     $("#department").empty().trigger('change')
                     $("#degree").empty().trigger('change')
                     $("#year").empty().trigger('change')
+                    $("#college").empty().trigger('change')
+
 
                     BootstrapDialog.show({
                         title: 'Hey!',
@@ -61,15 +63,15 @@ $("#sa_registration_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         BootstrapDialog.show({
+           BootstrapDialog.show({
             title: 'Oops!',
             message: 'Some error occured. Please try later',
             type: BootstrapDialog.TYPE_DANGER,
             closable: true,
             draggable: true
         });
-     }
- });
+       }
+   });
     }
     else
     {
