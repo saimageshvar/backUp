@@ -5,9 +5,11 @@ $contactNumber = sanitizeParams($_POST['contactNumber']);
 $emailId = sanitizeParams($_POST['emailId']);
 $password = sanitizeParams($_POST['password']);
 $gender = sanitizeParams($_POST['gender']);
-$collegeName =$_POST['college'];
+$collegeName = sanitizeParams($_POST['college']);
 $department = sanitizeParams($_POST['department']);
 $date = sanitizeParams($_POST['date']);
+$degree = sanitizeParams($_POST['degree']);
+$year = sanitizeParams($_POST['year']);
 $isSA = '';
 if(isset($_POST['sa']))
 	$isSA = true;
@@ -65,7 +67,7 @@ function sanitizeParams($param)
 	else
 	{
 		$_SESSION['registration'] = "failure";
-		return 0;
+		exit(0);
 	}
 }
 
