@@ -1,15 +1,16 @@
-var check = true;
+var check=false, nameFlag=false, phone=false, pass=false, email=false;
 function validatename(key)
 {
 	var name=key.value;
 	if (!name.match(/^[a-zA-Z. ]*$/))
 	{
 		key.style.borderColor="red";
-		check = false;
+		window.name = false;
 	}
 	else
 	{
 		key.style.borderColor="green";
+		window.name = true;
 	}
 	key.style.borderWidth="1px";
 }
@@ -17,12 +18,13 @@ function validatephone(key) {
         var phone = key.value;				
         if((phone.match(/^[0-9]+$/) == null) || phone.length != 10)
 		{
-			check = false;
+			window.phone = false;
 			key.style.borderColor="red";
 		}	
 		else
 		{
 			key.style.borderColor="green";
+			window.phone = true;
 		}
 		key.style.borderWidth="1px";
 } 
@@ -30,12 +32,13 @@ function validatepass(key) {
 		var pass = key.value;
         if(pass.length<8)
 		{
-			check = false;
+			window.pass = false;
 			key.style.borderColor="red";
 		}	
 		else
 		{
 			key.style.borderColor="green";
+			window.pass = true;
 		}
 		key.style.borderWidth="1px";
 }
@@ -45,12 +48,13 @@ function validatemail(key) {
 		var dotpos = x.lastIndexOf(".");
 		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) 
 		{
-			check = false;
+			window.email = false;
 			key.style.borderColor="red";
 		}
 		else
 		{
 			key.style.borderColor="green";
+			window.email = true;
 		}			
 		key.style.borderWidth="1px";		
 }
@@ -86,5 +90,5 @@ function Validate(formid)
 
 function returnCheck()
 {
-	return check;
+	return (window.name && window.phone && window.email && window.pass);
 }
