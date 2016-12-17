@@ -27,7 +27,10 @@ $params =  json_encode(array("user" => array(
 	"contactNumber" => $contactNumber, 
 	"password" => $password, 
 	"isSA" => $isSA,
-	"dateOfBirth" => $date
+	"dateOfBirth" => $date,
+	"degree" => $degree,
+	"year" => $year,
+	"location" => $city
 	)));
 $ch = curl_init( $url );
 curl_setopt( $ch, CURLOPT_POST, 1);
