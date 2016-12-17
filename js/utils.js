@@ -28,12 +28,18 @@ $("#login_form").submit(function(e) {
                 li1.className = "menu-item menu-item-type-post_type menu-item-object-page";
                 var link1 = document.createElement('a');
                 link1.href = "#"
-                $(link1).attr('data-toggle', 'modal');
-                $(link1).attr('data-target', '.dashboard');
                 label1 = document.createElement('span');
                 label1.textContent = "Hey, "+result.name;
                 $(link1).append(label1);
                 $(li1).append(link1);
+                li1.addEventListener("click", function() { BootstrapDialog.show({
+                    title: 'Hey!',
+                    message: 'Currently working on your dashboard. Please refresh to take a look at it.',
+                    type: BootstrapDialog.TYPE_SUCCESS,
+                    closable: true,
+                    draggable: true
+                });
+            });
                 $('#menu-main-menu').append(li1);
 
 
@@ -90,24 +96,22 @@ $("#registration_form").submit(function(e) {
                     closable: true,
                     draggable: true
                 });
-                // var li = document.createElement('li');
-                // li.className = "menu-item menu-item-type-post_type menu-item-object-page";
-                // var link = document.createElement('a');
-                // link.href = "logout.php";
-                // label = document.createElement('span');
-                // label.textContent = "Logout";
-                // $(link).append(label);
-                // $(li).append(link);
-                // $('#menu-main-menu').append(li);
-
-
             }
-            else if(result==0)
+            else if(result==2)
             {
-                $('.login').modal('toggle');
+                BootstrapDialog.show({
+                    title: 'Hey!',
+                    message: 'This email id seems to exist already!',
+                    type: BootstrapDialog.TYPE_WARNING,
+                    closable: true,
+                    draggable: true
+                });
+            }
+            else
+            {
                 BootstrapDialog.show({
                     title: 'Oops!',
-                    message: 'Registration Failed',
+                    message: 'Registration failed!',
                     type: BootstrapDialog.TYPE_DANGER,
                     closable: true,
                     draggable: true
