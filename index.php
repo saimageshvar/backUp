@@ -1201,7 +1201,7 @@ data-anchor="footer">
 <script>
 	var collegesArray = new Array();
 	var col = new XMLHttpRequest();
-	var colUrl = "https://api.myjson.com/bins/buxtx";
+	var colUrl = "https://api.myjson.com/bins/ifw5l";
 	
 	col.onreadystatechange = function() {
 		if(col.readyState == 4 && col.status == 200){
