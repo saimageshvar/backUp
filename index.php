@@ -53,17 +53,17 @@ require 'utils.php';
         }
         .events-details p
         {
-         font-family: 'Aref Ruqaa', serif; 
-         font-style: normal; 
-         font-size:23px;
-     }
-     .workshops-details p
-     {
-         font-family: 'Aref Ruqaa', serif; 
-         font-style: normal; 
-         font-size:23px;
-     }		
-     p {
+           font-family: 'Aref Ruqaa', serif; 
+           font-style: normal; 
+           font-size:23px;
+       }
+       .workshops-details p
+       {
+           font-family: 'Aref Ruqaa', serif; 
+           font-style: normal; 
+           font-size:23px;
+       }		
+       p {
         padding: 0.1em;
         font-size:16px;
         overflow-y:auto;
@@ -119,15 +119,15 @@ require 'utils.php';
 </style>
 <style>
   table {
-   border-collapse: collapse !important;
-   width: 100% !important;
-}
+     border-collapse: collapse !important;
+     width: 100% !important;
+ }
 
-th, td {
-   padding: 8px !important;
-   text-align: left !important;
-   border-bottom: 1px solid #ddd !important;
-}
+ th, td {
+     padding: 8px !important;
+     text-align: left !important;
+     border-bottom: 1px solid #ddd !important;
+ }
 </style>
 </head>
 <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
@@ -204,12 +204,12 @@ th, td {
                     }
                     else if($_SESSION['user']['isSA']==false)
                     {
-                     ?>   
-                     <li id="register_as_sa" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href=''><span>Register as SA</span></a></li>
-                     <?php
-                 }
-                 if(isset($_SESSION['user']))
-                 {
+                       ?>   
+                       <li id="register_as_sa" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href=''><span>Register as SA</span></a></li>
+                       <?php
+                   }
+                   if(isset($_SESSION['user']))
+                   {
                     ?>   
                     <li id="username" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".dashboard"><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
                     <?php
@@ -285,7 +285,7 @@ data-anchor="highlights">
                 <h2 class="title" style="color:  #581845 ">We at k! do <br/> many things</h2>
             </div>
             <style type="text/css" scoped="">
-            .facts-title:before { border-color:  #000;}
+                .facts-title:before { border-color:  #000;}
             </style>
             <div class="line"></div>
             <div class="line"></div>
@@ -481,12 +481,12 @@ data-anchor="initiatives">
                 <div class="overlay">
                     <h2 style="font-size: 30px">Neon Run</h2>
                     <p>
-                     <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
-                 </p>
-             </div>
-         </div>
-     </div>
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                       <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
+                   </p>
+               </div>
+           </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
             <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:250px;opacity: 0.2">
             <div class="overlay">
@@ -749,59 +749,59 @@ data-anchor="reach-us">
                 <center>
                     <table class="table table-hover table-bordered">
                         <tr>
-                         <th>City</th>
-                         <th>Date</th>
-                         <th>Venue</th>
-                     </tr>
-                     <tr>
-                         <td>Tirupati</td>
-                         <td>7, 8 January’17</td>
-                         <td>IIT Tirupati</td>
-                     </tr>
-                     <tr>
-                         <td>Trichy</td>
-                         <td>7, 8 January’17</td>
-                         <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
-                     </tr>
-                     <tr>
-                         <td>Chennai</td>
-                         <td>21,22 January’17</td>
-                         <td>Easwari Engineering College</td>
-                     </tr>
-                     <tr>
-                         <td>Madurai</td>
-                         <td>21,22 January’17</td>
-                         <td>Thiagarajar College of Engineering</td>
-                     </tr>
-                     <tr>
-                         <td>Vellore</td>
-                         <td>21,22 January’17</td>
-                         <td>Vellore Institute of Technology</td>
-                     </tr>
-                     <tr>
-                         <td>Coimbatore</td>
-                         <td>17, 18 December’16</td>
-                         <td>Coimbatore Institute of Technology</td>
-                     </tr>
-                     <tr>
-                         <td>Pilani</td>
-                         <td>17, 18 October’16</td>
-                         <td>BITS Pilani</td>
-                     </tr>
-                     <tr>
-                         <td>Suratkal</td>
-                         <td>2,3 October’16</td>
-                         <td>NIT Suratkal</td>
-                     </tr>
-                     <tr>
-                         <td>Salem</td>
-                         <td>17, 18 September’16</td>
-                         <td>Annapoorana Engineering College</td>
-                     </tr>
-                 </table>
-             </center>
-         </div>
-         <div class="modal-footer">
+                           <th>City</th>
+                           <th>Date</th>
+                           <th>Venue</th>
+                       </tr>
+                       <tr>
+                           <td>Tirupati</td>
+                           <td>7, 8 January’17</td>
+                           <td>IIT Tirupati</td>
+                       </tr>
+                       <tr>
+                           <td>Trichy</td>
+                           <td>7, 8 January’17</td>
+                           <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
+                       </tr>
+                       <tr>
+                           <td>Chennai</td>
+                           <td>21,22 January’17</td>
+                           <td>Easwari Engineering College</td>
+                       </tr>
+                       <tr>
+                           <td>Madurai</td>
+                           <td>21,22 January’17</td>
+                           <td>Thiagarajar College of Engineering</td>
+                       </tr>
+                       <tr>
+                           <td>Vellore</td>
+                           <td>21,22 January’17</td>
+                           <td>Vellore Institute of Technology</td>
+                       </tr>
+                       <tr>
+                           <td>Coimbatore</td>
+                           <td>17, 18 December’16</td>
+                           <td>Coimbatore Institute of Technology</td>
+                       </tr>
+                       <tr>
+                           <td>Pilani</td>
+                           <td>17, 18 October’16</td>
+                           <td>BITS Pilani</td>
+                       </tr>
+                       <tr>
+                           <td>Suratkal</td>
+                           <td>2,3 October’16</td>
+                           <td>NIT Suratkal</td>
+                       </tr>
+                       <tr>
+                           <td>Salem</td>
+                           <td>17, 18 September’16</td>
+                           <td>Annapoorana Engineering College</td>
+                       </tr>
+                   </table>
+               </center>
+           </div>
+           <div class="modal-footer">
             <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
         </div>
     </div>
@@ -868,32 +868,32 @@ data-anchor="reach-us">
                     <center>
                         <form id="registration_form"  method="post" autocomplete="off">
                             <div class="input-group" style="padding-bottom:13px;">
-                             <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
-                             <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)" required>
-                         </div>
-                         <div class="input-group" style="padding-bottom:13px;">
-                             <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
-                             <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)" required>
-                         </div>
+                               <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
+                               <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)" required>
+                           </div>
+                           <div class="input-group" style="padding-bottom:13px;">
+                               <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
+                               <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)" required>
+                           </div>
 
-                         <div class="input-group" style="padding-bottom:13px;">
-                             <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-                             <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)" required>
-                         </div>
+                           <div class="input-group" style="padding-bottom:13px;">
+                               <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
+                               <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)" required>
+                           </div>
 
-                         <div class="input-group" style="padding-bottom:13px;">
-                             <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                             <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters)" onblur="validatepass(this)" required>
-                         </div>
-                         <div class="input-group">
-                             <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
-                             <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/ required>
-                         </div>
-                         <br/>
+                           <div class="input-group" style="padding-bottom:13px;">
+                               <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
+                               <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters)" onblur="validatepass(this)" required>
+                           </div>
+                           <div class="input-group">
+                               <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
+                               <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/ required>
+                           </div>
+                           <br/>
 
-                         <div class="input-group pull-left">
-                           Gender:
-                           <label class="new radio-inline">
+                           <div class="input-group pull-left">
+                             Gender:
+                             <label class="new radio-inline">
                               <!--div class="new-radio"-->
                               <input style="background:rgba(0,0,0,0.2);" type="radio" name="gender"  value="M" checked>
                               <span></span>
@@ -919,7 +919,6 @@ data-anchor="reach-us">
                       </div>
                       <div class="form-group year">
                       </div>
-                      <input type="hidden" id="sa" name="sa" />
                       <input type="submit" class="btn btn-success" value="Register" style="background: #0000">
                   </form>
               </center>
@@ -1012,16 +1011,16 @@ data-anchor="reach-us">
             </div>
             <div class="modal-body" style="color:black">
                 <blockquote>"Education is the movement from darkness to light."
-                   -Allan Bloom
-               </blockquote>
+                 -Allan Bloom
+             </blockquote>
 
-               <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
-                   Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
-                   Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
-                   Come join us and help us light up the world.
-               </p>
-           </div>
-           <div class="modal-footer">
+             <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
+                 Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
+                 Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
+                 Come join us and help us light up the world.
+             </p>
+         </div>
+         <div class="modal-footer">
             <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
         </div>
     </div>
@@ -1073,20 +1072,20 @@ data-anchor="reach-us">
                     <?php if(isset($_SESSION['user'])) {?>
                     <!-- k id -->
                     <div class="col-sm-12 col-md-4">
-                     <button class="btn btn-success" type="button">k! id&nbsp;<span class="badge"><?php echo $_SESSION['user']['userId'] ?></span>
-                     </button>
-                 </div>
-                 <!-- mail id -->
-                 <div class="col-sm-12 col-md-8">
-                     <button class="btn btn-success" type="button">email id&nbsp;<span class="badge"><?php echo $_SESSION['user']['emailId'] ?></span>
-                     </button>
-                 </div>
-                 <p></p>
-                 <hr/>
-                 <!-- events -->
-                 <?php if(isset($_SESSION['user']['events'])) {?>
+                       <button class="btn btn-success" type="button">k! id&nbsp;<span class="badge"><?php echo $_SESSION['user']['userId'] ?></span>
+                       </button>
+                   </div>
+                   <!-- mail id -->
+                   <div class="col-sm-12 col-md-8">
+                       <button class="btn btn-success" type="button">email id&nbsp;<span class="badge"><?php echo $_SESSION['user']['emailId'] ?></span>
+                       </button>
+                   </div>
+                   <p></p>
+                   <hr/>
+                   <!-- events -->
+                   <?php if(isset($_SESSION['user']['events'])) {?>
 
-                 <div class="col-sm-12 col-md-6">
+                   <div class="col-sm-12 col-md-6">
                     <ul class="list-group">
                         <li class="list-group-item active btn btn-success">Events&nbsp;
                             <span class="badge"><?php echo count($_SESSION['user']['events']); ?></span>
@@ -1160,102 +1159,14 @@ data-anchor="reach-us">
     <script type="text/javascript" src="js/index1.js"></script>
     <script type="text/javascript" src="js/particleground.min.js"></script>
 
-    <!-- hospitality cms -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
     <script>
-        var myArr = new Array();
-        var xmlhttp = new XMLHttpRequest();
-        var url = "http://enct29fa5ae.kurukshetra.org.in/hospitalities.json";
-
-        xmlhttp.onreadystatechange = function() {
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                myArr.push(JSON.parse(xmlhttp.responseText));
-                $('.hospi-loader').hide();
-                myFunction(myArr);
-            }
-        };
-        xmlhttp.open("GET", url, true);
-    //xmlhttp.setRequestHeader('origin', 'http');
-    xmlhttp.send();
-
-</script>
-
-<!-- updates cms -->
-<script>
-    var updatesArray = new Array();
-    var updates = new XMLHttpRequest();
-    var updatesUrl = "http://enct29fa5ae.kurukshetra.org.in/updates.json";
-
-    updates.onreadystatechange = function() {
-        if (updates.readyState == 4 && updates.status == 200) {
-            updatesArray.push(JSON.parse(updates.responseText));
-            typeUpdates(updatesArray);
+     WebFont.load({
+        google: {
+            families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
         }
-    };
-    updates.open("GET", updatesUrl, true);
-    //updates.setRequestHeader('origin', 'http');
-    updates.send();
-
-</script>
-
-<!-- gls cms -->
-<script>
-    var glsArray = new Array();
-    var gls = new XMLHttpRequest();
-    var glsUrl = "http://enct29fa5ae.kurukshetra.org.in/gls.json";
-
-    gls.onreadystatechange = function() {
-        if (gls.readyState == 4 && gls.status == 200) {
-            glsArray.push(JSON.parse(gls.responseText));
-            displayGls(glsArray);
-        }
-    };
-    gls.open("GET", glsUrl, true);
-    //gls.setRequestHeader('origin', 'http');
-    gls.send();
-
-</script>
-
-<!--colleges list-->
-<script>
-	var collegesArray = new Array();
-	var col = new XMLHttpRequest();
-	var colUrl = "https://api.myjson.com/bins/ifw5l";
-	
-	col.onreadystatechange = function() {
-		if(col.readyState == 4 && col.status == 200){
-			collegesArray.push(JSON.parse(col.responseText));
-			displaycolleges(collegesArray);
-		}
-	};
-	col.open("GET", colUrl, true);
-	col.send();
-</script>
-
-<!--city, state list-->
-<script>
-    var cityArray = new Array();
-    var city = new XMLHttpRequest();
-    var cityUrl = "https://api.myjson.com/bins/1diai1";
-    
-    city.onreadystatechange = function() {
-        if(city.readyState == 4 && city.status == 200){
-            cityArray.push(JSON.parse(city.responseText));
-            displaycity(cityArray);
-        }
-    };
-    city.open("GET", cityUrl, true);
-    city.send();
-</script>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-<script>
-   WebFont.load({
-    google: {
-        families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
-    }
-});
+    });
 </script>
 <noscript>
     <!-- h1 font -->
@@ -1376,13 +1287,110 @@ data-anchor="reach-us">
 		$(document).ready(function() {
 
             if(window.location.href.indexOf('#SAregistration') != -1) {
-             $('#SAregistration').modal('show');
-         }
+               $('#SAregistration').modal('show');
+           }
 
-     });
- </script>
- <!--load iframe onload  -->
- <script type="text/javascript">
+       });
+   </script>
+
+
+   <!-- fetch from cms -->
+
+   <!-- hospitality cms -->
+   <script>
+    var myArr = new Array();
+    var xmlhttp = new XMLHttpRequest();
+    var url = "http://enct29fa5ae.kurukshetra.org.in/hospitalities.json";
+
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            myArr.push(JSON.parse(xmlhttp.responseText));
+            $('.hospi-loader').hide();
+            myFunction(myArr);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    //xmlhttp.setRequestHeader('origin', 'http');
+    xmlhttp.send();
+
+</script>
+
+<!-- updates cms -->
+<script>
+    var updatesArray = new Array();
+    var updates = new XMLHttpRequest();
+    var updatesUrl = "http://enct29fa5ae.kurukshetra.org.in/updates.json";
+
+    updates.onreadystatechange = function() {
+        if (updates.readyState == 4 && updates.status == 200) {
+            updatesArray.push(JSON.parse(updates.responseText));
+            typeUpdates(updatesArray);
+        }
+    };
+    updates.open("GET", updatesUrl, true);
+    //updates.setRequestHeader('origin', 'http');
+    updates.send();
+
+</script>
+
+<!-- gls cms -->
+<script>
+    var glsArray = new Array();
+    var gls = new XMLHttpRequest();
+    var glsUrl = "http://enct29fa5ae.kurukshetra.org.in/gls.json";
+
+    gls.onreadystatechange = function() {
+        if (gls.readyState == 4 && gls.status == 200) {
+            glsArray.push(JSON.parse(gls.responseText));
+            displayGls(glsArray);
+        }
+    };
+    gls.open("GET", glsUrl, true);
+    //gls.setRequestHeader('origin', 'http');
+    gls.send();
+
+</script>
+
+<!--colleges list-->
+<script>
+    var collegesArray = new Array();
+    var col = new XMLHttpRequest();
+    var colUrl = "https://api.myjson.com/bins/ifw5l";
+    
+    col.onreadystatechange = function() {
+        if(col.readyState == 4 && col.status == 200){
+            collegesArray.push(JSON.parse(col.responseText));
+            displaycolleges(collegesArray);
+        }
+    };
+    col.open("GET", colUrl, true);
+    col.send();
+</script>
+
+<!--city, state list-->
+<script>
+    var cityArray = new Array();
+    var city = new XMLHttpRequest();
+    var cityUrl = "https://api.myjson.com/bins/1diai1";
+    
+    city.onreadystatechange = function() {
+        if(city.readyState == 4 && city.status == 200){
+            cityArray.push(JSON.parse(city.responseText));
+            displaycity(cityArray);
+        }
+    };
+    city.open("GET", cityUrl, true);
+    city.send();
+</script>
+
+
+
+
+
+
+
+<!--load iframe onload  -->
+<script type="text/javascript">
   $(window).load(function() {
     var f = document.createElement('iframe');
     f.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3888654732154!2d80.23317031390987!3d13.010890790830125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679e8ab07191%3A0xd034864eb4cef07a!2sAnna+University+-+College+Of+Engineering!5e0!3m2!1sen!2sus!4v1480493857269'; 
@@ -1391,6 +1399,7 @@ data-anchor="reach-us">
     $('.anna-univ-location').append(f);
 });
 </script>
+
 
 <script type="text/javascript">
 
