@@ -1213,6 +1213,22 @@ data-anchor="footer">
 	col.send();
 </script>
 
+<!--city, state list-->
+<script>
+    var cityArray = new Array();
+    var city = new XMLHttpRequest();
+    var cityUrl = "https://api.myjson.com/bins/1diai1";
+    
+    city.onreadystatechange = function() {
+        if(city.readyState == 4 && city.status == 200){
+            cityArray.push(JSON.parse(city.responseText));
+            displaycity(cityArray);
+        }
+    };
+    city.open("GET", cityUrl, true);
+    city.send();
+</script>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
