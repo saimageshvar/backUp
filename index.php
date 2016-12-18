@@ -53,17 +53,17 @@ require 'utils.php';
         }
         .events-details p
         {
-         font-family: 'Aref Ruqaa', serif; 
-         font-style: normal; 
-         font-size:23px;
-     }
-     .workshops-details p
-     {
-         font-family: 'Aref Ruqaa', serif; 
-         font-style: normal; 
-         font-size:23px;
-     }		
-     p {
+           font-family: 'Aref Ruqaa', serif; 
+           font-style: normal; 
+           font-size:23px;
+       }
+       .workshops-details p
+       {
+           font-family: 'Aref Ruqaa', serif; 
+           font-style: normal; 
+           font-size:23px;
+       }		
+       p {
         padding: 0.1em;
         font-size:16px;
         overflow-y:auto;
@@ -75,6 +75,14 @@ require 'utils.php';
         overflow: hidden !important;
         position:fixed !important;
         width: 100%;
+    }
+    .select2-container .select2-selection--single
+    {
+        height:40px !important;
+    }
+    .form-control
+    {
+        height:40px !important;
     }
     @media screen and (max-width: 800px) {
         .unescodiv {
@@ -103,15 +111,15 @@ require 'utils.php';
 </style>
 <style>
   table {
-   border-collapse: collapse !important;
-   width: 100% !important;
-}
+     border-collapse: collapse !important;
+     width: 100% !important;
+ }
 
-th, td {
-   padding: 8px !important;
-   text-align: left !important;
-   border-bottom: 1px solid #ddd !important;
-}
+ th, td {
+     padding: 8px !important;
+     text-align: left !important;
+     border-bottom: 1px solid #ddd !important;
+ }
 </style>
 </head>
 <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
@@ -188,12 +196,12 @@ th, td {
                     }
                     else if($_SESSION['user']['isSA']==false)
                     {
-                     ?>   
-                     <li id="register_as_sa" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href=''><span>Register as SA</span></a></li>
-                     <?php
-                 }
-                 if(isset($_SESSION['user']))
-                 {
+                       ?>   
+                       <li id="register_as_sa" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href=''><span>Register as SA</span></a></li>
+                       <?php
+                   }
+                   if(isset($_SESSION['user']))
+                   {
                     ?>   
                     <li id="username" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".dashboard"><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
                     <?php
@@ -465,12 +473,12 @@ data-anchor="initiatives">
                 <div class="overlay">
                     <h2 style="font-size: 30px">Neon Run</h2>
                     <p>
-                     <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
-                 </p>
-             </div>
-         </div>
-     </div>
-     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                       <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
+                   </p>
+               </div>
+           </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
             <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:250px;opacity: 0.2">
             <div class="overlay">
@@ -733,59 +741,59 @@ data-anchor="footer">
                 <center>
                     <table class="table table-hover table-bordered">
                         <tr>
-                         <th>City</th>
-                         <th>Date</th>
-                         <th>Venue</th>
-                     </tr>
-                     <tr>
-                         <td>Tirupati</td>
-                         <td>7, 8 January’17</td>
-                         <td>IIT Tirupati</td>
-                     </tr>
-                     <tr>
-                         <td>Trichy</td>
-                         <td>7, 8 January’17</td>
-                         <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
-                     </tr>
-                     <tr>
-                         <td>Chennai</td>
-                         <td>21,22 January’17</td>
-                         <td>Easwari Engineering College</td>
-                     </tr>
-                     <tr>
-                         <td>Madurai</td>
-                         <td>21,22 January’17</td>
-                         <td>Thiagarajar College of Engineering</td>
-                     </tr>
-                     <tr>
-                         <td>Vellore</td>
-                         <td>21,22 January’17</td>
-                         <td>Vellore Institute of Technology</td>
-                     </tr>
-                     <tr>
-                         <td>Coimbatore</td>
-                         <td>17, 18 December’16</td>
-                         <td>Coimbatore Institute of Technology</td>
-                     </tr>
-                     <tr>
-                         <td>Pilani</td>
-                         <td>17, 18 October’16</td>
-                         <td>BITS Pilani</td>
-                     </tr>
-                     <tr>
-                         <td>Suratkal</td>
-                         <td>2,3 October’16</td>
-                         <td>NIT Suratkal</td>
-                     </tr>
-                     <tr>
-                         <td>Salem</td>
-                         <td>17, 18 September’16</td>
-                         <td>Annapoorana Engineering College</td>
-                     </tr>
-                 </table>
-             </center>
-         </div>
-         <div class="modal-footer">
+                           <th>City</th>
+                           <th>Date</th>
+                           <th>Venue</th>
+                       </tr>
+                       <tr>
+                           <td>Tirupati</td>
+                           <td>7, 8 January’17</td>
+                           <td>IIT Tirupati</td>
+                       </tr>
+                       <tr>
+                           <td>Trichy</td>
+                           <td>7, 8 January’17</td>
+                           <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
+                       </tr>
+                       <tr>
+                           <td>Chennai</td>
+                           <td>21,22 January’17</td>
+                           <td>Easwari Engineering College</td>
+                       </tr>
+                       <tr>
+                           <td>Madurai</td>
+                           <td>21,22 January’17</td>
+                           <td>Thiagarajar College of Engineering</td>
+                       </tr>
+                       <tr>
+                           <td>Vellore</td>
+                           <td>21,22 January’17</td>
+                           <td>Vellore Institute of Technology</td>
+                       </tr>
+                       <tr>
+                           <td>Coimbatore</td>
+                           <td>17, 18 December’16</td>
+                           <td>Coimbatore Institute of Technology</td>
+                       </tr>
+                       <tr>
+                           <td>Pilani</td>
+                           <td>17, 18 October’16</td>
+                           <td>BITS Pilani</td>
+                       </tr>
+                       <tr>
+                           <td>Suratkal</td>
+                           <td>2,3 October’16</td>
+                           <td>NIT Suratkal</td>
+                       </tr>
+                       <tr>
+                           <td>Salem</td>
+                           <td>17, 18 September’16</td>
+                           <td>Annapoorana Engineering College</td>
+                       </tr>
+                   </table>
+               </center>
+           </div>
+           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
     </div>
@@ -814,7 +822,7 @@ data-anchor="footer">
 </div>
 <!-- Login/ Registration -->
 <div class="modal fade login" role="dialog">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-md">
         <div class="modal-content">
             <ul class="nav nav-tabs nav-justified">
                 <li role="navigation" class="active">
@@ -849,62 +857,64 @@ data-anchor="footer">
                     </form>
                 </div>
                 <div id="register" class="tab-pane fade">
-                    <form id="registration_form" style="min-width: 300px;" method="post" autocomplete="off">
-                        <div class="input-group" style="padding-bottom:13px;">
-                         <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
-                         <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)" required>
-                     </div>
-                     <div class="input-group" style="padding-bottom:13px;">
-                         <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
-                         <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)" required>
-                     </div>
+                    <center>
+                        <form id="registration_form"  method="post" autocomplete="off">
+                            <div class="input-group" style="padding-bottom:13px;">
+                               <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
+                               <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)" required>
+                           </div>
+                           <div class="input-group" style="padding-bottom:13px;">
+                               <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
+                               <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)" required>
+                           </div>
 
-                     <div class="input-group" style="padding-bottom:13px;">
-                         <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-                         <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)" required>
-                     </div>
+                           <div class="input-group" style="padding-bottom:13px;">
+                               <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
+                               <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)" required>
+                           </div>
 
-                     <div class="input-group" style="padding-bottom:13px;">
-                         <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                         <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters)" onblur="validatepass(this)" required>
-                     </div>
-                     <div class="input-group">
-                         <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
-                         <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/ required>
-                     </div>
-                     <br/>
+                           <div class="input-group" style="padding-bottom:13px;">
+                               <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
+                               <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters)" onblur="validatepass(this)" required>
+                           </div>
+                           <div class="input-group">
+                               <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
+                               <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/ required>
+                           </div>
+                           <br/>
 
-                     <div class="input-group pull-left">
-                       Gender:
-                       <label class="new radio-inline">
-                          <!--div class="new-radio"-->
-                          <input style="background:rgba(0,0,0,0.2);" type="radio" name="gender"  value="M" checked>
-                          <span></span>
-                          Male
-                          <!--/div-->  
-                      </label>
-                      <label class="radio-inline">
-                          <!--div class="new-radio"-->
-                          <input type="radio" name="gender"  value="F">
-                          <span></span>
-                          Female
-                          <!--/div-->  
-                      </label>
-                  </div>
-                  <br>
-                  <div class="form-group city">
-                  </div>
-                  <div class="form-group college">
-                  </div>
-                  <div class="form-group courses">
-                  </div>
-                  <div class="form-group degree">
-                  </div>
-                  <div class="form-group year">
-                  </div>
-                  <input type="hidden" id="sa" name="sa" />
-                  <input type="submit" class="btn btn-success" value="Register" style="background: #0000">
-              </form>
+                           <div class="input-group pull-left">
+                             Gender:
+                             <label class="new radio-inline">
+                              <!--div class="new-radio"-->
+                              <input style="background:rgba(0,0,0,0.2);" type="radio" name="gender"  value="M" checked>
+                              <span></span>
+                              Male
+                              <!--/div-->  
+                          </label>
+                          <label class="radio-inline">
+                              <!--div class="new-radio"-->
+                              <input type="radio" name="gender"  value="F">
+                              <span></span>
+                              Female
+                              <!--/div-->  
+                          </label>
+                      </div>
+                      <p></p>
+                      <div class="form-group city">
+                      </div>
+                      <div class="form-group college">
+                      </div>
+                      <div class="form-group courses">
+                      </div>
+                      <div class="form-group degree">
+                      </div>
+                      <div class="form-group year">
+                      </div>
+                      <input type="hidden" id="sa" name="sa" />
+                      <input type="submit" class="btn btn-success" value="Register" style="background: #0000">
+                  </form>
+              </center>
           </div>
       </div>
   </div>
@@ -994,16 +1004,16 @@ data-anchor="footer">
             </div>
             <div class="modal-body" style="color:black">
                 <blockquote>"Education is the movement from darkness to light."
-                   -Allan Bloom
-               </blockquote>
+                 -Allan Bloom
+             </blockquote>
 
-               <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
-                   Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
-                   Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
-                   Come join us and help us light up the world.
-               </p>
-           </div>
-           <div class="modal-footer">
+             <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
+                 Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
+                 Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
+                 Come join us and help us light up the world.
+             </p>
+         </div>
+         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
     </div>
@@ -1055,20 +1065,20 @@ data-anchor="footer">
                     <?php if(isset($_SESSION['user'])) {?>
                     <!-- k id -->
                     <div class="col-sm-12 col-md-4">
-                     <button class="btn btn-success" type="button">k! id&nbsp;<span class="badge"><?php echo $_SESSION['user']['userId'] ?></span>
-                     </button>
-                 </div>
-                 <!-- mail id -->
-                 <div class="col-sm-12 col-md-8">
-                     <button class="btn btn-success" type="button">email id&nbsp;<span class="badge"><?php echo $_SESSION['user']['emailId'] ?></span>
-                     </button>
-                 </div>
-                 <p></p>
-                 <hr/>
-                 <!-- events -->
-                 <?php if(isset($_SESSION['user']['events'])) {?>
+                       <button class="btn btn-success" type="button">k! id&nbsp;<span class="badge"><?php echo $_SESSION['user']['userId'] ?></span>
+                       </button>
+                   </div>
+                   <!-- mail id -->
+                   <div class="col-sm-12 col-md-8">
+                       <button class="btn btn-success" type="button">email id&nbsp;<span class="badge"><?php echo $_SESSION['user']['emailId'] ?></span>
+                       </button>
+                   </div>
+                   <p></p>
+                   <hr/>
+                   <!-- events -->
+                   <?php if(isset($_SESSION['user']['events'])) {?>
 
-                 <div class="col-sm-12 col-md-6">
+                   <div class="col-sm-12 col-md-6">
                     <ul class="list-group">
                         <li class="list-group-item active btn btn-success">Events&nbsp;
                             <span class="badge"><?php echo count($_SESSION['user']['events']); ?></span>
@@ -1233,7 +1243,7 @@ data-anchor="footer">
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script>
-   WebFont.load({
+ WebFont.load({
     google: {
         families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
     }
@@ -1271,8 +1281,9 @@ data-anchor="footer">
               var options={
                 format: 'dd-M-yyyy',
                 container: container,
-                todayHighlight: true,
                 autoclose: true,
+                endDate: '31-Dec-2016',
+                startDate: '01-Jan-1980'
             };
             date_input.datepicker(options);
         });
@@ -1357,20 +1368,20 @@ data-anchor="footer">
 		$(document).ready(function() {
 
             if(window.location.href.indexOf('#SAregistration') != -1) {
-             $('#SAregistration').modal('show');
-         }
+               $('#SAregistration').modal('show');
+           }
 
-     });
- </script>
- <!--load iframe onload  -->
- <script type="text/javascript">
-  $(window).load(function() {
-    var f = document.createElement('iframe');
-    f.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3888654732154!2d80.23317031390987!3d13.010890790830125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679e8ab07191%3A0xd034864eb4cef07a!2sAnna+University+-+College+Of+Engineering!5e0!3m2!1sen!2sus!4v1480493857269'; 
-    f.width = 600; 
-    f.height = 300;
-    $('.anna-univ-location').append(f);
-});
+       });
+   </script>
+   <!--load iframe onload  -->
+   <script type="text/javascript">
+      $(window).load(function() {
+        var f = document.createElement('iframe');
+        f.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3888654732154!2d80.23317031390987!3d13.010890790830125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679e8ab07191%3A0xd034864eb4cef07a!2sAnna+University+-+College+Of+Engineering!5e0!3m2!1sen!2sus!4v1480493857269'; 
+        f.width = 600; 
+        f.height = 300;
+        $('.anna-univ-location').append(f);
+    });
 </script>
 
 <script type="text/javascript">
