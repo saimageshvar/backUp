@@ -181,7 +181,7 @@ session_start();
 
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success" id="subscribe_event">Subscribe</button>
 				</div>
 			</div>
 
@@ -250,38 +250,38 @@ session_start();
             });
 			//retain small size of k logo in large screen
 			$('.klogo').addClass('col-sm-4');
-			 $('.klogo').addClass('col-xs-4');
-			 $('.klogo').removeClass('col-xs-8');
-			 $('.klogo').removeClass('col-sm-8');
-        }
+			$('.klogo').addClass('col-xs-4');
+			$('.klogo').removeClass('col-xs-8');
+			$('.klogo').removeClass('col-sm-8');
+		}
 		else{   //increase k logo size in mobile
-				$('.klogo').addClass('col-sm-8');
-				$('.klogo').addClass('col-xs-8');
-				$('.klogo').removeClass('col-xs-4');
-				$('.klogo').removeClass('col-sm-4');
-			}
-    });
+			$('.klogo').addClass('col-sm-8');
+			$('.klogo').addClass('col-xs-8');
+			$('.klogo').removeClass('col-xs-4');
+			$('.klogo').removeClass('col-sm-4');
+		}
+	});
 </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-    <script>
-    	WebFont.load({
-    		google: {
-    			families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
-    		}
-    	});
-    </script>
-    <noscript>
-    	<!-- h1 font -->
-    	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+<script>
+	WebFont.load({
+		google: {
+			families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
+		}
+	});
+</script>
+<noscript>
+	<!-- h1 font -->
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
-    	<!-- h2 font -->
-    	<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">     
+	<!-- h2 font -->
+	<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">     
 
-    	<!-- p font -->
-    	<link href="http://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+	<!-- p font -->
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
 
-    </noscript>
+</noscript>
 
 </body>
 </html>    

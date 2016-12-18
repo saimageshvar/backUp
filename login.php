@@ -44,7 +44,9 @@ if(!isset($_SESSION['user']))
 	else
 	{
 		$_SESSION['login'] = "failure";
-		echo 0;
+		$code = 0;
+		$arr = array ('response'=>$code);
+		echo json_encode($arr);
 	}
 	
 	//header("Location: index.php");
