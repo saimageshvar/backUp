@@ -5,9 +5,12 @@ $contactNumber = sanitizeParams($_POST['contactNumber']);
 $emailId = sanitizeParams($_POST['emailId']);
 $password = sanitizeParams($_POST['password']);
 $gender = sanitizeParams($_POST['gender']);
-$collegeName =$_POST['college'];
+$collegeName = sanitizeParams($_POST['college']);
 $department = sanitizeParams($_POST['department']);
 $date = sanitizeParams($_POST['date']);
+$degree = sanitizeParams($_POST['degree']);
+$year = sanitizeParams($_POST['year']);
+$city = sanitizeParams($_POST['city']);
 $isSA = '';
 if(isset($_POST['sa']))
 	$isSA = true;
@@ -24,7 +27,10 @@ $params =  json_encode(array("user" => array(
 	"contactNumber" => $contactNumber, 
 	"password" => $password, 
 	"isSA" => $isSA,
-	"dateOfBirth" => $date
+	"dateOfBirth" => $date,
+	"degree" => $degree,
+	"year" => $year,
+	"location" => $city
 	)));
 $ch = curl_init( $url );
 curl_setopt( $ch, CURLOPT_POST, 1);
@@ -40,6 +46,12 @@ if (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 200)
 {
 	$_SESSION['registration'] = "success";
 	echo 1;
+}
+else if(curl_getinfo($ch, CURLINFO_HTTP_CODE) == 409)
+{
+	$_SESSION['registration'] = "failure";
+	echo 2;
+
 }
 else
 {
@@ -59,7 +71,7 @@ function sanitizeParams($param)
 	else
 	{
 		$_SESSION['registration'] = "failure";
-		header("Location: index.php");
+		exit(0);
 	}
 }
 
