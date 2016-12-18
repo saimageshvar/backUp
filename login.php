@@ -29,6 +29,9 @@ if(!isset($_SESSION['user']))
 		foreach ($response['user']['eventSubscriptionList'] as $r) {
 			$_SESSION['user']['events'][$r['eventName']] = true;
 		}
+		foreach ($response['user']['workshopsList'] as $r) {
+			$_SESSION['user']['workshops'][$r['workshopName']] = true;
+		}
 
 		$arr = array ('response'=>'1','name'=>$_SESSION['user']['name']);
 		echo json_encode($arr);
