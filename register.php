@@ -17,7 +17,7 @@ if(isset($_POST['sa']))
 else
 	$isSA = false;
 
-$url = 'http://login.kurukshetra.org.in/create';
+$url = 'http://cms.cegtechforum.com/create';
 $params =  json_encode(array("user" => array(
 	"name" => $name, 
 	"emailId" => $emailId, 

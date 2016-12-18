@@ -121,12 +121,12 @@ $("#registration_form").submit(function(e) {
             {
                 if(result==1)
                 {
-                    $('#sa_registration_form')[0].reset();
+                    $('#registration_form')[0].reset();
                     $("#city").empty().trigger('change');
-                    $("#department").empty().trigger('change')
-                    $("#degree").empty().trigger('change')
-                    $("#year").empty().trigger('change')
-                    $("#college").empty().trigger('change')
+                    $("#department").empty().trigger('change');
+                    $("#degree").empty().trigger('change');
+                    $("#year").empty().trigger('change');
+                    $("#college").empty().trigger('change');
 
 
                     BootstrapDialog.show({
