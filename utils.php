@@ -47,7 +47,7 @@ function checkLogin()
 			?>
 			<script>
 				BootstrapDialog.show({
-					title: 'Hey <?php echo $_SESSION['user']['name'] ?> !',
+					title: 'Hey <?php echo $_SESSION['user']['name'] ?>',
 					message: 'Welcome back to Kurukshetra 2017',
 					type: BootstrapDialog.TYPE_SUCCESS,
 					closable: true,

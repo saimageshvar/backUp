@@ -10,7 +10,7 @@ $("#login_form").submit(function(e) {
         async: false,
         success: function(result)
         {
-            if(result.response==1)
+            if(result.response!=0)
             {
                 $('#login_link').remove();
                 $('#register_as_new_sa').remove();
@@ -23,6 +23,22 @@ $("#login_form").submit(function(e) {
                     draggable: true
                 });
 
+                if(result.response==2)
+                {
+                    var li2 = document.createElement('li');
+                    li2.className = "menu-item menu-item-type-post_type menu-item-object-page";
+                    var link2 = document.createElement('a');
+                    link2.href = "#";
+                    label2 = document.createElement('span');
+                    label2.textContent = "Register as SA";
+                    $(link2).append(label2);
+                    $(li2).append(link2);
+                    li2.addEventListener("click", function() { 
+                        $('.registersa').modal('toggle');
+                    });
+                    $('#menu-main-menu').append(li2);
+
+                }
                 // adding dashboard
                 var li1 = document.createElement('li');
                 li1.className = "menu-item menu-item-type-post_type menu-item-object-page";
@@ -69,9 +85,9 @@ $("#login_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         alert("some error");
-     }
- });
+           alert("some error");
+       }
+   });
     e.preventDefault();
 });
 
@@ -119,9 +135,9 @@ $("#registration_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         alert("some error");
-     }
- });
+           alert("some error");
+       }
+   });
     e.preventDefault();
 });
 
@@ -170,9 +186,9 @@ $("#sa_registration_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         alert("some error");
-     }
- });
+           alert("some error");
+       }
+   });
     e.preventDefault();
 });
 
@@ -209,9 +225,9 @@ $("#register_as_sa").click(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     e.preventDefault();
 });
 
@@ -259,9 +275,9 @@ $('#sa_registration_form_existing').submit(function(e){
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     e.preventDefault();
 });
 
@@ -306,8 +322,8 @@ $("#subscribe_event").click(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     e.preventDefault();
 });

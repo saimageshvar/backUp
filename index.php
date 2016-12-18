@@ -904,92 +904,25 @@ data-anchor="footer">
 <!-- Register as Student Ambassdor -->
 <div class="modal fade registersa" role="dialog" id="SAregistration">
     <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <h2 style="text-align:center;margin-top:30px">Register as Student Ambassdor</h2>
-            <center>
-                <div class="newreg">
-                    <div class="oldreglink col-sm-12" style="text-align:right; cursor:pointer"><a><i>Already registered for k!?</i></a></div>
-                    <form id="sa_registration_form" style="width:90%;" >
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
-                            <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
-                            <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)">
-                        </div>
-                        <br>                            
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-                            <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                            <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
-                        </div>
-                        <br/>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
-                            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
-                        </div>
-                        <div class="input-group radio pull-left">
-                            Gender:
-                            <label class="radio-inline">
-                                <input type="radio" name="gender"  value="M" checked> Male
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="gender" value="F"> Female
-                            </label>
-                        </div>
-                        <div class="form-group college">
-                        </div>
-                        <div class="form-group courses">
-                        </div>
-                        <div class="form-group degree">
-                        </div>
-                        <div class="form-group year">
-                        </div>
-                        <div class="input-group">
-                            <input type="hidden" name="sa" value="true" />
-                        </div>
-                        <div class="col-sm-12">
-                            <input type="submit" class="btn btn-success pull-left" value="Register">
-                        </div>
-                        <div class="col-sm-12">
 
-                            <input type="reset" class="btn btn-success pull-right"  value="reset" />
-                        </div>
-                        <br/><br/>
-                    </form>
-                </div>
-            </center>
-            <div class="main clearfix oldreg" style="display:none;">
-                <div class="back">
-                    <a>
-                        <p style="cursor:pointer;">&nbsp;&nbsp;<i class="fa fa-arrow-left"></i>&nbsp;Back</p>
-                    </a>
-                </div>
-                <br/>
-                <center>
-                    <form id="sa_registration_form_existing" style="width:90%;" method="post">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-                            <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                            <input id="password" type="password" class="form-control" name="password" placeholder="Password" onblur="validatepass(this)">
-                        </div>
-                        <br>                            
-                        <input type="submit" class="btn btn-success" value="Login"><br/>
-                        <br>
-                    </form>
-                </center>
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title" style="text-align:center;margin-top:30px">Become Student Ambassador</h2>
+            </div>
+            <div class="modal-body text-center" style="color:black">
+                <h4 style="color: black">
+                    Want to support us in our fight against Climate Change?<br/>
+                    Want to join hands with us?<br/>
+                </h4>
+                <a href="http://www.sa.kurukshetra.org.in" style="font-size: 40px">Act now</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
+
     </div>
 </div>
 <!-- about -->

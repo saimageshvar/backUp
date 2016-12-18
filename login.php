@@ -32,8 +32,12 @@ if(!isset($_SESSION['user']))
 		foreach ($response['user']['workshopsList'] as $r) {
 			$_SESSION['user']['workshops'][$r['workshopName']] = true;
 		}
+		if ($_SESSION['user']['isSA'] == true)
+			$code = 1;
+		else
+			$code = 2;
 
-		$arr = array ('response'=>'1','name'=>$_SESSION['user']['name']);
+		$arr = array ('response'=>$code,'name'=>$_SESSION['user']['name']);
 		echo json_encode($arr);
 
 	}
@@ -50,7 +54,7 @@ if(!isset($_SESSION['user']))
 }
 else
 {
-	echo 2;
+	echo 3;
 }
 
 function sanitizeParams($param)
