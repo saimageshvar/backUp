@@ -18,7 +18,7 @@ if(isset($_SESSION['user']))
 	$response = curl_exec( $ch );
 	if (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 200)
 	{
-		$_SESSION['user']['event'][$_POST['eventName']] = true;
+		$_SESSION['user']['events'][$_POST['eventName']] = true;
 		echo 1;
 	}
 	else
