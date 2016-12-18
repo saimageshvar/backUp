@@ -95,7 +95,7 @@ session_start();
 					<div class="col-xs-3 col-sm-4 left-align no-left-indent" id="one">
 						<div class="navbar navbar-default " role="navigation">
 							<div class="navbar-header">
-								<a href="index.php"><button type="button" class="btn navbar-toggle collapsed" style="color:black">
+								<a href="index.php#eventsAndWorkshops"><button type="button" class="btn navbar-toggle collapsed" style="color:black">
 									<i class="fa fa-long-arrow-left"></i>                                            
 								</button></a>
 							</div>

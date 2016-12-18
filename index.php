@@ -372,31 +372,31 @@ data-anchor="eventsAndWorkshops">
         <!-- .section-title-block -->
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
             <div class="col-sm-3">
-                <a href="events.html#Engineering" class="hi-icon fa fa-gear"></a>
+                <a href="events.php#Engineering" class="hi-icon fa fa-gear"></a>
                 <p>Engineering</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html#Robotics" class="hi-icon fa fa-android"></a>
+                <a href="events.php#Robotics" class="hi-icon fa fa-android"></a>
                 <p>Robotics</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html#Management" class="hi-icon fa fa-money"></a>
+                <a href="events.php#Management" class="hi-icon fa fa-money"></a>
                 <p>Management</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html#Quiz" class="hi-icon fa fa-puzzle-piece"></a>
+                <a href="events.php#Quiz" class="hi-icon fa fa-puzzle-piece"></a>
                 <p>Quiz</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html#General" class="hi-icon fa fa-archive"></a>
+                <a href="events.php#General" class="hi-icon fa fa-archive"></a>
                 <p>General</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html#Coding" class="hi-icon fa fa-terminal"></a>
+                <a href="events.php#Coding" class="hi-icon fa fa-terminal"></a>
                 <p>Coding</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.html#Online" class="hi-icon fa fa-laptop"></a>
+                <a href="events.php#Online" class="hi-icon fa fa-laptop"></a>
                 <p>Online</p>
             </div>
             <!-- events will come here -->
@@ -404,27 +404,27 @@ data-anchor="eventsAndWorkshops">
         </div>
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains_work workshops-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100" style="display:none">
             <div class="col-sm-3">
-                <a href="workshops.html#General" class="hi-icon fa fa-gear"></a>
+                <a href="workshops.php#General" class="hi-icon fa fa-gear"></a>
                 <p>General</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.html#Science" class="hi-icon fa fa-laptop"></a>
+                <a href="workshops.php#Science" class="hi-icon fa fa-laptop"></a>
                 <p>Science</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.html#Engineering" class="hi-icon fa fa-terminal"></a>
+                <a href="workshops.php#Engineering" class="hi-icon fa fa-terminal"></a>
                 <p>Engineering</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.html#Management" class="hi-icon fa fa-money"></a>
+                <a href="workshops.php#Management" class="hi-icon fa fa-money"></a>
                 <p>Management</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.html#Robotics" class="hi-icon fa fa-android"></a>
+                <a href="workshops.php#Robotics" class="hi-icon fa fa-android"></a>
                 <p>Robotics</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.html#School" class="hi-icon fa fa-archive"></a>
+                <a href="workshops.php#School" class="hi-icon fa fa-archive"></a>
                 <p>School</p>
             </div>
             <!-- workshops will come here -->
@@ -1046,12 +1046,12 @@ data-anchor="footer">
                     <?php if(isset($_SESSION['user'])) {?>
                     <!-- k id -->
                     <div class="col-sm-12 col-md-4">
-                       <button class="btn btn-primary" type="button">k! id&nbsp;<span class="badge"><?php echo $_SESSION['user']['userId'] ?></span>
+                       <button class="btn btn-success" type="button">k! id&nbsp;<span class="badge"><?php echo $_SESSION['user']['userId'] ?></span>
                        </button>
                    </div>
                    <!-- mail id -->
                    <div class="col-sm-12 col-md-8">
-                       <button class="btn btn-primary" type="button">email id&nbsp;<span class="badge"><?php echo $_SESSION['user']['emailId'] ?></span>
+                       <button class="btn btn-success" type="button">email id&nbsp;<span class="badge"><?php echo $_SESSION['user']['emailId'] ?></span>
                        </button>
                    </div>
                    <p></p>
@@ -1061,7 +1061,7 @@ data-anchor="footer">
 
                    <div class="col-sm-12 col-md-6">
                     <ul class="list-group">
-                        <li class="list-group-item active btn btn-primary">Events&nbsp;
+                        <li class="list-group-item active btn btn-success">Events&nbsp;
                             <span class="badge"><?php echo count($_SESSION['user']['events']); ?></span>
                         </li>
                         <?php foreach ($_SESSION['user']['events'] as $event => $flag) {
@@ -1074,11 +1074,11 @@ data-anchor="footer">
                     ?>
                     <div class="col-sm-12 col-md-6">
                         <ul class="list-group">
-                            <li class="list-group-item active btn btn-primary">Events&nbsp;
+                            <li class="list-group-item active btn btn-success">Events&nbsp;
                                 <span class="badge">0</span>
                             </li>
                             <li class="list-group-item">
-                                Take a look at <a href='events.php'>events</a> 🙂
+                                Take a look at <a href='events.php'>events</a> 🙄
                             </li>
                         </ul>                   
                     </div>
@@ -1088,7 +1088,7 @@ data-anchor="footer">
 
                     <div class="col-sm-12 col-md-6">
                         <ul class="list-group">
-                            <li class="list-group-item active btn btn-primary">Workshops&nbsp;
+                            <li class="list-group-item active btn btn-success">Workshops&nbsp;
                                 <span class="badge"><?php echo count($_SESSION['user']['workshops']); ?></span>
                             </li>
                             <?php foreach ($_SESSION['user']['workshops'] as $workshop => $flag) {
@@ -1101,11 +1101,11 @@ data-anchor="footer">
                         ?>
                         <div class="col-sm-12 col-md-6">
                             <ul class="list-group">
-                                <li class="list-group-item active btn btn-primary">Workshops&nbsp;
+                                <li class="list-group-item active btn btn-success">Workshops&nbsp;
                                     <span class="badge">0</span>
                                 </li>
                                 <li class="list-group-item">
-                                    Take a look at <a href='workshops.php'>workshops</a> 🙂
+                                    Take a look at <a href='workshops.php'>workshops</a> 🙄
                                 </li>
                             </ul>                   
                         </div>
