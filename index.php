@@ -53,17 +53,17 @@ require 'utils.php';
         }
         .events-details p
         {
-           font-family: 'Aref Ruqaa', serif; 
-           font-style: normal; 
-           font-size:23px;
-       }
-       .workshops-details p
-       {
-           font-family: 'Aref Ruqaa', serif; 
-           font-style: normal; 
-           font-size:23px;
-       }		
-       p {
+         font-family: 'Aref Ruqaa', serif; 
+         font-style: normal; 
+         font-size:23px;
+     }
+     .workshops-details p
+     {
+         font-family: 'Aref Ruqaa', serif; 
+         font-style: normal; 
+         font-size:23px;
+     }		
+     p {
         padding: 0.1em;
         font-size:16px;
         overflow-y:auto;
@@ -72,9 +72,7 @@ require 'utils.php';
 
     }
     body.modal-open {
-        overflow: hidden !important;
-        position:fixed !important;
-        width: 100%;
+        overflow: hidden;
     }
     .select2-container .select2-selection--single
     {
@@ -123,15 +121,15 @@ require 'utils.php';
 </style>
 <style>
   table {
-     border-collapse: collapse !important;
-     width: 100% !important;
- }
+   border-collapse: collapse !important;
+   width: 100% !important;
+}
 
- th, td {
-     padding: 8px !important;
-     text-align: left !important;
-     border-bottom: 1px solid #ddd !important;
- }
+th, td {
+   padding: 8px !important;
+   text-align: left !important;
+   border-bottom: 1px solid #ddd !important;
+}
 </style>
 </head>
 <body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
@@ -208,12 +206,12 @@ require 'utils.php';
                     }
                     else if($_SESSION['user']['isSA']==false)
                     {
-                       ?>   
-                       <li id="register_as_sa" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href=''><span>Register as SA</span></a></li>
-                       <?php
-                   }
-                   if(isset($_SESSION['user']))
-                   {
+                     ?>   
+                     <li id="register_as_sa" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href=''><span>Register as SA</span></a></li>
+                     <?php
+                 }
+                 if(isset($_SESSION['user']))
+                 {
                     ?>   
                     <li id="username" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".dashboard"><span>Hey, <?php echo $_SESSION['user']['name']?> </span></a></li>
                     <?php
@@ -286,7 +284,7 @@ data-anchor="highlights">
     <div class="facts no-appear  inverse">
         <div class="facts-title" data-appear-animation="zoomIn" data-appear-animation-delay="100">
             <div class="title-wrap">
-                <h2 class="title" style="color:  #581845 ">We at k! do <br/> many things</h2>
+                <h1 class="title" style="color:  #581845 ">k!17 <br/> unravelled</h1>
             </div>
             <style type="text/css" scoped="">
                 .facts-title:before { border-color:  #000;}
@@ -323,13 +321,13 @@ data-anchor="highlights">
         <div class="facts-list">
             <div id="pg-fact-3" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
-                    <div class="skill-percent"  style="color:#d6973d;font-family:'Abril Fatface', cursive;">6+</div>
-                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1em">Guest<br/>Lectures</div>
+                    <div class="skill-percent"  style="color:#d6973d;font-family:'Abril Fatface', cursive;">10+</div>
+                    <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size: 1.1em">Projects</div>
                 </div>
                 <style type="text/css" scoped="">
                     #pg-fact-3 .skill-wrap.full-skill:before { border-color: #d6973d;}
                 </style>
-                <i  style="color:#d6973d;" class="fa fa-user"></i>
+                <i  style="color:#d6973d;" class="fa fa-archive"></i>
             </div>
             <!-- .fact -->
             <div id="pg-fact-4" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
@@ -436,12 +434,12 @@ data-anchor="eventsAndWorkshops">
                 <p>Engineering</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.php#Management" class="hi-icon fa fa-money"></a>
-                <p>Management</p>
-            </div>
-            <div class="col-sm-3">
                 <a href="workshops.php#Robotics" class="hi-icon fa fa-android"></a>
                 <p>Robotics</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="workshops.php#Management" class="hi-icon fa fa-money"></a>
+                <p>Management</p>
             </div>
             <div class="col-sm-3">
                 <a href="workshops.php#School" class="hi-icon fa fa-archive"></a>
@@ -485,12 +483,12 @@ data-anchor="initiatives">
                 <div class="overlay">
                     <h2 style="font-size: 30px">Neon Run</h2>
                     <p>
-                       <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
-                   </p>
-               </div>
-           </div>
-       </div>
-       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                     <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
+                 </p>
+             </div>
+         </div>
+     </div>
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="hovereffect">
             <img class="img-responsive" src="img/e4e.jpg" alt="" style="height:250px;opacity: 0.2">
             <div class="overlay">
@@ -753,59 +751,59 @@ data-anchor="reach-us">
                 <center>
                     <table class="table table-hover table-bordered">
                         <tr>
-                           <th>City</th>
-                           <th>Date</th>
-                           <th>Venue</th>
-                       </tr>
-                       <tr>
-                           <td>Tirupati</td>
-                           <td>7, 8 January’17</td>
-                           <td>IIT Tirupati</td>
-                       </tr>
-                       <tr>
-                           <td>Trichy</td>
-                           <td>7, 8 January’17</td>
-                           <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
-                       </tr>
-                       <tr>
-                           <td>Chennai</td>
-                           <td>21,22 January’17</td>
-                           <td>Easwari Engineering College</td>
-                       </tr>
-                       <tr>
-                           <td>Madurai</td>
-                           <td>21,22 January’17</td>
-                           <td>Thiagarajar College of Engineering</td>
-                       </tr>
-                       <tr>
-                           <td>Vellore</td>
-                           <td>21,22 January’17</td>
-                           <td>Vellore Institute of Technology</td>
-                       </tr>
-                       <tr>
-                           <td>Coimbatore</td>
-                           <td>17, 18 December’16</td>
-                           <td>Coimbatore Institute of Technology</td>
-                       </tr>
-                       <tr>
-                           <td>Pilani</td>
-                           <td>17, 18 October’16</td>
-                           <td>BITS Pilani</td>
-                       </tr>
-                       <tr>
-                           <td>Suratkal</td>
-                           <td>2,3 October’16</td>
-                           <td>NIT Suratkal</td>
-                       </tr>
-                       <tr>
-                           <td>Salem</td>
-                           <td>17, 18 September’16</td>
-                           <td>Annapoorana Engineering College</td>
-                       </tr>
-                   </table>
-               </center>
-           </div>
-           <div class="modal-footer">
+                         <th>City</th>
+                         <th>Date</th>
+                         <th>Venue</th>
+                     </tr>
+                     <tr>
+                         <td>Tirupati</td>
+                         <td>7, 8 January’17</td>
+                         <td>IIT Tirupati</td>
+                     </tr>
+                     <tr>
+                         <td>Trichy</td>
+                         <td>7, 8 January’17</td>
+                         <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
+                     </tr>
+                     <tr>
+                         <td>Chennai</td>
+                         <td>21,22 January’17</td>
+                         <td>Easwari Engineering College</td>
+                     </tr>
+                     <tr>
+                         <td>Madurai</td>
+                         <td>21,22 January’17</td>
+                         <td>Thiagarajar College of Engineering</td>
+                     </tr>
+                     <tr>
+                         <td>Vellore</td>
+                         <td>21,22 January’17</td>
+                         <td>Vellore Institute of Technology</td>
+                     </tr>
+                     <tr>
+                         <td>Coimbatore</td>
+                         <td>17, 18 December’16</td>
+                         <td>Coimbatore Institute of Technology</td>
+                     </tr>
+                     <tr>
+                         <td>Pilani</td>
+                         <td>17, 18 October’16</td>
+                         <td>BITS Pilani</td>
+                     </tr>
+                     <tr>
+                         <td>Suratkal</td>
+                         <td>2,3 October’16</td>
+                         <td>NIT Suratkal</td>
+                     </tr>
+                     <tr>
+                         <td>Salem</td>
+                         <td>17, 18 September’16</td>
+                         <td>Annapoorana Engineering College</td>
+                     </tr>
+                 </table>
+             </center>
+         </div>
+         <div class="modal-footer">
             <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
         </div>
     </div>
@@ -872,32 +870,32 @@ data-anchor="reach-us">
                     <center>
                         <form id="registration_form"  method="post" autocomplete="off">
                             <div class="input-group" style="padding-bottom:13px;">
-                               <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
-                               <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)" required>
-                           </div>
-                           <div class="input-group" style="padding-bottom:13px;">
-                               <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
-                               <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)" required>
-                           </div>
+                             <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
+                             <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)" required>
+                         </div>
+                         <div class="input-group" style="padding-bottom:13px;">
+                             <span class="input-group-addon"><i class="reicon fa fa-phone" style="width:16px;"></i></span>
+                             <input id="phone" type="text" class="form-control" name="contactNumber" placeholder="Your mobile number" onblur="validatephone(this)" required>
+                         </div>
 
-                           <div class="input-group" style="padding-bottom:13px;">
-                               <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-                               <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)" required>
-                           </div>
+                         <div class="input-group" style="padding-bottom:13px;">
+                             <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
+                             <input id="email" type="text" class="form-control" name="emailId" placeholder="Your email-id" onblur="validatemail(this)" required>
+                         </div>
 
-                           <div class="input-group" style="padding-bottom:13px;">
-                               <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                               <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters)" onblur="validatepass(this)" required>
-                           </div>
-                           <div class="input-group">
-                               <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
-                               <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/ required>
-                           </div>
-                           <br/>
+                         <div class="input-group" style="padding-bottom:13px;">
+                             <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
+                             <input id="pass" type="password" class="form-control" name="password" placeholder="Password (min 8 characters)" onblur="validatepass(this)" required>
+                         </div>
+                         <div class="input-group">
+                             <span class="input-group-addon"><i class="reicon fa fa-calendar"></i></span>
+                             <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/ required>
+                         </div>
+                         <br/>
 
-                           <div class="input-group pull-left">
-                             Gender:
-                             <label class="new radio-inline">
+                         <div class="input-group pull-left">
+                           Gender:
+                           <label class="new radio-inline">
                               <!--div class="new-radio"-->
                               <input style="background:rgba(0,0,0,0.2);" type="radio" name="gender"  value="M" checked>
                               <span></span>
@@ -1015,16 +1013,16 @@ data-anchor="reach-us">
             </div>
             <div class="modal-body" style="color:black">
                 <blockquote>"Education is the movement from darkness to light."
-                 -Allan Bloom
-             </blockquote>
+                   -Allan Bloom
+               </blockquote>
 
-             <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
-                 Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
-                 Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
-                 Come join us and help us light up the world.
-             </p>
-         </div>
-         <div class="modal-footer">
+               <p style="padding-left:10px;font-style: normal;">The Neon Run is an initiative for spreading awareness about the need of education for the underprivileged.The Run is to take place in a safe and controlled environment within the college campus. <br/><br/>
+                   Neon Run occurs in the presence of minimal light inorder to illuminate the various glow in the dark apparels(Neon Wrist bands,glow sticks etc) that would be provided.An e-certificate would also be provided to the participants.<br/><br/>
+                   Proceedings from the run would go towards an NGO which will help carry out the mission in spreading education to everyone.Register yourself early since the  maximum participant count is limited.<br/><br/>
+                   Come join us and help us light up the world.
+               </p>
+           </div>
+           <div class="modal-footer">
             <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
         </div>
     </div>
@@ -1076,20 +1074,20 @@ data-anchor="reach-us">
                     <?php if(isset($_SESSION['user'])) {?>
                     <!-- k id -->
                     <div class="col-sm-12 col-md-4">
-                       <button class="btn btn-success" type="button">k! id&nbsp;<span class="badge"><?php echo $_SESSION['user']['userId'] ?></span>
-                       </button>
-                   </div>
-                   <!-- mail id -->
-                   <div class="col-sm-12 col-md-8">
-                       <button class="btn btn-success" type="button">email id&nbsp;<span class="badge"><?php echo $_SESSION['user']['emailId'] ?></span>
-                       </button>
-                   </div>
-                   <p></p>
-                   <hr/>
-                   <!-- events -->
-                   <?php if(isset($_SESSION['user']['events'])) {?>
+                     <button class="btn btn-success" type="button">k! id&nbsp;<span class="badge"><?php echo $_SESSION['user']['userId'] ?></span>
+                     </button>
+                 </div>
+                 <!-- mail id -->
+                 <div class="col-sm-12 col-md-8">
+                     <button class="btn btn-success" type="button">email id&nbsp;<span class="badge"><?php echo $_SESSION['user']['emailId'] ?></span>
+                     </button>
+                 </div>
+                 <p></p>
+                 <hr/>
+                 <!-- events -->
+                 <?php if(isset($_SESSION['user']['events'])) {?>
 
-                   <div class="col-sm-12 col-md-6">
+                 <div class="col-sm-12 col-md-6">
                     <ul class="list-group">
                         <li class="list-group-item active btn btn-success">Events&nbsp;
                             <span class="badge"><?php echo count($_SESSION['user']['events']); ?></span>
@@ -1166,7 +1164,7 @@ data-anchor="reach-us">
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
     <script>
-     WebFont.load({
+       WebFont.load({
         google: {
             families: ['Abril Fatface', 'Aref Ruqaa', 'Raleway:400,500,700']
         }
@@ -1291,17 +1289,17 @@ data-anchor="reach-us">
 		$(document).ready(function() {
 
             if(window.location.href.indexOf('#SAregistration') != -1) {
-               $('#SAregistration').modal('show');
-           }
+             $('#SAregistration').modal('show');
+         }
 
-       });
-   </script>
+     });
+ </script>
 
 
-   <!-- fetch from cms -->
+ <!-- fetch from cms -->
 
-   <!-- hospitality cms -->
-   <script>
+ <!-- hospitality cms -->
+ <script>
     var myArr = new Array();
     var xmlhttp = new XMLHttpRequest();
     var url = "http://enct29fa5ae.kurukshetra.org.in/hospitalities.json";
@@ -1387,12 +1385,6 @@ data-anchor="reach-us">
     city.send();
 </script>
 
-
-
-
-
-
-
 <!--load iframe onload  -->
 <script type="text/javascript">
   $(window).load(function() {
@@ -1406,7 +1398,11 @@ data-anchor="reach-us">
 
 
 <script type="text/javascript">
-
+    $('.neonrun').modal().on('shown', function(){
+        $('body').css('overflow', 'hidden');
+    }).on('hidden', function(){
+        $('body').css('overflow', 'auto');
+    })
 </script>
 
 
