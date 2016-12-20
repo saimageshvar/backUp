@@ -646,7 +646,7 @@ data-anchor="theme">
 <div class="section-content ">
     <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
     <div class="container section-wrap"
-    style="">
+    style="position: relative;">
     <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Our Theme</h1>
     <div class="card card-outline-warning text-xs-center">
         <div class="card-block">
@@ -1395,17 +1395,6 @@ data-anchor="reach-us">
     $('.anna-univ-location').append(f);
 });
 </script>
-
-
-<script type="text/javascript">
-    $('.neonrun').modal().on('shown', function(){
-        $('body').css('overflow', 'hidden');
-    }).on('hidden', function(){
-        $('body').css('overflow', 'auto');
-    })
-</script>
-
-
 </body>
 </html>
 
