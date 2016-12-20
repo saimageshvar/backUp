@@ -11,8 +11,7 @@ session_start();
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<title>K'17 | Events</title>
 	<link rel='stylesheet' href='assets/css/bootstrap3a05.css' type='text/css' media='all' />
-	<link rel='stylesheet' href='assets/css/font-awesome.min3a05.css' type='text/css' media='all' />
-	<link rel='stylesheet' href='assets/css/animate.min3a05.css' type='text/css' media='all' />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">	<link rel='stylesheet' href='assets/css/animate.min3a05.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='assets/css/jquery.fullPage3a05.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='assets/css/style3a05.css' type='text/css' media='all' />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
@@ -36,15 +35,27 @@ session_start();
 			.unescodiv {
 				display:none;
 			}
+			.events
+			{
+				min-height: 420px;
+			}
 		}
 
 		p {
 			padding: 0.1em;
 			font-size:16px;
 			overflow-y:auto;
-			max-height:320px;
+			max-height:300px;
 			font-family: 'Raleway', Arial, sans-serif;
 
+		}
+
+		.modal-dialog{
+			overflow-y: initial !important
+		}
+		.modal-body{
+			height: 350px;
+			overflow-y: auto;
 		}
 	</style>
 	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>

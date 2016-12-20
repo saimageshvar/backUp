@@ -95,7 +95,7 @@ session_start();
 					<div class="col-xs-3 col-sm-4 left-align no-left-indent" id="one">
 						<div class="navbar navbar-default " role="navigation">
 							<div class="navbar-header">
-								<a href="index.php#eventsAndWorkshops"><button type="button" class="btn navbar-toggle collapsed">
+								<a href="index.php#eventsAndWorkshops"><button type="button" class="btn navbar-toggle collapsed" >
 									<i class="fa fa-long-arrow-left"></i>                                            
 								</button></a>
 							</div>
@@ -103,13 +103,16 @@ session_start();
 					</div>
 
 
-					<div class="col-xs-3 col-sm-4 logo-box" id="two"><img src="img/k orange white.png" style="margin-left: 10px; height: auto; margin-top: 5px; width: 75%;">
+					<div class="col-xs-4 col-sm-4 klogo logo-box">
+						<center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
 					</div>
-
-					<div class="col-xs-3 col-sm-4 logo-box" id="three">
+					<!--div class="col-xs-3 col-sm-4 logo-box" id="three">
 
 						<img src="img/unesco white and blue1.png" style=" height: auto;width: 60%;margin-top: -5px;margin-left:200px;">
 
+					</div-->
+					<div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
+						<img src="img/unesco white and blue1.png" style="height: auto;width: 55%;">                           
 					</div>                    
 				</div>
 			</div>

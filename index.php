@@ -12,7 +12,7 @@ require 'utils.php';
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>Kurukshetra'17</title>
     <link rel='stylesheet' href='assets/css/bootstrap3a05.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='assets/css/font-awesome.min3a05.css' type='text/css' media='all' />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
     <link rel='stylesheet' href='assets/css/animate.min3a05.css' type='text/css' media='all' />
     <link rel='stylesheet' href='assets/css/jquery.fullPage3a05.css' type='text/css' media='all' />
     <link rel='stylesheet' href='assets/css/style3a05.css' type='text/css' media='all' />
@@ -91,6 +91,10 @@ require 'utils.php';
     .new-radio
     {
         background:#d73e4d !important;
+    }
+    span
+    {
+        color:#fff !important;
     }
     @media screen and (max-width: 800px) {
         .unescodiv {
@@ -562,10 +566,10 @@ data-anchor="hospitality">
 
 <div class="section-content ">
     <div class="container section-wrap"
-    style="">
+    style="position: relative;">
     <h1 class="section-title text-center"  data-appear-animation="fadeInDown" data-appear-animation-delay="100">Hospitality</h1>
     <div class="hospi-header"></div>
-    <div style="background:transparent; border:transparent; color:#fff;"class="tab-content hospi-details">
+    <div style="background:transparent; border:transparent; color:#fff;" class="tab-content hospi-details">
     </div>
 </div>
 <span class="cssload-loader hospi-loader"><span class="cssload-loader-inner"></span></span>
@@ -606,7 +610,7 @@ data-anchor="gl">
             <!-- .avatars-carousel -->
         </div>
         <!-- .avatars -->
-        <div class="content gls-content">
+        <div class="content gls-content glspan">
 
         </div>
         <!-- .content -->

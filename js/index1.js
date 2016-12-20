@@ -104,6 +104,7 @@ function displayGls(arr)
 		title.textContent = arr[0].gls[i].title;
 		var description = document.createElement('p');
 		description.innerHTML = arr[0].gls[i].desc;
+		description.style = "color:#fff !important;";
 
 		$(blockQuote).append(title);
 		$(blockQuote).append(description);
