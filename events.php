@@ -54,7 +54,7 @@ session_start();
 			overflow-y: initial !important
 		}
 		.modal-body{
-			height: 350px;
+			max-height: 350px;
 			overflow-y: auto;
 		}
 	</style>
