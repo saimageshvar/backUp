@@ -483,7 +483,7 @@ data-anchor="initiatives">
                 <div class="overlay">
                     <h2 style="font-size: 30px">Neon Run</h2>
                     <p>
-                     <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
+                     <a id="nrdata" style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".neonrun">know more</a>
                  </p>
              </div>
          </div>
@@ -494,7 +494,7 @@ data-anchor="initiatives">
             <div class="overlay">
                 <h2 style="font-size: 30px">E for Educate</h2>
                 <p>
-                    <a style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".eforeducate">know more</a>
+                    <a id="e4edata" style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".eforeducate">know more</a>
                 </p>
             </div>
         </div>
@@ -1383,6 +1383,19 @@ data-anchor="reach-us">
     };
     city.open("GET", cityUrl, true);
     city.send();
+</script>
+
+<script>
+$('.nrdata').click(function(){
+	$("body").css("over‌​flow-y", "hidden");
+	$("body").css("position", "fixed");
+	}
+);
+$('.e4edata').click(function(){
+	$("body").css("over‌​flow-y", "hidden");
+	$("body").css("position", "fixed");
+	}
+);
 </script>
 
 <!--load iframe onload  -->
