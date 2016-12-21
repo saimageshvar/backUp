@@ -71,9 +71,7 @@ require 'utils.php';
         font-family: 'Raleway', Arial, sans-serif;
 
     }
-    body.modal-open {
-        overflow: hidden;
-    }
+    
     .select2-container .select2-selection--single
     {
         height:35px !important;
@@ -94,6 +92,11 @@ require 'utils.php';
     {
         color:#fff !important;
     }
+	body.modal-open {
+		overflow: hidden;
+		position:fixed;
+		width: 100%;
+	}
     @media screen and (max-width: 800px) {
         .unescodiv {
             display:none;
@@ -136,7 +139,7 @@ th, td {
 }
 </style>
 </head>
-<body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
+<body class="home page page-id-4 page-template page-template-template-homepage page-template-template-homepage-php one-page">
     <div class="preloader">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
@@ -498,7 +501,7 @@ data-anchor="initiatives">
             <div class="overlay">
                 <h2 style="font-size: 30px">E for Educate</h2>
                 <p>
-                    <a id="e4edata" style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".eforeducate">know more</a>
+                    <a class="e4edata" style="color:#fff;font-size:20px;" href="#" data-toggle="modal" data-target=".eforeducate">know more</a>
                 </p>
             </div>
         </div>
@@ -761,47 +764,47 @@ data-anchor="reach-us">
                      </tr>
                      <tr>
                          <td>Tirupati</td>
-                         <td>7, 8 January’17</td>
+                         <td>7, 8 January 2017</td>
                          <td>IIT Tirupati</td>
                      </tr>
                      <tr>
                          <td>Trichy</td>
-                         <td>7, 8 January’17</td>
+                         <td>7, 8 January 2017</td>
                          <td>Bharathidasan Institute of Technology (BIT) Campus; Anna University</td>
                      </tr>
                      <tr>
                          <td>Chennai</td>
-                         <td>21,22 January’17</td>
+                         <td>21,22 January 2017</td>
                          <td>Easwari Engineering College</td>
                      </tr>
                      <tr>
                          <td>Madurai</td>
-                         <td>21,22 January’17</td>
+                         <td>21,22 January 2017</td>
                          <td>Thiagarajar College of Engineering</td>
                      </tr>
                      <tr>
                          <td>Vellore</td>
-                         <td>21,22 January’17</td>
+                         <td>21,22 January2017</td>
                          <td>Vellore Institute of Technology</td>
                      </tr>
                      <tr>
                          <td>Coimbatore</td>
-                         <td>17, 18 December’16</td>
+                         <td>17, 18 December 2016</td>
                          <td>Coimbatore Institute of Technology</td>
                      </tr>
                      <tr>
                          <td>Pilani</td>
-                         <td>17, 18 October’16</td>
+                         <td>17, 18 October 2016</td>
                          <td>BITS Pilani</td>
                      </tr>
                      <tr>
                          <td>Suratkal</td>
-                         <td>2,3 October’16</td>
+                         <td>2,3 October 2016</td>
                          <td>NIT Suratkal</td>
                      </tr>
                      <tr>
                          <td>Salem</td>
-                         <td>17, 18 September’16</td>
+                         <td>17, 18 September 2016</td>
                          <td>Annapoorana Engineering College</td>
                      </tr>
                  </table>
@@ -1385,7 +1388,7 @@ data-anchor="reach-us">
     city.send();
 </script>
 
-<script>
+<!--script>
 $('.nrdata').click(function(){
 	$("body").css("over‌​flow-y", "hidden");
 	$("body").css("position", "fixed");
@@ -1394,9 +1397,12 @@ $('.nrdata').click(function(){
 $('.e4edata').click(function(){
 	$("body").css("over‌​flow-y", "hidden");
 	$("body").css("position", "fixed");
+	$("body").css("width", "100%");
+	$('.body').removeClass('modal-open');
+	$('.eforeducate').addClass('modal-open');
 	}
 );
-</script>
+</script-->
 
 <!--load iframe onload  -->
 <script type="text/javascript">
