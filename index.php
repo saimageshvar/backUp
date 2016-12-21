@@ -1238,6 +1238,13 @@ data-anchor="reach-us">
     <script src="js/list.js"></script>
     <script type='text/javascript' src='assets/js/main68b3.js'></script>
     <script type='text/javascript' src='js/utils.js'></script>
+	<!-- hide icons while displaying nav bar-->
+	<script>		
+		  $('.navbar-toggle').click(function() {
+			$('.logo-box').toggle();
+		  });
+	</script>
+	
     <script>
         $(document).ready(function() {
 
