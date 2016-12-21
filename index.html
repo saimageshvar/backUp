@@ -330,7 +330,7 @@ data-anchor="form">
 
 <div class="section-content">
   <div class="particle" style="width: 100%;height: 100%;position: absolute;"></div>
-  <div class="container section-wrap" style="margin-top:88px;">
+  <div class="container section-wrap" style="margin-top:8px;">
     <div>
      <div>
       <h1 class="section-title text-center" data-appear-animation="fadeInDown" data-appear-animation-delay="100" style="color: white">SA Registration</h1>
@@ -378,23 +378,23 @@ data-anchor="form">
       </div>
       <br/><br/>  
       <div class="input-group" style="padding-bottom:13px;">
-       <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
-       <input id="city" type="text" class="form-control" name="city" placeholder="Your city" required>
+       <span class="input-group-addon"><i style="width:18px;" class="reicon fa fa-map-marker"></i></span>
+       <input id="city" type="text" class="form-control" name="city" placeholder="District, city" required>
      </div>
      <div class="input-group" style="padding-bottom:13px;">
-       <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
+       <span class="input-group-addon"><i style="width:18px;" class="reicon fa fa-bank"></i></span>
        <input id="college" type="text" class="form-control" name="college" placeholder="Your college" required>
      </div>
      <div class="input-group" style="padding-bottom:13px;">
-       <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
+       <span class="input-group-addon"><i style="width:18px;" class="reicon fa fa-group"></i></span>
        <input id="department" type="text" class="form-control" name="department" placeholder="Your department" required>
      </div>
      <div class="input-group" style="padding-bottom:13px;">
-       <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
+       <span class="input-group-addon"><i style="width:18px;" class="reicon fa fa-book"></i></span>
        <input id="degree" type="text" class="form-control" name="degree" placeholder="Your degree" required>
      </div>
      <div class="input-group" style="padding-bottom:13px;">
-       <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
+       <span class="input-group-addon"><i style="width:18px;" class="reicon fa fa-calendar"></i></span>
        <input id="year" type="text" class="form-control" name="year" placeholder="Your year" required>
      </div>
      <input type="hidden" id="sa" name="sa" />
@@ -438,7 +438,7 @@ data-anchor="form">
 <!-- <script src="js/list.js"></script>
 -->
 <!--colleges list-->
-<script>
+<!--script>
 	var collegesArray = new Array();
 	var col = new XMLHttpRequest();
 	var colUrl = "https://api.myjson.com/bins/ifw5l ";
@@ -451,10 +451,10 @@ data-anchor="form">
 	};
 	col.open("GET", colUrl, true);
 	col.send();
-</script>
+</script-->
 
 <!--city, state list-->
-<script>
+<!--script>
 	var cityArray = new Array();
 	var city = new XMLHttpRequest();
 	var cityUrl = "https://api.myjson.com/bins/1diai1";
@@ -467,7 +467,7 @@ data-anchor="form">
 	};
 	city.open("GET", cityUrl, true);
 	city.send();
-</script>
+</script-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script>
@@ -565,7 +565,7 @@ data-anchor="form">
 				$('.klogo').removeClass('col-sm-4');
 			}
             // populate forms
-            populateForm();
+            //populateForm();
 
             // rolling content
             $(".update").typed({
