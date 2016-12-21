@@ -410,8 +410,8 @@ data-anchor="eventsAndWorkshops">
                 <p>Quiz</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.php#General" class="hi-icon fa fa-random"></a>
-                <p>General</p>
+                <a href="events.php#Extravanganza" class="hi-icon fa fa-random"></a>
+                <p>Extravanganza</p>
             </div>
             <div class="col-sm-3">
                 <a href="events.php#Coding" class="hi-icon fa fa-terminal"></a>
@@ -852,10 +852,6 @@ data-anchor="reach-us">
             </ul>
             <div class="tab-content" style="border:none">
                 <div id="login" class="tab-pane fade in active">
-                    <div class="col-sm-12" style="text-align:right; cursor:pointer">
-                        <a href="#" data-toggle="modal" data-target=""><i>Forgot Password?</i></a>
-                    </div>
-
                     <form id="login_form" method="post">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>

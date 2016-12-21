@@ -156,7 +156,7 @@ session_start();
 									<li><a href="#" id="Coding" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Coding</a></li>
 									<li><a href="#" id="Management" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Management</a></li>
 									<li><a href="#" id="Robotics" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Robotics</a></li>
-									<li><a href="#" id="General" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">General</a></li>
+									<li><a href="#" id="Extravanganza" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Extravanganza</a></li>
 									<li><a href="#" id="Quiz" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Quiz</a></li>
 
 								</ul>
