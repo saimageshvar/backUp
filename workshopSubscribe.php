@@ -2,10 +2,10 @@
 session_start();
 if(isset($_SESSION['user']))
 {	
-	$url = 'http://52.39.93.59:8080/web/api/eventSubscribe';
+	$url = 'http://52.39.93.59:8080/web/api/workshopSubscribe';
 	$params =  json_encode(array(
 		"access_token" => $_SESSION['access_token'], 
-		"eventName" => $_POST['eventName']
+		"workshopName" => $_POST['workshopName']
 		));
 	$ch = curl_init( $url );
 	curl_setopt( $ch, CURLOPT_POST, 1);
@@ -18,7 +18,7 @@ if(isset($_SESSION['user']))
 	$response = curl_exec( $ch );
 	if (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 200)
 	{
-		$_SESSION['user']['events'][$_POST['eventName']] = true;
+		$_SESSION['user']['workshops'][$_POST['workshopName']] = true;
 		echo 1;
 	}
 	else

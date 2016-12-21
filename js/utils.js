@@ -88,9 +88,9 @@ $("#login_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     }
     else
     {
@@ -170,15 +170,15 @@ $("#registration_form").submit(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           BootstrapDialog.show({
+         BootstrapDialog.show({
             title: 'Oops!',
             message: 'Some error occured 😪 <br/> Please try after refreshing',
             type: BootstrapDialog.TYPE_DANGER,
             closable: true,
             draggable: true
         });
-       }
-   });
+     }
+ });
     }
     else
     {
@@ -235,8 +235,58 @@ $("#subscribe_event").click(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         alert("some error");
-     }
- });
+           alert("some error");
+       }
+   });
+    e.preventDefault();
+});
+
+// workshop subscription
+$("#subscribe_workshop").click(function(e) { 
+    alert($('#eventsDetails .modal-title')[0].innerHTML);
+
+    $.ajax
+    ({ 
+        url: 'workshopSubscribe.php',
+        data:'workshopName=' + $('#eventsDetails .modal-title')[0].innerHTML,
+        type: 'post',
+        success: function(result)
+        {
+            alert(result);
+            if(result==1)
+            {
+                BootstrapDialog.show({
+                    title: 'Hey!',
+                    message: 'Workshop Subscribed 😀 <br/> We will update you on this',
+                    type: BootstrapDialog.TYPE_SUCCESS,
+                    closable: true,
+                    draggable: true
+                });
+            }
+            else if(result==0)
+            {
+                BootstrapDialog.show({
+                    title: 'Oops!',
+                    message: 'Your session ended 😶 <br/> Please login again to subscribe',
+                    type: BootstrapDialog.TYPE_DANGER,
+                    closable: true,
+                    draggable: true
+                });
+            }
+            else
+            {
+                BootstrapDialog.show({
+                    title: 'Oops!',
+                    message: 'You should login before you subscribe 😕',
+                    type: BootstrapDialog.TYPE_DANGER,
+                    closable: true,
+                    draggable: true
+                });
+            }
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+           alert("some error");
+       }
+   });
     e.preventDefault();
 });

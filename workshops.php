@@ -197,7 +197,7 @@ session_start();
 
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-success" id="subscribe_event">Subscribe</button>
+					<button type="button" class="btn btn-success" id="subscribe_workshop">Subscribe</button>
 				</div>
 			</div>
 
@@ -210,6 +210,8 @@ session_start();
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/workshops.js"></script>
+<script type='text/javascript' src='js/utils.js'></script>
+
 
 
 <script type="text/javascript" src="js/randomColorMaster.js"></script>
