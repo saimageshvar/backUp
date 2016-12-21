@@ -41,6 +41,7 @@ session_start();
 			{
 				min-height: 420px;
 			}
+
 		}
 		p {
 			padding: 0.1em;
@@ -49,6 +50,14 @@ session_start();
 			max-height:320px;
 			font-family: 'Raleway', Arial, sans-serif;
 
+		}
+
+		.modal-dialog{
+			overflow-y: initial !important
+		}
+		.modal-body{
+			max-height: 350px;
+			overflow-y: auto;
 		}
 	</style>
 	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
@@ -144,8 +153,8 @@ session_start();
 
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="#" id="General" onclick='swapDomains(this);' class="active" style="font-family: 'Aref Ruqaa', serif;">General</a></li>
-								<li><a href="#" id="Science" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Science</a></li>
-								<li><a href="#" id="Engineering" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Engineering</a></li>
+<!-- 								<li><a href="#" id="Science" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Science</a></li>
+ -->								<li><a href="#" id="Engineering" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Engineering</a></li>
 								<li><a href="#" id="Robotics" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Robotics</a></li>
 								<li><a href="#" id="Management" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Management</a></li>
 								<li><a href="#" id="School" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">School</a></li>
