@@ -105,6 +105,9 @@ require 'utils.php';
         .updates {
             height: 300px;
         }
+		.update{
+			font-size:40px;
+		}
     }
 </style>
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
