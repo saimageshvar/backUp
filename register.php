@@ -40,7 +40,7 @@ curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt( $ch, CURLOPT_HEADER, 0);
 curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 
-//$response = curl_exec( $ch );
+$response = curl_exec( $ch );
 $response = json_decode($response, true);
 if (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 200)
 {
@@ -71,7 +71,7 @@ function sanitizeParams($param)
 	else
 	{
 		$_SESSION['registration'] = "failure";
-		exit(0);
+		exit(43);
 	}
 }
 

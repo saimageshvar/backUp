@@ -12,6 +12,7 @@ $("#sa_registration_form").submit(function(e) {
             type: 'post',
             success: function(result)
             {
+                alert(result);
                 if(result==1)
                 {
                     $('#sa_registration_form')[0].reset();
