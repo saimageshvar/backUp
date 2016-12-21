@@ -252,7 +252,6 @@ $("#subscribe_workshop").click(function(e) {
         type: 'post',
         success: function(result)
         {
-            alert(result);
             if(result==1)
             {
                 BootstrapDialog.show({
