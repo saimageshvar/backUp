@@ -106,7 +106,7 @@ require 'utils.php';
             height: 300px;
         }
 		.update{
-			font-size:40px;
+			font-size:30px;
 		}
     }
 </style>
@@ -757,7 +757,7 @@ data-anchor="reach-us">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h2 class="modal-title" style="text-align:center;margin-top:30px">Xceed Schedule</h2>
             </div>
-            <div class="modal-body" style="color:black">
+            <div class="modal-body" style="color:black; height:450px; overflow-y:auto;">
                 <center>
                     <table class="table table-hover table-bordered">
                         <tr>
