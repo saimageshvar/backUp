@@ -19,7 +19,8 @@ function myFunction(arr)
 			column.addEventListener("click", function() { displayDetails(this); });
 			
 			var iconName = document.createElement('div');
-			//iconName.innerHTML = arr[0].events[domains].events[i].tabs[arr[0].events[domains].events[i].tabs.length-1].content;
+			//console.log(arr[0].events[domains].events[i].name);
+			iconName.innerHTML = arr[0].events[domains].events[i].tabs[arr[0].events[domains].events[i].tabs.length-1].content;
 
 			var link = document.createElement("a");
 			link.href = "#";

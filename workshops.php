@@ -11,7 +11,7 @@ session_start();
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<title>K'17 | Workshops</title>
 	<link rel='stylesheet' href='assets/css/bootstrap3a05.css' type='text/css' media='all' />
-	<link rel='stylesheet' href='assets/css/font-awesome.min3a05.css' type='text/css' media='all' />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">	<link rel='stylesheet' href='assets/css/animate.min3a05.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='assets/css/animate.min3a05.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='assets/css/jquery.fullPage3a05.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='assets/css/style3a05.css' type='text/css' media='all' />
@@ -36,6 +36,10 @@ session_start();
 		@media screen and (max-width: 800px) {
 			.unescodiv {
 				display:none;
+			}
+			.events
+			{
+				min-height: 420px;
 			}
 		}
 		p {

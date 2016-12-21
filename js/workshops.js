@@ -1,6 +1,5 @@
 function myFunction(arr)
 {
-	var icons = ["hi-icon-cog", "hi-icon-clock", "hi-icon-videos", "hi-icon-list", "hi-icon-refresh", "hi-icon-clock", "hi-icon-cog"]
 	
 	//events
 	var domains;
@@ -19,9 +18,14 @@ function myFunction(arr)
 			$(column).data('tabs',arr[0].workshops[domains].workshops[i].tabs);
 			column.className = "col-sm-3";
 			column.addEventListener("click", function() { displayDetails(this); });
+
+			var iconName = document.createElement('div');
+			//console.log(arr[0].events[domains].events[i].name);
+			iconName.innerHTML = arr[0].workshops[domains].workshops[i].tabs[arr[0].workshops[domains].workshops[i].tabs.length-1].content;
+
 			var link = document.createElement("a");
 			link.href = "#";
-			link.className = "hi-icon fa fa-twitter";
+			link.className = "hi-icon fa " + iconName.textContent;
 			var content = document.createElement("p");
 			content.textContent = arr[0].workshops[domains].workshops[i].name;
 			
@@ -63,7 +67,7 @@ function displayDetails(e)
 	outerDiv.className = 'eventModalBodyDiv';
 	var i;
 	var noOfTabs = $(e).data('tabs').length;
-	for(i=0; i<noOfTabs; i++)
+	for(i=0; i<noOfTabs-1; i++)
 	{
 		var tabHeading = document.createElement('h6');
 		tabHeading.innerHTML = $(e).data('tabs')[i].title;

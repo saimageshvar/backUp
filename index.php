@@ -90,13 +90,17 @@ require 'utils.php';
     {
         background:#d73e4d !important;
     }
-    span
+    p span
     {
         color:#fff !important;
     }
     @media screen and (max-width: 800px) {
         .unescodiv {
             display:none;
+        }
+
+        .updates {
+            height: 300px;
         }
     }
 </style>
@@ -248,7 +252,7 @@ th, td {
             <h1 class="section-title "  data-appear-animation="bounceInUp" data-appear-animation-delay="100">kurukshetra 2017</h1>
             <div class="animation"
             data-appear-animation="bounceInUp"
-            data-appear-animation-delay="100"  style="height: 300px">
+            data-appear-animation-delay="100">
             <div class="updates">
                 <h2 class="update" style="color: white;"></h2>
             </div>
@@ -284,7 +288,7 @@ data-anchor="highlights">
     <div class="facts no-appear  inverse">
         <div class="facts-title" data-appear-animation="zoomIn" data-appear-animation-delay="100">
             <div class="title-wrap">
-                <h1 class="title" style="color:  #581845 ">k!17 <br/> unravelled</h1>
+                <h1 class="title" style="color:  #981371 ">K'17 <br/> unravelled</h1>
             </div>
             <style type="text/css" scoped="">
                 .facts-title:before { border-color:  #000;}
@@ -390,11 +394,11 @@ data-anchor="eventsAndWorkshops">
         <!-- .section-title-block -->
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains events-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100">
             <div class="col-sm-3">
-                <a href="events.php#Engineering" class="hi-icon fa fa-gear"></a>
+                <a href="events.php#Engineering" class="hi-icon fa fa-cogs"></a>
                 <p>Engineering</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.php#Robotics" class="hi-icon fa fa-android"></a>
+                <a href="events.php#Robotics" class="hi-icon fa fa-registered"></a>
                 <p>Robotics</p>
             </div>
             <div class="col-sm-3">
@@ -406,7 +410,7 @@ data-anchor="eventsAndWorkshops">
                 <p>Quiz</p>
             </div>
             <div class="col-sm-3">
-                <a href="events.php#General" class="hi-icon fa fa-archive"></a>
+                <a href="events.php#General" class="hi-icon fa fa-random"></a>
                 <p>General</p>
             </div>
             <div class="col-sm-3">
@@ -422,19 +426,19 @@ data-anchor="eventsAndWorkshops">
         </div>
         <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b domains_work workshops-details" data-appear-animation="fadeInUp" data-appear-animation-delay="100" style="display:none">
             <div class="col-sm-3">
-                <a href="workshops.php#General" class="hi-icon fa fa-gear"></a>
+                <a href="workshops.php#General" class="hi-icon fa fa-random"></a>
                 <p>General</p>
             </div>
-            <div class="col-sm-3">
+          <!--   <div class="col-sm-3">
                 <a href="workshops.php#Science" class="hi-icon fa fa-laptop"></a>
                 <p>Science</p>
-            </div>
+            </div> -->
             <div class="col-sm-3">
-                <a href="workshops.php#Engineering" class="hi-icon fa fa-terminal"></a>
+                <a href="workshops.php#Engineering" class="hi-icon fa fa-cogs"></a>
                 <p>Engineering</p>
             </div>
             <div class="col-sm-3">
-                <a href="workshops.php#Robotics" class="hi-icon fa fa-android"></a>
+                <a href="workshops.php#Robotics" class="hi-icon fa fa-registered"></a>
                 <p>Robotics</p>
             </div>
             <div class="col-sm-3">
