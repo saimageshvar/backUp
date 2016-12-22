@@ -1,6 +1,8 @@
  
 // handle login
 $("#login_form").submit(function(e) { 
+$('.progress_loader').show();
+$('.login_submit').hide();
     var flag = returnCheckForLogin();
     if(flag)
     {
@@ -10,7 +12,6 @@ $("#login_form").submit(function(e) {
             data: $("#login_form").serialize(),
             type: 'post',
             dataType: "json",
-            async: false,
             success: function(result)
             {
                 if(result.response!=0)
@@ -85,10 +86,22 @@ $("#login_form").submit(function(e) {
                     closable: true,
                     draggable: true
                 });
+				$('#password').val('');
+				$('#password').focus();
             }
+			$('.progress_loader').hide();
+	$('.login_submit').show();
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         alert("some error");
+         BootstrapDialog.show({
+            title: 'Oops!',
+            message: 'Some error occured 😪 <br/> Please try after refreshing',
+            type: BootstrapDialog.TYPE_DANGER,
+            closable: true,
+            draggable: true
+        });
+		 $('.progress_loader').hide();
+	$('.login_submit').show();
      }
  });
     }
@@ -101,6 +114,8 @@ $("#login_form").submit(function(e) {
             closable: true,
             draggable: true
         });
+		$('.progress_loader').hide();
+	$('.login_submit').show();
     }
     e.preventDefault();
 });
@@ -108,6 +123,8 @@ $("#login_form").submit(function(e) {
 
 // handle new registration
 $("#registration_form").submit(function(e) { 
+	$('.progress_loader').show();
+	$('.reg_submit').hide();
     var flag = returnCheck();
     if(flag)
     {
@@ -168,6 +185,8 @@ $("#registration_form").submit(function(e) {
                     draggable: true
                 });
             }
+			$('.progress_loader').hide();
+	$('.reg_submit').show();
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
          BootstrapDialog.show({
@@ -177,6 +196,8 @@ $("#registration_form").submit(function(e) {
             closable: true,
             draggable: true
         });
+		$('.progress_loader').hide();
+	$('.reg_submit').show();
      }
  });
     }
@@ -189,7 +210,9 @@ $("#registration_form").submit(function(e) {
             closable: true,
             draggable: true
         });
-    }
+		$('.progress_loader').hide();
+	$('.reg_submit').show();
+    }	
     e.preventDefault();
 });
 
@@ -227,7 +250,7 @@ $("#subscribe_event").click(function(e) {
             {
                 BootstrapDialog.show({
                     title: 'Oops!',
-                    message: 'You should login before you subscribe 😕',
+                    message: 'You should <a href=\'index.php#login\'>login</a> before you subscribe 😕',
                     type: BootstrapDialog.TYPE_DANGER,
                     closable: true,
                     draggable: true
@@ -243,8 +266,6 @@ $("#subscribe_event").click(function(e) {
 
 // workshop subscription
 $("#subscribe_workshop").click(function(e) { 
-    alert($('#eventsDetails .modal-title')[0].innerHTML);
-
     $.ajax
     ({ 
         url: 'workshopSubscribe.php',
@@ -276,7 +297,7 @@ $("#subscribe_workshop").click(function(e) {
             {
                 BootstrapDialog.show({
                     title: 'Oops!',
-                    message: 'You should login before you subscribe 😕',
+                    message: 'You should <a href=\'index.php#login\'>login</a> before you subscribe 😕',
                     type: BootstrapDialog.TYPE_DANGER,
                     closable: true,
                     draggable: true

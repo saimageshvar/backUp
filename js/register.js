@@ -2,7 +2,7 @@ var check=false, nameFlag=false, phone=false, pass=false, email=false;
 function validatename(key)
 {
 	var name=key.value;
-	if (!name.match(/^[a-zA-Z. ]*$/))
+	if (!name.match(/^[a-zA-Z. ]{2,50}$/))
 	{
 		key.style.borderColor="red";
 		window.name = false;
@@ -95,6 +95,7 @@ function returnCheck()
 
 function returnCheckForLogin()
 {
+	
 	return (window.email && window.pass);
 
 }

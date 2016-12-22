@@ -19,6 +19,8 @@ require 'utils.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
     <link rel='stylesheet' href="css/res.css">
     <link rel='stylesheet' href="css/loader.css">
+	<link rel='stylesheet' href="css/progress_loader.css">
+
     <link rel='stylesheet' href="css/initiatives.css">
     <link rel='stylesheet' href="css/scroll.css">
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css'/>
@@ -92,13 +94,8 @@ require 'utils.php';
     {
         color:#fff !important;
     }
-	body.modal-open {
-		overflow: hidden;
-		position:fixed;
-		width: 100%;
-	}
     @media screen and (max-width: 800px) {
-        .unescodiv {
+        .logos {
             display:none;
         }
 
@@ -108,7 +105,17 @@ require 'utils.php';
 		.update{
 			font-size:30px;
 		}
+		.down{
+			display:none;
+		}
     }
+	.modal-dialog{
+			overflow-y: initial !important
+		}
+		.modal-body{
+			max-height: 450px;
+			overflow-y: auto;
+		}
 </style>
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 <style>
@@ -163,10 +170,10 @@ th, td {
         <header class="site-header  second-site-header">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-4 col-sm-4 left-align no-left-indent" id="one" >
+                    <div class="col-xs-4 col-sm-4 left-align no-left-indent" id="one">
                         <div class="navbar navbar-default " role="navigation">
                             <div class="navbar-header">
-                                <button type="button" class="btn navbar-toggle collapsed" style=""
+                                <button type="button" class="btn navbar-toggle collapsed" style="position:fixed;"
                                 data-toggle="collapse"
                                 data-target="#main-menu">
                                 <span class="icon close-icon">
@@ -189,15 +196,20 @@ th, td {
                 <div class="col-xs-4 col-sm-4 klogo logo-box">
                     <center><img src="img/k orange white.png" style="height: auto;width:75%;"></center>
                 </div>
-                <div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
-                    <img src="img/unesco white and blue1.png" style="height: auto;width: 55%;">                             
-                </div>
+                <!--div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
+                    <img src="img/combined logo.jpg" style="height: auto;width: 85%;">                             
+                </div-->
             </div>
         </div>
         <div class="clearfix"></div>
         <div class="header-menu" style="background: white">
             <nav id="main-menu" class="collapse navbar-collapse">
-                <ul id="menu-main-menu" class="col-sm-12 col-md-6 nav navbar-nav">
+				
+                <ul id="menu-main-menu" class="col-sm-12 col-md-6 nav navbar-nav" style="padding-top:0px;">
+				<div class="logos">
+				<center>	<img src="img/logo.png" style="height: auto;width:90%;"></center>
+				</div>
+				<br/>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#home-section"><span>Intro</span></a></li>
                     <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="#highlights"><span>Highlights</span></a></li>
                     <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="#eventsAndWorkshops"><span>Events & Workshops</span></a></li>
@@ -264,7 +276,7 @@ th, td {
             </div>
             <hr class="pg-gap" style="margin-bottom: 29px;">
         </div>
-        <div class="animation "
+        <div class="animation down"
         data-appear-animation="bounceInUp"
         data-appear-animation-delay="100" style="padding-top: 80px">
         <a href="#highlights"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
@@ -359,7 +371,7 @@ data-anchor="highlights">
 </div>
 </div>
 <!-- .section-content -->
-<div class="animation text-center"
+<div class="animation text-center down"
 data-appear-animation="bounceInUp"
 data-appear-animation-delay="100">
 <a href="#eventsAndWorkshops"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
@@ -460,7 +472,7 @@ data-anchor="eventsAndWorkshops">
         </div>
     </div>
 </div>
-<div class="animation text-center"
+<div class="animation text-center down"
 data-appear-animation="bounceInUp"
 data-appear-animation-delay="100">
 <a href="#initiatives"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
@@ -511,7 +523,7 @@ data-anchor="initiatives">
     </div>
 </div>
 </div>
-<div class="animation text-center"
+<div class="animation text-center down"
 data-appear-animation="bounceInUp"
 data-appear-animation-delay="100">
 <a href="#xceed"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
@@ -552,7 +564,7 @@ data-anchor="xceed">
 
 </div>
 <!-- .section-content -->
-<div class="animation text-center"
+<div class="animation text-center down"
 data-appear-animation="bounceInUp"
 data-appear-animation-delay="100">
 <a href="#hospitality"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
@@ -583,7 +595,7 @@ data-anchor="hospitality">
 <span class="cssload-loader hospi-loader"><span class="cssload-loader-inner"></span></span>
 </div>
 <!-- .section-content -->
-<div class="animation text-center"
+<div class="animation text-center down"
 data-appear-animation="bounceInUp"
 data-appear-animation-delay="100">
 <a href="#gl"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
@@ -636,7 +648,7 @@ data-anchor="gl">
 </div>
 </div>
 <!-- .section-content -->
-<div class="animation text-center"
+<div class="animation text-center down"
 data-appear-animation="bounceInUp"
 data-appear-animation-delay="100">
 <a href="#theme"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
@@ -673,7 +685,7 @@ data-anchor="theme">
 </div>
 </div>
 <!-- .section-content -->
-<div class="animation text-center"
+<div class="animation text-center down"
 data-appear-animation="bounceInUp"
 data-appear-animation-delay="100">
 <a href="#reach-us"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
@@ -841,7 +853,7 @@ data-anchor="reach-us">
     </div>
 </div>
 <!-- Login/ Registration -->
-<div class="modal fade login" role="dialog">
+<div class="modal fade login" role="dialog" id="registration">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <ul class="nav nav-tabs nav-justified">
@@ -868,13 +880,16 @@ data-anchor="reach-us">
                             <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
                             <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
                         </div>
-                        <br>                            
-                        <input type="submit" class="btn btn-success" value="Login">
+                        <br> 
+
+						<div class="progress_loader" style="display:none;">Loading...</div>
+                        <center><input type="submit" class="btn btn-success login_submit" value="Login"></center>
                     </form>
+					
                 </div>
-                <div id="register" class="tab-pane fade">
+                <div id="register" class="tab-pane fade"style="height:450px;overflow-y:auto;">
                     <center>
-                        <form id="registration_form"  method="post" autocomplete="off">
+                        <form id="registration_form"  method="post" autocomplete="off" style="padding-right:10px;">
                             <div class="input-group" style="padding-bottom:13px;">
                              <span class="input-group-addon"><i class="reicon glyphicon glyphicon-user"></i></span>
                              <input id="name" type="text" class="form-control" name="name" placeholder="Your name" onblur="validatename(this)" required>
@@ -927,7 +942,8 @@ data-anchor="reach-us">
                       </div>
                       <div class="form-group year">
                       </div>
-                      <input type="submit" class="btn btn-success" value="Register" style="background: #0000">
+					  <div class="progress_loader" style="display:none;">Loading...</div>
+                      <input type="submit" class="btn btn-success reg_submit" value="Register" style="background: #0000">
                   </form>
               </center>
           </div>
@@ -1298,11 +1314,11 @@ data-anchor="reach-us">
         </script>  
         
         <script>
-		//student ambassdor registration direct link
+		//login and registration direct link
 		$(document).ready(function() {
 
-            if(window.location.href.indexOf('#SAregistration') != -1) {
-             $('#SAregistration').modal('show');
+            if(window.location.href.indexOf('#login') != -1) {
+             $('#registration').modal('show');
          }
 
      });
