@@ -32,9 +32,6 @@ session_start();
 		h4, .h4 {font-family: Miso;font-size: 32px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}h5, .h5 {font-family: Miso;font-size: 24px;font-weight: 400;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}
 		h6, .h6 {font-family: Miso;font-size: 19px;font-weight: 700;color: #d73e4d;text-transform: uppercase;text-align: inherit;margin-top: 0px;margin-bottom: 15px;}a {font-family: Lato;font-size: 18px;text-transform: none;}a {color: #d73e4d}a:hover {color: #d73e4d}a:active {color: #d73e4d}.btn {padding-top:6px;padding-bottom:6px;padding-left:30px;padding-right:30px;}.btn.btn-sm {padding-top:2px;padding-bottom:2px;padding-left:20px;padding-right:20px;}.btn.btn-lg {padding-top:6px;padding-bottom:6px;padding-left:40px;padding-right:40px;}p {margin-top:0px;margin-bottom:30px;}blockquote {border-left-width:1px;border-color:#d73e4d;padding-top:0px;padding-bottom:0px;padding-left:20px;padding-right:0px;}table th, table td {padding-top:1px;padding-bottom:1px;padding-left:1px;padding-right:1px;}        
 		@media screen and (max-width: 800px) {
-			.unescodiv {
-				display:none;
-			}
 			.events
 			{
 				min-height: 420px;
@@ -122,9 +119,7 @@ session_start();
 						<img src="img/unesco white and blue1.png" style=" height: auto;width: 60%;margin-top: -5px;margin-left:200px;">
 
 					</div-->
-					<div align="right" class="col-xs-4 col-sm-4 logo-box unescodiv" id="three">                             
-						<img src="img/unesco white and blue1.png" style="height: auto;width: 55%;">                           
-					</div>                    
+                    
 				</div>
 			</div>
 
