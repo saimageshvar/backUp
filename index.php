@@ -19,7 +19,7 @@ require 'utils.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
     <link rel='stylesheet' href="css/res.css">
     <link rel='stylesheet' href="css/loader.css">
-	<link rel='stylesheet' href="css/progress_loader.css">
+    <link rel='stylesheet' href="css/progress_loader.css">
 
     <link rel='stylesheet' href="css/initiatives.css">
     <link rel='stylesheet' href="css/scroll.css">
@@ -64,7 +64,7 @@ require 'utils.php';
          font-family: 'Aref Ruqaa', serif; 
          font-style: normal; 
          font-size:23px;
-     }		
+     }      
      p {
         padding: 0.1em;
         font-size:16px;
@@ -102,20 +102,20 @@ require 'utils.php';
         .updates {
             height: 300px;
         }
-		.update{
-			font-size:30px;
-		}
-		.down{
-			display:none;
-		}
+        .update{
+            font-size:30px;
+        }
+        .down{
+            display:none;
+        }
     }
-	.modal-dialog{
-			overflow-y: initial !important
-		}
-		.modal-body{
-			max-height: 450px;
-			overflow-y: auto;
-		}
+    .modal-dialog{
+            overflow-y: initial !important
+        }
+        .modal-body{
+            max-height: 450px;
+            overflow-y: auto;
+        }
 </style>
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 <style>
@@ -204,12 +204,12 @@ th, td {
         <div class="clearfix"></div>
         <div class="header-menu" style="background: white">
             <nav id="main-menu" class="collapse navbar-collapse">
-				
+                
                 <ul id="menu-main-menu" class="col-sm-12 col-md-6 nav navbar-nav" style="padding-top:0px;">
-				<div class="logos">
-				<center>	<img src="img/logo.png" style="height: auto;width:90%;"></center>
-				</div>
-				<br/>
+                <div class="logos">
+                <center>    <img src="img/logo.png" style="height: auto;width:90%;"></center>
+                </div>
+                <br/>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#home-section"><span>Intro</span></a></li>
                     <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="#highlights"><span>Highlights</span></a></li>
                     <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="#eventsAndWorkshops"><span>Events & Workshops</span></a></li>
@@ -882,10 +882,10 @@ data-anchor="reach-us">
                         </div>
                         <br> 
 
-						<div class="progress_loader" style="display:none;">Loading...</div>
+                        <div class="progress_loader" style="display:none;">Loading...</div>
                         <center><input type="submit" class="btn btn-success login_submit" value="Login"></center>
                     </form>
-					
+                    
                 </div>
                 <div id="register" class="tab-pane fade"style="height:450px;overflow-y:auto;">
                     <center>
@@ -942,7 +942,7 @@ data-anchor="reach-us">
                       </div>
                       <div class="form-group year">
                       </div>
-					  <div class="progress_loader" style="display:none;">Loading...</div>
+                      <div class="progress_loader" style="display:none;">Loading...</div>
                       <input type="submit" class="btn btn-success reg_submit" value="Register" style="background: #0000">
                   </form>
               </center>
@@ -1181,7 +1181,7 @@ data-anchor="reach-us">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/index1.js"></script>
-    <script type="text/javascript" src="js/particleground.min.js"></script>
+    <!-- <script type="text/javascript" src="js/particleground.min.js"></script> -->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
@@ -1254,25 +1254,25 @@ data-anchor="reach-us">
     <script src="js/list.js"></script>
     <script type='text/javascript' src='assets/js/main68b3.js'></script>
     <script type='text/javascript' src='js/utils.js'></script>
-	<!-- hide icons while displaying nav bar-->
-	<script>		
-		  $('.navbar-toggle').click(function() {
-			$('.logo-box').toggle();
-		  });
-	</script>
-	
+    <!-- hide icons while displaying nav bar-->
+    <script>        
+          $('.navbar-toggle').click(function() {
+            $('.logo-box').toggle();
+          });
+    </script>
+    
     <script>
         $(document).ready(function() {
 
             if($(window).width() >= 900){
 
             // initialize particles
-            $('.particle').particleground({
-              dotColor: '#ffffff',
-              density: 20000,
-              proximity: 100
-          });
-			//retain small size of k logo in large screen
+          //   $('.particle').particleground({
+          //     dotColor: '#ffffff',
+          //     density: 20000,
+          //     proximity: 100
+          // });
+            //retain small size of k logo in large screen
             $('.klogo').addClass('col-sm-4');
             $('.klogo').addClass('col-xs-4');
             $('.klogo').removeClass('col-xs-8');
@@ -1281,12 +1281,12 @@ data-anchor="reach-us">
         }
         else{
 
-				//increase k logo size in mobile
-				$('.klogo').addClass('col-sm-8');
-				$('.klogo').addClass('col-xs-8');
-				$('.klogo').removeClass('col-xs-4');
-				$('.klogo').removeClass('col-sm-4');
-			}
+                //increase k logo size in mobile
+                $('.klogo').addClass('col-sm-8');
+                $('.klogo').addClass('col-xs-8');
+                $('.klogo').removeClass('col-xs-4');
+                $('.klogo').removeClass('col-sm-4');
+            }
             // populate forms
             populateForm();
         });
@@ -1314,8 +1314,8 @@ data-anchor="reach-us">
         </script>  
         
         <script>
-		//login and registration direct link
-		$(document).ready(function() {
+        //login and registration direct link
+        $(document).ready(function() {
 
             if(window.location.href.indexOf('#login') != -1) {
              $('#registration').modal('show');
@@ -1416,17 +1416,17 @@ data-anchor="reach-us">
 
 <!--script>
 $('.nrdata').click(function(){
-	$("body").css("over‌​flow-y", "hidden");
-	$("body").css("position", "fixed");
-	}
+    $("body").css("over‌​flow-y", "hidden");
+    $("body").css("position", "fixed");
+    }
 );
 $('.e4edata').click(function(){
-	$("body").css("over‌​flow-y", "hidden");
-	$("body").css("position", "fixed");
-	$("body").css("width", "100%");
-	$('.body').removeClass('modal-open');
-	$('.eforeducate').addClass('modal-open');
-	}
+    $("body").css("over‌​flow-y", "hidden");
+    $("body").css("position", "fixed");
+    $("body").css("width", "100%");
+    $('.body').removeClass('modal-open');
+    $('.eforeducate').addClass('modal-open');
+    }
 );
 </script-->
 
@@ -1440,6 +1440,15 @@ $('.e4edata').click(function(){
     $('.anna-univ-location').append(f);
 });
 </script>
+
+<script type="text/javascript" src="js/snowstorm-min.js"></script>
+<script type="text/javascript">
+snowStorm.animationInterval = 53;
+snowStorm.freezeOnBlur = false;
+snowStorm.followMouse = true;
+snowStorm.flakesMax = 500;
+</script>
+
 
 <!-- google analytics -->
 <script>
