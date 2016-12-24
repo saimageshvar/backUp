@@ -276,10 +276,15 @@ th, td {
             </div>
             <hr class="pg-gap" style="margin-bottom: 29px;">
         </div>
+		
         <div class="animation down"
         data-appear-animation="bounceInUp"
         data-appear-animation-delay="100" style="padding-top: 80px">
         <a href="#highlights"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
+		</div>
+		<br/>
+		<div style="padding-left:76%;position:fixed;">
+		<a href="http://www.picgifs.com/graphics/"><img style="width:300px; padding-right:1px;" src="http://www.picgifs.com/graphics/c/christmas-sleigh/graphics-christmas-sleigh-199839.gif" border="0" /></a>
     </div>
 </div>
 </div>
