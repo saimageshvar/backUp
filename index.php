@@ -108,6 +108,18 @@ require 'utils.php';
         .down{
             display:none;
         }
+		.christmasgif
+		{
+			display:none;
+		}
+	}
+	@media screen and (min-width:1000px)
+	{
+		.navbutton
+		{
+			position:fixed;
+			-webkit-backface-visibility: hidden;
+		}
     }
     .modal-dialog{
             overflow-y: initial !important
@@ -173,7 +185,7 @@ th, td {
                     <div class="col-xs-4 col-sm-4 left-align no-left-indent" id="one">
                         <div class="navbar navbar-default " role="navigation">
                             <div class="navbar-header">
-                                <button type="button" class="btn navbar-toggle collapsed" style="position:fixed;"
+                                <button type="button" class="navbutton btn navbar-toggle collapsed" onclick="location.href = '#home-section';"
                                 data-toggle="collapse"
                                 data-target="#main-menu">
                                 <span class="icon close-icon">
@@ -283,9 +295,9 @@ th, td {
         <a href="#highlights"><i class="fa fa-angle-double-down" style="font-size:48px;"></i></a>
 		</div>
 		<br/>
-		<div style="padding-left:76%;position:fixed;">
-		<a href="http://www.picgifs.com/graphics/"><img style="width:300px; padding-right:1px;" src="http://www.picgifs.com/graphics/c/christmas-sleigh/graphics-christmas-sleigh-199839.gif" border="0" /></a>
-    </div>
+		<div class="christmasgif" style="padding-left:76%;position:fixed;">
+		<img style="width:300px; padding-right:1px;" src="http://www.picgifs.com/graphics/c/christmas-sleigh/graphics-christmas-sleigh-199839.gif" border="0" />
+		</div>
 </div>
 </div>
 </div>
@@ -1266,6 +1278,8 @@ data-anchor="reach-us">
           });
     </script>
     
+	<!-- scroll to top when navbar clicked-->
+	
     <script>
         $(document).ready(function() {
 
