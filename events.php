@@ -119,7 +119,7 @@ session_start();
 						<img src="img/unesco white and blue1.png" style=" height: auto;width: 60%;margin-top: -5px;margin-left:200px;">
 
 					</div-->
-                    
+					
 				</div>
 			</div>
 
@@ -255,17 +255,17 @@ session_start();
 
 
 <!-- particles -->
-<script type="text/javascript" src="js/particleground.min.js"></script>
+<!-- <script type="text/javascript" src="js/particleground.min.js"></script> -->
 <script type="text/javascript">
 	$(document).ready(function() {
 		if($(window).width() >= 900){
 
             // initialize particles
-            $('.particle').particleground({
-            	dotColor: '#ffffff',
-            	density: 20000,
-            	proximity: 100
-            });
+            // $('.particle').particleground({
+            // 	dotColor: '#ffffff',
+            // 	density: 20000,
+            // 	proximity: 100
+            // });
 			//retain small size of k logo in large screen
 			$('.klogo').addClass('col-sm-4');
 			$('.klogo').addClass('col-xs-4');
@@ -290,6 +290,17 @@ session_start();
 		}
 	});
 </script>
+
+<script type="text/javascript" src="js/snowstorm-min.js"></script>
+<script type="text/javascript">
+	snowStorm.animationInterval = 53;
+	snowStorm.freezeOnBlur = false;
+	snowStorm.followMouse = true;
+	snowStorm.flakesMaxActive = 100;
+	snowStorm.flakesMax = 500;
+</script>
+
+
 <noscript>
 	<!-- h1 font -->
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">

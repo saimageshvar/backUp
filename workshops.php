@@ -148,55 +148,55 @@ session_start();
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="#" id="General" onclick='swapDomains(this);' class="active" style="font-family: 'Aref Ruqaa', serif;">General</a></li>
 <!-- 								<li><a href="#" id="Science" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Science</a></li>
- -->								<li><a href="#" id="Engineering" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Engineering</a></li>
-								<li><a href="#" id="Robotics" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Robotics</a></li>
-								<li><a href="#" id="Management" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Management</a></li>
-								<li><a href="#" id="School" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">School</a></li>
-							</ul>
+-->								<li><a href="#" id="Engineering" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Engineering</a></li>
+<li><a href="#" id="Robotics" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Robotics</a></li>
+<li><a href="#" id="Management" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">Management</a></li>
+<li><a href="#" id="School" onclick='swapDomains(this);' style="font-family: 'Aref Ruqaa', serif;">School</a></li>
+</ul>
 
 
-							<div class="clearfix"></div>
-						</div><!-- .filter-buttons -->
-					</div>
-				</div><!-- .section-title-block -->
-				<div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b events">							
-					<!-- events will come here -->
+<div class="clearfix"></div>
+</div><!-- .filter-buttons -->
+</div>
+</div><!-- .section-title-block -->
+<div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b events">							
+	<!-- events will come here -->
 
 
 
 
-				</div>
+</div>
 
+
+</div>
+
+
+
+</div>
+</div><!-- .section-content -->
+
+
+<!-- events details -->
+<!-- Modal -->
+<div id="eventsDetails" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h2 class="modal-title" style="text-align:center;margin-top:30px"></h2>
+			</div>
+			<div class="modal-body" style="color:black">
 
 			</div>
-
-
-
-		</div>
-	</div><!-- .section-content -->
-
-
-	<!-- events details -->
-	<!-- Modal -->
-	<div id="eventsDetails" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
-
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h2 class="modal-title" style="text-align:center;margin-top:30px"></h2>
-				</div>
-				<div class="modal-body" style="color:black">
-
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-success" id="subscribe_workshop">Subscribe</button>
-				</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" id="subscribe_workshop">Subscribe</button>
 			</div>
-
 		</div>
+
 	</div>
+</div>
 
 
 </div><!-- .main -->
@@ -249,17 +249,17 @@ session_start();
 <script type='text/javascript' src='assets/js/isotope.pkgd.min68b3.js?ver=1'></script>
 <script type='text/javascript' src='assets/js/main68b3.js'></script>
 <!-- particles -->
-<script type="text/javascript" src="js/particleground.min.js"></script>
+<!-- <script type="text/javascript" src="js/particleground.min.js"></script> -->
 <script type="text/javascript">
 	$(document).ready(function() {
 		if($(window).width() >= 900){
 
             // initialize particles
-            $('.particle').particleground({
-            	dotColor: '#ffffff',
-            	density: 20000,
-            	proximity: 100
-            });
+            // $('.particle').particleground({
+            // 	dotColor: '#ffffff',
+            // 	density: 20000,
+            // 	proximity: 100
+            // });
 			//retain small size of k logo in large screen
 			$('.klogo').addClass('col-sm-4');
 			$('.klogo').addClass('col-xs-4');
@@ -283,6 +283,17 @@ session_start();
 		}
 	});
 </script>
+
+<script type="text/javascript" src="js/snowstorm-min.js"></script>
+<script type="text/javascript">
+	snowStorm.animationInterval = 53;
+	snowStorm.freezeOnBlur = false;
+	snowStorm.followMouse = true;
+	snowStorm.flakesMaxActive = 100;
+	snowStorm.flakesMax = 500;
+</script>
+
+
 <noscript>
 	<!-- h1 font -->
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">

@@ -1446,6 +1446,7 @@ $('.e4edata').click(function(){
 snowStorm.animationInterval = 53;
 snowStorm.freezeOnBlur = false;
 snowStorm.followMouse = true;
+snowStorm.flakesMaxActive = 100;
 snowStorm.flakesMax = 500;
 </script>
 
