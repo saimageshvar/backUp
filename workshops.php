@@ -174,8 +174,8 @@ session_start();
 
 </div>
 <div class="christmasgif" style="padding-left:76%;position:fixed;">
-		<img style="width:230px; padding-right:1px;" src="http://www.picgifs.com/graphics/c/christmas-sleigh/graphics-christmas-sleigh-199839.gif" border="0" />
-	</div>
+	<img style="width:230px; padding-right:1px;" src="http://www.picgifs.com/graphics/c/christmas-sleigh/graphics-christmas-sleigh-199839.gif" border="0" />
+</div>
 </div><!-- .section-content -->
 
 
