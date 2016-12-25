@@ -89,6 +89,7 @@ $("#login_form").submit(function(e) {
                 $('#password').val('');
                 $('#password').focus();
             }
+			$('#login_form')[0].reset();
             $('.progress_loader').hide();
             $('.login_submit').show();
         },
@@ -407,6 +408,7 @@ $("#reset_password_form").submit(function(e) {
                         draggable: true
                     });
                     $("#reset_password_form")[0].reset();
+					$("#login_form")[0].reset();
 					$('#registration').modal('show');
                 }
                 else if(result==0)

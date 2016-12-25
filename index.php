@@ -983,7 +983,7 @@ data-anchor="reach-us">
 				<br/>
                 <center><div class="input-group" style="width:70%;">
                     <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-                    <input id="send_reset_email" type="text" class="form-control" name="send_reset_email" placeholder="Email" onblur="validatemail(this)">
+                    <input id="send_reset_email" type="text" class="form-control" name="send_reset_email" placeholder="Email" onblur="validatemail(this)" required>
                 </div></center>
             </div>
             
@@ -1012,12 +1012,12 @@ data-anchor="reach-us">
                 <form id="reset_password_form" method="post" autocomplete="off">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="reicon fa fa-key"></i></span>
-                        <input id="reset_token" type="text" class="form-control" name="reset_token" placeholder="Reset Token" onblur="validateAccessToken(this)">
+                        <input id="reset_token" type="text" class="form-control" name="reset_token" placeholder="Reset Token" onblur="validateAccessToken(this)" required>
                     </div>
                     <br>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                        <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)" required>
                     </div>
                     <br> 
 
@@ -1052,15 +1052,15 @@ data-anchor="reach-us">
                 <div id="login" class="tab-pane fade in active">
                     <a href="" class="pull-right" data-toggle="modal" data-target=".forgot_password" data-dismiss="modal">Forgot Password?</a>
                     <br/><br/>
-                    <form id="login_form" method="post">
+                    <form id="login_form" method="post" autocomplete="off">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
-                            <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)">
+                            <input id="email" type="text" class="form-control" name="email" placeholder="Email" onblur="validatemail(this)" required>
                         </div>
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
-                            <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)" required>
                         </div>
                         <br> 
 
