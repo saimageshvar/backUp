@@ -396,7 +396,6 @@ $("#reset_password_form").submit(function(e) {
             type: 'post',
             success: function(result)
             {
-                alert(result);
                 if(result==1)
                 {
 					$('.resetpassword').modal('hide');

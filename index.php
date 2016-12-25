@@ -113,8 +113,11 @@ require 'utils.php';
          display:none;
      }
  }
- @media screen and (min-width:1000px)
+ @media screen and (min-width:801px)
  {
+	 .updates {
+            height: 50px;
+        }
   .navbutton
   {
      position:fixed;
