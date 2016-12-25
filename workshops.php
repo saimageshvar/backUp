@@ -48,7 +48,14 @@ session_start();
 			font-family: 'Raleway', Arial, sans-serif;
 
 		}
-
+		.input-group-addon
+        {
+            background-color:#f7e3e5;
+        }
+		.reicon
+        {
+            color:#d73e4d;
+        }
 		.modal-dialog{
 			overflow-y: initial !important
 		}
@@ -195,12 +202,75 @@ session_start();
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-success" id="subscribe_workshop">Subscribe</button>
+				<button type="button" class="btn btn-success" id="register_workshop" data-target="#register" data-toggle="modal">Register</button>
 			</div>
 		</div>
 
 	</div>
 </div>
 
+<!-- Register for workshop -->
+<div class="modal fade" id="register" role="dialog">
+    <div class="modal-dialog modal-md">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title" style="text-align:center;margin-top:30px">Register</h2>
+            </div>
+            <div class="modal-body" style="color:black">
+                <form id="team_members_form" method="post" autocomplete="off">
+                    <div class="input-group" style="padding-bottom:5px;">
+                        <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
+                        <input type="text" class="form-control" name="member1" placeholder="Email 1" onblur="validatemail(this)" required>
+                    </div>
+                    <div class="input-group" style="padding-bottom:5px;">
+                        <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
+                        <input id="phone" type="phone" class="form-control" name="phone1" placeholder="Contact number" onblur="validatephone(this)" required>
+                    </div>
+                    <br/>
+					
+					<div class="input-group" style="padding-bottom:5px;">
+                        <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
+                        <input type="text" class="form-control" name="member2" placeholder="Email 2" onblur="validatemail(this)" required>
+                    </div>
+                    <div class="input-group" style="padding-bottom:5px;">
+                        <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
+                        <input id="phone" type="phone" class="form-control" name="phone2" placeholder="Contact number" onblur="validatephone(this)" required>
+                    </div>
+					<br/>
+					
+					<div class="input-group" style="padding-bottom:5px;">
+                        <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
+                        <input type="text" class="form-control" name="member3" placeholder="Email 3" onblur="validatemail(this)" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
+                        <input id="phone" type="phone" class="form-control" name="phone3" placeholder="Contact number" onblur="validatephone(this)" required>
+                    </div>
+					<br/>
+					
+					<div class="input-group" style="padding-bottom:5px;">
+                        <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
+                        <input type="text" class="form-control" name="member4" placeholder="Email 4" onblur="validatemail(this)" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
+                        <input id="phone" type="phone" class="form-control" name="phone4" placeholder="Contact number" onblur="validatephone(this)" required>
+                    </div>
+					<br/>
+                    <div class="progress_loader" style="display:none;"></div>
+                    <center><input type="submit" class="btn btn-success workshop_register" value="Register"></center>
+					<br/>
+                </form>
+
+            </div>
+           <!--   -->
+        </div>
+
+    </div>
+</div>
 
 </div><!-- .main -->
 <!-- random color -->
@@ -239,6 +309,7 @@ session_start();
 
 
 </script>
+<script type='text/javascript' src='assets/js/register.js'></script>
 <script type='text/javascript' src='assets/js/jquery.easings.min68b3.js'></script>
 <script type='text/javascript' src='assets/js/jquery.carouFredSel-6.2.1-packed68b3.js'></script>
 <script type='text/javascript' src='assets/js/jquery.touchwipe.min68b3.js'></script>
