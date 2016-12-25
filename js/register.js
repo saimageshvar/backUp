@@ -1,4 +1,4 @@
-var check=false, nameFlag=false, phone=false, pass=false, email=false;
+var check=false, name=false, phone=false, pass=false, email=false, access_token=false;
 function validatename(key)
 {
 	var name=key.value;
@@ -87,6 +87,21 @@ function Validate(formid)
 	else
 		alert("Invalid")*/
 }
+function validateAccessToken(key)
+{
+	var access_token=key.value;
+	if (!access_token.match(/^[a-zA-Z0-9]{10,50}$/))
+	{
+		key.style.borderColor="red";
+		window.access_token = false;
+	}
+	else
+	{
+		key.style.borderColor="green";
+		window.access_token = true;
+	}
+	key.style.borderWidth="1px";
+}
 
 function returnCheck()
 {
@@ -97,5 +112,18 @@ function returnCheckForLogin()
 {
 	
 	return (window.email && window.pass);
+
+}
+
+function returnEmail()
+{
+	
+	return window.email;
+
+}
+
+function returnPasswordReset()
+{
+	return (window.access_token && window.pass);
 
 }

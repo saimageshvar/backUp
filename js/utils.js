@@ -1,8 +1,8 @@
  
 // handle login
 $("#login_form").submit(function(e) { 
-$('.progress_loader').show();
-$('.login_submit').hide();
+    $('.progress_loader').show();
+    $('.login_submit').hide();
     var flag = returnCheckForLogin();
     if(flag)
     {
@@ -86,24 +86,24 @@ $('.login_submit').hide();
                     closable: true,
                     draggable: true
                 });
-				$('#password').val('');
-				$('#password').focus();
+                $('#password').val('');
+                $('#password').focus();
             }
-			$('.progress_loader').hide();
-	$('.login_submit').show();
+            $('.progress_loader').hide();
+            $('.login_submit').show();
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         BootstrapDialog.show({
+           BootstrapDialog.show({
             title: 'Oops!',
             message: 'Some error occured 😪 <br/> Please try after refreshing',
             type: BootstrapDialog.TYPE_DANGER,
             closable: true,
             draggable: true
         });
-		 $('.progress_loader').hide();
-	$('.login_submit').show();
-     }
- });
+           $('.progress_loader').hide();
+           $('.login_submit').show();
+       }
+   });
     }
     else
     {
@@ -114,8 +114,8 @@ $('.login_submit').hide();
             closable: true,
             draggable: true
         });
-		$('.progress_loader').hide();
-	$('.login_submit').show();
+        $('.progress_loader').hide();
+        $('.login_submit').show();
     }
     e.preventDefault();
 });
@@ -185,21 +185,21 @@ $("#registration_form").submit(function(e) {
                     draggable: true
                 });
             }
-			$('.progress_loader').hide();
-	$('.reg_submit').show();
+            $('.progress_loader').hide();
+            $('.reg_submit').show();
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         BootstrapDialog.show({
+           BootstrapDialog.show({
             title: 'Oops!',
             message: 'Some error occured 😪 <br/> Please try after refreshing',
             type: BootstrapDialog.TYPE_DANGER,
             closable: true,
             draggable: true
         });
-		$('.progress_loader').hide();
-	$('.reg_submit').show();
-     }
- });
+           $('.progress_loader').hide();
+           $('.reg_submit').show();
+       }
+   });
     }
     else
     {
@@ -210,8 +210,8 @@ $("#registration_form").submit(function(e) {
             closable: true,
             draggable: true
         });
-		$('.progress_loader').hide();
-	$('.reg_submit').show();
+        $('.progress_loader').hide();
+        $('.reg_submit').show();
     }	
     e.preventDefault();
 });
@@ -258,9 +258,9 @@ $("#subscribe_event").click(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     e.preventDefault();
 });
 
@@ -305,8 +305,147 @@ $("#subscribe_workshop").click(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
+    e.preventDefault();
+});
+
+// send reset instructions
+$("#send_reset_instructions").click(function(e) { 
+    $('.progress_loader').show();
+    $('#send_reset_instructions').hide();
+    var flag = returnEmail();
+    if(flag)
+    {
+
+        $.ajax
+        ({ 
+            url: 'sendResetInstructions.php',
+            data:'emailId=' + $('#send_reset_email')[0].value,
+            type: 'post',
+            success: function(result)
+            {
+                if(result==1)
+                {
+
+
+                    BootstrapDialog.show({
+                        title: 'Hey!',
+                        message: 'Please check your email for further instructions 🙂',
+                        type: BootstrapDialog.TYPE_SUCCESS,
+                        closable: true,
+                        draggable: true
+                    });
+                    $('#send_reset_email')[0].value="";
+
+                }
+                else if(result==0)
+                {
+                    BootstrapDialog.show({
+                        title: 'Oops!',
+                        message: 'This email id is not registered with Kurukshetra 2017 😦',
+                        type: BootstrapDialog.TYPE_WARNING,
+                        closable: true,
+                        draggable: true
+                    });
+                }
+                $('.progress_loader').hide();
+                $('#send_reset_instructions').show();
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+               BootstrapDialog.show({
+                title: 'Oops!',
+                message: 'Some error occured 😪 <br/> Please try after refreshing',
+                type: BootstrapDialog.TYPE_DANGER,
+                closable: true,
+                draggable: true
+            });
+               $('.progress_loader').hide();
+               $('#send_reset_instructions').show();
+           }
+       });
+    }
+    else
+    {
+        BootstrapDialog.show({
+            title: 'Hey!',
+            message: 'We won\'t spam you 😒 <br/> Please enter valid details',
+            type: BootstrapDialog.TYPE_WARNING,
+            closable: true,
+            draggable: true
+        });
+        $('.progress_loader').hide();
+        $('#send_reset_instructions').show();
+    }   
+    e.preventDefault();
+});
+
+// reset password
+$("#reset_password_form").submit(function(e) { 
+    $('.progress_loader').show();
+    $('.password_reset_submit').hide();
+    var flag = returnPasswordReset();
+    if(flag)
+    {
+
+        $.ajax
+        ({ 
+            url: 'resetPassword.php',
+            data: $("#reset_password_form").serialize(),
+            type: 'post',
+            success: function(result)
+            {
+                alert(result);
+                if(result==1)
+                {
+
+                    BootstrapDialog.show({
+                        title: 'Hey!',
+                        message: 'Your password has been reset.<br/>Please login to continue. 😀',
+                        type: BootstrapDialog.TYPE_SUCCESS,
+                        closable: true,
+                        draggable: true
+                    });
+                    $("#reset_password_form")[0].reset();
+                }
+                else if(result==0)
+                {
+                    BootstrapDialog.show({
+                        title: 'Oops!',
+                        message: 'Enter appropriate access token. 😕',
+                        type: BootstrapDialog.TYPE_WARNING,
+                        closable: true,
+                        draggable: true
+                    });
+                }
+                $('.progress_loader').hide();
+                $('.password_reset_submit').show();
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+               BootstrapDialog.show({
+                title: 'Oops!',
+                message: 'Some error occured 😪 <br/> Please try after refreshing',
+                type: BootstrapDialog.TYPE_DANGER,
+                closable: true,
+                draggable: true
+            });
+               $('.progress_loader').hide();
+               $('.password_reset_submit').show();
+           }
+       });
+    }
+    else
+    {
+        BootstrapDialog.show({
+            title: 'Hey!',
+            message: 'We won\'t spam you 😒 <br/> Please enter valid details',
+            type: BootstrapDialog.TYPE_WARNING,
+            closable: true,
+            draggable: true
+        });
+        $('.progress_loader').hide();
+        $('.password_reset_submit').show();
+    }   
     e.preventDefault();
 });

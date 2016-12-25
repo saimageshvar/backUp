@@ -216,7 +216,7 @@ require 'utils.php';
         <div class="clearfix"></div>
         <div class="header-menu" style="background: white">
             <nav id="main-menu" class="collapse navbar-collapse">
-                
+
                 <ul id="menu-main-menu" class="col-sm-12 col-md-6 nav navbar-nav" style="padding-top:0px;">
                     <div class="logos">
                         <center>    <img src="img/logo.png" style="height: auto;width:90%;"></center>
@@ -869,6 +869,70 @@ data-anchor="reach-us">
 
     </div>
 </div>
+
+<!-- forgot password -->
+<div class="modal fade forgot_password" role="dialog">
+    <div class="modal-dialog modal-md">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title" style="text-align:center;margin-top:30px">Forgot Password</h2>
+            </div>
+            <div class="modal-body" style="color:black">
+                <center>Enter your registered email here. <br/> We will send you password reset instructions to that mail</center>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
+                    <input id="send_reset_email" type="text" class="form-control" name="send_reset_email" placeholder="Email" onblur="validatemail(this)">
+                </div>          
+            </div>
+            <div class="modal-footer">
+                <div class="progress_loader" style="display:none;"></div>
+
+                <center><button type="button" class="btn btn-success" id="send_reset_instructions">Send</button></center>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- reset password -->
+<div class="modal fade reset_password" role="dialog">
+    <div class="modal-dialog modal-md">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title" style="text-align:center;margin-top:30px">Reset Password</h2>
+            </div>
+            <div class="modal-body" style="color:black">
+                <center>Enter the access token you received through mail</center>
+                
+                <form id="reset_password_form" method="post">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
+                        <input id="reset_token" type="text" class="form-control" name="reset_token" placeholder="Reset Token" onblur="validateAccessToken(this)">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="reicon glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Password (min 8 characters long)" onblur="validatepass(this)">
+                    </div>
+                    <br> 
+
+                    <div class="progress_loader" style="display:none;"></div>
+                    <center><input type="submit" class="btn btn-success password_reset_submit" value="Reset"></center>
+                </form>
+
+            </div>
+           <!--   -->
+        </div>
+
+    </div>
+</div>
+
 <!-- Login/ Registration -->
 <div class="modal fade login" role="dialog" id="registration">
     <div class="modal-dialog modal-md">
@@ -886,8 +950,9 @@ data-anchor="reach-us">
                 </li>
             </ul>
             <div class="tab-content" style="border:none">
-                <a href="" class="pull-right">Forgot Password?</a>
                 <div id="login" class="tab-pane fade in active">
+                    <a href="" class="pull-right" data-toggle="modal" data-target=".forgot_password" data-dismiss="modal">Forgot Password?</a>
+                    <br/><br/>
                     <form id="login_form" method="post">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
@@ -903,7 +968,7 @@ data-anchor="reach-us">
                         <div class="progress_loader" style="display:none;">Loading...</div>
                         <center><input type="submit" class="btn btn-success login_submit" value="Login"></center>
                     </form>
-                    
+
                 </div>
                 <div id="register" class="tab-pane fade"style="height:450px;overflow-y:auto;">
                     <center>
