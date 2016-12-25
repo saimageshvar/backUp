@@ -230,6 +230,7 @@ require 'utils.php';
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="#xceed"><span>Xceed</span></a></li>
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="#hospitality"><span>Hospitality</span></a></li>
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".sponsors"><span>Sponsors</span></a></li>
+					<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".contact-table"><span>Contact</span></a></li>
                     <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href='#' data-toggle="modal" data-target=".about"><span>About</span></a></li>
                     <?php 
                     if(!isset($_SESSION['user']))
@@ -337,7 +338,7 @@ data-anchor="highlights">
         <div class="facts-list">
             <div id="pg-fact-1" class="fact" data-appear-animation="zoomIn" data-appear-animation-delay="300">
                 <div class="skill-wrap full-skill">
-                    <div class="skill-percent"  style="color:#d73e4d;font-family:'Abril Fatface', cursive;">10+</div>
+                    <div class="skill-percent"  style="color:#d73e4d;font-family:'Abril Fatface', cursive;">8+</div>
                     <div class="skill-name" style="font-family: 'Aref Ruqaa', serif;font-size:1.1em">Workshops</div>
                 </div>
                 <style type="text/css" scoped="">
@@ -849,6 +850,100 @@ data-anchor="reach-us">
 
 </div>
 </div>
+
+<!--contact-->
+<div class="modal fade contact-table" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title" style="text-align:center;margin-top:30px">Contact</h2>
+            </div>
+            <div class="modal-body" style="color:black; height:450px; overflow-y:auto;">
+                <center>
+                    <table class="table table-hover table-bordered">
+                        <tr>
+                           <th><center>Team</center></th>
+                           <th colspan="4"><center>Members</center></th>                           
+                       </tr>
+                       <tr>
+                           <td>Events</td>
+                           <td colspan="2">Harees<br/>+91 96555 92571</td>
+						   <td colspan="2">Meenakshi<br/>+91 77084 60788</td>
+                       </tr>
+                       <tr>
+                           <td>Guest Lectures</td>
+                           <td colspan="2">Adarsh Reddy<br/>+91 98405 82365</td>
+						   <td colspan="2">Akshara<br/>+91 99401 86875</td>
+                       </tr>
+                       <tr>
+                           <td>Hospitality</td>
+                           <td colspan="2">Divya Bharathi<br/>+91 99659 61021</td>
+						   <td colspan="2">Padmaashri<br/>+91 85269 82897</td>
+						</tr>
+						<tr>
+							<td></td>
+						   <td colspan="2">Raja<br/>+91 96775 13011</td>
+						   <td colspan="2">Ranjith<br/>+91 80984 01981</td>
+                       </tr>
+                       <tr>
+                           <td>Human Resources</td>
+                           <td colspan="2">Deepak Kumar<br/>+91 97891 281911</td>						   
+                       </tr> 
+					   <tr>
+                           <td>Industrial Relations</td>
+                           <td colspan="2">Shreyas Ramesh<br/>+91 94450 52080</td>
+						   <td colspan="2">Tharun Suresh<br/>+91 94450 52081</td>
+                       </tr> 
+					   <tr>
+                           <td>Logistics</td>
+                           <td colspan="2">Aravind Selvam<br/>+91 94456 75340</td>					   
+						   <td colspan="2">Balaji Arumugam<br/>+91 94869 67187</td>
+						</tr>
+						<tr>
+							<td></td>
+						   <td colspan="2">Manoj Kumar<br/>+91 78128 04038</td>
+						   <td colspan="2">Praveen<br/>+91 91762 70678</td>
+                       </tr> 
+					   <tr>
+                           <td>Media</td>
+                           <td colspan="2">Saravana Kumar<br/>+91 94450 52083</td>						   
+                       </tr> 
+						<tr>
+                           <td>Projects</td>
+                           <td colspan="2">Kishore Ganesh<br/>+91 99627 20398</td>
+						   <td colspan="2">Raghuraman<br/>+91 95660 45429</td>						   						   
+                       </tr> 
+					   <tr>
+                           <td>Public Relations</td>
+                           <td colspan="2">Dhanush<br/>+91 98417 76580</td>						   
+						   <td colspan="2">Keerthivasan<br/>+91 78455 31020</td>
+						</tr>
+						<tr>
+							<td></td>
+						   <td colspan="2">Tharunya Danabal<br/>99425 82259</td>						   
+                       </tr> 
+					   <tr>
+                           <td>Workshops</td>
+                           <td colspan="2">Catherine<br/>+91 95003 57401</td>						   
+						   <td colspan="2">Syed Shameer Ahmed<br/>+91 90033 98103</td>
+                       </tr> 
+					   <tr>
+                           <td>Xceed and K!arnival</td>
+                           <td colspan="2">Jaffar Sheriff<br/>+91 99442 79229</td>	   
+						   <td colspan="2">Rajasree Arul<br/>+91 95001 06778</td>
+                       </tr> 
+                   </table>
+               </center>
+           </div>
+           
+    </div>
+
+</div>
+</div>
+
 <!-- sponsors -->
 <div class="modal fade sponsors" role="dialog">
     <div class="modal-dialog modal-lg">
@@ -882,23 +977,24 @@ data-anchor="reach-us">
             </div>
             <div class="modal-body" style="color:black">
                 <center>Enter your registered email here. <br/> We will send you password reset instructions to that mail</center>
-                <div class="input-group">
+				<br/>
+                <center><div class="input-group" style="width:70%;">
                     <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
                     <input id="send_reset_email" type="text" class="form-control" name="send_reset_email" placeholder="Email" onblur="validatemail(this)">
-                </div>          
+                </div></center>
             </div>
-            <div class="modal-footer">
+            
                 <div class="progress_loader" style="display:none;"></div>
 
-                <center><button type="button" class="btn btn-success" id="send_reset_instructions">Send</button></center>
-            </div>
+                <center><button type="button" class="btn btn-success" id="send_reset_instructions">Send</button></center><br/>
+            
         </div>
 
     </div>
 </div>
 
 <!-- reset password -->
-<div class="modal fade reset_password" role="dialog">
+<div class="modal fade resetpassword" role="dialog">
     <div class="modal-dialog modal-md">
 
         <!-- Modal content-->
@@ -910,9 +1006,9 @@ data-anchor="reach-us">
             <div class="modal-body" style="color:black">
                 <center>Enter the access token you received through mail</center>
                 
-                <form id="reset_password_form" method="post">
+                <form id="reset_password_form" method="post" autocomplete="off">
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="reicon fa fa-envelope"></i></span>
+                        <span class="input-group-addon"><i class="reicon fa fa-key"></i></span>
                         <input id="reset_token" type="text" class="form-control" name="reset_token" placeholder="Reset Token" onblur="validateAccessToken(this)">
                     </div>
                     <br>
@@ -1406,10 +1502,19 @@ data-anchor="reach-us">
                $('#registration').modal('show');
            }
 
-       });
-   </script>
+		});
+		</script>
 
+		<script>
+        //reset password direct link
+        $(document).ready(function() {
+			
+            if(window.location.href.indexOf('#resetpassword') != -1) {
+               $('.resetpassword').modal('show');
+           }
 
+		});
+		</script>
    <!-- fetch from cms -->
 
    <!-- hospitality cms -->

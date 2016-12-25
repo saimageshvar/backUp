@@ -328,8 +328,8 @@ $("#send_reset_instructions").click(function(e) {
             {
                 if(result==1)
                 {
-
-
+					$('.forgot_password').modal('hide');
+					$('.resetpassword').modal('show');					
                     BootstrapDialog.show({
                         title: 'Hey!',
                         message: 'Please check your email for further instructions 🙂',
@@ -399,7 +399,7 @@ $("#reset_password_form").submit(function(e) {
                 alert(result);
                 if(result==1)
                 {
-
+					$('.resetpassword').modal('hide');
                     BootstrapDialog.show({
                         title: 'Hey!',
                         message: 'Your password has been reset.<br/>Please login to continue. 😀',
@@ -408,6 +408,7 @@ $("#reset_password_form").submit(function(e) {
                         draggable: true
                     });
                     $("#reset_password_form")[0].reset();
+					$('#registration').modal('show');
                 }
                 else if(result==0)
                 {
