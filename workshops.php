@@ -202,7 +202,7 @@ session_start();
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-success" id="subscribe_workshop">Subscribe</button>
-				<button type="button" class="btn btn-success" id="register_workshop" data-target="#register" data-toggle="modal">Register</button>
+				<button type="button" class="btn btn-success" id="register_workshop" data-target="#register" data-toggle="modal" onclick="fillWorkshopName();">Register</button>
 			</div>
 		</div>
 
@@ -217,56 +217,56 @@ session_start();
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h2 class="modal-title" style="text-align:center;margin-top:30px">Register</h2>
+                <h2 class="modal-title" style="text-align:center;">Register</h2>
+                <h2 class="workshop-name" style="text-align:center;padding-top: 10px"></h2>
             </div>
             <div class="modal-body" style="color:black">
-                <form id="team_members_form" method="post" autocomplete="off">
+                <form id="workshop_team_members_form" method="post" autocomplete="off">
                     <div class="input-group" style="padding-bottom:5px;">
                         <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
-                        <input type="text" class="form-control" name="member1" placeholder="Email 1" onblur="validatemail(this)" required>
+                        <input type="text" class="form-control" name="email[]" placeholder="Your Email" onblur="validatemail(this)" required>
                     </div>
                     <div class="input-group" style="padding-bottom:5px;">
                         <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
-                        <input id="phone" type="phone" class="form-control" name="phone1" placeholder="Contact number" onblur="validatephone(this)" required>
+                        <input id="phone" type="phone" class="form-control" name="phone[]" placeholder="Your Contact Number" onblur="validatephone(this)" required>
                     </div>
                     <br/>
 					
 					<div class="input-group" style="padding-bottom:5px;">
                         <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
-                        <input type="text" class="form-control" name="member2" placeholder="Email 2" onblur="validatemail(this)" required>
+                        <input type="text" class="form-control" name="email[]" placeholder="Teammate's Email">
                     </div>
                     <div class="input-group" style="padding-bottom:5px;">
                         <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
-                        <input id="phone" type="phone" class="form-control" name="phone2" placeholder="Contact number" onblur="validatephone(this)" required>
+                        <input id="phone" type="phone" class="form-control" name="phone[]" placeholder="Teammate's Contact Number">
                     </div>
 					<br/>
 					
 					<div class="input-group" style="padding-bottom:5px;">
                         <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
-                        <input type="text" class="form-control" name="member3" placeholder="Email 3" onblur="validatemail(this)" required>
+                        <input type="text" class="form-control" name="email[]" placeholder="Teammate's Email">
                     </div>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
-                        <input id="phone" type="phone" class="form-control" name="phone3" placeholder="Contact number" onblur="validatephone(this)" required>
+                        <input id="phone" type="phone" class="form-control" name="phone[]" placeholder="Teammate's Contact Number">
                     </div>
 					<br/>
 					
 					<div class="input-group" style="padding-bottom:5px;">
                         <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
-                        <input type="text" class="form-control" name="member4" placeholder="Email 4" onblur="validatemail(this)" required>
+                        <input type="text" class="form-control" name="email[]" placeholder="Teammate's Email">
                     </div>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
-                        <input id="phone" type="phone" class="form-control" name="phone4" placeholder="Contact number" onblur="validatephone(this)" required>
+                        <input id="phone" type="phone" class="form-control" name="phone[]" placeholder="Teammate's Contact Number">
                     </div>
 					<br/>
                     <div class="progress_loader" style="display:none;"></div>
-                    <center><input type="submit" class="btn btn-success workshop_register" value="Register"></center>
+                    <center><input type="submit" class="btn btn-success workshop_register_submit" value="Register"></center>
 					<br/>
                 </form>
 
             </div>
-           <!--   -->
         </div>
 
     </div>
@@ -309,7 +309,7 @@ session_start();
 
 
 </script>
-<script type='text/javascript' src='assets/js/register.js'></script>
+<script type='text/javascript' src='js/register.js'></script>
 <script type='text/javascript' src='assets/js/jquery.easings.min68b3.js'></script>
 <script type='text/javascript' src='assets/js/jquery.carouFredSel-6.2.1-packed68b3.js'></script>
 <script type='text/javascript' src='assets/js/jquery.touchwipe.min68b3.js'></script>
@@ -347,6 +347,13 @@ session_start();
 			$('.klogo').removeClass('col-sm-4');
 		}
 	});
+</script>
+
+<script type="text/javascript">
+	function fillWorkshopName()
+	{
+		$('.workshop-name')[0].innerHTML = $('#eventsDetails .modal-title')[0].innerHTML;
+	}
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>

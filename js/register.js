@@ -1,5 +1,4 @@
 var check=false, name=false, phone=false, pass=false, email=false, access_token=false;
-var email[4], phone[4];
 function validatename(key)
 {
 	var name=key.value;
@@ -127,4 +126,9 @@ function returnPasswordReset()
 {
 	return (window.access_token && window.pass);
 
+}
+
+function returnWorkshopRegistration()
+{
+		return (window.email && window.phone);
 }

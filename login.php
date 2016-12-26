@@ -5,7 +5,7 @@ if(!isset($_SESSION['user']))
 	$emailId = sanitizeParams($_POST['email']);
 	$password = sanitizeParams($_POST['password']);
 	
-	$url = 'http://52.39.93.59:8080/web/api/login';
+	$url = 'shinigami.kurukshetra.org.in/web/api/login';
 	$params =  json_encode(array(
 		"emailId" => $emailId, 
 		"password" => $password
