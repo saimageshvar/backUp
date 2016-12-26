@@ -221,59 +221,9 @@ session_start();
                 <h2 class="workshop-name" style="text-align:center;padding-top: 10px"></h2>
             </div>
             <div class="modal-body" style="color:black">
-                <form id="workshop_team_members_form" method="post" autocomplete="off">
-                    <div class="input-group" style="padding-bottom:5px;">
-                        <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
-                        <input type="text" class="form-control" name="email[]" placeholder="Your Email" onblur="validatemail(this)" required>
-                    </div>
-                    <div class="input-group" style="padding-bottom:5px;">
-                        <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
-                        <input id="phone" type="phone" class="form-control" name="phone[]" placeholder="Your Contact Number" onblur="validatephone(this)" required>
-                    </div>
-                    <br/>
-					
-					<div class="input-group" style="padding-bottom:5px;">
-                        <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
-                        <input type="text" class="form-control" name="email[]" placeholder="Teammate's Email">
-                    </div>
-                    <div class="input-group" style="padding-bottom:5px;">
-                        <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
-                        <input id="phone" type="phone" class="form-control" name="phone[]" placeholder="Teammate's Contact Number">
-                    </div>
-					<br/>
-					
-					<div class="input-group" style="padding-bottom:5px;">
-                        <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
-                        <input type="text" class="form-control" name="email[]" placeholder="Teammate's Email">
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
-                        <input id="phone" type="phone" class="form-control" name="phone[]" placeholder="Teammate's Contact Number">
-                    </div>
-					<br/>
-					
-					<div class="input-group" style="padding-bottom:5px;">
-                        <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
-                        <input type="text" class="form-control" name="email[]" placeholder="Teammate's Email">
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
-                        <input id="phone" type="phone" class="form-control" name="phone[]" placeholder="Teammate's Contact Number">
-                    </div>
-					<br/>
-
-					<div class="input-group" style="padding-bottom:5px;">
-                        <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
-                        <input type="text" class="form-control" name="email[]" placeholder="Teammate's Email">
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
-                        <input id="phone" type="phone" class="form-control" name="phone[]" placeholder="Teammate's Contact Number">
-                    </div>
-					<br/>
-					
-                    <div class="progress_loader" style="display:none;"></div>
-                    <center><input type="submit" class="btn btn-success workshop_register_submit" value="Register"></center>
+                <form id="workshop_team_members_form" method="post" autocomplete="off">					
+       <!--              <div class="progress_loader" style="display:none;"></div>
+                    <center><input type="submit" class="btn btn-success workshop_register_submit" value="Register"></center> -->
 					<br/>
                 </form>
 
@@ -364,6 +314,7 @@ session_start();
 	function fillWorkshopName()
 	{
 		$('.workshop-name')[0].innerHTML = $('#eventsDetails .modal-title')[0].innerHTML;
+
 	}
 </script>
 
