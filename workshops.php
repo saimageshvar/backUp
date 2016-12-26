@@ -261,6 +261,17 @@ session_start();
                         <input id="phone" type="phone" class="form-control" name="phone[]" placeholder="Teammate's Contact Number">
                     </div>
 					<br/>
+
+					<div class="input-group" style="padding-bottom:5px;">
+                        <span class="input-group-addon"><i class="reicon fa fa-envelope" style="width:14px;"></i></span>
+                        <input type="text" class="form-control" name="email[]" placeholder="Teammate's Email">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="reicon fa fa-phone"></i></span>
+                        <input id="phone" type="phone" class="form-control" name="phone[]" placeholder="Teammate's Contact Number">
+                    </div>
+					<br/>
+					
                     <div class="progress_loader" style="display:none;"></div>
                     <center><input type="submit" class="btn btn-success workshop_register_submit" value="Register"></center>
 					<br/>
