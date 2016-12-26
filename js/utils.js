@@ -94,17 +94,17 @@ $("#login_form").submit(function(e) {
             $('.login_submit').show();
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         BootstrapDialog.show({
+           BootstrapDialog.show({
             title: 'Oops!',
             message: 'Some error occured 😪 <br/> Please try after refreshing',
             type: BootstrapDialog.TYPE_DANGER,
             closable: true,
             draggable: true
         });
-         $('.progress_loader').hide();
-         $('.login_submit').show();
-     }
- });
+           $('.progress_loader').hide();
+           $('.login_submit').show();
+       }
+   });
     }
     else
     {
@@ -190,17 +190,17 @@ $("#registration_form").submit(function(e) {
             $('.reg_submit').show();
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         BootstrapDialog.show({
+           BootstrapDialog.show({
             title: 'Oops!',
             message: 'Some error occured 😪 <br/> Please try after refreshing',
             type: BootstrapDialog.TYPE_DANGER,
             closable: true,
             draggable: true
         });
-         $('.progress_loader').hide();
-         $('.reg_submit').show();
-     }
- });
+           $('.progress_loader').hide();
+           $('.reg_submit').show();
+       }
+   });
     }
     else
     {
@@ -259,9 +259,9 @@ $("#subscribe_event").click(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     e.preventDefault();
 });
 
@@ -306,9 +306,9 @@ $("#subscribe_workshop").click(function(e) {
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
-       }
-   });
+         alert("some error");
+     }
+ });
     e.preventDefault();
 });
 
@@ -329,20 +329,20 @@ $("#send_reset_instructions").click(function(e) {
             {
                 if(result==1)
                 {
-                   $('.forgot_password').modal('hide');
-                   $('.resetpassword').modal('show');					
-                   BootstrapDialog.show({
+                 $('.forgot_password').modal('hide');
+                 $('.resetpassword').modal('show');					
+                 BootstrapDialog.show({
                     title: 'Hey!',
                     message: 'Please check your email for further instructions 🙂',
                     type: BootstrapDialog.TYPE_SUCCESS,
                     closable: true,
                     draggable: true
                 });
-                   $('#send_reset_email')[0].value="";
+                 $('#send_reset_email')[0].value="";
 
-               }
-               else if(result==0)
-               {
+             }
+             else if(result==0)
+             {
                 BootstrapDialog.show({
                     title: 'Oops!',
                     message: 'This email id is not registered with Kurukshetra 2017 😦',
@@ -355,17 +355,17 @@ $("#send_reset_instructions").click(function(e) {
             $('#send_reset_instructions').show();
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         BootstrapDialog.show({
+           BootstrapDialog.show({
             title: 'Oops!',
             message: 'Some error occured 😪 <br/> Please try after refreshing',
             type: BootstrapDialog.TYPE_DANGER,
             closable: true,
             draggable: true
         });
-         $('.progress_loader').hide();
-         $('#send_reset_instructions').show();
-     }
- });
+           $('.progress_loader').hide();
+           $('#send_reset_instructions').show();
+       }
+   });
     }
     else
     {
@@ -399,20 +399,20 @@ $("#reset_password_form").submit(function(e) {
             {
                 if(result==1)
                 {
-                   $('.resetpassword').modal('hide');
-                   BootstrapDialog.show({
+                 $('.resetpassword').modal('hide');
+                 BootstrapDialog.show({
                     title: 'Hey!',
                     message: 'Your password has been reset.<br/>Please login to continue. 😀',
                     type: BootstrapDialog.TYPE_SUCCESS,
                     closable: true,
                     draggable: true
                 });
-                   $("#reset_password_form")[0].reset();
-                   $("#login_form")[0].reset();
-                   $('#registration').modal('show');
-               }
-               else if(result==0)
-               {
+                 $("#reset_password_form")[0].reset();
+                 $("#login_form")[0].reset();
+                 $('#registration').modal('show');
+             }
+             else if(result==0)
+             {
                 BootstrapDialog.show({
                     title: 'Oops!',
                     message: 'Enter appropriate access token. 😕',
@@ -425,17 +425,17 @@ $("#reset_password_form").submit(function(e) {
             $('.password_reset_submit').show();
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-         BootstrapDialog.show({
+           BootstrapDialog.show({
             title: 'Oops!',
             message: 'Some error occured 😪 <br/> Please try after refreshing',
             type: BootstrapDialog.TYPE_DANGER,
             closable: true,
             draggable: true
         });
-         $('.progress_loader').hide();
-         $('.password_reset_submit').show();
-     }
- });
+           $('.progress_loader').hide();
+           $('.password_reset_submit').show();
+       }
+   });
     }
     else
     {
@@ -502,21 +502,31 @@ $("#workshop_team_members_form").submit(function(e) {
                         draggable: true
                     });
                 }
+                else if(result.response==2)
+                {
+                    BootstrapDialog.show({
+                        title: 'Oops!',
+                        message: 'You should <a href=\'index.php#login\'>login</a> before you register 😕',
+                        type: BootstrapDialog.TYPE_DANGER,
+                        closable: true,
+                        draggable: true
+                    });
+                }
                 $('.progress_loader').hide();
                 $('.workshop_register_submit').show();
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
-             BootstrapDialog.show({
+               BootstrapDialog.show({
                 title: 'Oops!',
                 message: 'Some error occured 😪 <br/> Please try after refreshing',
                 type: BootstrapDialog.TYPE_DANGER,
                 closable: true,
                 draggable: true
             });
-             $('.progress_loader').hide();
-             $('.workshop_register_submit').show();
-         }
-     });
+               $('.progress_loader').hide();
+               $('.workshop_register_submit').show();
+           }
+       });
     }
     else
     {

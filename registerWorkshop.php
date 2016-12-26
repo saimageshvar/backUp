@@ -59,5 +59,7 @@ if(isset($_SESSION['user']))
 }
 else
 {
-	echo 2;
+	$code = 2;
+	$arr = array ('response'=>$code);
+	echo json_encode($arr);
 }
